@@ -1,18 +1,34 @@
-
-h1 {
-  color: red;
-  font-family: Arial;
-}
+p {color: white;}
 
 .title {
-  text-align: center;
-  font-size
+  text-align: left;
+  font-family: MuseoModerno !important;
+  color: white;
+}
+
+
+h3 {text-align: center;
+font-family: 'MuseoModerno', cursive !important;
+color:white !important;
+font-weight: 600 !important;
 }
 
 .navbar {
   padding: 0;
-  background-image: url("")
+  border-radius: 25px  0px 25px 0px;
+  border-style: solid;
+  border-color: black;
+
 }
+
+.logo{
+
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 /* Rende la navbar orizzontale */
 .navbar ul {
@@ -21,6 +37,8 @@ h1 {
   display: flex;
   list-style: none;
   align-items: center;
+
+  clear: left;
 }
 
 .navbar li {
@@ -30,21 +48,22 @@ h1 {
 /* Tutti gli elementi linkati in navbar */
 .navbar a {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0px 0 0px 30px;
+  padding: 30px 0px 0px 20px;
   font-family: MuseoModerno !important;
   font-size: 20px;
-  color: blue;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
+  text-align:center !important;
+
 }
 
 .navbar a i {
-  font-size: 12px;
   line-height: 0;
   margin-left: 5px;
- 
+  font-family: MuseoModerno !important;
+  font-size: 20px;
 }
 
 .navbar .dropdown ul {
@@ -56,8 +75,8 @@ h1 {
   padding: 10px 0;
   z-index: 99;
   opacity: 0;
-  visibility: hidden;
-  background: #fff;
+  visibility: hidden; 
+  background: #fff; /* CI POTREBBE STARE PURE TRASPARENTE CIOE rgba(0000) */*
   box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
   transition: 0.2s;
 }
@@ -71,8 +90,9 @@ h1 {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: blue;
+  color: black;
 }
+
 
 
 
@@ -81,7 +101,13 @@ h1 {
   opacity: 1;
   top: 100%;
   visibility: visible;
+  color: green;
 }
+
+a:hover {
+  color: #3EEFAF !important;
+}
+
 
 .navbar .dropdown .dropdown ul {
   top: 0;
@@ -105,24 +131,9 @@ h1 {
   }
 }
 
-#name_magazine {
-  border-color: black;
-  border: 5px;
- 
 
-}
 
-#magazine {
-  border-color: black;
-  border: 10px;
 
-}
-
-#team {
-  border-color: black;
-  border: 10px;
-
-}
 
 .parallax {
   /* The image used */
@@ -140,38 +151,35 @@ h1 {
   background-size: cover;
   border-radius: 25px;
   border-style: solid;
+  clear: left;
+  clear: right;
+  clear: top;
+  clear: bottom;
 }
 
-@keyframes sfondo {
-  from {background-color: #4CCAF2;}
-  to {background-color: #97F676;}
-}
 
 /* The element to apply the animation to */
-.parallax2 {
-
-  background-color: red;
-  animation-name: sfondo;
-  animation-duration: 10s;
-  animation-fill-mode: both;
-  animation-delay: 3s;
-  animation-iteration-count: infinite;
-
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-.parallax2 {
-  /* The image used */
-  background-image: url("https://i.pinimg.com/564x/40/d8/c2/40d8c2f116f6a11a4f3616e0b7d9417f.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
+   /* Set a specific height */
+
+
 
 /* centrare le imgs */
 .center {
@@ -184,4 +192,271 @@ h1 {
 
 body {
   background-color: #000000 !important;
+}
+
+.card{
+    float: left;
+    padding: 10px;
+    text-align: center !important;
+    margin: 30px;
+    align-items: center !important;
+    position: relative;
+
+}
+
+.card-text {
+  color: black;
+}
+
+#team {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 2000px;
+  text-align: center;
+
+}
+
+
+/* ANIMAZIONI */
+
+
+#magazine {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 2000px;
+  position:relative;
+ 
+  animation-name: versoDestra;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s; 
+
+}
+
+
+@keyframes versoDestra {
+    from {
+      left: -20%; 
+
+    }
+    to {
+      left: 5%;
+
+    }
+}
+
+#magazine {
+  animation-timing-function: ease-out;
+}
+
+ #magazine {animation-name: versoSinistra;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s; 
+   
+ }
+
+ @keyframes versoSinistra {
+    from {
+      right: -20%; 
+
+    }
+    to {
+      right: 0%;
+
+    }
+}
+
+#magazine {
+  animation-timing-function: ease-out;
+}
+
+
+#project {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 2000px;
+  position: relative;
+  animation-name: versoDestra;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+
+}
+
+@keyframes versoDestra {
+    from {
+      left: -20%; 
+
+    }
+    to {
+      left: 5%;
+
+    }
+}
+
+
+#issues {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+  width: 2000px;
+  position:relative;
+ 
+  animation-name: versoDestra;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s; 
+
+}
+
+#issues {
+  animation-timing-function: ease-out;
+}
+
+
+ #issues {animation-name: versoSinistra;
+  animation-duration: 2s; 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s; 
+   
+ }
+#issues {
+  animation-timing-function: ease-out;
+}
+
+.img_team {
+  border-radius: 105px 105px 0px 0px;
+  border-style: solid;
+  border-color: black;
+  width: 300px;
+  height:300px;
+ 
+}
+
+.img_issue {
+  border-radius: 105px;
+  border-style: solid;
+  border-color: black;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+
+
+.issue_txt {
+  text-align: center;
+}
+
+button {
+  text-align:center !important;
+  display: block !important;
+  border-style: dashed;
+  color: yellow;
+}
+
+
+.rotate {
+  animation: rotation 2s infinite ease-out;
+  speed: slow;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+    
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+    
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("file:///C:/Users/lunet/Documents/DIGITAL%20HUMANITIES/Sito_Vitali/imgs/path.png");
+
+/* https://image.freepik.com/vetores-gratis/fundo-colorido-da-onda-do-equalizador_23-2148430378.jpg */
+
+  /* Set a specific height */
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+
+/* COSE SOLO PER LA PAGINA ARTICLES */
+
+.article_col {
+  overflow: auto;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  padding: 20px !important;
+  height: 800px;
+}
+
+.article_col::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+}
+ 
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.article_col::-webkit-scrollbar-thumb {
+  background-color: pink;
+  outline: 1px solid pink;
+ 
 }
