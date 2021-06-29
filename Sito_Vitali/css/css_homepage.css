@@ -440,15 +440,22 @@ button {
 .article_col {
   overflow: auto;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 20px 0px 0px 0px;
   border-color: black;
   padding: 20px !important;
   height: 800px;
+  
+}
+
+
+.row_articles {
+  column-gap: 10px;
 }
 
 .article_col::-webkit-scrollbar {
     width: 0.5em;
     margin: 2px;
+    background-image: conic-gradient(rgba(57, 124, 254, 1)  rgba(158, 249, 68, 1));
 }
  
 .article_col::-webkit-scrollbar-track {
@@ -456,7 +463,14 @@ button {
 }
  
 .article_col::-webkit-scrollbar-thumb {
-  background-color: pink;
-  outline: 1px solid pink;
+  
+  outline: 1px solid;
+  background-image: conic-gradient(rgba(57, 124, 254, 1)  rgba(158, 249, 68, 1));
  
+}
+
+.title-issue {
+  text-align: center !important;
+  font-family: 'MuseoModerno', cursive !important;
+  color: white !important;
 }
