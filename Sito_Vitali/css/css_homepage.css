@@ -137,7 +137,7 @@ a:hover {
 
 .parallax {
   /* The image used */
-  background-image: url("file:///C:/Users/lunet/Downloads/Untitled(8).png");
+  background-image: url("file:///C:/Users/lunet/Documents/DIGITAL%20HUMANITIES/Sito_Vitali/imgs/parallax.png");
 
 /* https://image.freepik.com/vetores-gratis/fundo-colorido-da-onda-do-equalizador_23-2148430378.jpg */
 
@@ -444,6 +444,7 @@ button {
   border-color: black;
   padding: 20px !important;
   height: 800px;
+   text-align: justify !important;
   
 }
 
@@ -456,6 +457,7 @@ button {
     width: 0.5em;
     margin: 2px;
     background-image: conic-gradient(rgba(57, 124, 254, 1)  rgba(158, 249, 68, 1));
+   
 }
  
 .article_col::-webkit-scrollbar-track {
@@ -474,3 +476,4 @@ button {
   font-family: 'MuseoModerno', cursive !important;
   color: white !important;
 }
+
