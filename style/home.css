@@ -154,11 +154,27 @@ background-size: cover;
   width: 50%;
 }
 
+.row{
+  column-gap: 9px;
+}
+
 .col{
+  margin-top: 40px;
   text-align: center;
+  border: 3px solid black;
+}
+
+#one{
+ margin-left: 10px;
+}
+
+#three{
+   margin-right: 10px;
 }
 
 .img_issue{
   width:200px;
   height: auto;
 }
+
+/*AGGIUNTE*/
