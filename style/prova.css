@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
+@font-face{
+  font-family: "new_font";
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Franklin Gothic Heavy Italic.ttf");
+}
+
+@font-face{
+  font-family: "Metropolis-ExtraBoldItalic";
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Metropolis-ExtraBoldItalic.otf");
+}
+@font-face{
+  font-family:"futura";
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Futura Condensed Bold/Futura Condensed Bold.otf");
+}
+
+@font-face{
+  font-family:article;
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/timr45w.ttf");
+}
+
+@font-face{
+  font-family:article_block;
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/timr65w.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+
+@font-face{
+  font-family:"Bebas Neue";
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/BebasNeue-Regular.woff");
+}
+
+@font-face{
+  font-family:"Inter";
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Inter-Bold.ttf");
+}
+
+@font-face{
+  font-family: orwell;
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Orwell.ttf");
+}
+
+@font-face{
+  font-family:Golddrew;
+  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Golddrew.ttf");
+}
+
+/* NAVBAR */
+.navbar {
+  border-style: solid;
+  border-color: white;
+  background-color:rgb(220,57,57); 
+  position: relative;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+.navbar li {
+  position: relative;
+}
+
+/* Tutti gli elementi linkati in navbar */
+.navbar a {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px 0px 20px;
+  font-family: "Metropolis-ExtraBoldItalic"!important;
+  font-size: 40px;
+  color: white;
+  white-space: nowrap;
+  transition: 0.3s;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.navbar a i {
+  line-height: 0;
+  margin-left: 5px;
+  font-family: "Metropolis-ExtraBoldItalic" !important;
+  font-size: 20px;
+}
+
+.navbar a:hover{
+  color: yellow;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden; 
+  background: #fff; /* CI POTREBBE STARE PURE TRASPARENTE CIOE rgba(0000) */
+  box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.2s;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: none;
+  color: black;
+}
+
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  color: green;
+}
+
+.title_issue {
+	margin: 0.5em;
+	margin-left:0.5em;
+	width: 99%;
+	border: 4px solid white;
+	background-color: rgb(220,57,57);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 60px auto;
+}
+
+.two{
+  font-size: 50px;
+  font-family: Metropolis-ExtraBoldItalic;
+  color: white;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.three{
+	grid-row: 1;
+	grid-column: 3/5;
+	font-size: 20px;
+	font-family: Metropolis-ExtraBoldItalic;
+	color: yellow;
+	line-height: normal;
+	text-align: left;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+}
+
+.three>div{
+	font-size: 30px;
+	font-family: Metropolis-ExtraBoldItalic;
+	color: yellow;
+	line-height: normal;
+	text-align: left;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+}
+
+.five{
+	grid-row: 1/4;
+	grid-column: 6/13;
+}
+
+.thirteen{
+	grid-row: 2;
+	grid-column:1/5;
+	font-size: 100px;
+	font-family: Metropolis-ExtraBoldItalic;
+	color: white;
+	line-height: 50px;
+	text-align: left;
+	padding-bottom: 6px;
+	padding-left: 50px;
+}
+
+.ten{
+	grid-row:3;
+	grid-column: 4/6;
+	font-size: 20px;
+    font-family: Metropolis-ExtraBoldItalic;
+    color: white;
+    text-align: right;
+}
+
+.advertising{
+	text-align: right;
+}
+
+.article_col{
+  border:solid black;
+  margin: 0.5em;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
+  background: white;
+  font-family:"Public Sans", sans-serif;
+  color:black;
+}
+
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+.article_col::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.article_col::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+#col1_img{
+  height: 335px;
+  width: auto;
+  text-align: left;
+  margin-top: 15px;
+  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col1_img.jpeg");
+  background-size: cover;
+  font-family: futura;
+  font-size: 60px;
+  color: white;
+  line-height: 1em;
+  }
+
+
+.start_line{
+border-top: 3px solid black;
+width: 80px;
+margin-top: 0;
+}
+
+#black_music_line{
+  border-bottom: 6px solid white;
+  width: 50%;
+  border-radius: 25px;
+}
+
+.paragraph_header{
+  font-family: futura;
+  size: 20px;
+  text-align: center;
+}
+.author_and_date{
+  size:10px;
+}
+
+
+figcaption{
+   size:10px;
+}
+
+body{
+  background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");
+}
+
+.article_col figure{
+  text-align:center;
+}
+
+.article_col .video{
+  display: block;
+  text-align:center;
+}
+
+#col1 ul{
+    list-style: none;
+}
+
+#col1 ul li {
+    text-indent: -0.3rem;
+  }
+
+#col1 ul li::before {
+    content: "🎺 ";
+  }
+
+#col2_img{
+  text-align: left;
+  height: 335px;
+  width: auto;
+  margin-top: 15px;
+  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col2_img.jpg");
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  font-size: 60px;
+  line-height: 1em;
+  color: black;
+  line-height: 2em;
+  padding:2px;*/
+}
+
+#col3 .CoverTitle{
+  font-family: futura;
+  font-size: 60px;
+}
+
+#col3_img{
+  text-align: left;
+  padding-top:0.5em;
+  padding-left: 5px;
+  height: 335px;
+  width: auto;
+  margin-top: 15px;
+  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col3_img.jpg");
+  background-size: cover;
+  font-family: "Bebas Neue";
+  text-decoration: underline; 
+  font-size: 60px;
+  line-height: 1em;
+  color: white/*rgb(255, 121, 0)*/;
+}
+
+.extract{
+  font-family: 'Arimo', sans-serif;
+  border-radius: 25px;
+  padding:0.5em;
+  text-align: center;
+}
+
+#col2 .extract{
+  background-color: rgba(255, 234, 0.6);
+}
+
+#col3 .extract{
+  background-color: rgba(180, 12, 133, 0.8);
+}
+
+#col1 .extract{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#col2 p{
+  column-count: 2;
+}

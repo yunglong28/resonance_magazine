@@ -16,85 +16,60 @@
   clear: left;
 }
 
+/* Tutti gli elementi in navbar */
 .navbar li {
   position: relative;
-}
-
-/* Tutti gli elementi linkati in navbar */
-.navbar a {
   display: flex;
   justify-content: space-between;
-  font-size: 40px;
-  color: white;
+  font-size: 30px;
   white-space: nowrap;
   text-align:center !important;
   margin-right: 20px;
   margin-left: 30px;
   margin-bottom: 0px;
   padding: 0px;
+  color:white;
 }
 
-.navbar a i {
-  line-height: 0;
-  margin-left: 5px;
-  font-family: MuseoModerno !important;
-  font-size: 20px;
+.navbar li a {
+   color:white;    
 }
-.navbar a:hover{
+
+.navbar li:hover{
   color:  #9fa4c4 !important;
 }
 
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
   padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
   visibility: hidden;
-  background: #fff; /* CI POTREBBE STARE PURE TRASPARENTE CIOE rgba(0000) */
-  box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.2s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
+  background: #fff;
 }
 
 /* Elementi che stanno del dropdown */
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
   color: black;
 }
-
 
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
-  color: green;
 }
 
-a:hover{
-  color: black !important;
-}
 
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
+/*Fine navbar*/
 
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
 
 #magazine_title{
   width:70%;
@@ -119,6 +94,10 @@ a:hover{
 .container{
   font-family:'Zen Antique', serif;
   color:black;
+}
+
+.title{
+  text-align: center;
 }
 
 body{
@@ -162,6 +141,7 @@ background-size: cover;
   margin-top: 40px;
   text-align: center;
   border: 3px solid black;
+  margin: 0.5em;
 }
 
 #one{

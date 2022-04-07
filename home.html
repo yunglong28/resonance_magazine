@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 
 <head> 
-<!-- CSS + Bootstrap Stylesheet-->
-<link href="style/home.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/changes.js"></script>
+  <link id="pagestyle" href="style/home.css" rel="stylesheet" type="text/css">
   <link href="style/bootstrap.css" rel="stylesheet">
   <link href="C:\Users\Lorenza\Desktop\Sito_Vitali\boxicons.min.css" rel="stylesheet">
   <link href="C:\Users\Lorenza\Desktop\Sito_Vitali\glightbox.min.css" rel="stylesheet">
@@ -18,25 +19,26 @@
 <nav class="navbar sticky-top navbar-light" class="navbar">
 
         <ul>
-          <li><a href><span>Home</span></a></li>
+          <li><a href>Home</a></li>
          
-          <li class="dropdown"><a href=><span>The Issues</span></a>
+          <li class="dropdown">The Issues
             <ul>
-              <li><a href>Issue #1</a></li>
-              <li><a href>Issue #2</a></li>
-              <li><a href>Issue #3</a></li>
+              <li id="one">Issue #1</li>
+              <li id="two">Issue #2</li>
+              <li id="three">Issue #3</li>
             </ul>
             <li class="dropdown"><a href="representation.html"><span>Rights Disclaimer</span></a>
-            <li><a href><span>Documentation</span></a></li>
+            <li><a href>Documentation</a></li>
+            <li id="change">ExampleStyle</li>
         </ul>
       </nav>
-<div id="magazine_title">RESONANCE <img id="spinning_vinyl" src="imgs/spinning.gif">
+<div class="home" id="magazine_title">RESONANCE <img id="spinning_vinyl" src="imgs/spinning.gif">
 </div>
 
 
 <!-- SECTIONS-->
 
-<div class="container" id="magazine">
+<div class="container home" id="magazine">
 <h2 class="title">Our Magazine: Resonance</h2>
 
   
@@ -47,25 +49,28 @@ Mauris sapien nisl, pharetra et pellentesque nec, venenatis at ex. Praesent nec 
 
 
 </div>
-<br>
-<hr id="hr">
-<br>
-<div class="container" id="project">
+<br class="home">
+<hr class="home" id="hr">
+<br class="home">
+<div class="container home" id="project">
 <h2 class="title">The LLLL Project</h2>
 <p> Born as the final project for the course 'Information Modeling and Web Technologies' at the University of Bologna, RESONANCE is a
 
 Maecenas nec nisl turpis. Etiam pharetra massa efficitur, mattis ex non, ullamcorper nibh. Aliquam venenatis vel elit nec scelerisque. Mauris vel enim est. Sed tincidunt metus ut urna ullamcorper mattis. Praesent ornare sapien magna, suscipit egestas diam vestibulum id. Quisque nunc massa, ornare ac neque non, fringilla varius nulla. Vestibulum fringilla dignissim mollis. Nunc elementum vehicula dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur magna ex, tincidunt at vestibulum et, elementum dignissim dui. Donec eleifend scelerisque ipsum pharetra pellentesque. Pellentesque vel dignissim felis. Praesent non eleifend ligula. Etiam egestas et nunc vel euismod. </p>
 
 </div>
-<br>
-<hr id="hr">
-<br>
-<div class="container" id="issues">
-<h2 class="title">Our Issues</h2>
+
+<br class="home">
+<hr class="home" id="hr">
+<br class="home">
+
+
+<div class="container-fluid container_articles" id="issues">
+<h2 class="title" id="title_issue">Our Issues</h2>
 <div class="row">
 
-
 <!-- ISSUE 1-->
+
 <div class="col" style="text-align:center"><h3>Issue #1: Music Streaming Economy</h3>
 <img src="imgs/streaming_issue.jpeg" class="img_issue">
 <p class="issue_txt">This issue is dedicated to music streaming economy and its relation to digital technologies. Andy Cush from Pitchfork introduces us to the fight between musicians and Spotify: the colossus is reducing its payments to artist, making it more difficult for independent musicians to survive. Then, we propose a great think-piece by Baldr Eldursson, written for the now dead underground-cult blog TinyMixtapes. It is a reflection on how our listening's habits changed with the advent of pervasive digital technology in the last ten years: this is an original, provocative and unique piece as in the style of TinyMixtapes. Our last article looks at the future with an optimist perspective: NFTs and similar crypto-technology will probably shock the music industry in the next future. According to Mertens, they could also offer a way for implementing a more sustainable system of revenues, beyond the power of streaming platforms. </p><br>
