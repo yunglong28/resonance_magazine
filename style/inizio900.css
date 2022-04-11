@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 
 @font-face {
@@ -40,75 +41,38 @@ src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/la
   src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/Cuivrerie-Demo.otf");
 }
 
-
-
 /* NAVBAR */
 .navbar {
-  border: 7px solid black!important;
   position: relative;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  background-color: #C73123 !important;
-
+  background-color: #C73123;
+  height: 4em;
+  margin: 0 auto;  
 }
+
 /* Rende la navbar orizzontale */
 .navbar ul {
-  margin: 1;
-  padding: 0;
   display: flex;
   list-style: none;
-  align-items: center;
   clear: left;
-  font-family: "Cuivrerie";
+  font-family: 'Bebas Neue', cursive;
   font-size: 50px;
-  color: #FFCB69;
-}
-
-.navbar li {
-  position: relative;
 }
 
 /* Tutti gli elementi linkati in navbar */
-span::first-letter {
-  font-size: 60px;
-  color: black !important;
-}
 .navbar a {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 0px 0px 20px;
-  font-size: 50px;
   color: #FFCB69;
-  white-space: nowrap;
-  transition: 0.3s;
-  text-align:center !important;
   margin-right: 20px;
-  margin-left: 30px;
-  margin-bottom: 0px;
-  padding: 0px;
-
-}
-
-.navbar a i {
-  line-height: 0;
-  margin-left: 5px;
-  font-family: MuseoModerno !important;
-  font-size: 20px;
 }
 
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
   padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
+  z-index: 2;
   visibility: hidden; 
-  background: #fff; /* CI POTREBBE STARE PURE TRASPARENTE CIOE rgba(0000) */
+  background: #fff; 
   box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.2s;
 }
 
 .navbar .dropdown ul li {
@@ -119,16 +83,12 @@ span::first-letter {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  text-transform: none;
   color: black;
 }
 
 
 .navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
   visibility: visible;
-  color: green;
 }
 
 
@@ -136,27 +96,6 @@ a:hover{
   color: black !important;
 }
 
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-#chat{
-  height:150px;
-  width: auto;
-  position: absolute;
-  right:0;
-  top:0;
-  bottom:0;
-}
 
 body{
   background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/wall2.jpeg);
@@ -164,30 +103,14 @@ body{
   background-repeat: no-repeat;
 }
 
-.title_issue{
-  width:40%;
-  margin-left:auto;
-  margin-right: auto;
-  margin-top: 20px;
-  background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/exx.png);
-  min-height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 60px;
-  text-align: center; 
-  padding-top: 50px;
-}
-
-span::first-letter {
-  font-size: 60px;
-  color: black !important;
-}
-
 .article_col{
   margin: 0.5em;
   height: 600px;
   overflow: scroll;
   overflow-x: hidden;
+  border-width: 10px;
+  border-style: solid;
+  border-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg) 25% round;
 }
 
 .article_col figure{
@@ -207,18 +130,15 @@ span::first-letter {
 
 #col1_img{
   font-family:'Franklin', cursive;
-  font-size: 60px;
+  font-size: 35px;
   color:rgb(228, 217, 201);
-  padding:0.8em;
+  padding:0.6em;
   line-height: 1em;
-  background-image: url("C:/Users/Francesca/Downloads/Bici.jpeg");
-   background-repeat: no-repeat;
-  background-size: auto;
 }
 
 #col1_subt{
   font-family:'Franklin', cursive;
-  font-size: 50px;
+  font-size: 30px;
   color:rgb(228, 217, 201);
   line-height: 1em;
   text-align: center;
@@ -229,25 +149,28 @@ span::first-letter {
   color: rgb(194, 182, 166);
   padding-right:15px;
   padding-left: 15px;
+  font-size: 12px;
+  text-transform:uppercase;
 }
 
 #col1 .paragraph_header{
   font-family:'Franklin', cursive;
   color: black;
   text-align: center;
+  font-size: 15px;
+  text-transform:uppercase;
 }
 
 #col1 figcaption{
-  font-family: 'Coustard', cursive;
+  font-family: 'Franklin', cursive;
   text-align: justify;
   color: rgb(194, 182, 166);
   text-align: center;
   padding-top:0.5em;
+  text-transform:uppercase;
+  font-size: 10px;
 }
 
-#p_1_col1{
-  text-transform:uppercase;
-}
 #col1 .extract {
   background-color: #7e9fa0;
   color: black;
@@ -275,11 +198,17 @@ span::first-letter {
 
 #col2{
   background-color:black; 
+  /*border-width: 3px;
+  border-style: solid;
+  border-color: red;
+  outline-style: solid;
+  outline-color: white;*/
+  
 }
 
 #col2_img{
   color:rgb(191, 164, 4); 
-  font-size: 100px;
+  font-size: 50px;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
   line-height: 1em;
@@ -303,24 +232,24 @@ span::first-letter {
   color: rgb(47,84,161);
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-  font-size: 50px;
-  padding-top: 8px;
+  font-size: 30px;
+  padding-top: 9px;
 }
 
 #center{
   color: black;
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-  font-size: 20px;
-  padding-top: 7px;
+  font-size: 10px;
+  padding-top: 14px;
 }
 
 #right{
   color: rgb(47,84,161);
   font-family: 'Bebas Neue', cursive;
   text-align: center;
-  font-size: 50px;
-  padding-top: 8px;
+  font-size: 30px;
+  padding-top: 9px;
 }
 
 #col2_txt{
@@ -345,10 +274,10 @@ span::first-letter {
 #col3_img{
   font-family:  'Golddrew', cursive;
   color: rgb(0, 53, 102);
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
   line-height: 1em;
-  padding:0.8em;
+  padding:0.6em;
 }
 
 #li{
@@ -361,7 +290,7 @@ span::first-letter {
 }
 
 .smaller{
-  font-size: 45px;
+  font-size: 30px;
   line-height: 1em;
 }
 
