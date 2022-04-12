@@ -177,13 +177,6 @@
   float: right;
 }
 
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-
 /*fine sidebar*/
 
 .title_issue {
@@ -191,78 +184,6 @@
   margin-left:auto;
   margin-right: auto;
   }
-
-/*.title_issue {
-	margin: 0.5em;
-	margin-left:0.5em;
-	width: 99%;
-	border: 4px solid white;
-	background-color: rgb(220,57,57);
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 60px auto;
-}*/
-
-.two{
-  font-size: 50px;
-  font-family: Metropolis-ExtraBoldItalic;
-  color: white;
-  text-align: center;
-  padding-left: 20px;
-}
-
-.three{
-	grid-row: 1;
-	grid-column: 3/5;
-	font-size: 20px;
-	font-family: Metropolis-ExtraBoldItalic;
-	color: yellow;
-	line-height: normal;
-	text-align: left;
-	padding-right: 0.5em;
-	padding-top: 0.5em;
-	padding-left: 0.5em;
-}
-
-.three>div{
-	font-size: 30px;
-	font-family: Metropolis-ExtraBoldItalic;
-	color: yellow;
-	line-height: normal;
-	text-align: left;
-	padding-right: 0.5em;
-	padding-top: 0.5em;
-}
-
-.five{
-	grid-row: 1/4;
-	grid-column: 6/13;
-}
-
-.thirteen{
-	grid-row: 2;
-	grid-column:1/5;
-	font-size: 100px;
-	font-family: Metropolis-ExtraBoldItalic;
-	color: white;
-	line-height: 50px;
-	text-align: left;
-	padding-bottom: 6px;
-	padding-left: 50px;
-}
-
-.ten{
-	grid-row:3;
-	grid-column: 4/6;
-	font-size: 20px;
-    font-family: Metropolis-ExtraBoldItalic;
-    color: white;
-    text-align: right;
-}
-
-.advertising{
-	text-align: right;
-}
 
 .article_col{
   border:solid black;
@@ -288,7 +209,7 @@
     background-color: #000000;
 }
 
-.col1_img{
+#title_and_subtitle_1{
   height: 335px;
   width: auto;
   text-align: left;
@@ -299,7 +220,7 @@
   font-size: 60px;
   color: white;
   line-height: 1em;
-  }
+}
 
 
 .start_line{
@@ -354,7 +275,7 @@ body{
     content: "🎺 ";
   }
 
-.col2_img{
+#title_and_subtitle_2{
   text-align: right;
   color:white;
   font-family: futura;
@@ -366,28 +287,9 @@ body{
   width: auto;
   margin-top: 15px;
   padding: 6px;
-  /*
-  text-align: left;
-  height: 335px;
-  width: auto;
-  margin-top: 15px;
-  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col2_img.jpg");
-  background-size: cover;
-  font-family: 'Inter', sans-serif;
-  font-size: 60px;
-  line-height: 1em;
-  color: black;
-  line-height: 2em;
-  padding:2px;
-}
-*/
+ }
 
-#col3 .CoverTitle{
-  font-family: futura;
-  font-size: 60px;
-}
-
-.col3_img{
+#title_and_subtitle_3{
   text-align: left;
   padding-top:0.5em;
   padding-left: 5px;
