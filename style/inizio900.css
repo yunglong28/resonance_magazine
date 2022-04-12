@@ -128,7 +128,8 @@ body{
   text-align: center;
 }
 
-#col1_img{
+
+#col1 .title{
   font-family:'Franklin', cursive;
   font-size: 35px;
   color:rgb(228, 217, 201);
@@ -136,13 +137,14 @@ body{
   line-height: 1em;
 }
 
-#col1_subt{
+#col1 .subtitle{
   font-family:'Franklin', cursive;
   font-size: 30px;
   color:rgb(228, 217, 201);
   line-height: 1em;
   text-align: center;
 }
+
 #col1 p, #col1 li{
   font-family: 'Franklin', serif;
   text-align: center;
@@ -203,10 +205,9 @@ body{
   border-color: red;
   outline-style: solid;
   outline-color: white;*/
-  
 }
 
-#col2_img{
+#col2 .title{
   color:rgb(191, 164, 4); 
   font-size: 50px;
   font-family: 'Bebas Neue', cursive;
@@ -271,7 +272,7 @@ body{
   background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg);
 }
 
-#col3_img{
+#col3 .title_and_subtitle{
   font-family:  'Golddrew', cursive;
   color: rgb(0, 53, 102);
   font-size: 40px;

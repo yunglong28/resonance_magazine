@@ -209,7 +209,7 @@
     background-color: #000000;
 }
 
-#title_and_subtitle_1{
+#col1 .title_and_subtitle{
   height: 335px;
   width: auto;
   text-align: left;
@@ -275,7 +275,7 @@ body{
     content: "🎺 ";
   }
 
-#title_and_subtitle_2{
+#col2 .title_and_subtitle{
   text-align: right;
   color:white;
   font-family: futura;
@@ -289,7 +289,7 @@ body{
   padding: 6px;
  }
 
-#title_and_subtitle_3{
+#col3 .title_and_subtitle{
   text-align: left;
   padding-top:0.5em;
   padding-left: 5px;
