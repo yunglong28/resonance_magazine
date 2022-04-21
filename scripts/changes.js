@@ -31,7 +31,15 @@ function change(name) {
 }
 
 if (name == 'tabloid'){
-  
+   $("#pagestyle").attr('href','style/fine900.css');
+   $('img').remove();
+   $('#sep_nav').remove();
+   $("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("#main");
+}
+
+if (name=='illuminist'){
+  $("#pagestyle").attr('href','baroque.css');
+  $('img').remove();
 }
 
 
