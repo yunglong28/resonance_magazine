@@ -76,8 +76,8 @@
   width:70%;
   margin: auto;
   text-align: center;
-  font-size: 50px;
-  font-family: 'BioRhyme Expanded', serif;  color:black;
+  font-size: 90px;
+  font-family: 'Zen Antique', serif;  color:white;
 }
 
 #main_subt{
@@ -93,17 +93,18 @@
 
 .container{
   font-family:'Zen Antique', serif;
-  color:black;
+  color:white;
 }
 
 .title{
   text-align: center;
   font-family:'Zen Antique', serif;
+  color: white;
 }
 
 body{
   background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #6BCDD9 100%);
   /*background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/brush.jpg");*/
 =======
   /*background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/brush.jpg");*/
@@ -112,7 +113,7 @@ background-size: cover;
 }
 
 .parallax{
-  background-image: url("https://freight.cargo.site/w/2000/q/94/i/c5634ff4824126f609bc4986c2ed0d7474f7a9c28919df7e3d898a8749d9c7a4/resonance-2.0.png");
+  background-image: url("https://freight.cargo.site/w/2200/q/94/i/d4b8367a125f0c7fa60a1cb62de74884f1c5558817979ad4553c5446a400c1ae/resonance-2.2.png");
   min-height: 200px;
 
   /* Create the parallax scrolling effect */
@@ -120,14 +121,29 @@ background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 25px;
 }
+
+.parallax2{
+  background-image: url("https://freight.cargo.site/t/original/i/e6675457d15c345d093f43370d1075fdb4787b00228b7eda6ce7d23ca5231068/resonance-2.3.png ");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+
 
 .card{
   margin-left: 70px;
 }
 
 #hr{
-  border-top: 3px solid black;
+  border-top: 3px solid whitesmoke;
   width: 50%;
 }
 
@@ -138,7 +154,7 @@ background-size: cover;
 .col{
   margin-top: 40px;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid whitesmoke;
   border-radius: unset;
   margin: 0.5em;
 }
@@ -156,5 +172,21 @@ background-size: cover;
   height: auto;
   border-radius: 25px;
 }
+
+
+.issue_title {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
+.issue_txt {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
 
 /*AGGIUNTE*/
