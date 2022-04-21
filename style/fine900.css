@@ -56,6 +56,7 @@
   border-color: white;
   background-color:rgb(183,64,59); 
   position: relative;
+  height:80px;
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
@@ -75,7 +76,7 @@
 .navbar a {
   padding: 0px;
   font-family: "Metropolis-ExtraBoldItalic"!important;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   margin-right: 25px;
   margin-left: 5px;
