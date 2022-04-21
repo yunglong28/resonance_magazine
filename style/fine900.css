@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 @font-face{
   font-family: "new_font";
   src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Franklin Gothic Heavy Italic.ttf");
@@ -185,14 +189,25 @@
   margin-right: auto;
   }
 
+.banner_issue{
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+  color: rgb(183,64,59);
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  height:45px;
+}
+
 .article_col{
-  border:solid black;
+  border:solid gray;
+  border-width: thin;
   margin: 0.5em;
   height: 600px;
   overflow: scroll;
   overflow-x: hidden;
   background: white;
-  font-family:"Public Sans", sans-serif;
+  font-family:"Hel", sans-serif;
   color:black;
 }
 
@@ -201,25 +216,12 @@
     background-color: transparent;
 }
 .article_col::-webkit-scrollbar {
-    width: 6px;
+    width: 0px;
     background-color: transparent;
 }
 
 .article_col::-webkit-scrollbar-thumb {
     background-color: #000000;
-}
-
-#col1 .title_and_subtitle{
-  height: 335px;
-  width: auto;
-  text-align: left;
-  margin-top: 15px;
-  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col1_img.jpeg");
-  background-size: cover;
-  font-family: futura;
-  font-size: 60px;
-  color: white;
-  line-height: 1em;
 }
 
 
@@ -229,11 +231,6 @@ width: 80px;
 margin-top: 0;
 }
 
-#black_music_line{
-  border-bottom: 6px solid white;
-  width: 50%;
-  border-radius: 25px;
-}
 
 .paragraph_header{
   font-family: futura;
@@ -243,7 +240,6 @@ margin-top: 0;
 .author_and_date{
   size:10px;
 }
-
 
 figcaption{
    size:10px;
@@ -271,17 +267,33 @@ body{
     text-indent: -0.3rem;
   }
 
-#col1 ul li::before {
-    content: "🎺 ";
-  }
-
-#col2 .title_and_subtitle{
-  text-align: right;
-  color:white;
+#col1 .title_and_subtitle{
+  background-image: url("../imgs/may.jpeg");
+  padding:5px;
+  height: 335px;
+  width: auto;
+  text-align: left;
+  margin-top: 15px;
+  background-size: cover;
   font-family: futura;
   font-size: 60px;
+  color: white;
   line-height: 1em;
-  background-image: url("C:/Users/Francesca/Desktop/coppiaboris.jpg");
+}
+
+
+ #col1 .title {  
+  font-size: 30px;
+  text-decoration: underline;
+ }
+
+#col2 .title_and_subtitle{
+  text-align: left;
+  color:white;
+  font-family: futura;
+  font-size: 70px;
+  line-height: 1em;
+  background-image: url("../imgs/boris.jpeg");
   background-size: cover;
   height: 335px;
   width: auto;
@@ -289,20 +301,40 @@ body{
   padding: 6px;
  }
 
+ #col2 .title {  
+  max-width:80%;
+  word-wrap: break-word;
+ }
+
 #col3 .title_and_subtitle{
   text-align: left;
-  padding-top:0.5em;
+  padding-top:0.1em;
   padding-left: 5px;
   height: 335px;
   width: auto;
   margin-top: 15px;
-  background-image: url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/col3_img.jpg");
+  background-image: url("../imgs/couple.jpg");
   background-size: cover;
-  font-family: "Bebas Neue";
-  text-decoration: underline; 
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1em;
-  color: white/*rgb(255, 121, 0)*/;
+  color: white;
+}
+
+#col3 .title{
+  max-width:80%;
+  text-decoration: underline;
+  font-family: 'futura';
+  font-size: 30px;
+}
+
+#col3 .subtitle{
+  max-width:50%;
+  font-size: 40px;
+  line-height: 1em;
+  font-family: "futura";
+  margin-top: 2px;
+  text-transform: uppercase;
+  word-wrap: break-word;
 }
 
 .extract{
@@ -328,3 +360,4 @@ body{
 #col2 p{
   column-count: 2;
 }
+

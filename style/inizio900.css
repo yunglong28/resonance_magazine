@@ -47,6 +47,7 @@ src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/la
   background-color: #C73123;
   height: 4em;
   margin: 0 auto;  
+  background-image: url(../imgs/old_paper.jpg);
 }
 
 /* Rende la navbar orizzontale */
@@ -61,7 +62,7 @@ src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/la
 /* Tutti gli elementi linkati in navbar */
 .navbar a {
   display: flex;
-  color: #FFCB69;
+  color: #9f281f;
   margin-right: 20px;
 }
 
@@ -98,7 +99,7 @@ a:hover{
 
 
 body{
-  background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/wall2.jpeg);
+  background-image: url(../imgs/wall2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -110,7 +111,7 @@ body{
   overflow-x: hidden;
   border-width: 10px;
   border-style: solid;
-  border-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg) 25% round;
+  border-image: url(../imgs/old_paper.jpg)25% round;
 }
 
 .article_col figure{
@@ -128,13 +129,13 @@ body{
   text-align: center;
 }
 
-
 #col1 .title{
   font-family:'Franklin', cursive;
   font-size: 35px;
   color:rgb(228, 217, 201);
   padding:0.6em;
   line-height: 1em;
+  text-transform: uppercase;
 }
 
 #col1 .subtitle{
@@ -143,6 +144,31 @@ body{
   color:rgb(228, 217, 201);
   line-height: 1em;
   text-align: center;
+  text-transform: uppercase;
+ }
+
+ #col1 .author_and_date {
+    text-align: left;
+    padding: 0.5em;
+    font-family:'Franklin', cursive;
+    font-size: 15px;
+   color:rgb(228, 217, 201);
+ }
+
+  #col1 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(228, 217, 201);
+  }
+
+#col1 .title_and_subtitle img{
+ margin-top:-60px;
+}
+
+#col1 .subtitle{
+  background-image: url(../imgs/spaccata.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #col1 p, #col1 li{
@@ -151,13 +177,13 @@ body{
   color: rgb(194, 182, 166);
   padding-right:15px;
   padding-left: 15px;
-  font-size: 12px;
+  font-size: 13px;
   text-transform:uppercase;
 }
 
 #col1 .paragraph_header{
   font-family:'Franklin', cursive;
-  color: black;
+  color: rgb(228, 217, 201);
   text-align: center;
   font-size: 15px;
   text-transform:uppercase;
@@ -166,14 +192,14 @@ body{
 #col1 figcaption{
   font-family: 'Franklin', cursive;
   text-align: justify;
-  color: rgb(194, 182, 166);
+  color:rgb(228, 217, 201);
   text-align: center;
   padding-top:0.5em;
   text-transform:uppercase;
   font-size: 10px;
 }
 
-#col1 .extract {
+/*#col1 .extract {
   background-color: #7e9fa0;
   color: black;
   border-radius: 5px;
@@ -186,7 +212,7 @@ body{
   width: 80%;
   margin:auto;
   margin-bottom: 1em;
-}
+}*/
 
 #ballerini{
   display: block;
@@ -200,11 +226,11 @@ body{
 
 #col2{
   background-color:black; 
-  /*border-width: 3px;
-  border-style: solid;
-  border-color: red;
+  /*
+  border-color: rgb(47,84,161);
   outline-style: solid;
-  outline-color: white;*/
+  outline-color: rgb(224, 201, 166);
+  outline-width: thick;*/
 }
 
 #col2 .title{
@@ -216,6 +242,20 @@ body{
   padding:0.4em;
 }
 
+#col2 .title_and_subtitle img{
+ margin-top:-40px;
+}
+
+#col2 .author_and_date{
+   color:rgb(191, 164, 4);
+   font-family:  'Bebas Neue', cursive;
+}
+
+ #col2 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(191, 164, 4);
+  }
+
 #amazzone{
   display: block;
   margin-left: auto;
@@ -226,7 +266,7 @@ body{
 #container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg);
+  background-image: url(../imgs/old_paper.jpg);
 }
 
 #left{
@@ -254,7 +294,7 @@ body{
 }
 
 #col2_txt{
-  background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg);
+  background-image: url(../imgs/old_paper.jpg);
   text-align: center;
   padding:15px;
   font-family: 'Bebas Neue', cursive;
@@ -262,14 +302,14 @@ body{
 }
 
 #col2 .extract{
-  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 20px; 
   color: rgb(47,84,161);
   text-align: center;
 }
 
 #col3{
-  background-image: url(C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/images/old_paper.jpg);
+  background-image: url(../imgs/old_paper.jpg);
 }
 
 #col3 .title_and_subtitle{
@@ -280,6 +320,16 @@ body{
   line-height: 1em;
   padding:0.6em;
 }
+
+#col3 .author_and_date{
+   color:rgb(0, 53, 102);
+   font-family:  'Golddrew', cursive;
+}
+
+ #col3 .start_line{
+     width: 50%;
+     border-top: 3px solid rgb(0, 53, 102);
+  }
 
 #li{
   float:left;
@@ -295,21 +345,11 @@ body{
   line-height: 1em;
 }
 
-#ear_line{
-  border-top: 15px solid black;
-}
-
-#col3 p:nth-of-type(1){
-  column-count: 2;
-  color:rgb(194,182,166);
-  font-size: 20px;
-  font-family: "Bebas Neue", cursive;
-}
 
 #col3 p{
-  color:rgb(194,182,166);
-  font-size: 20px;
-  font-family: "Coustard", cursive;
+  color:rgb(0, 53, 102);
+  font-size: 15px;
+  font-family: 'Golddrew', cursive;
   text-align: center;
 }
 
@@ -324,7 +364,7 @@ body{
     background-color: transparent;
 }
 .article_col::-webkit-scrollbar {
-    width: 6px;
+    width: 0px;
     background-color: transparent;
 }
 
@@ -332,3 +372,66 @@ body{
     background-color: #000000;
 }
 
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: rgb(183,64,59); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white !important;
+  cursor: pointer;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(183,64,59);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  right:0;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  float: right;
+}
+
+/*fine sidebar*/
