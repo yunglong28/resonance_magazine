@@ -4,12 +4,13 @@
 <!-- CSS + Bootstrap Stylesheet-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="scripts/sidebar.js"></script>
-<link  id="pagestyle" href="baroque.css" rel="stylesheet" type="text/css">
-<link href="C:\Users\Francesca\Desktop\Vitali\Sito_Vitali\Style\css\bootstrap.min.css" rel="stylesheet">
-  <link href="C:\Users\Francesca\Desktop\Vitali\Sito_Vitali\Style\css\bootstrap-icons.css" rel="stylesheet">
-  <link href="C:\Users\Francesca\Desktop\Vitali\Sito_Vitali\Style\css\boxicons.min.css" rel="stylesheet">
-  <link href="C:\Users\Francesca\Desktop\Vitali\Sito_Vitali\Style\css\glightbox.min.css" rel="stylesheet">
-  <link href="C:\Users\Francesca\Desktop\Vitali\Sito_Vitali\Style\css\swiper-bundle.min.css" rel="stylesheet">
+<script src="scripts/changes.js"></script>
+<link  id="pagestyle" href="style/fine900.css" rel="stylesheet" type="text/css">  
+<link href="style/bootstrap.min.css" rel="stylesheet">
+  <link href="style/bootstrap-icons.css" rel="stylesheet">
+  <link href="style/boxicons.min.css" rel="stylesheet">
+  <link href="style/glightbox.min.css" rel="stylesheet">
+  <link href="style/swiper-bundle.min.css" rel="stylesheet">
 </head>
   
 
@@ -29,10 +30,15 @@
             </ul>
             <li class="dropdown"><a href="representation.html"><span>Rights Disclaimer</span></a>
             <li><a href>Documentation</a></li>
+            <li onclick="change('illuminist')"><img src="imgs/cello.png"></li>
+            <li onclick="change('romantic')"><img src="imgs/harp.png"></li>
+            <li onclick="change('belle')"><img src="imgs/gramophone.png"></li>
+            <li onclick="change('disco')"><img src="imgs/disco.png"></li>
+            <li onclick="change('tabloid')"><img src="imgs/boombox.png"></li>
+            <li onclick="change('tabloid')"><img src="imgs/walkman.png"></li>
         </ul>
 </nav>
 
-<!-- Sidebar-->
 <div id="mySidebar" class="sidebar">
 <a class="closebtn">×</a>
 QUA VANNO I CONTENUTI
@@ -40,26 +46,20 @@ QUA VANNO I CONTENUTI
            
 <div id="main">
 <button class="openbtn">☰</button>
-</div>
+</div> 
+            
 
-<!-- Style Bar-->
-<hr class="half-width">
-<div class="styles" style="text-align:center">
-    <h2>Enlightenment - Moulin Rouge - Dada - 80's - Trash - Low Tech</h2></div> <hr class="half-width">
-<br>
-
-<!--Issue Title-->
-<div class="title_issue"> <img src="C:/Users/Francesca/Desktop/theresonance.jpg"> </div>
+<div class="title_issue"> <img src="imgs/theresonance.jpg"> </div>
+<div class="banner_issue"> EXCLUSIVE: DECOLONISING MUSIC</div>
 
 <div class="container container_articles">
 <div class="row row_articles">
 
 <div class="col article_col" id="col1">
 
-<div class="title_and_subtitle" id="title_and_subtitle_1">
-  <p class="title"> BRAZILIAN BLACK MUSIC </p> 
-  <hr id="black_music_line" align="center">
-  <p class="subtitle">LATIN AMERICA BEYON THE STIGMAS </p> 
+<div class="title_and_subtitle">
+  <div class="title"> <img src="imgs/pallino.png"> Brazilian Black Music</div> 
+  <div class="subtitle">LATIN AMERICA BEYON THE STIGMAS </div> 
 </div>
 
 <div class="author_and_date">
@@ -201,13 +201,13 @@ QUA VANNO I CONTENUTI
 <div class="col-lg article_col" id="col2">
 
 
-<div class="title_and_subtitle" id="title_and_subtitle_2">
-  <p class="title"> DECOLONISE <br> THE <br> EAR</p> 
+<div class="title_and_subtitle">
+  <div class="title"> DECOLONIZING OUR MUSIC</div>
 </div>
 
 <div class="author_and_date">
-<p class="author">By <span class="person" about="Gary Ingle"> Gary Ingle</span></p>
-<p class="publicationDate">November 16, 2016.</p>
+<div class="author">By <span class="person" about="Gary Ingle"> Gary Ingle</span></div>
+<div class="publicationDate">November 16, 2016.</div>
 <hr class="start_line">
 </div>
 
@@ -217,16 +217,13 @@ QUA VANNO I CONTENUTI
   <p> <span class="key" about="colonization">Colonization</span> rears its ugly head whenever there is <span class="key" about="globalization"> “globalization.”</span></p><p> In the 1500s, several <span class="person" about="Europe">European </span> nations were aggressively <span class="key" about="globalization"> globalizing </span>, especially <span class="place" about="Spain"> Spain </span>, and especially in the <span class="place" about="America"> Americas</span>. At the time of <span class="person" about="Christopher Columbus"> Christopher Columbus’s</span> westward wanderings, the Americas already had strong <span class="key" about="indigenous"> indigenous</span> cultures. There was a great fondness for music and dancing, especially for rituals and celebrations.</p>
 
   <p>Alongside the arrival of the <span class="place" about="Spain">Spanish </span>conquistadors came the arrival of  <span class="key" about="religion">Catholic missionaries</span>. The militaries with their governments and the <span class="key" about="religion">churches</span> with their faith began the process of <span class="key" about="colonization">colonization</span> and, with it, they brought  <span class="key" about="West"> Western</span> music and culture. While  <span class="key" about="indigenous">indigenous</span> music and  <span class="key" about="West">Western </span> music have coexisted for sure,  <span class="key" about="West">Western</span> music became preeminent as the government and the <span class="key" about="religion"> church </span> often imposed a rigid adoption o <span class="key" about="West"> Western ways, much to the detriment of <span class="key" about="indigenous"> indigenous music </span>.</p>
-
-  <blockquote class="extract"><b>«Companies with the financial resources and the political clout often impose a uniformity on the consumption of the music they believe is <span class="genre" about="popular"> popular</span> and therefore profitable.»</b></blockquote>
   
   <p>The same is true today with digital <span class="key" about="colonization">colonization</span>. The companies with the financial resources and the political clout often impose a uniformity on the consumption of the music they believe is <span class="genre" about="popular"> popular</span> and therefore profitable. Given the ubiquity of their total command of the <span class="key" about="tech"> internet</span>, the “world” becomes their <span class="key" about="colonization">colony</span> and the <span class="genre" about="popular"> “popular”</span> tastes rule, again to the detriment of the <span class="genre" about="indigenous"> indigenous music</span>, but also to art music and to any other music with a limited audience and appeal.</p>
 
   <p>This scenario has forced <span class="genre" about="indigenous"> indigenous music</span>  and even our beloved <span class="genre" about="classical">  “classical” music</span> into competing with everything—sports,<span class="genre" about="popular"> popular music</span>, even each other.  Unfortunately, <span class="genre" about="indigenous"> indigenous music </span> and <span class="genre" about="classical">classical music</span> were never intended to compete.  In an April 4, 2003 <span class="newspaper" about="London Financial Times">London Financial Times</span> article entitled “Out of Tune,” <span class="person" about="Andrew Clark">music critic Andrew Clark</span> postulated that, throughout most of its history,<span class="genre" about="classical">  classical music</span> had been able to flourish through a mixture of patronage (government, corporations, private philanthropy) and paternal influence on public policy (e.g. <span class="genre" about="classical">  “classical music</span> is good for you”).  Now, neither patronage nor paternalism is certain or sufficient.  Today, corporate, private, and governmental philanthropy continues to decline.  And no one can stand before a Board of Education and use the argument that music must be in the curriculum because it’s good for us.  So now we as supporters of <span class="genre" about="indigenous">indigenous</span> and <span class="genre" about="classical"> classical music </span> are trying to compete where we were never intended to compete in the first place—in the sphere of popular culture.  Add to that mix what<span class="person" about="Andrew Clark"> Clark</span> describes as “the overwhelming evidence that <span class="genre" about="classical">  classical music</span> spent most of the past century in creative implosion, and there seem justifiable grounds for panic.” We face quite a challenge. But back to <span class="key" about="decolonization"> decolonization</span>.</p>
 
   <p>The common thread of <span class="key" about="colonization"> colonization</span>, whether it’s the old kind of <span class="key" about="colonization">colonization</span> or the new, is an “either/or” mentality. One music reigns supreme, while the other is neglected at best or dies away at worst. The either/or <span class="key" about="colonization">colonial</span> approach is not healthy or even desirable for a flourishing culture. Thus, the necessity to <span class="key" about="decolonization">“decolonize”</span> our music.</p>
-  
-  <blockquote class="extract"><b>Decolonizing music involves a conscious decision to move away from an “either/or” “colonial” mentality to a “both/and" “decolonized” mentality.</b></blockquote>
+ 
   
   <p><span class="key" about="decolonization">Decolonizing</span> music involves a conscious decision to move away from an “either/or” <span class="key" about="colonization">“colonial”</span>mentality to a “both/an<span class="key" about="decolonization">” “decolonized” mentality</span>. <span class="key" about="decolonization">Decolonizing</span> music, however, is not about replacing one style or genre with another. Replacing <span class="genre" about="colonial_music"> colonial music</span> with <span class="genre" about="indigenous"> indigenous music </span> only perpetuates the either/or mentality that has always been destructive to music, just with a different style becoming preeminent. We must be open and accepting of new music as well as old, of <span class="key" about="classical">  classical music</span> as well as <span class="genre" about="popular"> popular </span>, improvised as well as notated, and on it goes.</p>
 
@@ -236,8 +233,6 @@ QUA VANNO I CONTENUTI
   <p>Our greatest and most immediate challenge will be how we deal with technology. As we all know, the <span class="key" about="tech"> digital age</span> is upon us, utterly transforming all of society with a new <span class="key" about="tech"> cyber-reality </span>.</p>
 
   <p>One of the gurus of contemporary thought is <span class="person" about="Nicholas Negroponte">Nicholas Negroponte</span>, a professor and founder of the Media Lab at the <span class="person" about="Massachusetts"> Massachusetts Institute of Technology</span>.<span class="person" about="Nicholas Negroponte"> Negroponte </span> describes the technological revolution in terms of a shift from atoms to bits; that is, a shift from the importance of material objects to the supremacy of digital information. All of life, music included, is in the process of <span class="key" about="tech"> digital transformation </span>. Hence, the description by Swedish composer and acting CEO of the Swedish performing rights society <span class="person" about="Alfons Karabuda"> Alfons Karabuda </span> of the newest form of conquering “space.” Not the kind of “space” associated with Star Trek and its motto “To boldly go where no man has gone before,” but the infinite space of the <span class="key" about="tech"> internet </span> and, as<span class="person" about="Alfons Karabuda"> Alfons </span> described it,<span class="key" about="coloniaztion"> <span class="key" about="tech">  “digital colonization.”</span> </span> The conquering of <span class="key" about="tech"> digital space</span> has shifted <span class="key" about="colonization">colonization</span> from countries to companies. In the past, it was countries like <span class="place" about="UK">Britain</span>,<span class="place" about="France"> France</span>, and <span class="place" about="Spain"> Spain </span> who amassed land colonies across the world. Today it is companies like <span class="organization" about="Apple"> Apple</span>, <span class="organization" about="Google"> Google</span>, and <span class="organization" about="YouTube"> YouTube </span> (which is owned by <span class="organization" about="Google"> Google</span>) who are the great<span class="key" about="colonization"> colonizers </span> of digital space, especially in music.</p>
-
-  <blockquote class="extract"><b>In the past, it was countries like France, and Spain who amassed land colonies across the world. Today it is companies like  Apple, Google, and YouTube (which is owned by Google who are the great colonizers of digital space, especially in music.</b></blockquote>
 
   <p>Yes, <span class="key" about="tech"> technology </span> is the driving force today. <span class="key" about="tech"> Technological innovations</span> have changed the way we work and live and think. We cannot imagine our lives without computers or the <span class="key" about="tech">  internet</span>. But neither can we imagine life, especially musical life, without persononal interactions, human conversation, or, for that matter and very important for me, music studios without a living, breathing teacher.</p>
 
@@ -258,10 +253,10 @@ QUA VANNO I CONTENUTI
 <!-- Inizio terza colonna-->
 <div class="col article_col" id="col3">
 
-<div class="title_and_subtitle" id="title_and_subtitle_3">
-  <p class="title"> DECOLONISING OUR MUSIC</p> 
+<div class="title_and_subtitle">
+  <div class="title">  <img src="imgs/pallino.png"> Decolonizing the ear</div> 
+   <div class="subtitle"> Introduction to <br> <div class="smaller">"Popular music and the postcolonial" <hr id="ear_line"></div></div>
 </div>
- 
 
 <div class="author_and_date">
 <div class="author">By <span class="person" about="Oliver Lovesey"> Oliver Lovesey</span> </div>
@@ -276,14 +271,12 @@ QUA VANNO I CONTENUTI
 
 <p>While a number of <span class="key" about="decolonization"> postcolonial</span> theorists, such as<span class="person" about="Edward Said"> Edward Said</span>, <span class="person" about="Frantz Fanon"> Frantz Fanon</span> , and <span class="person" about="C. L. R. James"> C. L. R. James</span> , had a developed interest in <span class="genre" about="popular"> music and/or popular culture</span>, <span class="key" about="decolonization">postcolonial</span> studies has often ignored popular culture and particularly <span class="genre" about="popular"> popular music</span>, along with its often noted deafness to the material realities of <span class="key" about="colonization">colonial oppression</span>. <span class="key" about="decolonization"> Postcolonial <span class="key" about="decolonization">studies—however personistently self-critical and even narcissistic in its approaches—has focused on literature, and yet more narrowly on late 20th-century Anglophone postmodern novels and a large handful of counter-canonical classics.</p>
 
-<blockquote class="extract"><b>Popular music considered within a postcolonial frame of reference advances at least notionally a decolonizing political agenda.</b></blockquote>
 
 <p>Distinguishing postcolonial <span class="genre" about="popular">  popular music</span> studies from the insights of ethnomusicology or world music studies or other disciplinary silos is largely a question of isolating the socio-economic and political contexts of production and reception, though there is inevitably much overlap and hopefully cross-fertilization. <span class="genre" about="popular"> Popular music</span> considered within a<span class="key" about="decolonization">  postcolonial</span> frame of reference advances at least notionally a <span class="key" about="decolonization">decolonizing </span> political agenda. It less obviously belongs to a disinterested process of salvage or archival ethnography though it may look critically at the parasitic nourishment of contemporary musical expression from a repository of cultural artifacts from the <span class="key" about="globalization">global south</span>. <span class="key" about="decolonization">Postcolonial</span> necrophilia, the preservation of non-Western cultural archives to inspire and sustain present-day and
 future <span class="key" about="West"> Western </span> musical production, is a practice with deep roots in 19th-century exoticism. <span class="key" about="decolonization">Postcolonial</span> <span class="genre" about="popular"> popular music</span> studies also is distanced from the cultural<span class="key" about="globalization"> globalization</span> of<span class="key" about="world music"> world music</span>, itself originating as a marketing category and reproducing a synthetic brand of hybridized homogenization.</p>
 
 <p><span class="key" about="decolonization">Postcolonial</span><span class="genre">popular music</span> studies seeks to examine all uses of <span class="genre" about="popular">popular music</span> for an understanding of the historical and ongoing process of <span class="key" about="decolonization"> decolonization</span>, recognizing that flag raising in the postcolony alone does not consign the colonial legacy to the past. In the 21st century, postcolonial studies has become multifaceted,<span class="key" about="globalization">global</span>, and plural, and “postcolonialisms” encompass the recent experience of metropolitan centers in Europe with the flows of migrants and refugees,as well as often-ignored <span class="key" about="colonization">colonial </span> paradigms operating both inside and outside the <span class="place" about="Europe">European</span> matrix. The articles in this special issue reflect this development with analyses of internal <span class="key" about="colonization"> colonization</span> within <span class="place" about="Europe"> Europe </span> and the ambivalent experience of <span class="key" about="decolonization"> postcolonial</span> <span class="place" about="Korea">Korea</span>. <span class="key" about="decolonization"> Postcolonial</span><span class="key" about="genre"> popular music</span> studies challenges the spatiotemporal boundaries of the <span class="key" about="decolonization"> postcolonial</span>, and its notional hyphen, which like the<span class="key" about="colonization"> colonial</span> itself, is not bracketed in the past. Moreover, there is an inevitable and welcome expansion of analyses to embrace cultural studies, performance studies, and world history as well as the inter- and multidisciplinary.</p>
 
-<blockquote class="extract"><b>Postcolonialpopular music studies seeks to examine all uses of popular music for an understanding of the historical and ongoing process of decolonization, recognizing that flag raising in the postcolony alone does not consign the colonial legacy to the past.</b></blockquote>
 
 <p>There are different modes of resistance in <span class="key" about="decolonization">postcolonial</span> <span class="genre" about="popular"> popular music</span>, broadly conceived, some of which are explored in the essays in this special issue. The music considered here, moreover, was performed and circulated in a wide range of different modes from recordings and radio play, to festivals, pubs and nightclubs, theatres, rural gathering places, and the zone of cyberspace. In some cases, songs connect with an <span class="key" about="indigenous"> indigenous</span> <span class="key" about="tradition"> tradition</span> of popular resistance, or reconfigure seemingly banal songs to circulate new messages, virtually crafting a new language of resistance in the process. Some bear witness to and memorialize acts of injustice or terror and celebrate survival. Others inspire, organize, and re-energize resistance, calling for collective unity and activism while also voicing demands for redress. The articles in this special collection set out to uncover some of the diverse dimensions
 of the intersection of<span class="genre" about="popular">popular music</span> and the <span class="key" about="decolonization">postcolonial</span>. In the first cluster, they explore various aspects of the role of <span class="genre" about="popular">popular music</span> in <span class="place" about="Africa">African</span> <span class="key" about="decolonization">decolonization</span> and the stance of <span class="person" about="Edward Said">Edward Said</span>, often considered the founder of<span class="key" about="decolonization"> postcolonial</span> studies on <span class="genre" about="popular"> popular music</span>.
@@ -333,5 +326,3 @@ popular song can become a unifying or a discordant and contested site in the pos
 </div>
 
 </body>
-
-

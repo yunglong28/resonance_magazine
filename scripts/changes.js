@@ -48,18 +48,7 @@ function change(name) {
 
 
 
-/*
-$.getJSON( "decolonization/decolonization.json", function( data ) {
-  	var y = data[1];
-    $("#title_issue").html(y["title"]);
-
-
-     $.getJSON( "decolonization/decolonization.json")
-    .done(function( data ) {
-    	var y = data[1];
-    	$("#title_issue").html(y["title"]);
-    }*/
-
+ /* DI ALE*/
 $(document).ready(function(){
   $("#change").click(function(){
   $("#pagestyle").attr('href','baroque.css');
@@ -93,19 +82,4 @@ $(document).ready(function(){
   /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
   });
   });
-
-
-
-
-
-/*
-$.getJSON( "decolonization/decolonization.json", function( data ) {
-  	var y = data[1];
-    $("#title_issue").html(y["title"]);
-
-
-     $.getJSON( "decolonization/decolonization.json")
-    .done(function( data ) {
-    	var y = data[1];
-    	$("#title_issue").html(y["title"]);
-    }*/
+/*Fine Ale*/
