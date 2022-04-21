@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <!--<link href="C:\Users\lunet\Documents\Sito_Vitali\css\css_homepage.css" rel="stylesheet" type="text/css">-->
 
-
+<script src="scripts/changes.js"></script>
 
 <head xmlns="http://www.w3.org/1999/html">
     <!-- CSS + Bootstrap Stylesheet-->
-    <link href="futuristic_typo.css" rel="stylesheet" type="text/css">
+    <link href="baroque.css" rel="stylesheet" type="text/css" id="pagestyle">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style/bootstrap-grid.css" rel="stylesheet">
     <link href="style/bootstrap.css" rel="stylesheet">
@@ -14,6 +14,12 @@
     <link href="style/bootstrap-utilities.css" rel="stylesheet">
     <link href="style/bootstrap-utilities.rtl.css" rel="stylesheet">
     <link href="style/bootstrap.rtl.css" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/changes.js"></script>
+
+
     <!-- Fonts import-->
     <style>
     @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
@@ -59,6 +65,10 @@
             </ul>
             <li class="dropdown"><a href="representation.html"><span>Rights Disclaimer</span></a>
             <li><a href>Documentation</a></li>
+
+            <li >ExampleStyle</li>
+        </ul>
+</nav>
         </ul>
 </nav>
 
@@ -75,14 +85,14 @@
 <!-- Style Bar-->
 <hr class="half-width">
 <div class="styles" style="text-align:center">
-<h2>Enlightenment - Moulin Rouge - Dada - 80's - Trash - Low Tech</h2></div> <hr class="half-width">
+<h2><span id="change">Baroque</span> - Moulin Rouge - Dada - 80's - Trash - <span id="changetoLow">Low Tech</span></h2></div> <hr class="half-width">
 
 <!--Issue Title-->
 <div class="title_issue" style="text-align:center">
     <h1 class="title-issue">Issue #1: Music Streaming Economy</h1>
 
     <!-- Solar Bar-->
-    <div class="solar_bar">
+    <div id="solar_bar">
     <h4 class="subtitle"> This is a solar-powered website, which means it sometimes goes offline <img src="imgs/icons8-sun-30.png">
         <br>
     </h4>
@@ -109,7 +119,7 @@
 <div class="col article_col" id="col1">
 
 <figure>
-    <img class="img-fluid" src="imgs/dither_it_article_1_1.png">
+    <img class="img-fluid" src="imgs/dither_it_article_1_1.png" id="dither1">
 </figure>
 
 <h1 class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">How Musicians Are Fighting for Streaming Pay During the Pandemic</h1>
@@ -119,6 +129,7 @@
 
     <hr class="half-hr">
     <div class="author_and_date">
+        <hr class="start_line">
 <p class="byline">
     <p class="author">By <span class="person" about="Andy Cush" data-label="Andy Cush"> Andy Cush </span></p></p>
     <p class="publicationDate">June 29, 2020</p>
@@ -196,13 +207,16 @@ Musicians with different label and publishing situations—even those whose musi
 <!--ARTICLE 2-->
 <div class="col article_col" id="col2" alt="primoarticolo">
 <figure >
-    <img class="img-fluid" src="imgs/dither_it_article_2_1.png">
+    <img class="img-fluid" src="imgs/dither_it_article_2_1.png" id="dither2">
 </figure>
 <h1 data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">2010s: The End of Anarchy</h1><hr class="half-hr">
 
 <h2 class="subtitle">Streaming platforms, the Culture Industry  &amp; the commodification of accessibility</h2>
 <hr class="half-hr">
+    <div class="author_and_date">
+        <hr class="start_line">
 <p class="byline"><p class="author">By <span class="person" about="Baldr Eldursson"> Baldr Eldursson </span></p></p>
+        </div>
 
 <p class="publicationDate">November 12, 2019 </p>
 <hr class="half-hr">
@@ -247,7 +261,7 @@ Musicians with different label and publishing situations—even those whose musi
 <hr class="half-width">
 <h2 class="subtitle">I. PAST: The Corporate Colonization of&nbsp;Cyberspace</h2>
 <figure class="figure--Article_Width figure--imagecache">
-<img class="img-fluid" src="imgs/dither_it_article_2_2.png" alt="" />
+<img class="img-fluid" src="imgs/dither_it_article_2_2.png" alt="" id="dither3">
 </figure>
 
 
@@ -290,7 +304,7 @@ Musicians with different label and publishing situations—even those whose musi
 <hr />
 <h2 class="subtitle">II. PRESENT: The Use &amp; Abuse of Music in the Age of&nbsp;<span class="streaming-service" about="Spotify">Spotify</span></h2>
 
-<figure><img class="img-fluid" src="imgs/dither_it_article_2_3.png" alt="" />
+<figure><img class="img-fluid" src="imgs/dither_it_article_2_3.png" alt="" id="dither4">
 </figure>
 <p>Writing at the time of Nazi ascendancy in <span class="place" about="Germany">Germany</span>, <span class="person" about="Walter Benjamin">Walter Benjamin</span> identified that the &#8220;proletarianization&#8221; of humankind would pose a unique challenge to fascist ideologues who sought mass public appeal without any intent to change the structures oppressing that same public. Such a feat was only accomplished through appeals to ideology: &#8220;Fascism sees its salvation,&#8221; <span class="person" about="Walter Benjamin">Benjamin</span> writes, &#8220;in giving [the newly created proletarian] masses […] a chance to express themselves,&#8221; offering changes to the <i>optics</i> of the proletariat&#8217;s material conditions while in reality obscuring the ossification of the property structure. &#8220;The masses have a right to change property relations,&#8221; <span class="person" about="Walter Benjamin">Benjamin</span> states. &#8220;Fascism seeks to give them an expression while preserving&nbsp;property.&#8221;</p>
 
@@ -326,7 +340,7 @@ Musicians with different label and publishing situations—even those whose musi
 <h2 class="sample_table">III. FUTURE: Discover Weekly, Ego Formation &amp;&nbsp;You</h2>
 
 <figure>
-<img class="img-fluid" src="imgs/dither_it_article_2_4.png" alt="" />
+<img class="img-fluid" src="imgs/dither_it_article_2_4.png" alt="" id="dither5">
 </figure>
 
 <p>Whether or not we see these as positive or negative developments in the state of the industry, it&#8217;s not something that we can simply ignore. Nor does it show any signs of changing. Globally, users spend about half of their time on <span class="streaming-service" about="Spotify">Spotify</span> consuming playlists, &amp; the centrality of features such as Discover Weekly continue to discourage active exploration &amp; secure the hegemony of the&nbsp;algorithm.</p>
@@ -350,14 +364,15 @@ Musicians with different label and publishing situations—even those whose musi
 <!--ARTICLE 3-->
     <div class="col article_col" id="col3">
 <figure>
-<img class="img-fluid" src="imgs/dither_it_article_3_1.png">
+<img class="img-fluid" src="imgs/dither_it_article_3_1.png" id="dither6">
 </figure>
 <h1 data-src="https://www.ft.com/content/2d216328-b006-4237-8e77-aed1bde712b6">With NFTs, Musicians See a Way to Finally Take Control</h1><hr class="half-hr">
 
 <h2 class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring their potential as an alternative to labels and streaming services.</h2>
-<hr class="half-hr">
+<hr class="half-hr"><div class="author_and_date">
+        <hr class="start_line">
 <p class="byline"><p class="author">By <span class="person" about="Max Mertens"> Max Mertens </span></p>
-
+</div>
 <p class="publicationDate">March, 12 2021</p>
     <hr class="half-hr">
 
