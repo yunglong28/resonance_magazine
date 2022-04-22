@@ -147,9 +147,7 @@
 /*fine sidebar*/
 
 .title_issue {
-  width:83%;
-  margin-left:auto;
-  margin-right: auto;
+  text-align: center;
   }
 
 .banner_issue{

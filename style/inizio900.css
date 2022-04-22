@@ -167,20 +167,6 @@ body{
   font-size: 10px;
 }
 
-/*#col1 .extract {
-  background-color: #7e9fa0;
-  color: black;
-  border-radius: 5px;
-  padding:0.5em;
-  text-align: center;
-  margin:10px;
-  font-family: 'Skranji', cursive;
-  text-transform: uppercase;
-  font-size: 15px;
-  width: 80%;
-  margin:auto;
-  margin-bottom: 1em;
-}*/
 
 #ballerini{
   display: block;
@@ -265,11 +251,6 @@ body{
   font-size: 20px;
 }
 
-#col2 .extract{
-  font-size: 20px; 
-  color: rgb(47,84,161);
-  text-align: center;
-}
 
 #col3{
   background-image: url(../imgs/old_paper.jpg);
@@ -308,12 +289,6 @@ body{
   color:rgb(0, 53, 102);
   font-size: 15px;
   text-align: center;
-}
-
-#col3 .extract{
-  text-align: justify;
-  color: black;
-  font-size: 20px;
 }
 
 .article_col::-webkit-scrollbar-track {
