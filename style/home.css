@@ -227,3 +227,35 @@ footer {
 }
 
 /*AGGIUNTE*/
+
+/* Documentation Page CSS*/
+#styles {
+  border: 3px white;
+  border-style: dotted;
+  border-radius: 25px;
+  margin-top: 10px;
+
+
+}
+
+#styles2 {
+  border: 3px white;
+  border-style: dotted;
+  border-radius: 25px;
+  margin-top: 10px;
+
+
+}
+
+.style_title {
+  text-align: center;
+
+
+}
+
+h4 {
+
+  font-family: "Arial Rounded MT Bold";
+
+
+}
