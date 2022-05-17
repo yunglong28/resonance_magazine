@@ -3,10 +3,16 @@
 
     /* NAVBAR */
 .navbar {
-  font-family:'Zen Antique', serif;
-  background-color: black;
+  font-family:'Arial Rounded MT Bold', serif;
+  background-color: transparent;
   position: fixed;
 }
+
+.navbar_hr {
+  color: white;
+}
+
+
 /* Rende la navbar orizzontale */
 .navbar ul {
   margin: 1;
@@ -37,11 +43,11 @@
 }
 
 .navbar li:hover{
-  color:  #9fa4c4 !important;
+  color: #D9AFD9;!important;
 }
 
 .navbar li a:hover{
-  color:  #9fa4c4 !important;
+  color: #D9AFD9; !important;
   text-decoration:none;
 }
 
@@ -52,14 +58,15 @@
   position: absolute;
   padding: 10px 0;
   visibility: hidden;
-  background: #fff;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #6BCDD9 100%);
 }
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul li{
   padding: 10px;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 .navbar .dropdown:hover > ul {
@@ -77,7 +84,7 @@
   margin: auto;
   text-align: center;
   font-size: 90px;
-  font-family: 'Zen Antique', serif;  color:white;
+  font-family: 'Arial Black', sans-serif;  color:white;
 }
 
 #main_subt{
@@ -98,8 +105,10 @@
 
 .title{
   text-align: center;
-  font-family:'Zen Antique', serif;
+  font-family:'Arial Rounded MT Bold', serif;
+  font-weight: bolder;
   color: white;
+  font-size: 44px;
 }
 
 body{
@@ -113,7 +122,7 @@ background-size: cover;
 }
 
 .parallax{
-  background-image: url("https://freight.cargo.site/w/2200/q/94/i/d4b8367a125f0c7fa60a1cb62de74884f1c5558817979ad4553c5446a400c1ae/resonance-2.2.png");
+  background-image: url("https://freight.cargo.site/w/2200/q/94/i/a1665021a248427919340c2fe65aa65228a688d25a862f9f8c6c48c1b0b91da1/resonance-2.4.png");
   min-height: 200px;
 
   /* Create the parallax scrolling effect */
@@ -121,20 +130,17 @@ background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 25px;
 }
 
 .parallax2{
-  background-image: url("https://freight.cargo.site/t/original/i/e6675457d15c345d093f43370d1075fdb4787b00228b7eda6ce7d23ca5231068/resonance-2.3.png ");
+  background-image: url("https://freight.cargo.site/w/2194/q/94/i/ae83d87222f3fd22152ae58ce86e6a349e9d2006e4b9f2ce404fdf4c56d34a62/resonance-2.6.png");
   min-height: 200px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 25px;
-}
+  background-size: cover;}
 
 
 
@@ -154,7 +160,7 @@ background-size: cover;
 .col{
   margin-top: 40px;
   text-align: center;
-  border: 3px solid whitesmoke;
+  border: 3px dotted whitesmoke;
   border-radius: unset;
   margin: 0.5em;
 }
@@ -175,18 +181,81 @@ background-size: cover;
 
 
 .issue_title {
-  font-family:'Zen Antique', serif;
+  font-family:'Arial Rounded MT Bold', serif;
   color: white;
 
 
 }
 
 .issue_txt {
-  font-family:'Zen Antique', serif;
+  font-family:'Arial', serif;
   color: white;
 
 
 }
 
+.description {
+  font-family:'Arial', serif;
+  font-size: 20px;
+
+}
+
+
+p
+{
+  font-family:'Arial', serif;
+  color: white;
+  padding: 20px;
+
+}
+
+.footer_text
+{
+  font-family:'Arial', serif;
+  color: white;
+}
+
+h3 {
+  font-family: 'Arial Rounded MT Bold', serif;
+  color: white;
+
+}
+
+footer {
+  display: block;
+
+}
 
 /*AGGIUNTE*/
+
+/* Documentation Page CSS*/
+#styles {
+  border: 3px white;
+  border-style: dotted;
+  border-radius: 25px;
+  margin-top: 10px;
+
+
+}
+
+#styles2 {
+  border: 3px white;
+  border-style: dotted;
+  border-radius: 25px;
+  margin-top: 10px;
+
+
+}
+
+.style_title {
+  text-align: center;
+
+
+}
+
+h4 {
+
+  font-family: "Arial Rounded MT Bold";
+
+
+}

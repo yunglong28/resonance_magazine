@@ -73,7 +73,6 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#changetoLow").click(function (position, text){
     $("#pagestyle").attr('href','futuristic_typo.css');
-    $('#solar_bar').insertAdjacentHTML(position, text);
     /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
   });
 });
