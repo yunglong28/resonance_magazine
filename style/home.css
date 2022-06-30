@@ -99,7 +99,7 @@
 }
 
 .container{
-  font-family:'Zen Antique', serif;
+  font-family:'Arial Rounded MT Bold', serif;
   color:white;
 }
 
@@ -229,7 +229,7 @@ footer {
 /*AGGIUNTE*/
 
 /* Documentation Page CSS*/
-#styles {
+styles {
   border: 3px white;
   border-style: dotted;
   border-radius: 25px;
@@ -238,7 +238,7 @@ footer {
 
 }
 
-#styles2 {
+ styles2 {
   border: 3px white;
   border-style: dotted;
   border-radius: 25px;

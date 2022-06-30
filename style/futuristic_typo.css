@@ -229,3 +229,106 @@ a:hover {
 .openbtn:hover {
   background-color: #444;
 }
+
+/* For the Homepage */
+.img_issue{
+  width:200px;
+  height: auto;
+  border-radius: 25px;
+}
+
+
+#magazine_title{
+  width:70%;
+  margin: auto;
+  text-align: center;
+  font-size: 90px;
+  font-family: "Times New Roman", Serif;
+}
+
+#main_subt{
+  font-size: 20px;
+  text-align: left;
+  line-height: 1em;
+}
+
+#spinning_vinyl{
+  width: 200px;
+  height:auto;
+}
+
+.container{
+  font-family:'Times New Roman', serif;
+}
+
+.title{
+  text-align: center;
+  font-size: 44px;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family:'Times New Roman', serif;
+  background-color: transparent;
+  position: fixed;
+}
+
+.navbar_hr {
+  color: white;
+}
+
+
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:rgb(215, 54, 42);
+}
+
+.navbar li a {
+
+}
+
+.navbar li:hover{
+  color: #D9AFD9;!important;
+}
+
+.navbar li a:hover{
+  color: #D9AFD9; !important;
+  text-decoration:none;
+}
+
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(215, 54, 42);
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+/*Fine navbar*/
