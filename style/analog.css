@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'zapf_elliptical_711_regular';
-    src: url('fonts/zapf_elliptical_711_regular-webfont.woff2') format('woff2'),
-         url('fonts/zapf_elliptical_711_regular-webfont.woff') format('woff');
+    src: url('../fonts/zapf_elliptical_711_regular-webfont.woff2') format('woff2'),
+         url('../fonts/zapf_elliptical_711_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'paraaminobenzoic';
-    src: url('fonts/paraaminobenzoic-webfont.woff2') format('woff2'),
-         url('fonts/paraaminobenzoic-webfont.woff') format('woff');
+    src: url('../fonts/paraaminobenzoic-webfont.woff2') format('woff2'),
+         url('../fonts/paraaminobenzoic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'vcr';
-    src: url('fonts/vcr.woff2') format('woff2'),
-         url('fonts/vcr.woff') format('woff');
+    src: url('../fonts/vcr.woff2') format('woff2'),
+         url('../fonts/vcr.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,23 +28,23 @@
 
 @font-face {
     font-family: 'harry_fat';
-    src: url('fonts/harry_fat-webfont.woff2') format('woff2'),
-         url('fonts/harry_fat-webfont.woff') format('woff');
+    src: url('../fonts/harry_fat-webfont.woff2') format('woff2'),
+         url('../fonts/harry_fat-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'joystix_monospace';
-    src: url("fonts/joystix_monospace-webfont.woff2") format('woff2'),
-         url("fonts/joystix_monospace-webfont.woff") format('woff');
+    src: url("../fonts/joystix_monospace-webfont.woff2") format('woff2'),
+         url("../fonts/joystix_monospace-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'ZapfBookITCStd-Demi';
-    src: url('fonts/ZapfBookITCStd-Demi.woff2') format('woff2'),
-         url('fonts/ZapfBookITCStd-Demi.woff') format('woff');
+    src: url('../fonts/ZapfBookITCStd-Demi.woff2') format('woff2'),
+         url('../fonts/ZapfBookITCStd-Demi.woff') format('woff');
     font-weight: normal;
     font-style: normal;}
 
@@ -287,7 +287,7 @@ body {
     /* Full height */
   height: 100%;
     background-color: #White!important;
-      background-image: url('imgs/backram.png');
+      background-image: url('../imgs/backram.png');
       background-size: repeat;
  }
 
@@ -488,7 +488,7 @@ margin-top: 36px;
 }
 
 html{
-  cursor: url('imgs/cursor.cur'), auto;
+  cursor: url('../imgs/cursor.cur'), auto;
 }
 
 figcaption {
