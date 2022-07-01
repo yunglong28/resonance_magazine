@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
+
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('fonts/bodoni-webfont.woff2') format('woff2'),
+         url('fonts/bodoni-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'nimbus';
+    src: url('fonts/freesans-webfont.woff2') format('woff2'),
+         url('fonts/freesans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+    /* NAVBAR */
+.navbar {
+  font-family: 'nimbus';
+  background-color: #fc4434;
+  position: fixed;
+  color:black!important;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+/* Rende la navbar orizzontale */
+.navbar ul {
+  margin: 1;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  clear: left;
+}
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color:black;
+}
+
+.navbar li a {
+   color:black;
+}
+
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+
+/*Fine navbar*/
+
+
+
+
+#main_subt{
+  font-size: 20px;
+  text-align: left;
+  line-height: 1em;
+}
+
+
+
+
+
+.title{
+  text-align: center;
+  font-family:'Zen Antique', serif;
+  color: white;
+}
+
+body{
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.parallax{
+  background-image: url("https://freight.cargo.site/w/2200/q/94/i/d4b8367a125f0c7fa60a1cb62de74884f1c5558817979ad4553c5446a400c1ae/resonance-2.2.png");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.parallax2{
+  background-image: url("https://freight.cargo.site/t/original/i/e6675457d15c345d093f43370d1075fdb4787b00228b7eda6ce7d23ca5231068/resonance-2.3.png ");
+  min-height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+
+
+.card{
+  margin-left: 70px;
+}
+
+#hr{
+  border-top: 3px solid whitesmoke;
+  width: 50%;
+}
+
+.row{
+  column-gap: 9px;
+}
+
+.col{
+  margin-top: 40px;
+  text-align: center;
+  border: 3px solid whitesmoke;
+  border-radius: unset;
+  margin: 0.5em;
+}
+
+#one{
+ margin-left: 10px;
+}
+
+#three{
+   margin-right: 10px;
+}
+
+.img_issue{
+  width:200px;
+  height: auto;
+  border-radius: 25px;
+}
+
+
+.issue_title {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
+.issue_txt {
+  font-family:'Zen Antique', serif;
+  color: white;
+
+
+}
+
+#magazine{
+  background-color: #fc4434;
+height: 600px;
+
+  color: whitesmoke;
+    font-family: 'bodoni';
+    font-size: 25px;
+    text-align:
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+
+    padding-right: 40%;
+    text-align: justify;
+    background-size: cover;
+
+    margin: 0;
+
+}
+#magazine2{
+background-color:#0c2414;
+height: 700px;
+
+  color:#e1e2f1;
+    font-family: 'bodoni';
+    font-size: 25px;
+    text-align: right;
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+padding-top: 10%;
+    padding-left: 40%;
+    text-align: justify;
+    background-size: cover;
+
+    margin: 0;
+
+}
+
+.projectsection{
+  background-color:
+#e6d8a8;
+height: 700px;
+}
+.text{
+  color:#black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+}
+
+.colspotify{
+  color:#black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+margin-left: 70px;
+}
+
+.wrapper {
+  display: grid;
+    grid-template-columns: 500px 700px ;
+    background-color:
+  #e6d8a8;
+  height: 600px;
+}
+
+}
+
+#project{
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+
+}
+
+
+
+.alignleft {
+	float: left;
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+}
+.alignright {
+	float: right;
+  background-color: #0d2110;
+  font-family:'bodony', serif;
+  color: whitesmoke;
+}
+
+
+
+.marquee-section {
+    position: relative;
+    min-height:   100px;
+    font-size: 80px;
+    font-family: 'bodoni', serif;
+    color:black;
+    background-color: white
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 50s infinite;
+
+
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+{
+  box-sizing: border-box;
+}
+
+
+.cardsection{
+  background-color: #fc4434;
+  height: 500px;
+  width: auto;
+
+}
+
+.cont {
+  position: relative;
+  height: auto;
+  width: auto;
+  top: 60px;
+  left: calc(37% - 300px);
+  display: flex;
+
+}
+
+.card {
+  display: flex;
+  height: 380px;
+  width: 300px;
+  background-color: #fc4434;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  color: black;
+
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+    width: 400px;
+
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 30px;
+  transition: 0.4s ease-out;
+
+}
+
+.title {
+  color: black;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 300px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: #fc4434;
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 150px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 90px;
+  font-family: nimbus;
+  text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 14px;
+    margin-top: -27px;
+}
+
+.btn-10{
+font-family: nimbus;
+  background-color: transparent;
+  border: 3px solid  #fc4434;
+  color: #fc4434;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.btn-10:hover {
+  font-family: nimbus;
+    background-color: #fc4434;
+    border: 3px solid  #fc4434;
+    color:#0c2414;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  #block1 {
+      float:left;
+  }
+
+  #block2
+  {
+      float:right;
+      background-color: #F5F5F5;
+      margin: 10px 20px;
+      padding: 20px;
+      width: 180px;
+  }
+
+
+  *,
+   *:before,
+   *:after {
+     box-sizing: border-box;
+   }
+
+   body {
+     background: lightgrey;
+   }
+
+   .vinyl-wrapper {
+     position: relative;
+     display: block;
+     margin: 150px;
+     width: 200px;
+     height: 200px;
+     transform: rotateX(10deg) rotateZ(-20deg);
+   }
+
+   .record-sleeve {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     background: -webkit-radial-gradient(49% 50%, circle, transparent 27%, #8c737c 10%);
+     background: -moz-radial-gradient(49% 50%, circle, transparent 27%, #8c737c 10%);
+     background: radial-gradient(49% 50%, circle, transparent 27%, #8c737c 10%);
+     border-radius: 2px;
+     box-shadow: -3px 5px 10px -1px grey;
+     z-index: 10;
+   }
+
+   .vinyl {
+     position: absolute;
+     -ms-transform: translate(69px);
+     transform: translate(69px);
+     top: 70px;
+     background: #f7aac7;
+     width: 58px;
+     height: 60px;
+     border-radius: 50%;
+     border: solid #e7568d;
+     border-width: 29px 0px;
+     border-left: 0;
+     animation: pull-out 1.3s 2s ease-out forwards, spin 1.3s 4s linear infinite;
+     box-shadow: 0px 0px 3px #f7aac7, 0px 0px 0px 10px #ea6a9b, 0px 0px 15px #f7aac7, 0px 0px 0px 16px #000, 0px 0px 0px 17px #252424, 0px 0px 0px 18px #000, 0px 0px 0px 19px #313030, 0px 0px 0px 20px #000, 0px 0px 0px 21px #3a3838, 0px 0px 0px 22px #000, 0px 0px 0px 23px #2b2a2a, 0px 0px 0px 24px #000, 0px 0px 0px 25px #313030, 0px 0px 0px 26px #000, 0px 0px 0px 27px #313030, 0px 0px 0px 28px #000, 0px 0px 0px 29px #333333, 0px 0px 0px 30px #000, 0px 0px 0px 31px #333232, 0px 0px 0px 32px #000, 0px 0px 0px 33px #4c4a4a, 0px 0px 0px 34px #000, 0px 0px 0px 35px #2f2e2e, 0px 0px 0px 36px #000, 0px 0px 0px 37px #252424, 0px 0px 0px 38px #000, 0px 0px 0px 39px #2f2e2e, 0px 0px 0px 40px #000, 0px 0px 0px 41px #2f2e2e, 0px 0px 0px 42px #000, 0px 0px 0px 55px #2f2e2e, 0px 0px 0px 56px #000, 0px 0px 0px 57px #2f2e2e, 0px 0px 0px 58px #cecece, 0px 0px 0px 59px #2f2e2e;
+   }
+
+   .vinyl:before {
+     content: "";
+     position: absolute;
+     width: 6px;
+     height: 6px;
+     background: white;
+     top: calc(50% - 3px);
+     left: calc(50% - 3px);
+     border-radius: 50%;
+   }
+
+   @keyframes spin {
+     0% {
+       transform: rotate(0deg);
+       left: 300px;
+     }
+     100% {
+       transform: rotate(360deg);
+       left: 300px;
+     }
+   }
+
+   @keyframes pull-out {
+     0% {
+       transform: translateX(69px);
+     }
+     100% {
+       transform: translateX(300px);
+     }
+   }
