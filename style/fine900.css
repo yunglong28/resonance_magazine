@@ -1,54 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 @font-face{
-  font-family: "new_font";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Franklin Gothic Heavy Italic.ttf");
-}
-
-@font-face{
   font-family: "Metropolis-ExtraBoldItalic";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Metropolis-ExtraBoldItalic.otf");
+  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/tabloid_fonts/Metropolis-ExtraBoldItalic.otf");
 }
 @font-face{
   font-family:"futura";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Futura Condensed Bold/Futura Condensed Bold.otf");
+  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/tabloid_fonts/Futura Condensed Bold/Futura Condensed Bold.otf");
 }
 
-@font-face{
-  font-family:article;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/timr45w.ttf");
-}
-
-@font-face{
-  font-family:article_block;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/timr65w.ttf");
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
-
-@font-face{
-  font-family:"Bebas Neue";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/BebasNeue-Regular.woff");
-}
-
-@font-face{
-  font-family:"Inter";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Inter-Bold.ttf");
-}
-
-@font-face{
-  font-family: orwell;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Orwell.ttf");
-}
-
-@font-face{
-  font-family:Golddrew;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/tabloid_fonts/Golddrew.ttf");
-}
 
 /* NAVBAR */
 .navbar {
@@ -75,7 +36,7 @@
 /* Tutti gli elementi linkati in navbar */
 .navbar a {
   padding: 0px;
-  font-family: "Metropolis-ExtraBoldItalic"!important;
+  font-family: "Metropolis-ExtraBoldItalic";
   font-size: 30px;
   color: white;
   margin-right: 25px;
@@ -186,9 +147,7 @@
 /*fine sidebar*/
 
 .title_issue {
-  width:83%;
-  margin-left:auto;
-  margin-right: auto;
+  text-align: center;
   }
 
 .banner_issue{
@@ -283,10 +242,13 @@ body{
   line-height: 1em;
 }
 
-
  #col1 .title {  
   font-size: 30px;
   text-decoration: underline;
+ }
+
+ #col1 .subtitle {
+  text-transform: uppercase;
  }
 
 #col2 .title_and_subtitle{
@@ -306,6 +268,7 @@ body{
  #col2 .title {  
   max-width:80%;
   word-wrap: break-word;
+  text-transform: uppercase;
  }
 
 #col3 .title_and_subtitle{
@@ -339,27 +302,4 @@ body{
   word-wrap: break-word;
 }
 
-.extract{
-  font-family: 'Arimo', sans-serif;
-  border-radius: 25px;
-  padding:0.5em;
-  text-align: center;
-}
-
-#col2 .extract{
-  background-color: rgba(255, 234, 0.6);
-}
-
-#col3 .extract{
-  background-color: rgba(180, 12, 133, 0.8);
-}
-
-#col1 .extract{
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-#col2 p{
-  column-count: 2;
-}
 

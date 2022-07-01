@@ -1,45 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-
-
-@font-face {
-font-family: "lansbury";
-src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/lansbury.ttf");
-}
-@font-face {
-  font-family: "Musketeer";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/Musketeer Extra Bold Regular.ttf");
-}
-
-@font-face {
-  font-family: "Metropolitaines";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/Metropolitaines D Regular.ttf");
-}
-
 
 @font-face{
   font-family:Golddrew;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/Golddrew.ttf");
+  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/chat_fonts/Golddrew.ttf");
 }
 
 @font-face{
   font-family:Franklin;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/BenjaminFranklin.ttf");
+  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/chat_fonts/BenjaminFranklin.ttf");
 }
 
 
-@font-face{
-  font-family:Cuivrerie;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Sito_Vitali/Style/FONTS/chat_fonts/Cuivrerie-Demo.otf");
-}
 
 /* NAVBAR */
 .navbar {
@@ -128,10 +100,10 @@ body{
   padding:0;
   background-color: rgb(211, 104, 65);
   text-align: center;
+  font-family: 'Franklin', cursive;
 }
 
 #col1 .title{
-  font-family:'Franklin', cursive;
   font-size: 35px;
   color:rgb(228, 217, 201);
   padding:0.6em;
@@ -140,7 +112,6 @@ body{
 }
 
 #col1 .subtitle{
-  font-family:'Franklin', cursive;
   font-size: 30px;
   color:rgb(228, 217, 201);
   line-height: 1em;
@@ -149,11 +120,10 @@ body{
  }
 
  #col1 .author_and_date {
-    text-align: left;
-    padding: 0.5em;
-    font-family:'Franklin', cursive;
-    font-size: 15px;
-   color:rgb(228, 217, 201);
+  padding:1em;
+  text-align: left;
+  font-size: 15px;
+  color:rgb(228, 217, 201);
  }
 
   #col1 .start_line{
@@ -173,7 +143,6 @@ body{
 }
 
 #col1 p, #col1 li{
-  font-family: 'Franklin', serif;
   text-align: center;
   color: rgb(194, 182, 166);
   padding-right:15px;
@@ -183,7 +152,6 @@ body{
 }
 
 #col1 .paragraph_header{
-  font-family:'Franklin', cursive;
   color: rgb(228, 217, 201);
   text-align: center;
   font-size: 15px;
@@ -191,7 +159,6 @@ body{
 }
 
 #col1 figcaption{
-  font-family: 'Franklin', cursive;
   text-align: justify;
   color:rgb(228, 217, 201);
   text-align: center;
@@ -200,20 +167,6 @@ body{
   font-size: 10px;
 }
 
-/*#col1 .extract {
-  background-color: #7e9fa0;
-  color: black;
-  border-radius: 5px;
-  padding:0.5em;
-  text-align: center;
-  margin:10px;
-  font-family: 'Skranji', cursive;
-  text-transform: uppercase;
-  font-size: 15px;
-  width: 80%;
-  margin:auto;
-  margin-bottom: 1em;
-}*/
 
 #ballerini{
   display: block;
@@ -227,6 +180,8 @@ body{
 
 #col2{
   background-color:black; 
+    font-family: 'Bebas Neue', cursive;
+
   /*
   border-color: rgb(47,84,161);
   outline-style: solid;
@@ -237,7 +192,6 @@ body{
 #col2 .title{
   color:rgb(191, 164, 4); 
   font-size: 50px;
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
   line-height: 1em;
   padding:0.4em;
@@ -249,7 +203,6 @@ body{
 
 #col2 .author_and_date{
    color:rgb(191, 164, 4);
-   font-family:  'Bebas Neue', cursive;
 }
 
  #col2 .start_line{
@@ -272,7 +225,6 @@ body{
 
 #left{
   color: rgb(47,84,161);
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
   font-size: 30px;
   padding-top: 9px;
@@ -280,7 +232,6 @@ body{
 
 #center{
   color: black;
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
   font-size: 10px;
   padding-top: 14px;
@@ -288,7 +239,6 @@ body{
 
 #right{
   color: rgb(47,84,161);
-  font-family: 'Bebas Neue', cursive;
   text-align: center;
   font-size: 30px;
   padding-top: 9px;
@@ -298,23 +248,16 @@ body{
   background-image: url(../imgs/old_paper.jpg);
   text-align: center;
   padding:15px;
-  font-family: 'Bebas Neue', cursive;
   font-size: 20px;
 }
 
-#col2 .extract{
-  font-family: 'Bebas Neue', cursive;
-  font-size: 20px; 
-  color: rgb(47,84,161);
-  text-align: center;
-}
 
 #col3{
   background-image: url(../imgs/old_paper.jpg);
+  font-family:  'Golddrew', cursive;
 }
 
 #col3 .title_and_subtitle{
-  font-family:  'Golddrew', cursive;
   color: rgb(0, 53, 102);
   font-size: 40px;
   text-align: center;
@@ -324,7 +267,6 @@ body{
 
 #col3 .author_and_date{
    color:rgb(0, 53, 102);
-   font-family:  'Golddrew', cursive;
 }
 
  #col3 .start_line{
@@ -336,10 +278,6 @@ body{
   float:left;
 }
 
-.centered{
-  text-align: center;
-  font-family:  'Averia Libre', cursive;
-}
 
 .smaller{
   font-size: 30px;
@@ -350,14 +288,7 @@ body{
 #col3 p{
   color:rgb(0, 53, 102);
   font-size: 15px;
-  font-family: 'Golddrew', cursive;
   text-align: center;
-}
-
-#col3 .extract{
-  text-align: justify;
-  color: black;
-  font-size: 20px;
 }
 
 .article_col::-webkit-scrollbar-track {
