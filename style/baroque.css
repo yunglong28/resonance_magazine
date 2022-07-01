@@ -417,3 +417,16 @@ a:hover{
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 
 }
+
+
+.didot_img {
+
+    filter: sepia(80%) !important;
+    height: 600px !important;
+
+}
+
+.article_images {
+
+    filter: sepia(100%) !important;
+}
