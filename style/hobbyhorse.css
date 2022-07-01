@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'caslon_old_faceregular';
-    src: url('fonts/caslon_old_face_regular-webfont.woff2') format('woff2'),
-         url('fonts/caslon_old_face_regular-webfont.woff') format('woff');
+    src: url('../fonts/caslon_old_face_regular-webfont.woff2') format('woff2'),
+         url('../fonts/caslon_old_face_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -9,15 +9,15 @@
 
 @font-face {
     font-family: 'caslon_old_face_italic';
-    src: url('fonts/caslon_old_face_italic-webfont.woff2') format('woff2'),
-         url('fonts/caslon_old_face_italic-webfont.woff') format('woff');
+    src: url('../fonts/caslon_old_face_italic-webfont.woff2') format('woff2'),
+         url('../fonts/caslon_old_face_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;}
 
 @font-face {
     font-family: 'p22_operina_fiore_fiore';
-    src: url("fonts/p22_operina_fiore_fiore-webfont.woff2") format('woff2'),
-         url("fonts/p22_operina_fiore_fiore-webfont.woff") format('woff');
+    src: url("../fonts/p22_operina_fiore_fiore-webfont.woff2") format('woff2'),
+         url("../fonts/p22_operina_fiore_fiore-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,8 +26,8 @@
 
 @font-face {
     font-family: 'dk_magical_brush';
-    src: url("fonts/dk_magical_brush-webfont.woff2") format('woff2'),
-         url("fonts/dk_magical_brush-webfont.woff") format('woff');
+    src: url("../fonts/dk_magical_brush-webfont.woff2") format('woff2'),
+         url("../fonts/dk_magical_brush-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -38,7 +38,7 @@ font-family: 'caslon_old_faceregular';
 }
 
 #body2::first-letter {
-  background-image: url('imgs/I.png');
+  background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
 background-center: center center;
@@ -53,7 +53,7 @@ margin-bottom: -4.15rem;
 
 
 #body3::first-letter {
-  background-image: url('imgs/I.png');
+  background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
 background-center: center center;
@@ -68,7 +68,7 @@ margin-bottom: -4.15rem;
 }
 
 #body1::first-letter {
-  background-image: url('imgs/FDROP.png');
+  background-image: url('../imgs/FDROP.png');
   background-size: contain;
   background-size: 48%;
 background-repeat: no-repeat;
@@ -330,7 +330,7 @@ body {
     /* Full height */
   height: 100%;
     background-color: #White!important;
-      background-image: url('imgs/backremoved.png');
+      background-image: url('../imgs/backremoved.png');
  }
 
 .author_and_date {
