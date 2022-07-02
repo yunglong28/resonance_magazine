@@ -51,6 +51,7 @@
   padding: 0px;
   color:black;
   z-index: 1;
+  text-decoration: none;
 }
 
 .navbar li a {
