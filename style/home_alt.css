@@ -26,8 +26,6 @@
   color:black!important;
   text-transform: uppercase;
   font-size: 8px;
-  text-decoration:
-
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
@@ -53,7 +51,6 @@
   padding: 0px;
   color:black;
   z-index: 1;
-  text-decoration: none;
 }
 
 .navbar li a {
