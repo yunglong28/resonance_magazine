@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'bodoni';
-    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
-         url('../fonts/bodoni-webfont.woff') format('woff');
+    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff2') format('woff2'),
+         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'nimbus';
-    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
-         url('../fonts/freesans-webfont.woff') format('woff');
+    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff2') format('woff2'),
+         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -52,11 +52,10 @@
   margin-bottom: 0px;
   padding: 0px;
   color:black;
-  z-index: 1;
+  text-align: left;
 }
 
 .navbar li a {
-  text-decoration: none;
    color:black;
 }
 
@@ -104,13 +103,14 @@ html {
 /*Section used for centering process*/
 section {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   background-color:#0c2414;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'bodoni';
-  font-size: 30px;
+  font-size: 25px;
+  margin-top: 0px;
 }
 
 .container{
@@ -120,95 +120,7 @@ section {
   padding: 0 1.5rem;
 }
 
-.accordion-item{
-  background-color:#0c2414;
-  border-radius: .4rem;
-font-size: 20px;
-}
 
-.accordion-item hr{
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.accordion-link{
-  font-size: 1.6rem;
-  color: rgba(255,255,255,.8);
-  text-decoration: none;
-background-color:#0c2414;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-    font-size: 20px;
-}
-
-.accordion-link h3{
-  font-weight:500;
-  font-size: 20px;
-}
-
-.accordion-link i{
-  color: #e7d5ff;
-  padding: .5rem;
-
-}
-
-.accordion-link ul{
-  display:flex;
-  align-items: flex-end;
-  list-style-type: none;
-  margin-left: 25px; font-size: 20px;
-}
-
-.accordion-link li{
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.4);
-  padding: 0 0 1px 5px;
-font-size: 20px;
-}
-
-.accordion-link div{
-  display: flex;
-  font-size: 20px;
-}
-
-.accordion-link .ion-md-arrow-down{
-  display: none;
-  font-size: 20px;
-}
-
-.answer{
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-background-color:#0c2414;
-  transition: max-height 650ms;
-font-size: 20px;
-}
-
-
-
-.answer p{
-  color: #fff;
-  font-size: 15px;
-  padding: 2rem;
-  font-size: 20px;
-
-}
-
-.accordion-item:target .answer{
-  max-height: 20rem;
-    font-size: 20px;
-}
-
-.accordion-item:target .accordion-link .ion-md-arrow-forward{
-  display: none
-}
-
-.accordion-item:target .accordion-link .ion-md-arrow-down{
-  display: block;
-}
 
 
 .btn-10{
@@ -285,21 +197,25 @@ font-family: nimbus;
 footer{
   color:black!important;
   background-color: white;
-  margin-top: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: nimbus;
   text-transform: uppercase;
+  height:30vh;
+  font-size: 20px;
 }
 #magazine2{
   background-color:
   #e6d8a8;
 height: 370px;
 padding-top: 4%;
-padding-left: 2%;
-padding-right: 2%;
+padding-left: 6%;
+padding-right: 6%;
 padding-bottom: 2%;
   color:black;
     font-family: 'bodoni';
     font-size: 25px;
+    text-align: justify;
 
 }
 .btn_stili {
@@ -309,4 +225,66 @@ height: 100px;
 background-color:#0c2414;
 
 text-align: center;
+}
+
+
+---da copiare in git---
+.container{
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+    font-family: bodoni;
+    font-size: 22px;
+}
+
+section {
+  width: 100%;
+  height: 220vh;
+background-color:#0c2414;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: white;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.style_title {
+  text-decoration: ;
 }
