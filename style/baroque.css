@@ -73,6 +73,7 @@
 
 body{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+    overflow-x: hidden;
 }
 
 
@@ -437,4 +438,3 @@ a:hover{
     filter: sepia(80%) !important;
     margin: 0 40px 0 0 !important;
 }
-
