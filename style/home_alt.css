@@ -461,9 +461,12 @@ svg {
 footer{
   color:black!important;
   background-color: white;
-  margin-top: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-family: nimbus;
   text-transform: uppercase;
+  height:30vh;
+  font-size: 25px;
 }
 
 .container {
