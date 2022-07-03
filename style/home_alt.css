@@ -466,7 +466,10 @@ footer{
   font-family: nimbus;
   text-transform: uppercase;
   height:30vh;
-  font-size: 25px;
+  font-size: 20px;
+}
+footer h3 {
+    font-size: 20px;
 }
 
 .container {
