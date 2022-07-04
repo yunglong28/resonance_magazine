@@ -479,6 +479,46 @@ font-family: nimbus;
      margin-top: 0px;
    }
 
+   /* unvisited link */
+   a:link {
+     color: red;
+   }
+
+   /* visited link */
+   a:visited {
+     color: red;
+   }
+
+   /* mouse over link */
+   a:hover {
+     color: black;
+   }
+
+   /* selected link */
+   a:active {
+     color: red;
+   }
+
+   a:link {
+     text-decoration: none;
+   }
+
+   a:visited {
+     text-decoration: none;
+   }
+
+   a:hover {
+     text-decoration: none;
+   }
+
+   a:active {
+     text-decoration: none;
+   }
+
+   .issue_title {
+     text-decoration: ;
+     color:lightgrey;
+   }
 
 .btn_stili {
   margin-top: 20px;
