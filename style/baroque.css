@@ -73,6 +73,7 @@
 
 body{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+    overflow-x: hidden;
 }
 
 
@@ -242,8 +243,9 @@ figcaption {
 .navbar a {
     display: flex;
     color: #000000;
-    margin-right: 20px;
+    margin-right: 40px;
     text-decoration: none;
+    font-size: 31px;
 }
 
 .navbar .dropdown ul {
@@ -438,4 +440,3 @@ a:hover{
     filter: sepia(80%) !important;
     margin: 0 40px 0 0 !important;
 }
-

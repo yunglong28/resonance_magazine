@@ -35,12 +35,12 @@ function change(name) {
 
   if (name=='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
-    $("img").remove();
+    /*$("img").remove();*/
     $("<br>").insertAfter(".navbar");
     $(".container_articles").attr('class', 'container-fluid container_articles');
-    $("<img src='imgs/folies.jpeg'/>").insertBefore("#title_and_subtitle_1"); 
+    /*$("<img src='imgs/folies.jpeg'/>").insertBefore("#title_and_subtitle_1"); 
     $("<img src='imgs/chocolat.jpeg'/>").insertBefore("#title_and_subtitle_2");
-    $("<img src='imgs/palais.jpeg'/>").insertBefore("#title_and_subtitle_3");
+    $("<img src='imgs/palais.jpeg'/>").insertBefore("#title_and_subtitle_3");*/
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");

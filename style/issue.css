@@ -187,3 +187,17 @@ figcaption {
   outline: 1px solid;
 
 }
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-family: nimbus;
+  text-transform: uppercase;
+  height:30vh;
+  font-size: 14px;
+  padding-top: 60px;
+}
+footer h3 {
+    font-size: 20px;
+}
