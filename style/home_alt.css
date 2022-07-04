@@ -269,6 +269,13 @@ margin-left: 70px;
 
 }
 
+.wrapper_mag {
+  display: grid;
+    grid-template-columns: 500px 700px ;
+  
+  height: 600px;
+}
+
 #project{
   background-color: #0d2110;
   font-family:'bodony', serif;
