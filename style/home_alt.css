@@ -267,7 +267,41 @@ margin-left: 70px;
   height: 600px;
 }
 
+.wrapper_mag {
+  display: grid;
+    grid-template-columns: 704px 700px ;
+    background-color:
+   #fc4434;
+  height: 600px;
 }
+
+.coltext {
+  color:#black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 60px;
+margin-left: 70px;
+
+
+}
+
+.colimg {
+  color:#black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 80px;
+margin-left: 80px;
+}
+
+
 
 #project{
   background-color: #0d2110;
@@ -347,7 +381,16 @@ margin-left: 70px;
 
 
 
+.cont {
 
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+}
 
 
 
@@ -493,8 +536,8 @@ font-family: nimbus;
 
 }
 div.col-6 {
-    flex: 0 0 auto;
-    width: 49%;
+
+    width: 48%;
     font-size: 20px;
     font-family: 'nimbus'!important;
   }
