@@ -27,7 +27,9 @@ h5 {
   overflow: auto;
   border-style: solid;
   overflow-x: hidden;
-  border-color: black;
+  border-color: #73895a;
+  border-width: thin;
+  border-radius: 25px;
   padding: 20px !important;
   height: 800px;
   
@@ -40,16 +42,15 @@ h5 {
 
 .article_col::-webkit-scrollbar {
     width: 0.5em;
-    margin: 2px;
+
 }
  
 .article_col::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgb(188, 177, 157);
 }
  
 .article_col::-webkit-scrollbar-thumb {
   
-  outline: 1px solid; 
 }
 
 
@@ -94,8 +95,8 @@ h5 {
   padding: 0;
   z-index: 2;
   visibility: hidden;
-  background: rgba(255, 255, 255, 0);
-  font-size: 15px !important;
+  background-color: rgb(250, 247, 230) !important;
+  font-size: 10px !important;
 }
 
 .navbar .dropdown ul li {
@@ -104,11 +105,10 @@ h5 {
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px !important;
+  font-size: 15px !important;
   color: black;
   margin: 0;
-  letter-spacing: 1px;
+
 }
 
 
@@ -263,7 +263,7 @@ a:hover{
   font-size: 20px;
   white-space: nowrap;
   text-align:center !important;
-padding: 10px;
+  padding: 10px;
   color: black;
 }
 
@@ -308,6 +308,4 @@ a {
   color: darkred !important;
 }
 
-.icons {
-}
 
