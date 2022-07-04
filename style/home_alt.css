@@ -347,21 +347,7 @@ margin-left: 70px;
 
 
 
-.cont {
-  position: relative;
-  height: auto;
-  width: auto;
-  top: 60px;
-  left: calc(37% - 300px);
-  display: flex;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: 14px;
-  margin-top: -27px;
 
-}
 
 
 
@@ -369,7 +355,7 @@ footer{
   color:black!important;
   background-color: white;
   margin-top: 90px;
-  font-family: nimbus;
+  font-family: 'nimbus';
   text-transform: uppercase;
 }
 
