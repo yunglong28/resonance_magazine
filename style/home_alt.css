@@ -441,12 +441,7 @@ font-family: nimbus;
      margin-top: 0px;
    }
 
-   .container{
-     width: 100%;
-     max-width: 80rem;
-     margin: 0 auto;
-     padding: 0 1.5rem;
-   }
+
    .container{
      width: 100%;
      max-width: 100rem;
