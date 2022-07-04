@@ -526,3 +526,11 @@ font-family: nimbus;
   text-align: left;
   padding-left: 72px;
 }
+
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 49%;
+    font-size: 20px;
+    font-family: nimbus;
+  }
