@@ -36,8 +36,8 @@ function change(name) {
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
     $("blockquote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
-    if ($(".first_char").html() == 'E'){
-        $(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
+    //if ($(".first_char").html() == 'E'){
+        //$(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
     };
 
     /*$(".ArtBody p:first-of-type").each(function(){
