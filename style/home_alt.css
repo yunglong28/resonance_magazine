@@ -71,15 +71,14 @@
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  padding: 5px 0;
+  padding: 10px 0;
   visibility: hidden;
   background: #fff;
-  margin-top: 22px;
 }
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul li{
-  padding: 5px 0;
+  padding: 10px;
   font-size: 20px;
   color: black;
 }
@@ -88,7 +87,6 @@
   opacity: 1;
   top: 100%;
   visibility: visible;
-    margin-top: 22px;
 }
 
 
