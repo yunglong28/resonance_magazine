@@ -101,7 +101,11 @@ margin-bottom: -4.15rem;
 #fra3::first-letter {
   background-image: url('../imgs/t2.png');
   background-size: contain;
+<<<<<<< Updated upstream
     background-size: 48%;
+=======
+    background-size: 50%;
+>>>>>>> Stashed changes
 background-repeat: no-repeat;
 background-center: center center;
 float: left;
@@ -450,14 +454,14 @@ body {
 .ArtBody, .Cover {
 
     font-style: normal;
-	     font-variant-ligatures: normal;
-	     font-variant-caps: normal;
-	     font-variant-numeric: normal;
-	     font-variant-east-asian: normal;
-	     font-weight: normal;
-	     font-stretch: normal;
+       font-variant-ligatures: normal;
+       font-variant-caps: normal;
+       font-variant-numeric: normal;
+       font-variant-east-asian: normal;
+       font-weight: normal;
+       font-stretch: normal;
     font-size: 19px;
-	   line-height: normal;
+     line-height: normal;
 
 }
 

@@ -38,15 +38,16 @@ function change(name) {
     $("blockquote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
     //if ($(".first_char").html() == 'E'){
         //$(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
-    };
+    //};
 
     /*$(".ArtBody p:first-of-type").each(function(){
       var first_char = $(this).text().charAt(0);
       alert(first_char);
       $(this).text().charAt(0).remove();
     });*/
-
   }
+
+
 
   else{
     $(".container_articles").attr('class', 'container container_articles');
