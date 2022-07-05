@@ -2,8 +2,6 @@ function change(name) {
   /*alert(currentstyle)*/
   if (name == 'belle') {
     $("#pagestyle").attr('href','style/inizio900.css');
-    $(".title_issue").remove();
-    $(".banner_issue").replaceWith("<br>");
     $(".container_articles img").remove();
     $("<img id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
@@ -12,9 +10,6 @@ function change(name) {
     $("#col2 p").wrapAll( "<div id='col2_txt'>");
   }
 
-  else{
-    $("#sep_nav").remove();
-  }
 
   if (name == 'tabloid'){
     $("#pagestyle").attr('href','style/fine900.css');
@@ -25,6 +20,7 @@ function change(name) {
 
   else {
     $(".banner_issue").remove();
+    $(".title_issue").remove();
   }
 
   if (name=='illuminist'){
@@ -35,22 +31,25 @@ function change(name) {
 
   if (name=='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
-    /*$("img").remove();*/
-    $("<br>").insertAfter(".navbar");
     $(".container_articles").attr('class', 'container-fluid container_articles');
-    /*$("<img src='imgs/folies.jpeg'/>").insertBefore("#title_and_subtitle_1"); 
-    $("<img src='imgs/chocolat.jpeg'/>").insertBefore("#title_and_subtitle_2");
-    $("<img src='imgs/palais.jpeg'/>").insertBefore("#title_and_subtitle_3");*/
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
     $("blockquote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
+    if ($(".first_char").html() == 'E'){
+        $(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
+    };
+
     /*$(".ArtBody p:first-of-type").each(function(){
       var first_char = $(this).text().charAt(0);
       alert(first_char);
       $(this).text().charAt(0).remove();
     });*/
 
+  }
+
+  else{
+    $(".container_articles").attr('class', 'container container_articles');
   }
 
    /*if (name=='hobbyhorse'){*/
