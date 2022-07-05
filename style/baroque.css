@@ -179,8 +179,6 @@ figcaption {
     font-size: 5px !important;
 }
 
-
-
 .article_col {
     overflow: auto;
     border-style: inset;
@@ -231,7 +229,7 @@ figcaption {
     clear: left;
     font-family: 'GFS Didot', serif;
     font-variant: all-petite-caps;
-    font-size: 50px;
+    font-size: 20px;
     letter-spacing: 5px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
     background-repeat: repeat-x !important;
@@ -280,8 +278,6 @@ a:hover{
 }
 
 
-
-
 /* The button used to open the sidebar */
 .openbtn {
     font-size: 20px;
@@ -301,8 +297,6 @@ a:hover{
     text-align: center;
     display: block;
 }
-
-
 
 /* For the Homepage */
 .img_issue{
@@ -326,10 +320,6 @@ a:hover{
     line-height: 1em;
 }
 
-#spinning_vinyl{
-    width: 200px;
-    height:auto;
-}
 
 .container{
     font-family:'Lynotype Didot Roman', serif;
@@ -416,19 +406,33 @@ a:hover{
 
 .container_articles{
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+<<<<<<< Updated upstream
     height: 900px;
 
+=======
+>>>>>>> Stashed changes
 }
 
+.article_col::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+.article_col::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
 
-.didot_img {
+.article_col::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
 
+.opening_img {
     filter: sepia(80%) !important;
-    height: 500px !important;
+    height: 400px;
+    width:auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .article_images {

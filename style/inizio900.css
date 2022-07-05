@@ -181,12 +181,6 @@ body{
 #col2{
   background-color:black; 
     font-family: 'Bebas Neue', cursive;
-
-  /*
-  border-color: rgb(47,84,161);
-  outline-style: solid;
-  outline-color: rgb(224, 201, 166);
-  outline-width: thick;*/
 }
 
 #col2 .title{
@@ -290,6 +284,7 @@ body{
   font-size: 15px;
   text-align: center;
 }
+
 
 .article_col::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
