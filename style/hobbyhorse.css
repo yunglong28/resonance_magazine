@@ -101,6 +101,7 @@ margin-bottom: -4.15rem;
 #fra3::first-letter {
   background-image: url('../imgs/t2.png');
   background-size: contain;
+    background-size: 48%;
 background-repeat: no-repeat;
 background-center: center center;
 float: left;
