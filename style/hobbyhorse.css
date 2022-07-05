@@ -170,7 +170,7 @@ font-weight: 600 !important;
 }
 
 .navbar {
-height: 60px;
+height: 80px;
 padding: 0;
 border-color: black;
 border-width: 5px  ;
@@ -258,15 +258,11 @@ display: block;
   padding: 30px 0px 0px 20px;
   text-decoration: none;
   font-size: 20px;
-  color: White;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
   text-align:center !important;
   text-transform: uppercase;
-
-
-
-
 
 }
 
@@ -461,7 +457,7 @@ body {
 
 }
 
-blockquote img {
+.quote img {
   margin-top: -34px;
   margin-left: -36px;
 }
@@ -475,7 +471,7 @@ blockquote img {
 
 
 
-blockquote {
+.quote {
     font-family: 'p22_operina_fiore_fiore';
     line-height: 25px;
     margin-left: 15px;
