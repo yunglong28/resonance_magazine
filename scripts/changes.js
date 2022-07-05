@@ -10,6 +10,15 @@ function change(name) {
     $("#col2 p").wrapAll( "<div id='col2_txt'>");
   }
 
+  else{
+    $(".opening_img").remove();
+    if($('.op').length == 0){
+    $("<img class='op' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertAfter("#col1 .title");
+    $("<img class='op' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertAfter("#col2 .title");
+    $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");
+  };
+
+  }
 
   if (name == 'tabloid'){
     $("#pagestyle").attr('href','style/fine900.css');
@@ -35,7 +44,7 @@ function change(name) {
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
-    $("blockquote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
+    $(".quote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
     //if ($(".first_char").html() == 'E'){
         //$(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
     //};
