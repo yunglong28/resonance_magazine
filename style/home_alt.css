@@ -71,7 +71,7 @@
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  padding: 10px 0;
+  padding: 5px 0;
   visibility: hidden;
   background: #fff;
 }
