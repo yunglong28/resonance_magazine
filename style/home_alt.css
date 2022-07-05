@@ -308,6 +308,39 @@ margin-left: -300px;
 z-index: 0;
 }
 
+.col_button{
+  color:#black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+margin-top: 216px;
+margin-left: 159px;
+}
+
+.col_us {
+
+    color: lightgrey;
+    font-family: 'bodoni';
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -470px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+
+.wrapper_us {
+  display: grid;
+    grid-template-columns: 704px 700px ;
+  background-color:#0c2414;
+  height: 900px;
+  margin-left: -32px;
+}
+
+
 
 
 #project{
