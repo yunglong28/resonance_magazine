@@ -64,7 +64,7 @@
 .navbar li a:hover{
   color:  #9fa4c4 !important;
   text-decoration:none;
-  margin-top: 22px;
+
 }
 
 
@@ -75,15 +75,14 @@
   padding: 5px 0;
   visibility: hidden;
   background: #fff;
-  margin-top: 22px;
+
 }
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul li{
   padding: 10px;
   font-size: 20px;
-  color: black;
-  margin-top: 22px;
+
 }
 
 .navbar .dropdown:hover > ul {
