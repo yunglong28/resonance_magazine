@@ -170,7 +170,7 @@ font-weight: 600 !important;
 }
 
 .navbar {
-height: 80px;
+height: 96px;
 padding: 0;
 border-color: black;
 border-width: 5px  ;
@@ -206,6 +206,7 @@ font-style: bold;
 padding: 5px;
 background-color: #53575c;
 border: 5px solid white;
+padding-top: 1.5rem;
 /*background-image: url('C:/Users/Lorenza/Desktop/Sito_Vitali/imgs/corvo.png');*/
 }
 
@@ -405,7 +406,7 @@ body {
 
      background-color: white;
     opacity: 0.8;
-  border-radius: 2rem;
+  border-radius: 0rem;
   padding: 0.4em;
     text-align: justify;
 
