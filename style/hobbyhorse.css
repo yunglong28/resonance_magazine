@@ -101,20 +101,16 @@ margin-bottom: -4.15rem;
 #fra3::first-letter {
   background-image: url('../imgs/t2.png');
   background-size: contain;
-<<<<<<< Updated upstream
-    background-size: 48%;
-=======
-    background-size: 50%;
->>>>>>> Stashed changes
+    background-size: 54%;
 background-repeat: no-repeat;
 background-center: center center;
 float: left;
 font-size: 12rem;
 line-height: 0.65;
 color: transparent;
-margin-right: -0.15px;
-margin-left: -0.15rem;
-margin-bottom: -4.15rem;
+margin-right: -55px;
+margin-left: -0.0rem;
+margin-bottom: -4.80rem;
 
 }
 
