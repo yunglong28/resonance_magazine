@@ -82,12 +82,14 @@
   padding: 10px;
   font-size: 20px;
   color: black;
+  margin-top: 22px;
 }
 
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
+  margin-top: 22px;
 }
 
 
