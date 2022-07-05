@@ -640,3 +640,9 @@ div.col-6 {
 .slide_us {
   font-size: 65px;
 }
+
+ .wrapper_us a, a:hover, a:focus, a:active {
+      text-decoration: none
+      ;
+      color: #fc4434!important;
+ }
