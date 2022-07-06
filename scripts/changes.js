@@ -10,7 +10,7 @@ function change(name) {
     $("#col2 p").wrapAll( "<div id='col2_txt'>");
   }
 
-  else{
+  /*else{
     $(".opening_img").remove();
     if($('.op').length == 0){
     $("<img class='op' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertAfter("#col1 .title");
@@ -18,13 +18,13 @@ function change(name) {
     $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");
   };
 
-  }
+  }*/
 
   if (name == 'tabloid'){
+    $(".opening_img").remove();
     $("#pagestyle").attr('href','style/fine900.css');
-    $(".container_articles img").remove();
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
-    $("#col1 .title").prepend("<img src='imgs/pallino.png'/>");
+    /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
   }
 
   else {
@@ -60,6 +60,7 @@ function change(name) {
 
   else{
     $(".container_articles").attr('class', 'container container_articles');
+    $("figcaption").remove();
   }
 
    /*if (name=='hobbyhorse'){*/

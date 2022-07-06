@@ -3,12 +3,14 @@
 
 <head>
 <!-- CSS + Bootstrap Stylesheet-->
-<link href="style\hobbyhorse.css" rel="stylesheet" type="text/css">
-<link href="style\bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link id="pagestyle" href="style/hobbyhorse.css" rel="stylesheet" type="text/css">
+<script src="scripts/changes.js"></script>
+<link href="style/bootstrap.min.css" rel="stylesheet">
 <link href="stylebootstrap-icons.css" rel="stylesheet">
-<link href="style\css\boxicons.min.css" rel="stylesheet">
-<link href="style\glightbox.min.css" rel="stylesheet">
-<link href="style\swiper-bundle.min.css" rel="stylesheet">
+<link href="style/css/boxicons.min.css" rel="stylesheet">
+<link href="style/glightbox.min.css" rel="stylesheet">
+<link href="styleswiper-bundle.min.css" rel="stylesheet">
 
 </head>
 
@@ -19,7 +21,7 @@
 
 
 <!-- NAV-->
-<nav class="navbar sticky-top navbar-light" class="navbar">
+<nav class="navbar sticky-top navbar-light">
 
           <ul>
             <li><a href="home_alt.html">The Resonance</a></li>
@@ -38,7 +40,12 @@
                 <li><a href>Us</a></li>
               </ul>
               </li>
-
+              <li id="" onclick="change('illuminist')"><img src="imgs/cello.png"></li>
+              <li id="" onclick="change('hobbyhorse')"><img src="imgs/harp.png"></li>
+              <li id="belle" onclick="change('belle')"><img src="imgs/gramophone.png"></li>
+              <li id="" onclick="change('disco')"><img src="imgs/disco.png"></li>
+              <li id="tabloid" onclick="change('tabloid')"><img src="imgs/boombox.png"></li>
+              <li id="" onclick="change('tabloid')"><img src="imgs/walkman.png"></li>
           </ul>
         </nav>
 

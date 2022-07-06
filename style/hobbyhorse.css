@@ -343,6 +343,10 @@ a:hover {
     background-color: white!important;
 }
 
+.navbar img{
+  
+}
+
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
