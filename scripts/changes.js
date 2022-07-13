@@ -33,7 +33,7 @@ function change(name) {
   }
 
   if (name=='illuminist'){
-    $("#pagestyle").attr('href','baroque.css');
+    $("#pagestyle").attr('href','illuminism.css');
     $("img").remove();
 
   }
@@ -109,7 +109,7 @@ function change(name, currentstyle) {
  /* DI ALE*/
 $(document).ready(function(){
   $("#change").click(function(){
-  $("#pagestyle").attr('href','baroque.css');
+  $("#pagestyle").attr('href','illuminism.css');
   $('img').remove();
   $('#solar_bar').remove();
   });
@@ -119,7 +119,7 @@ $(document).ready(function(){
 /* In -> Lowtech style*/
 $(document).ready(function(){
   $("#changetoLow").click(function (position, text){
-    $("#pagestyle").attr('href','futuristic_typo.css');
+    $("#pagestyle").attr('href','future.css');
     /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
   });
 });
@@ -134,9 +134,18 @@ $(document).ready(function(){
 /*Funzione Lowtech to anotherstyle*/
 $(document).ready(function(){
   $("#changeLow").click(function(){
-  $("#pagestyle").attr('href','baroque.css');
+  $("#pagestyle").attr('href','illuminism.css');
   $('#solar_bar').remove();
   /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
   });
   });
 /*Fine Ale*/
+
+
+
+function blackout() {
+  document.getElementById("blackout").style.display = "flex";
+  document.getElementById("blackout-sentence").style.display = "flex";
+}
+
+myTimeout = setTimeout(blackout, 300000);

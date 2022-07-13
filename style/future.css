@@ -6,9 +6,6 @@ footer {
   display: block;
 }
 
-
-
-
 h3
 {font-family: "Times New Roman", Times, serif; !important;}
 
@@ -16,8 +13,6 @@ h4{font-family: "Times New Roman", Times, serif; !important;}
 h5 {
   font-family: "Times New Roman", Times, serif; !important;
 }
-
-
 
 .container_articles {
   background-color: rgb(250, 247, 230);
@@ -41,24 +36,19 @@ h5 {
 }
 
 .article_col::-webkit-scrollbar {
-    width: 0.5em;
-
+  color: #DAECC6;
 }
  
 .article_col::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(188, 177, 157);
+    -webkit-box-shadow: inset 0 0 0 #DAECC6;
 }
  
-.article_col::-webkit-scrollbar-thumb {
-  
-}
+
 
 
 .img-fluid {
     max-width: auto;
     height: auto;
-   
-
 }
 
 /* NAVBAR */
@@ -181,12 +171,7 @@ a:hover{
   background-color: #444;
 }
 
-/* For the Homepage */
-.img_issue{
-  width:200px;
-  height: auto;
-  border-radius: 25px;
-}
+
 
 
 #magazine_title{
@@ -309,3 +294,42 @@ a {
 }
 
 
+.didot_logo {
+  display: none;
+}
+
+.opening_img_illuminism {
+  display: none;
+}
+
+.paragraph_header {
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif; !important;
+  color: darkgreen;
+}
+
+.half-width {
+  display: none;
+}
+
+.blackout {
+  background:black;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  height: 200%;
+  width: 100%;
+  z-index: 20;
+  display: none;
+}
+
+.blackout-sentence {
+  z-index: 22;
+  color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 100px;
+  text-align: center;
+  display: none;
+}
