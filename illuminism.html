@@ -50,10 +50,11 @@
     </style>
     <title>Articles Page</title>
 </head>
+<div class="blackout" id="blackout"><p class="blackout-sentence" id="blackout-sentence">SERVER IS OUT OF ENERGY</p></div>
 
 <body>
 
-
+<!-- NAV-->
 <nav class="navbar">
 
     <ul>
@@ -80,14 +81,32 @@
         <li onclick="change('belle')"><img src="imgs/gramophone.png" class="icons"></li>
         <li onclick="change('disco')"><img src="imgs/disco.png" class="icons"></li>
         <li onclick="change('tabloid')"><img src="imgs/boombox.png" class="icons"></li>
-        <li onclick="change('tabloid')"><img src="imgs/walkman.png" class="icons"></li>
+        <li onclick="change('future')"><img src="imgs/walkman.png" class="icons"></li>
 
 
     </ul>
 </nav>
+<hr>
 
 <br id="sep_nav">
 
+<!-- Solar Bar-->
+<div id="solar_bar">
+    <p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left.  <img src="imgs/icons8-sun-30.png">
+        <br>
+    </p>
+
+    <p>The page size is 86kb. You can print it ecologically <a href="https://www.greenerprinter.com/00"><img src="imgs/icons8-print-30.png"></a>
+    <p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p>
+    <p>Calculate your web page footprint <a href="https://www.websitecarbon.com/">here</a>.<p/>
+
+
+    <p>Server Stats <img src="imgs/icons8-solar-panels-32.png"> <br>
+        Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes
+    </p>
+
+    <hr class="half-hr"/>
+</div>
 
 <!-- Articles Boxes-->
 <div class="container container_articles">
@@ -98,7 +117,7 @@
 <div class="col article_col" id="col1">
 
 
-    <img class="img-fluid opening_img" src="imgs/didot_cover1.jpeg" >
+    <img class="img-fluid opening_img opening_img_illuminism" src="imgs/didot_cover1.jpeg" id="opening_illuminism1">
 
     <div class="title_and_subtitle">
         <div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">
@@ -198,7 +217,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <!--ARTICLE 2-->
 <div class="col article_col" id="col2" alt="secondoarticolo">
-    <img class="img-fluid opening_img" src="imgs/didot_cover2.jpeg">
+    <img class="img-fluid opening_img opening_img_illuminism" src="imgs/didot_cover2.jpeg" id="opening_illuminism2">
 
     <div class="title_and_subtitle">
         <div class="title" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">
@@ -342,7 +361,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>Notice that the would-be genre tag of &#8220;study music&#8221; &mdash; arguably the most popular &#8220;genre&#8221; emerging out of this process &mdash; doesn&#8217;t refer to the music&#8217;s aesthetic qualities but rather to its <i>function</i>. <span class="person" about="Brian Eno">Brian Eno</span> anticipates this early on when he describes ambient music explicitly as music to play in the background. In fact, the mostly-recent entry of <span class="genre" about="ambient music">ambient music</span> into the mainstream only further points to the ascendency of <i>use</i> in the industry: among these changes in consumption habits, ambient music entered the mainstream <i>qua</i> study music, <i>qua</i> sleep music, <i>qua</i> background&nbsp;music.</p>
 
-<hr class="paragraph_header"> CASE III: The Playlist (Fake Artists)</h3>
+<h3 class="paragraph_header"> CASE III: The Playlist (Fake Artists)</h3>
         <hr class="half-hr">
 <p>One might argue that a certain amount of this is inoffensive. However, in addition to changing how we ascribe value to music, these playlists are undeniably affecting our interactions with &mdash; &amp; the
  <i>uses</i> of &mdash; musicians. Consider that many tracks on sponsored playlists are ghostwritten &mdash; <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s &#8220;fake artists&#8221; of infamy. But whether or not this is upsetting to you depends on your own vision of what our interactions with music should be. As <a href="shttps://www.digitalmusicnews.com/2017/07/10/spotify-fake-artists-real-artists-paid/">one cynical commentator</a> writes in support of the&nbsp;strategy,</p>
@@ -352,7 +371,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>Of course, there are repercussions for &#8220;real artists&#8221; too. Playlists that curate use-value appraise tracks on these terms, even in the case of artists who don&#8217;t wish to be assessed in such a way. Some might not even want to decontextualize their music from its original framing through inclusion on a playlist. While this is probably true of very few artists whose music is on <span class="streaming-service" about="Spotify">Spotify</span> to begin with &mdash; though we mustn&#8217;t forget the punishment for abstaining &mdash; the fact that industry needs triumph over the artist points to the state of music consumption, commodification, &amp; property relations&nbsp;today.</p>
 <hr class="half-width">
-<h2 class="sample_table">III. FUTURE: Discover Weekly, Ego Formation &amp;&nbsp;You</h2>
+<h3 class="paragraph_header">III. FUTURE: Discover Weekly, Ego Formation &amp;&nbsp;You</h3>
 
 <figure>
 <img class="img-fluid article_images" src="imgs/article_2_4.jpg" alt="">
@@ -378,13 +397,13 @@ Musicians with different label and publishing situations—even those whose musi
 
 <!--ARTICLE 3-->
     <div class="col article_col" id="col3">
-        <img class="img-fluid opening_img" src="imgs/didot_cover3.jpeg">
+        <img class="img-fluid opening_img opening_img_illuminism" src="imgs/didot_cover3.jpeg" id="opening_illuminism3">
 
         <div class="title_and_subtitle">
 <div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">
     With NFTs, Musicians See <div class="title_small">a Way to</div> Finally Take Control</div>
             <figure>
-                <img class="img-fluid" src="imgs/dither_it_article_3_1.png" id="dither6">
+                <img class="img-fluid article_images" src="imgs/article_3_1.png" id="dither6">
             </figure>
             <hr class="half-hr">
 

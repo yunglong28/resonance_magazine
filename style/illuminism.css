@@ -425,15 +425,7 @@ a:hover{
 }
 
 
-.opening_img {
 
-    filter: sepia(80%) !important;
-    height: 500px !important;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 .article_images {
 
@@ -443,4 +435,43 @@ a:hover{
 
     filter: sepia(80%) !important;
     margin: 0 40px 0 0 !important;
+}
+
+#solar_bar {
+    display: none;
+}
+
+.opening_img {
+
+}
+
+.opening_img_illuminism {
+
+    filter: sepia(80%) !important;
+    height: 500px !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.blackout {
+    background:black;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height: 200%;
+    width: 100%;
+    z-index: 20;
+    display: none;}
+
+.blackout-sentence {
+    z-index: 22;
+    color: white;
+    font-family: "Times New Roman", serif;
+    font-size: 100px;
+    text-align: center;
+    display: none;
 }
