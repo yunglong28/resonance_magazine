@@ -27,14 +27,14 @@ function change(name) {
     /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
   }
 
-  else {
+  /*else {
     $(".banner_issue").remove();
     $(".title_issue").remove();
-  }
+  }*/
 
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
-
+    $(".opening_img").remove();
   }
 
   if (name ==='future'){
@@ -150,6 +150,7 @@ $(document).ready(function(){
   });
   });
 /*Fine Ale*/
+
 
 
 function blackout() {
