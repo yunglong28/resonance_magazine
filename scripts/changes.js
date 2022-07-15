@@ -142,7 +142,6 @@ $(document).ready(function(){
 /*Fine Ale*/
 
 
-
 function blackout() {
   document.getElementById("blackout").style.display = "flex";
   document.getElementById("blackout-sentence").style.display = "flex";
