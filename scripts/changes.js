@@ -3,11 +3,11 @@ function change(name) {
   if (name == 'belle') {
     $("#pagestyle").attr('href','style/inizio900.css');
     $(".container_articles img").remove();
-    $("<img id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
-    $("<img id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
-    $("#col2 p:first-of-type").replaceWith( "<div id='container'><div id='left'><span class='key' about='colonization'>Colonization</span></div> <div id='center'>rears its ugly head whenever there is</div> <div id='right'><span class='key' about='globalization'> globalization</span></div></div><br>");
-    $("#col2 p").wrapAll( "<div id='col2_txt'>");
+    $("<img class='opening_img' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
+    $("<img class='opening_img' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
+    $("<img class='opening_img' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
+    /*$("#col2 p:first-of-type").replaceWith( "<div id='container'><div id='left'><span class='key' about='colonization'>Colonization</span></div> <div id='center'>rears its ugly head whenever there is</div> <div id='right'><span class='key' about='globalization'> globalization</span></div></div><br>");*/
+    /*$("#col2 p").wrapAll( "<div id='col2_txt'>");*/
   }
 
   /*else{
@@ -44,23 +44,13 @@ function change(name) {
 
   if (name=='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
+    $()
     $(".container_articles").attr('class', 'container-fluid container_articles');
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
     $(".quote").prepend("<img id='block1' src='imgs/birds3.png' width='250'>");
-    //if ($(".first_char").html() == 'E'){
-        //$(".first_char").replaceWith('<img src="imgs/letterE.png"/>');
-    //};
-
-    /*$(".ArtBody p:first-of-type").each(function(){
-      var first_char = $(this).text().charAt(0);
-      alert(first_char);
-      $(this).text().charAt(0).remove();
-    });*/
   }
-
-
 
   else{
     $(".container_articles").attr('class', 'container container_articles');
