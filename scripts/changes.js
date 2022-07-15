@@ -19,7 +19,6 @@ function change(name) {
   }
 
 
-
   if (name == 'tabloid'){
     $(".opening_img").remove();
     $("#pagestyle").attr('href','style/fine900.css');
@@ -44,6 +43,8 @@ function change(name) {
 
   if (name ==='future'){
     $("#pagestyle").attr('href','style/future.css');
+    /*$("<div class='blackout' id='blackout'><p class='blackout-sentence' id='blackout-sentence'>SERVER IS OUT OF ENERGY</p></div>").insertAfter("head");
+    $("<script src='scripts/blackout.js'></script>").insertAfter("#changestyle");*/
   }
 
 
@@ -157,10 +158,3 @@ $(document).ready(function(){
 /*Fine Ale*/
 
 
-
-function blackout() {
-  document.getElementById("blackout").style.display = "flex";
-  document.getElementById("blackout-sentence").style.display = "flex";
-}
-
-myTimeout = setTimeout(blackout, 300000);
