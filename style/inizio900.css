@@ -77,6 +77,18 @@ body{
   background-repeat: no-repeat;
 }
 
+.title_issue{
+  display: none;
+}
+
+.banner_issue{
+  display: none;
+}
+
+#sep_banner{
+  display:none;
+}
+
 .article_col{
   margin: 0.5em;
   height: 600px;
@@ -211,10 +223,14 @@ body{
   width: 100%;
 }
 
-#container{
+#container_belle{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-image: url(../imgs/old_paper.jpg);
+}
+
+.emphasized{
+  display: none;
 }
 
 #left{

@@ -220,6 +220,14 @@ body{
   text-align:center;
 }
 
+#sep_nav{
+  display: none;
+}
+
+.opening_img{
+  display: none;
+}
+
 #col1 ul{
     list-style: none;
 }
@@ -269,6 +277,17 @@ body{
   max-width:80%;
   word-wrap: break-word;
   text-transform: uppercase;
+ }
+
+ #container_belle{
+  display: none;
+ }
+
+#sep_container_belle{
+  display: none;
+}
+ #emphasized{
+   font-weight: bold;
  }
 
 #col3 .title_and_subtitle{
