@@ -4,4 +4,4 @@ function blackout() {
   document.getElementById("blackout-sentence").style.display = "flex";
 }
 
-myTimeout = setTimeout(blackout, 30);/*300000*/
+myTimeout = setTimeout(blackout, 300000);/*300000*/
