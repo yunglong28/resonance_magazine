@@ -35,9 +35,9 @@ function change(name) {
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
     $(".opening_img").remove();
-    $("<img class='opening_img' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
+    /*$("<img class='opening_img' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img class='opening_img' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
+    $("<img class='opening_img' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");*/
   }
 
   if (name ==='future'){
