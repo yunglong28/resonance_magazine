@@ -32,11 +32,15 @@ function change(name) {
     $(".title_issue").remove();
   }
 
-  if (name=='illuminist'){
-    $("#pagestyle").attr('href','illuminism.css');
-    $("img").remove();
+  if (name ==='illuminist'){
+    $("#pagestyle").attr('href','style/illuminism.css');
 
   }
+
+  if (name ==='future'){
+    $("#pagestyle").attr('href','style/future.css');
+  }
+
 
   if (name=='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
@@ -104,6 +108,12 @@ function change(name, currentstyle) {
   }
 
 };/*
+
+
+
+
+ */
+
 
 
  /* DI ALE*/
