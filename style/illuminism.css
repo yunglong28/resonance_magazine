@@ -439,9 +439,10 @@ a:hover{
 
 
 .article_images {
-
     filter: sepia(100%) !important;
+    text-align: center !important;
 }
+
 .icons {
 
     filter: sepia(80%) !important;
