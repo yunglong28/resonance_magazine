@@ -2,7 +2,7 @@ function change(name) {
   /*alert(currentstyle)*/
   if (name == 'belle') {
     $("#pagestyle").attr('href','style/inizio900.css');
-    $(".container_articles img").remove();
+    /*$(".container_articles img").remove();*/
     $("<img class='opening_img' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
     $("<img class='opening_img' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
@@ -43,6 +43,12 @@ function change(name) {
 
   if (name ==='future'){
     $("#pagestyle").attr('href','style/future.css');
+    $(".opening_img").remove();
+    $("<img class='img-fluid article_images' src='imgs/dither_it_fra1.jpg'>").insertAfter("#col1 .title");
+    $("<img class='img-fluid article_images' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
+    $("<img class='img-fluid article_images' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");
+    $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div><br>").insertAfter("#sep_nav");
+    $("<hr>").insertBefore("#sep_nav");
     /*$("<div class='blackout' id='blackout'><p class='blackout-sentence' id='blackout-sentence'>SERVER IS OUT OF ENERGY</p></div>").insertAfter("head");
     $("<script src='scripts/blackout.js'></script>").insertAfter("#changestyle");*/
   }
