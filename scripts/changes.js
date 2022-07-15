@@ -10,15 +10,15 @@ function change(name) {
     /*$("#col2 p").wrapAll( "<div id='col2_txt'>");*/
   }
 
-  /*else{
-    $(".opening_img").remove();
-    if($('.op').length == 0){
+  else{
+    $("#container_belle").remove();
+    /*if($('.op').length == 0){
     $("<img class='op' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertAfter("#col1 .title");
     $("<img class='op' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertAfter("#col2 .title");
-    $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");
-  };
+    $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");*/
+  }
 
-  }*/
+
 
   if (name == 'tabloid'){
     $(".opening_img").remove();
@@ -30,14 +30,16 @@ function change(name) {
   else {
     $(".banner_issue").remove();
     $(".title_issue").remove();
+    $("#pallino").remove();
   }
 
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
     $(".opening_img").remove();
-    /*$("<img class='opening_img' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
-    $("<img class='opening_img' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img class='opening_img' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");*/
+    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
+    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
+    $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
+
   }
 
   if (name ==='future'){
