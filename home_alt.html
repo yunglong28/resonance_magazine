@@ -6,6 +6,7 @@
 <script src="scripts/sidebar.js"></script>
 <script src="scripts/changes.js"></script>
 <link  id="pagestyle" href="style/home_alt.css" rel="stylesheet" type="text/css">
+
 <link href="style/bootstrap.min.css" rel="stylesheet">
   <link href="style/bootstrap-icons.css" rel="stylesheet">
   <link href="style/boxicons.min.css" rel="stylesheet">
@@ -14,14 +15,46 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<script src="bootstrap.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 
 <body>
+<!-- MODALS -->
+
+    <!-- disclaimer start -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Disclaimer</h5>
+            <button type="button" class="firstbtn" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body p-4">
+            <p>
+                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+            </p>
+
+            <p>
+                All copyrights and related rights on the content remain with their original owners.
+                <br>
+                All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-secondary" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- disclaimer end -->
 
 	<!-- NAV-->
   <nav class="navbar sticky-top navbar-light" class="navbar">
@@ -33,14 +66,14 @@
               <ul>
                 <li><a href>Issue #1</a></li>
                 <li><a href>Issue #2</a></li>
-                <li><a href>Issue #3</a></li>
+                <li><a href="issue.html">Issue #3</a></li>
               </ul>
               </li>
                <li class="dropdown"><a href=>About</a>
               <ul>
                 <li><a href="documentation_alt.html">Documentation</a></li>
-                <li><a href>Disclaimer</a></li>
-                <li><a href>Us</a></li>
+                <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+                <li><a href="#aboutus">Us</a></li>
               </ul>
               </li>
 
@@ -73,15 +106,22 @@
     </div>
 
 
-    <div class="home2" id="magazine2">
+
+        <div class="wrapper_yet">
+          <div class="col_img_yet"> <img  src="imgs\records.jpg" height='450'>
+          <div class="col_text_yet">
+
       Yet, with Resonance, we aim to offer a different idea of what a magazine could be, stretching the boundaries of this hundred-year-old definition. Resonance is a typographical experiment, that allows the reader to experience our articles’ selection through six different stylistic lenses. Digital technologies enable us to give a new spin to the reading experience, making it playful and creative. We are not only interested in the recreational side of things: with the Metadata Viewer, we aim to offer an enhanced reading experience, where entities, places, and other knowledge material can be easily recognized and studied by our readers!
 
       <p>
 
-      <a href="#aboutus"><button class="custom-btn btn-10" >The issues</button> </a>
-      <a href="file:///C:/Users/Lorenza/Desktop/Sito_Vitali/documentation.html"> <button class="custom-btn btn-10">Documentation</button></a>
+      <a href="#issue_"><button class="custom-btn btn-10" >The issues</button> </a>
+      <a href="documentation_alt.html"> <button class="custom-btn btn-10">Documentation</button></a>
       </p>
     </div>
+    </div>
+  </div>
+
 
 
 
@@ -96,7 +136,7 @@
 
     </div>
 
-    <div class="marquee-section">
+    <div class="marquee-section"id="issue_">
         <div class="marquee-div">
             <div class="marquee"> &bull; The best waves resonate here &bull; The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;The best waves resonate here &bull;vvThe best waves resonate here &bull;The best waves resonate here &bull;</div>
         </div>
@@ -109,7 +149,7 @@
 
 
 
-          <p>
+          <p >
           <button  class="custom-btn btn-10"role="presentation" class="active" href="#Issue1" aria-controls="Issue1" role="tab" data-toggle="tab">ISSUE 1</button> </p>
             <p>
               <button  class="custom-btn btn-10"role="presentation"  href="#Issue2" aria-controls="Issue2" role="tab" data-toggle="tab">ISSUE 2</button></p>
@@ -124,12 +164,12 @@
 
         <br />
         <div  class="col_issue">
-        
 
 
 
 
-                <div class="tab-content">
+
+                <div class="tab-content" >
 
                 	<div role="tabpanel" class="tab-pane active" id="Issue1">
                     <p class="issue_title">MUSIC STREAMING ECONOMY</p>
@@ -174,7 +214,7 @@
               </div>
 </div>
 <div class="wrapper_us">
-  <div class="col_button_us">
+  <div class="col_button_us" id="aboutus">
 
 
   <span>About us</span>

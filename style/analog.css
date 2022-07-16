@@ -129,6 +129,7 @@ font-style: bold;
   background-color: #f0eee4;
   margin-bottom: 43px;
   background-color: transparent;
+      background-image: url('../imgs/backram.png');
 
 }
 
@@ -384,7 +385,7 @@ body {
 border-top: 1px solid black;
 border-bottom: 1px solid black;
 }
-blockquote {
+.quote {
     font-family:'joystix_monospace';
     font-size: 11px;
 
@@ -393,7 +394,7 @@ blockquote {
 
 #block1 {visibility: hidden;}
 
-blockquote {
+.quote {
   color: white;
 	position: relative;
 	width: 290px; /* e.g. */
@@ -402,7 +403,7 @@ blockquote {
 	border-radius: 50% / 10%;
 	background: black center no-repeat;}
 
-blockquote:before {
+.quote:before {
 	position: absolute;
 	top: 10%;
 	right: -5%;
@@ -502,3 +503,35 @@ display: block;
 webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 filter: grayscale(100%);
 }
+
+.opening_img {
+  display: none;
+}
+
+.deco {
+  display: none
+}
+
+
+.start_line {
+  display: none
+}
+
+#block1 {
+  display: none;
+
+}
+#birds2{
+  display: none;
+
+}
+
+#deco2 {
+  display: none;
+}
+
+#deco3 {
+  display: none;
+}
+
+.hob {display: none}

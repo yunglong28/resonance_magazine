@@ -344,7 +344,7 @@ a:hover {
 }
 
 .navbar img{
-  
+
 }
 
 @media (max-width: 1366px) {
@@ -500,3 +500,38 @@ figcaption {
   text-align: center;
 
 }
+
+#fig_article {
+  display: none;
+}
+
+.fig_article {
+  display: none;
+}
+
+.sub1 {
+  display: none;
+}
+
+
+#adv1{
+  display: none;
+}
+
+.adv2{
+  display: none;
+
+}
+.adv3 {
+  display: none;
+}
+
+.micro {
+  display: none;
+}
+
+#fig3 {
+  display: none;
+}
+
+.an {display: none}
