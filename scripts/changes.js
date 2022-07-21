@@ -32,6 +32,8 @@ function change(name) {
 
   else {
     $(".opening_img_illuminism").remove();
+    $(".cover_image").remove();
+    $(".didot_logo").remove();
   }
 
   
@@ -43,10 +45,6 @@ function change(name) {
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
-<<<<<<< HEAD
-
-=======
->>>>>>> e71d3e73f6d8a4d3a305b32143119177864f27af
   }
 
 
@@ -63,6 +61,7 @@ function change(name) {
     $("#pagestyle").attr('href','style/fine900.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
+    $()
   }
 
   else {
@@ -73,9 +72,6 @@ function change(name) {
 
 
   if (name ==='future'){
-
-
-
 
     $("#pagestyle").attr('href','style/future.css');
     $(".opening_img").remove();
@@ -115,6 +111,8 @@ function change(name) {
     $("#solar_bar").remove();
     $("#nav_hr").remove();
     $(".opening_img_future").remove();
+    $(".blackout").remove();
+    $(".blackout-sentence").remove();
   }
 
 };

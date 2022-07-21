@@ -211,3 +211,13 @@ footer h3 {
 a:link {
   text-decoration: none;
 }
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
+}
