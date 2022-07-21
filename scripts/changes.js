@@ -36,14 +36,17 @@ function change(name) {
 
   
 
-  if (name=='hobbyhorse'){
+  if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     $("#sep_nav").remove();
     $(".container_articles").attr('class', 'container-fluid container_articles');
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
+<<<<<<< HEAD
 
+=======
+>>>>>>> e71d3e73f6d8a4d3a305b32143119177864f27af
   }
 
 
@@ -51,7 +54,6 @@ function change(name) {
   else{
     $(".container_articles").attr('class', 'container container_articles');
     $("figcaption").remove();
-    $(".uccelli").remove();
   }
 
 
@@ -103,6 +105,7 @@ function change(name) {
             document.getElementById("blackout-sentence").style.display = "flex";
             console.log('starting timer');
 }
+
     myTimeout = setTimeout(blackout, 300000);
 
   }
