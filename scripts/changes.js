@@ -42,12 +42,7 @@ function change(name) {
     $(".container_articles").attr('class', 'container-fluid container_articles');
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
-    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
-<<<<<<< HEAD
-
-=======
->>>>>>> e71d3e73f6d8a4d3a305b32143119177864f27af
-  }
+    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type"); }
 
 
 
