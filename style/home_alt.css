@@ -722,11 +722,24 @@ border: none;
         background-color:white!important;
         color: black;
         font-size: 18px;
-      
+
 
  }
 
 .modal-title {
   font-size: 32px;
   text-transform: uppercase;
+}
+
+
+
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
 }
