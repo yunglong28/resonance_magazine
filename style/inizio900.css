@@ -3,12 +3,12 @@
 
 @font-face{
   font-family:Golddrew;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/chat_fonts/Golddrew.ttf");
+  src:url("../fonts/Golddrew.ttf");
 }
 
 @font-face{
   font-family:Franklin;
-  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/chat_fonts/BenjaminFranklin.ttf");
+  src:url("../fonts/BenjaminFranklin.ttf");
 }
 
 

@@ -44,7 +44,7 @@ function change(name) {
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
-    if($('.birds').length == 0){$(".quote").prepend("<img class='birds' src='imgs/birds3.png' width='250'>")};
+    if($('.uccelli').length == 0){$(".quote").prepend("<img class='uccelli' src='imgs/birds3.png' width='250'>")};
   }
 
 
@@ -52,7 +52,7 @@ function change(name) {
   else{
     $(".container_articles").attr('class', 'container container_articles');
     $("figcaption").remove();
-    $(".birds").remove();
+    $(".uccelli").remove();
   }
 
 
