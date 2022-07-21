@@ -24,10 +24,15 @@ function change(name) {
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
     $(".opening_img").remove();
+
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
 
+
+    /* per la home */
+    $(".marquee-section").remove();
+    $("<img src='imgs/cellohome.png'>").remove();
   }
 
   else {
@@ -44,8 +49,9 @@ function change(name) {
     $(".container_articles").attr('class', 'container-fluid container_articles');
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
-    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
+    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type"); 
   }
+
 
 
 
@@ -75,18 +81,44 @@ function change(name) {
 
     $("#pagestyle").attr('href','style/future.css');
     $(".opening_img").remove();
+
     if($("#nav_hr").length == 0){
       $("<hr id='nav_hr'>").insertAfter("nav");
     }
     if($("#sep_nav").length == 0){
       $("<br id='sep_nav'>").insertAfter("#nav_hr");
     }
-    /*inserire un if per issue*/
-    if($(".opening_img_future").length == 0){
-    $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra1.jpg'>").insertAfter("#col1 .title");
-    $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
-    $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");}
-    if($("#solar_bar").length == 0){$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#sep_nav")};
+    /*inserire un if per issue! Se inserisci nome dell'elemento
+    * punto lenght come qua sotto verifica se esiste e poi fa. così inserisce
+    * le tue immagini solo nel tuo (da ale)*/
+    if ($("#francesca").length) {
+     if($(".opening_img_future").length === 0){
+       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra1.jpg'>").insertAfter("#col1 .title");
+       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
+       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");}
+    }
+
+    if($("#alessandro").length) {
+      /* Immagini di apertura */
+      $("<img class='img-fluid article_images' src='imgs/article_1_1.png'>").remove();
+      $("<img class='img-fluid article_images' src='imgs/article_2_1.jpg'>").remove();
+      $("<img class='img-fluid article_images' src='imgs/article_3_1.png'>").remove();
+      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_1_1.png'>").insertAfter("#col1 .title");
+      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_2_1.png'>").insertAfter("#col2 .title");
+      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_3_1.png'>").insertAfter("#col3 .title");
+      $("#second_image_second_article").remove();
+      $("#third_image_second_article").remove();
+      $("#fourth_image_second_article").remove();
+      /* Immagini nell'articolo */
+      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_2.png'>").insertAfter(".article_2_2");
+      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_3.png'>").insertAfter(".article_2_3");
+      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_4.png'>").insertAfter(".article_2_4");
+    }
+
+
+
+    if($("#solar_bar").length == 0)
+    {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#sep_nav")};
     $("#cello").attr('src','imgs/dither_it_cello.png');
     $("#harp").attr('src','imgs/dither_it_harp.png');
     $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
@@ -115,7 +147,7 @@ function change(name) {
     $(".blackout-sentence").remove();
   }
 
-};
+}
 
 
 
@@ -151,51 +183,4 @@ function change(name, currentstyle) {
     $("img").remove();
 
   }
-
-};/*
-
-
-
-
- */
-
-
-
- /* DI ALE*/
-$(document).ready(function(){
-  $("#change").click(function(){
-  $("#pagestyle").attr('href','illuminism.css');
-  $('img').remove();
-  $('#solar_bar').remove();
-  });
-  });
-
-
-/* In -> Lowtech style*/
-$(document).ready(function(){
-  $("#changetoLow").click(function (position, text){
-    $("#pagestyle").attr('href','future.css');
-    /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
-  });
-});
-
-$(document).ready(function(){
-  $("#three").click(function(){
-  $(".home").remove();
-  });
-  });
-
-
-/*Funzione Lowtech to anotherstyle*/
-$(document).ready(function(){
-  $("#changeLow").click(function(){
-  $("#pagestyle").attr('href','illuminism.css');
-  $('#solar_bar').remove();
-  /*da scrivere come rimuovere tutte le immagini e mettere le altre*/
-  });
-  });
-/*Fine Ale*/
-
-
-
-
+}*/
