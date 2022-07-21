@@ -1,8 +1,7 @@
 function change(name) {
-  
-  
+ 
 
-  if (name == 'belle') {
+   if (name == 'belle') {
     $("#pagestyle").attr('href','style/inizio900.css');
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
@@ -44,12 +43,7 @@ function change(name) {
     $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
     $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
     $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type");
-<<<<<<< HEAD
-    if($('.uccelli').length == 0){$(".quote").prepend("<img class='uccelli' src='imgs/birds3.png' width='250'>")};
-=======
-    if($('.birds').length == 0){$(".quote").prepend("<img class='birds' src='imgs/birds3.png' width='250'>")
-    }
->>>>>>> a65c05f6ef6e1864400a50d69dbbcaf0ba06ecf3
+
   }
 
 
@@ -109,7 +103,7 @@ function change(name) {
             document.getElementById("blackout-sentence").style.display = "flex";
             console.log('starting timer');
 }
-    myTimeout = setTimeout(blackout, 300);/300000/
+    myTimeout = setTimeout(blackout, 300000);
 
   }
 
