@@ -535,3 +535,16 @@ figcaption {
 }
 
 .an {display: none}
+
+
+
+.icons {
+  width: 40px;
+  height: 40px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top:10px;
+
+}
