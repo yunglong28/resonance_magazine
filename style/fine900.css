@@ -3,11 +3,11 @@
 
 @font-face{
   font-family: "Metropolis-ExtraBoldItalic";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/tabloid_fonts/Metropolis-ExtraBoldItalic.otf");
+  src:url("../fonts/Metropolis-ExtraBoldItalic.otf");
 }
 @font-face{
   font-family:"futura";
-  src:url("C:/Users/Francesca/Desktop/Vitali/Progetto/Style/FONTS/tabloid_fonts/Futura Condensed Bold/Futura Condensed Bold.otf");
+  src:url("../fonts/Futura Condensed Bold.otf");
 }
 
 

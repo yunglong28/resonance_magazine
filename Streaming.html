@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <!--<link href="C:\Users\lunet\Documents\Sito_Vitali\css\css_homepage.css" rel="stylesheet" type="text/css">-->
+<!-- HTML UNICO DELLA MIA ISSUE-->
 
 <head xmlns="http://www.w3.org/1999/html">
     <!-- CSS + Bootstrap Stylesheet-->
-    <link href="style/future.css" rel="stylesheet" type="text/css" id="pagestyle">
+    <link href="style/issue.css" rel="stylesheet" type="text/css" id="pagestyle">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style/bootstrap-grid.css" rel="stylesheet">
     <link href="style/bootstrap.css" rel="stylesheet">
@@ -15,11 +16,13 @@
 
     <!--JavaScript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script id="changestyle" src="scripts/changes.js"></script>
+
+
+
 
     <title id="alessandro">Issue 1</title>
 </head>
-
-<script src="scripts/changes.js"></script>
 
 <body>
 
@@ -45,44 +48,19 @@
             </ul>
         </li>
 
-        <li onclick="change('illuminist')"><img src="imgs/dither_it_cello.png" class="icons" id="cello"></li>
-        <li onclick="change('romantic')"><img src="imgs/dither_it_harp.png" class="icons" id="harp"></li>
-        <li onclick="change('belle')"><img src="imgs/dither_it_gramophone.png" class="icons" id="gramophone"></li>
-        <li onclick="change('disco')"><img src="imgs/dither_it_disco.png" class="icons" id="disco"></li>
-        <li onclick="change('tabloid')"><img src="imgs/dither_it_boombox.png" class="icons" id="boombox"></li>
-        <li onclick="change('future')"><img src="imgs/dither_it_walkman.png" class="icons" id="walkman"></li>
+        <li onclick="change('illuminist')"><img src="imgs/cello.png" class="icons"></li>
+        <li onclick="change('romantic')"><img src="imgs/harp.png" class="icons"></li>
+        <li onclick="change('belle')"><img src="imgs/gramophone.png" class="icons"></li>
+        <li onclick="change('disco')"><img src="imgs/disco.png" class="icons"></li>
+        <li onclick="change('tabloid')"><img src="imgs/boombox.png" class="icons"></li>
+        <li onclick="change('future')"><img src="imgs/walkman.png" class="icons"></li>
 
 
     </ul>
-
 </nav>
-<hr id="nav_hr">
-
-<!-- Sidebar-->
+<hr>
 
 <br id="sep_nav">
-
-
-    <!-- Solar Bar-->
-    <div id="solar_bar">
-    <p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src="imgs/icons8-sun-30.png">
-        <br>
-    </p>
-
-    <p>The page size is 86kb. You can print it ecologically <a href="https://www.greenerprinter.com/00"><img src="imgs/icons8-print-30.png"></a>
-        <p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p>
-        <p>Calculate your web page footprint <a href="https://www.websitecarbon.com/">here</a>.</p>
-
-
-        <p>Server Stats <img src="imgs/icons8-solar-panels-32.png"> <br>
-            Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes
-        </p>
-
-    <hr class="half-hr"/>
-    </div>
-
-<br>
-
 
 <!-- Articles Boxes-->
 <div class="container container_articles">
@@ -93,30 +71,32 @@
 <div class="col article_col" id="col1">
 
 
+
     <div class="title_and_subtitle">
-<div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">How Musicians Are Fighting for Streaming Pay During the Pandemic
-</div>
-        <hr class="half-hr">
-
+        <div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">
+            How Musicians Are Fighting <div class="title_small">for Streaming Pay</div>  During the Pandemic</div>
         <figure>
-            <img class="img-fluid opening_img" src="imgs/dither_it_article_1_1.png" id="dither1">
+            <img class="img-fluid opening_img" src="imgs/article_1_1.png">
         </figure>
+    <hr class="half-hr">
 
-<div class="subtitle">With concerts on hold, it’s abundantly clear that most musicians can’t live off streaming income alone. How could the system be fixed?
+        <div class="subtitle">With concerts on hold,
+        it’s abundantly clear that most musicians can’t live off streaming income alone. How could the system be fixed?
+        </div>
+
     </div>
-    </div>
-    <hr class="start_line">
+    <hr class="half-hr">
+
     <div class="author_and_date">
-
-<p class="byline">
-    <div class="writer">By <span class="person" about="Andy Cush" data-label="Andy Cush"> Andy Cush </span>
-    </div></p>
+    <p class="byline">
+    <div class="author">By <span class="writer" about="Andy Cush" data-label="Andy Cush">Andy Cush </span></div>
     <div class="publicationDate">June 29, 2020</div>
+    <hr class="half-hr">
     </div>
-    <hr>
 
     <div class="ArtBody">
-        <p><span class="first_letter">I</span>ndie rockers <a href="https://www.stolenjars.com/"><span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span></a> are not exactly <span class="band" about="Coldplay" data-label="Stolen Jars">Coldplay</span> or <span class="band" about="Coldplay" data-label="Stolen Jars">U2</span>, but they’re not a garage band either. They tour regularly and have been covered by <span class="newspaper" about="NPR" data-label="NPR">NPR</span> and <i><span class="newspaper" about="New York Times" data-label="New York Times">The New York Times</span></i>. They have a fanbase. They’ve placed one of their off-kilter songs in an iPad commercial. They currently have more than 22,000 monthly listeners on <span class="streaming-service" about="Spotify">Spotify</span>. Bandleader <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Cody Fitzgerald</span> estimates he makes about $1,500 to $2,000 every year from streaming services, which is good for about a month’s rent on his <span class="place" about="New York">New York</span> apartment.</p>
+
+<p><span class="first_letter">I</span>ndie rockers <a href="https://www.stolenjars.com/"><span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span></a>  are not exactly <span class="band" about="Coldplay" data-label="Stolen Jars">Coldplay</span> or <span class="band" about="Coldplay" data-label="Stolen Jars">U2</span>, but they’re not a garage band either. They tour regularly and have been covered by <span class="newspaper" about="NPR" data-label="NPR">NPR</span> and <i><span class="newspaper" about="New York Times" data-label="New York Times">The New York Times</span></i>. They have a fanbase. They’ve placed one of their off-kilter songs in an iPad commercial. They currently have more than 22,000 monthly listeners on <span class="streaming-service" about="Spotify">Spotify</span>. Bandleader <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Cody Fitzgerald</span> estimates he makes about $1,500 to $2,000 every year from streaming services, which is good for about a month’s rent on his <span class="place" about="New York">New York</span> apartment.</p>
 <p>That annual streaming income, <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Fitzgerald</span> is quick to note, is quite high for bands of <span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span>’ stature. “Most people are on labels, which means they get, at most, 50 percent of that,” he says. <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Fitzgerald</span> self-releases <span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span>’ albums. He is also the band’s primary songwriter and performs many of the instruments on the recordings himself, all of which entitles him to an unusually large share of the total payments from services like <span class="streaming-service" about="Spotify">Spotify</span> and <span class= "mention streaming-service" about="Apple Music" data-label="Apple Music">Apple Music</span>.</p>
 
 
@@ -131,8 +111,10 @@ Musicians with different label and publishing situations—even those whose musi
 <p>“I don’t have any friends who don’t have some kind of financial worries right now,” says <span class="person" about="Sadie Dupuis">Sadie Dupuis</span>, <span class="organization" about="Union of Musicians and Allied Workers (UMAW)">UMAW</span> founding member and guitarist-songwriter of <span class="band" about="Speedy Ortiz">Speedy Ortiz</span>. “For most musicians I know who are touring full-time, the work they have outside of that is all based in the service industry, and they can’t get back into that either.” According to <span class="person" about="Mark Taylor">Mark Taylor</span>, communications director of the <span class="organization" about="Ivors Academy">Ivors Academy</span>, the situation represents nothing less than an existential crisis over the future of music itself. “We really just want to keep music alive,” he says. “It’s good for us, it’s good for our souls, it’s good for the economy, it’s good for culture.”</p>
 
 <p>In the <span class="place" about="UK">UK</span>, the <span class="organization" about="Keep Music Alive">Keep Music Alive alliance</span> campaign is pushing for a government review of the streaming industry, which it hopes will result in additional regulations over the way payments are doled out. The <span class="organization" about="Union of Musicians and Allied Workers (UMAW)">UMAW</span>, as a new organization aimed at a host of issues including streaming, has not yet formalized a set of demands for changes. Both groups acknowledge that the process of fixing streaming will be as complicated as the recognition of its brokenness is simple.</p>
-<hr class="half-hr">
-        <h3 class="paragraph_header">How do streaming payments work?</h3>
+
+<h3 class="paragraph_header">How do streaming payments work?</h3>
+        <hr class="half-hr">
+
 <p>Artists receive, on average, a small fraction of a cent for each time one of their songs is streamed on a major platform. A seemingly obvious fix would be for the platforms to simply increase this number. But while these tiny per-stream payments are a useful concept for identifying the problem, they’re not particularly useful for solving it, because they don’t reflect the mechanism by which the platforms actually distribute money.</p>
 
 
@@ -142,7 +124,9 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p><span class="organization" about="Soundcharts">Soundcharts</span> offers another way of looking at it. Each time <span class="streaming-service" about="Spotify">Spotify</span> introduces a new feature aimed at keeping people listening for longer, like autoplaying similar artists after you finish an album, it sends the average per-stream figure down. That’s not because <span class="streaming-service" about="Spotify">Spotify</span> is suddenly skimping on payments, but because people are streaming more songs—and when people stream more songs, a single stream is equivalent to a smaller pie slice. That’s fine for established artists whose music is regularly recommended by these listener-retention features, because the dilution in value of a single stream is offset by an increase in streams. But for artists who aren’t being recommended, it means their streams are worth less.</p>
 
-        <h3 class="paragraph_header">How do streaming payments work?</h3>
+<h3 class="paragraph_header">How could platforms make payments bigger?</h3>
+        <hr class="half-hr">
+
 <p>Though making streaming services work better for musicians is not as straightforward as demanding a higher payment per stream, there are several ways the system could theoretically be changed to get more money into artists’ pockets. Most obviously, companies like <span class="streaming-service" about="Spotify">Spotify</span> could increase the 60 to 70 percent share of their revenue that they pay out to rightsholders.</p>
 
 <p>But if recent history is any indication, that number is likely to go down before it goes up. <span class="streaming-service" about="Spotify">Spotify</span> renegotiated its deals with labels in 2017; before that, the payout number was <a href="https://www.ft.com/content/e913f2d8-74b9-11e4-b30b-00144feabdc0">more like 80 percent</a>. At the time, the labels agreed to have their payments cut—thereby reducing musicians’ payments as well—because they believed they needed <span class="streaming-service" about="Spotify">Spotify</span> in order to ensure their own survival. With streaming accounting for an <a href="https://www.wsj.com/articles/music-revenue-surges-on-streaming-subscription-growth-11567708974">ever-increasing majority share of the recording industry’s revenue</a> each year, the labels probably won’t be changing their minds about that anytime soon.</p>
@@ -157,12 +141,14 @@ Musicians with different label and publishing situations—even those whose musi
 <p>The current system, known as pro rata, <a href="https://qz.com/1660465/the-way-spotify-and-apple-music-pays-artists-isnt-fair/">gives more financial weight</a> to the preferences of users who stream more songs, whereas user-centric payments would treat the preferences of all users equally. <span class="person" about="Mark Taylor">Taylor</span> says the user-centric model is a better reflection of how listeners interact with the artists they love outside of the streaming realm: “We choose to go to gigs, to buy merchandise, and part of that exchange is, ‘I want my money to go to this artist, so they can make a living, and do more of what they do.’ That is a very distinct relationship that currently doesn’t work, really, in streaming.”</p>
 
 <p>A user-centric model is appealing in the abstract, and there is reason to believe it could financially benefit some smaller artists in the long run. According to a <a href="http://www.muusikkojenliitto.fi/usercentric/">2017</a> study by the <span class="organization" about="Finnish Music Publishers Association">Finnish Music Publishers Association</span>, 10 percent of all streaming revenue flows to the top .4 percent of artists under the pro rata system. The study found that a user-centric system would cut the revenue to that top tier nearly in half and increase the overall flow of money to less popular artists. However, some individual small artists ended up receiving less money under a user-centric system in the study’s simulation. The French streaming platform <span class="streaming-service" about="Deezer">Deezer</span> <a href="https://pitchfork.com/thepitch/is-there-a-fairer-way-for-streaming-services-to-pay-artists/">announced</a> a switch to user-centric payments last year, but for now there is little real-world data showing its effects one way or the other.</p>
-        <h3 class="paragraph_header">What about labels?</h3>
+<h3 class="paragraph_header">What about labels?</h3>
+        <hr class="half-hr">
 <p>Streaming platforms do not make payments directly to musicians, but rather to labels, distributors, publishers, and copyright collection societies, all of whom take their own cuts before passing the money along. The share of revenue that ends up in a performing artist’s pocket also depends on factors that have more to do with these other parties than the streaming services themselves: chiefly, whether the artists are performing their own compositions or someone else’s, and the size of the splits they’ve negotiated with their label over revenue from their recordings. These factors may help explain why a songwriter with no label like <span class="band" about="Stolen Jars">Stolen Jars</span>’ <span class="person" about="Cody Fitzgerald">Cody Fitzgerald</span> makes more money from streaming than a signed artist who mostly performs works by other composers like <span class="band" about="Tasmin Little">Tasmin Little</span>, despite the greater popularity of Little’s recordings.</p>
 <p>The label’s cut of an artist’s streaming revenue varies from artist to artist and label to label, and the contracts that govern it aren’t generally made public. But several <a href="https://www.nytimes.com/2018/09/06/business/media/spotify-music-industry-record-labels.html">experts</a> <a href="https://medium.com/soundeon/what-is-the-typical-revenue-split-between-labels-and-artists-for-streaming-royalties-8812fbafed23">estimate</a> that labels get anywhere from 50 to 85 percent. Fifty-fifty splits are common to indie labels; majors generally take a larger share.</p>
 <p>The <span class="organization" about="Keep Music Alive">Keep Music Alive</span> campaign broadly presents itself as a critique of the streaming industry, but its specific platform focuses equally on the role of labels. According to <span class="person" about="Mark Taylor">Taylor</span>, the 85 percent a major label might take from an artist’s revenue is no longer justified in the streaming era. “A lot of that is a hangup from when they had larger overheads, from when they had to store and ship CDs,” he says. “There was a cost to all of that, which is now largely being reduced. We’re basing this new system on outdated models.”</p>
 
-        <h3 class="paragraph_header">What about labels?</h3>
+<h3 class="paragraph_header">What's next?</h3>
+        <hr class="half-hr">
 <p>For musicians facing an undeniably appealing and increasingly dominant technology that threatens to usurp their livelihood, resistance can seem futile. It would be foolish to pretend that streaming isn’t an amazing service from a listener’s perspective, or that it will go away just because it doesn’t seem fair. Talk to enough musicians and you’ll find plenty who are vocal critics of streaming, but still host their albums on streaming services and are subscribers themselves.</p>
 <p>“It would be great to strike a new balance, because these streaming services are really helpful in terms of music discovery—I buy more records than I used to, because I can get psyched up on something new without having to go to the listening station at the Virgin Megastore,” says <span class="person" about="Sadie Dupuis">Dupuis</span>. “But the discrepancy between what mega-corporations are pulling in off artists’ music and what we’re pulling in is pretty gross.”</p>
 <p>An individual musician who’s inclined to protest that discrepancy has limited options. They could pull their catalog from the platforms, but that seems doomed to fail as anything other than an act of symbolism.“Unless there’s a big collective action to do that, that will not do anything,” <span class="person" about="Cody Fitzgerald">Fitzgerald</span> says. “If you do it by yourself, it will just make it so you can’t grow your fanbase, so you can’t be a band.”</p>
@@ -181,31 +167,36 @@ Musicians with different label and publishing situations—even those whose musi
 
 
 <!--ARTICLE 2-->
-<div class="col article_col" id="col2" alt="primoarticolo">
+<div class="col article_col" id="col2" alt="secondoarticolo">
 
     <div class="title_and_subtitle">
-<div class="title" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">2010s: The End of Anarchy
-</div>
-        <hr class="half-hr">
-        <figure>
-            <img class="img-fluid opening_img" src="imgs/dither_it_article_2_1.png" id="dither2">
+        <div class="title" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">
+            2010s: The End <div class="title_small">of</div> Anarchy</div>
+        <figure >
+            <img class="img-fluid opening_img" src="imgs/article_2_1.jpg">
         </figure>
-<div class="subtitle">Streaming platforms, the Culture Industry  &amp; the commodification of accessibility</div>
+    <hr class="half-hr">
+    <div class="subtitle">Streaming platforms, the Culture Industry &amp; the commodification of accessibility</div>
     </div>
-
-    <div class="author_and_date">
-        <hr class="start_line">
-<p class="byline"><div class="writer">By <span class="person" about="Baldr Eldursson"> Baldr Eldursson </span>
-        </div></p>
+    <hr class="half-hr">
 
 
-<div class="publicationDate">November 12, 2019 </div>
-    </div>
-    <hr>
 
+<div class="author_and_date">
+        <p class="byline">
+        <div class="author">By <span class="writer" about="Baldr Eldursson"> Baldr Eldursson </span>
+        </div>
+    </p>
+    <div class="publicationDate">November 12, 2019</div>
 
-    <h3 class="paragraph_header">PROLOGUE: A People&#8217;s History of Streaming Before&nbsp;Streaming</h3>
+</div>
+
+<hr class="half-hr">
+    <br>
     <div class="ArtBody">
+      <h3 class="paragraph_header">PROLOGUE: A People&#8217;s History of Streaming Before&nbsp;Streaming</h3>
+        <hr class="half-hr">
+
 <p><span class="first_letter">C</span>h&mdash;. Kh&mdash;.&nbsp;Sh&mdash;.</p>
 <p>Timeless: the sound of scanning airwaves, tuning the car radio on the highway, parsing through millisecond snippets of voice. Ch&mdash;. A sound in the collective memory, preserved beyond its analog lifespan. Kh&mdash;. Like the floppy disk as Save icon. Sh&mdash;. Like a white-noise TV screen, so you have to adjust the antenna. Ch&mdash;. Kh&mdash;. Sh&mdash;. Vestigial structures of the digital&nbsp;age.</p>
 <p>&#8220;I&#8217;m <span class="person" about="Ryan Seacrest"> Ryan Seacrest</span> &amp; you&#8217;re tuned into KRCK, the #1 Hit Music&nbsp;Station.&#8221;</p>
@@ -242,9 +233,10 @@ Musicians with different label and publishing situations—even those whose musi
 <p>Thing is, though: they&#8217;re a continuation &mdash; a substantiation &mdash; of a comprehensive process that&#8217;s been drastically changing the panorama of the internet &amp; the rules that govern it: who can use it, when they can use it, how much they can use it, for what they can use it &mdash; &amp;, of course, who profits from&nbsp;it.</p>
 
 <hr class="half-width">
-        <h3 class="paragraph_header">I. PAST: The Corporate Colonization of&nbsp;Cyberspace</h3>
+<h3 class="paragraph_header">I. PAST: The Corporate Colonization of&nbsp;Cyberspace</h3>
+        <hr class="half-hr">
 <figure class="article_2_2">
-<img class="img-fluid article_images" src="imgs/dither_it_article_2_2.png" alt="" id="dither3">
+<img class="img-fluid article_images" id="second_image_second_article" src="imgs/article_2_2.jpg">
 </figure>
 
 
@@ -284,12 +276,15 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>But aside from representing a symptom of the current panorama of the internet &amp; entailing significant repercussions for the music industry, <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s current hegemony inaugurates a new era for &#8220;consumers&#8221; complete with observable changes to our contemporary interactions with music, which are sure to carve their own enduring marks not just on our &#8220;consumption&#8221; habits, but on how we view, invent, &amp; construct ourselves in relation to music; the way we arrange, reposition, organize, share, catalogue, frame, tag, compartmentalize, &amp; jostle with it; the spaces it occupies &amp; doesn&#8217;t occupy in our lives; the <i>uses</i> we ascribe to it, the conditions that make it <i>useless</i>, &amp; the times at which it&#8217;s both &mdash; or&nbsp;neither.</p>
 
-<hr />
-        <h3 class="paragraph_header">II. PRESENT: The Use &amp; Abuse of Music in the Age of&nbsp;<span class="streaming-service" about="Spotify">Spotify</span>
-        </h3>
+
+<h3 class="paragraph_header">II. PRESENT: The Use &amp; Abuse of Music in the Age of&nbsp;<span class="streaming-service" about="Spotify">Spotify</span>
+</h3>
+        <hr class="half-hr">
+
 <figure class="article_2_3">
-    <img class="img-fluid article_images" src="imgs/dither_it_article_2_3.png" alt="" id="dither4">
+    <img class="img-fluid article_images" src="imgs/article_2_3.jpg" id="third_image_second_article">
 </figure>
+
 <p>Writing at the time of Nazi ascendancy in <span class="place" about="Germany">Germany</span>, <span class="person" about="Walter Benjamin">Walter Benjamin</span> identified that the &#8220;proletarianization&#8221; of humankind would pose a unique challenge to fascist ideologues who sought mass public appeal without any intent to change the structures oppressing that same public. Such a feat was only accomplished through appeals to ideology: &#8220;Fascism sees its salvation,&#8221; <span class="person" about="Walter Benjamin">Benjamin</span> writes, &#8220;in giving [the newly created proletarian] masses […] a chance to express themselves,&#8221; offering changes to the <i>optics</i> of the proletariat&#8217;s material conditions while in reality obscuring the ossification of the property structure. &#8220;The masses have a right to change property relations,&#8221; <span class="person" about="Walter Benjamin">Benjamin</span> states. &#8220;Fascism seeks to give them an expression while preserving&nbsp;property.&#8221;</p>
 
 <p>Building on this tradition, <span class="streaming-service" about="Spotify">Spotify</span> represents a reactionary cyber-fascism that follows from the micro-communisms of P2P networks that it contributes to stamping out. Whereas P2P networks transform capitalist property relations by disaggregating the purchaser-owner equality &amp; redistributing the fruits of work through cyberspace (though the &#8220;work&#8221; in question is not the production of content, but the searching, archiving, uploading, etc. thereof), streaming services employ &#8220;licensing&#8221; to stage a pantomime of the anarchy that actually enables the rearrangement of property&nbsp;relations.</p>
@@ -299,11 +294,13 @@ Musicians with different label and publishing situations—even those whose musi
 <p>One of the frightening outcomes of <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s hegemony is that many have internalized their mimicry. Many interact with streaming services as though they&#8217;re a definitive repository of contemporary music. Availability is equated with relevance: that which isn&#8217;t on <span class="streaming-service" about="Spotify">Spotify</span>, conversely, is <i>irrelevant</i>. <span class="streaming-service" about="Spotify">Spotify</span> is a degree-granting institution that certifies that your music <i>exists</i>.</p>
 <p>By co-opting the destabilized property relations of P2P networks &amp; subtly requiring non-corporate actors to register in their scheme under the threat of excommunication, <span class="streaming-service" about="Spotify">Spotify</span> centralizes music consumption under one roof &amp; advances the expansion of capitalism into&nbsp;cyberspace.</p>
         <p><h3 class="paragraph_header">CASE I: The Algorithm</h3></p>
+        <hr class="half-hr">
 <p>One of the important fruits of centralization in this case is the ability to generate abundant data via monitoring every aspect of users&#8217; habits. Of course, this data is fed back to the industry, but it also contributes to &#8220;improving&#8221; the streaming service&nbsp;itself.</p>
 <p>Here&#8217;s just one way in which our interactions with music are changing &mdash; or, rather, not. In theory, the internet offers a medium for exploration &amp; self-creation outside the mediation of radio stations, music television, etc. But cyberspace operates under its own architecture, which is by no means arbitrary: the algorithms that carve out the pathways of cyberspace don&#8217;t exist in a vacuum; they are drawn up by humans &amp; are frequently altered in favor of certain types of content &amp; online&nbsp;interactions.</p>
 <p>In the age of <span class="streaming-service" about="Spotify">Spotify</span>, this makes algorithms a valuable commodity. On <span class="streaming-service" about="Spotify">Spotify</span>, we&#8217;re subjected to the tyranny of the algorithm, which was co-opted &amp; has since fully invaded &amp; rearranged the exploratory space of the internet. Algorithms underpin everything from chart generation to search result delivery: pertinent results are overwhelmed by popular ones; copycats flock to capitalize on precious search terms; single tracks top artist pages, even of those loyal to the album&nbsp;format.</p>
 <p>One algorithm to fit all &mdash; even when it doesn&#8217;t. Today, the algorithm plays an unprecedented role in demarcating the mainstream. But where these boundaries were once meant to <i>exclude</i> everything outside it, today the outside is being <i>assimilated</i> into the corporate template for the purposes of&nbsp;commodification.</p>
         <h3 class="paragraph_header">CASE II: The Playlist (Use-Value)</h3>
+        <hr class="half-hr">
 <p>On <span class="streaming-service" about="Spotify">Spotify</span>, this commodification is expressed in the form of playlists. Browse the various playlists on offer to get a quick overview of the strategies &amp; aesthetics of capitalism today. <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s selection of playlists frankly demonstrates a few of the company&#8217;s most successful trademark features, just one of which is the abundance of use-oriented&nbsp;playlists.</p>
 
 <p>Categories of &#8220;uses&#8221; often seek to change, maintain, or match the consumption context &amp; the state of consumers, whether it corresponds to an <i>emotional</i> state (Coping With Loss, The PMS Playlist); a <i>cognitive</i> state (Confidence Boost, Creativity Boost, Focus Now, Music for Concentration, Perfect Concentration); an <i>activity</i> (Reading Soundtrack, Reading Chill Out, Read &amp; Unwind, Reading Adventure, Summer Reading); a <i>time</i> (Wake Up Happy, Wake Up Gently, Autumn Acoustic, Winter Sounds). Sometimes they are filtered by genre to match individual preferences (House Focus, Classical Focus, Electronic Focus, Soft Focus, Binaural Beats Focus); sometimes by demographic (Baby Sleep, Sleep Baby Sleep, Harp Lullabies); &amp; sometimes they just fetishize (Dreamcatcher, Vibra&nbsp;Tropical).</p>
@@ -312,8 +309,8 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>Notice that the would-be genre tag of &#8220;study music&#8221; &mdash; arguably the most popular &#8220;genre&#8221; emerging out of this process &mdash; doesn&#8217;t refer to the music&#8217;s aesthetic qualities but rather to its <i>function</i>. <span class="person" about="Brian Eno">Brian Eno</span> anticipates this early on when he describes ambient music explicitly as music to play in the background. In fact, the mostly-recent entry of <span class="genre" about="ambient music">ambient music</span> into the mainstream only further points to the ascendency of <i>use</i> in the industry: among these changes in consumption habits, ambient music entered the mainstream <i>qua</i> study music, <i>qua</i> sleep music, <i>qua</i> background&nbsp;music.</p>
 
-<p><h3 class="paragraph_header"> CASE III: The Playlist (Fake Artists)</h3>
-        </p>
+<h3 class="paragraph_header"> CASE III: The Playlist (Fake Artists)</h3>
+        <hr class="half-hr">
 <p>One might argue that a certain amount of this is inoffensive. However, in addition to changing how we ascribe value to music, these playlists are undeniably affecting our interactions with &mdash; &amp; the
  <i>uses</i> of &mdash; musicians. Consider that many tracks on sponsored playlists are ghostwritten &mdash; <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s &#8220;fake artists&#8221; of infamy. But whether or not this is upsetting to you depends on your own vision of what our interactions with music should be. As <a href="shttps://www.digitalmusicnews.com/2017/07/10/spotify-fake-artists-real-artists-paid/">one cynical commentator</a> writes in support of the&nbsp;strategy,</p>
 <blockquote><p>&#8216;Fake artists&#8217; are actually real artists […] [with] fake names that <span class="streaming-service" about="Spotify">Spotify</span> listeners aren&#8217;t reading anyway. […] Show me the <span class="streaming-service" about="Spotify">Spotify</span> listener that c<span class="website" about="Ares">Ares</span> that their zen-like piano music wasn&#8217;t actually performed by <span class="person" about="Julius Aston">Julius Aston</span>. They don&#8217;t. […] Sorry you hate the fact that this &#8216;cheats&#8217; some struggling jazz artist who can&#8217;t get onto a&nbsp;playlist.</p></blockquote>
@@ -325,7 +322,7 @@ Musicians with different label and publishing situations—even those whose musi
 <h3 class="paragraph_header">III. FUTURE: Discover Weekly, Ego Formation &amp;&nbsp;You</h3>
 
 <figure class="article_2_4">
-<img class="img-fluid article_images" src="imgs/dither_it_article_2_4.png" alt="" id="dither5">
+<img class="img-fluid article_images" src="imgs/article_2_4.jpg" id="fourth_image_second_article">
 </figure>
 
 <p>Whether or not we see these as positive or negative developments in the state of the industry, it&#8217;s not something that we can simply ignore. Nor does it show any signs of changing. Globally, users spend about half of their time on <span class="streaming-service" about="Spotify">Spotify</span> consuming playlists, &amp; the centrality of features such as Discover Weekly continue to discourage active exploration &amp; secure the hegemony of the&nbsp;algorithm.</p>
@@ -350,22 +347,25 @@ Musicians with different label and publishing situations—even those whose musi
     <div class="col article_col" id="col3">
 
         <div class="title_and_subtitle">
-<div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">With NFTs, Musicians See a Way to Finally Take Control</div>
-            <hr class="half-hr">
+<div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">
+    With NFTs, Musicians See <div class="title_small">a Way to</div> Finally Take Control</div>
             <figure>
-                <img class="img-fluid opening_img" src="imgs/dither_it_article_3_1.png" id="dither6">
+                <img class="img-fluid opening_img" src="imgs/article_3_1.png" id="dither6">
             </figure>
-<div class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring their potential as an alternative to labels and streaming services.
-</div>
-        </div>
-<div class="author_and_date">
-        <hr class="start_line">
-<p class="byline"><div class="writer">By <span class="person" about="Max Mertens"> Max Mertens </span></div>
+            <hr class="half-hr">
 
-<div class="publicationDate">March, 12 2021</div>
+<div class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring
+    their potential as an alternative to labels and streaming services.</div>
+<hr class="half-hr">
+
+            <div class="author_and_date">
+
+<p class="byline">
+                <div class="author">By <span class="writer" about="Max Mertens"> Max Mertens </span></div>
 </div>
-    <hr>
-<div class="ArtBody">
+<div class="publicationDate">March, 12 2021</div>
+    <hr class="half-hr">
+            <div class="ArtBody">
 <p><span class="first_letter">I</span>f you were on the internet at all in the past month you've no doubt heard of NFTs, or non-fungible tokens. The cryptocurrency-based collectible market has exploded recently, with digital artworks in the form of JPEGs and GIFs <a href="https://www.vice.com/en/article/jgqz73/beeple-nft-sells-for-dollar69-million-in-christies-auction">going for tens of millions of dollars</a> and musicians selling publishing rights on the blockchain. NFTs are hardly a new phenomenon, but given <a href="https://www.vice.com/en/article/pkd83y/people-are-spending-millions-on-jpegs-tweets-and-other-crypto-collectibles">the immense amount of money</a> they’ve attracted in recent weeks, they’ve become a lightning rod for debate over art and capitalism.</p>
 
 
@@ -402,33 +402,26 @@ Musicians with different label and publishing situations—even those whose musi
 <p>“People are just going to be left in the dust if they refuse to come to grips with this in terms of it being a very important, dynamic shifting development,” said Crossan. “If you're not careful right now your kids are going to be exhaustedly explaining non-fungible cryptographic tokens to you.”</p>
 
 <p>According to <span class="person" about="Holly Herndon">Herndon</span>, we should be encouraging experimentation with things that can move art to a more fair playing field. “I hope we can move past the platform paradigm that’s ruling all of our online lives right now, and move to something that’s more humane, more equitable, and creates communities in a healthier way and a more sustainable way,” she said.</p>
-</div>
+    </div>
 </div>
 <hr class="half-width">
 </div>
 </div>
+</div>
 </body>
-<hr>
-<footer><br>
-    <div class="container footer_baroque">
-        <div class="row">
-            <div class="col-6">
+
+<footer>
+    <div class="footer_baroque">
 
                 <h3>The Project</h3>
-                <span class="footer_baroque">
-                    This project is part of the exam of Information Modeling and Web Technology for the year 2021/2022 by Professor Fabio Vitali.
+                <span class>
+                    This project is part of the exam of Information Modeling and Web Technology for the year 2020/2021 by Professor Fabio Vitali.
                 </span>
-            </div>
-        <div class="col-6">
+
+
             <h3> Rights </h3>
-            <span class="footer_baroque">
+            <span class>
             © 2022 Copyright: Alessandro Y. Longo, Francesca Borriello, Lorenza Pierrucci
                 </span>
-
-        </div>
     </div>
-    </div>
-
 </footer>
-
-

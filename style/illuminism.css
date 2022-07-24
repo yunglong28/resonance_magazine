@@ -57,17 +57,6 @@
     cursor: pointer;
 }
 
-/* The button used to open the sidebar */
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: rgb(183,64,59);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    right:0;
-}
-
 .openbtn:hover {
     background-color: #444;
 }
@@ -467,7 +456,6 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .blackout {
@@ -489,4 +477,99 @@ a:hover{
     font-size: 100px;
     text-align: center;
     display: none;
+}
+
+/* per la homepage */
+#magazine{
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    height: 700px;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black !important;
+    font-size: 25px;
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+    padding-right: 40%;
+    text-align: justify;
+    background-size: cover;
+    margin: 0;
+    margin-top: -57px;
+
+}
+#magazine2{
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    height: 700px;
+    color: black !important;
+    font-size: 25px;z-index: 100;
+    position: relative;
+    padding: 5vh;
+    padding-top: 10%;
+    padding-left: 40%;
+    text-align: justify;
+    background-size: cover;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 500px 700px ;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black;
+
+    height: 600px;
+}
+
+.col_us {
+
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -104px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+
+.col_img_yet {
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 110px;
+    margin-left: 90px;
+    z-index: 0;
+}
+
+
+.col_text_yet {
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -470px;
+    margin-left: 453px;
+    margin-right: -525px;
+}
+
+
+.projectsection {
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    height: 700px;
+}
+
+.colspotify{
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+
+    text-align: justify;
+    margin-top: 80px;
+    margin-left: 70px;
 }
