@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'bodoni';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff') format('woff');
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'nimbus';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff') format('woff');
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
