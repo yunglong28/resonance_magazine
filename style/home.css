@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'bodoni';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff') format('woff');
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'nimbus';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff') format('woff');
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -96,99 +96,13 @@
 
 /*Fine navbar*/
 
-#main_subt{
-  font-size: 20px;
-  text-align: left;
-  line-height: 1em;
-}
 
-
-.title{
-  text-align: center;
-  font-family:'Zen Antique', serif;
-  color: white;
-}
 
 body{
   background-color: white;
   overflow-x: hidden;
 }
 
-.parallax{
-  background-image: url("https://freight.cargo.site/w/2200/q/94/i/d4b8367a125f0c7fa60a1cb62de74884f1c5558817979ad4553c5446a400c1ae/resonance-2.2.png");
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 25px;
-}
-
-.parallax2{
-  background-image: url("https://freight.cargo.site/t/original/i/e6675457d15c345d093f43370d1075fdb4787b00228b7eda6ce7d23ca5231068/resonance-2.3.png ");
-  min-height: 200px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 25px;
-}
-
-
-
-.card{
-  margin-left: 70px;
-}
-
-#hr{
-  border-top: 3px solid whitesmoke;
-  width: 50%;
-}
-
-.row{
-  column-gap: 9px;
-}
-
-.col{
-  margin-top: 40px;
-  text-align: center;
-  border: 3px solid whitesmoke;
-  border-radius: unset;
-  margin: 0.5em;
-}
-
-#one{
- margin-left: 10px;
-}
-
-#three{
-   margin-right: 10px;
-}
-
-.img_issue{
-  width:200px;
-  height: auto;
-  border-radius: 25px;
-}
-
-
-.issue_title {
-  font-family:'Zen Antique', serif;
-  color: white;
-
-
-}
-
-.issue_txt {
-  font-family:'Zen Antique', serif;
-  color: white;
-
-
-}
 
 #magazine{
   background-color: #fc4434;
@@ -208,30 +122,7 @@ height: 600px;
     margin-top: -57px;
 
 }
-#magazine2{
-background-color:#0c2414;
-height: 700px;
 
-  color:#e1e2f1;
-    font-family: 'bodoni';
-    font-size: 25px;
-    text-align: right;
-    z-index: 100;
-    position: relative;
-    padding: 5vh;
-padding-top: 10%;
-    padding-left: 40%;
-    text-align: justify;
-    background-size: cover;
-
-    margin: 0;
-
-}
-
-.projectsection {
-    background-color: #e6d8a8;
-height: 700px;
-}
 .text{
   color:black;
     font-family: 'bodoni';
@@ -392,16 +283,6 @@ margin-left: 70px;
 
 }
 
-.carousel{
-  margin-top: 50px;
-}
-.carousel-inner{
-  height: 100px;
-}
-.carousel-caption{
-  color: #fff;
-  top: 50%;
-}
 #us {
   font-family: 'bodoni';
   font-size: 50px;
@@ -413,28 +294,6 @@ margin-left: 70px;
       color:  #fc4434;
       font-family: 'nimbus';
 }
-#project{
-  background-color: #0d2110;
-  font-family:'bodony', serif;
-  color: whitesmoke;
-
-}
-
-
-
-.alignleft {
-	float: left;
-  background-color: #0d2110;
-  font-family:'bodony', serif;
-  color: whitesmoke;
-}
-.alignright {
-	float: right;
-  background-color: #0d2110;
-  font-family:'bodony', serif;
-  color: whitesmoke;
-}
-
 
 
 .marquee-section {
@@ -541,18 +400,7 @@ font-family: nimbus;
     text-transform: uppercase;
   }
 
-  #block1 {
-      float:left;
-  }
 
-  #block2
-  {
-      float:right;
-      background-color: #F5F5F5;
-      margin: 10px 20px;
-      padding: 20px;
-      width: 180px;
-  }
 
 
   *,
@@ -634,13 +482,6 @@ font-family: nimbus;
      color:lightgrey;
    }
 
-.btn_stili {
-  margin-top: 20px;
-  background-color:#0c2414;
-  text-align: left;
-  padding-left: 72px;
-}
-
 
 div.col-6 {
 
@@ -650,15 +491,6 @@ div.col-6 {
   }
 
 
-  .carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev{
-    display:block;
-}
-
-.slide_us {
-  font-size: 65px;
-}
 
  .wrapper_us a, a:hover, a:focus, a:active {
       text-decoration: none
