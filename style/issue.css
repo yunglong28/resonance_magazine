@@ -114,11 +114,10 @@ margin-left: auto;
 
 body {
 font-family: 'nimbus';
-
     background-repeat: repeat;
     /* Full height */
   height: 100%;
-    background-color: #White!important;
+    background-color: #E6D8A8 !important;
 
       background-size: repeat;
  }
@@ -191,16 +190,15 @@ figcaption {
   outline: 1px solid;
 }
 
-footer{
-  color:black!important;
-  background-color: white;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  font-family: nimbus;
-  text-transform: uppercase;
-  height:30vh;
-  font-size: 14px;
-  padding-top: 60px;
+footer {
+    color:lightgray !important;
+    background-color: #0C2414;
+    margin-top: 90px ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-family: 'nimbus';
+    text-transform: uppercase;
 }
 
 footer h3 {
