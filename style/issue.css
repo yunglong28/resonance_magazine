@@ -219,3 +219,58 @@ a:link {
   margin-left: 295px;
   margin-top: 7px;
 }
+
+#myModal {
+   font-family:'nimbus';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+     background-color:#0c2414;
+      color:lightgrey;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:#0c2414;
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 18px;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
