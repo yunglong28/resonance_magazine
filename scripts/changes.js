@@ -1,8 +1,15 @@
+/*function keepstyle(whichstyle){
+  var style= document.getElementById('pagestyle').getAttribute("href"); 
+  sessionStorage.setItem("currentstyle", style);//store the current style
+};*/
+
+
 function change(name) {
  
 
    if (name == 'belle') {
     $("#pagestyle").attr('href','style/belle.css');
+    $(".first_img").remove();
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
@@ -23,7 +30,7 @@ function change(name) {
 
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
-    $(".opening_img").remove();
+    $(".first_img").remove();
 
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
@@ -63,11 +70,11 @@ function change(name) {
 
 
   if (name == 'tabloid'){
-    $(".opening_img").remove();
+    $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
-    $()
+    $("<br>").insertAfter(".banner_issue");
   }
 
   else {
@@ -80,7 +87,7 @@ function change(name) {
   if (name ==='future'){
 
     $("#pagestyle").attr('href','style/future.css');
-    $(".opening_img").remove();
+    $(".first_img").remove();
 
     if($("#nav_hr").length == 0){
       $("<hr id='nav_hr'>").insertAfter("nav");
@@ -119,12 +126,12 @@ function change(name) {
 
     if($("#solar_bar").length == 0)
     {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#sep_nav")};
-    $("#cello").attr('src','imgs/dither_it_cello.png');
+    /*$("#cello").attr('src','imgs/dither_it_cello.png');
     $("#harp").attr('src','imgs/dither_it_harp.png');
     $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
     $("#disco").attr('src','imgs/dither_it_disco.png');
     $("#boombox").attr('src','imgs/dither_it_boombox.png');
-    $("#walkman").attr('src','imgs/dither_it_walkman.png');
+    $("#walkman").attr('src','imgs/dither_it_walkman.png');*/
 
     $("<div class='blackout' id='blackout'><p class='blackout-sentence' id='blackout-sentence'>SERVER IS OUT OF ENERGY</p></div>").insertBefore("head");
     function blackout() {

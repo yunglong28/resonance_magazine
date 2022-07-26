@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 @font-face{
@@ -10,14 +9,23 @@
   src:url("../fonts/Futura Condensed Bold.otf");
 }
 
+@font-face{
+  font-family:"frutiger";
+  src:url("../fonts/FrutigerNextLT-Bold.ttf");
+}
+
+
 
 /* NAVBAR */
 .navbar {
-  border-style: solid;
-  border-color: white;
-  background-color:rgb(183,64,59); 
-  position: relative;
-  height:80px;
+  font-family: 'Metropolis-ExtraBoldItalic';
+  background-color: rgb(183,64,59);
+  position: fixed;
+  text-transform: uppercase;
+  font-size: 8px;
+  margin-bottom: 20px;
+  height: 60px;
+
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
@@ -29,51 +37,55 @@
   clear: left;
 }
 
+/* Tutti gli elementi in navbar */
 .navbar li {
   position: relative;
-}
-
-/* Tutti gli elementi linkati in navbar */
-.navbar a {
-  padding: 0px;
-  font-family: "Metropolis-ExtraBoldItalic";
-  font-size: 30px;
-  color: white;
-  margin-right: 25px;
-  margin-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 20px;
+  margin-left: 30px;
   margin-bottom: 0px;
   padding: 0px;
-  text-decoration: none;
+  color:black;
 }
 
-.navbar a:hover{
-  color: black;
+.navbar li a {
+   color:white;
+   text-decoration: none;
 }
 
+.navbar li:hover{
+  color:  #9fa4c4 !important;
+}
+
+.navbar li a:hover{
+  color:  #9fa4c4 !important;
+  text-decoration:none;
+}
+
+
+/* Dropdown */
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
   padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden; 
-  background: #fff; /* CI POTREBBE STARE PURE TRASPARENTE CIOE rgba(0000) */
-  box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.2s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-  padding: 1em;
+  visibility: hidden;
+  background: #fff;
+    z-index: 1;
 }
 
 /* Elementi che stanno del dropdown */
-.navbar .dropdown ul a {
-  font-size: 14px;
+.navbar .dropdown ul li{
+  padding: 10px;
+  font-size: 20px;
   color: black;
+}
+
+.navbar .dropdown ul li a{
+  color:black;
 }
 
 .navbar .dropdown:hover > ul {
@@ -315,4 +327,37 @@ body{
   margin-top: 2px;
   text-transform: uppercase;
   word-wrap: break-word;
+}
+
+.cont {
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 14px;
+  margin-top: -27px;
+  margin-bottom: 14px;
+
+}
+
+.article_col{
+  font-family: 'frutiger';
+}
+
+footer{
+  color:white;
+  background-color: rgb(183,64,59);
+  margin-top: 90px;
+  font-family: 'Metropolis-ExtraBoldItalic';
+  text-transform: uppercase;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
 }

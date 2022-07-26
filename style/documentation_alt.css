@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'bodoni';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff') format('woff');
+    src: url('../fonts/bodoni-webfont.woff2') format('woff2'),
+         url('../fonts/bodoni-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'nimbus';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff') format('woff');
+    src: url('../fonts/freesans-webfont.woff2') format('woff2'),
+         url('../fonts/freesans-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -287,4 +287,68 @@ a:active {
 
 .style_title {
   text-decoration: ;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
+}
+
+#myModal {
+   font-family:'nimbus';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+     background-color:#0c2414;
+      color:lightgrey;
+ }
+
+ .modal-footer {
+     background-color:white;
+      color:lightgrey;
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+ color:black;
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color:#0c2414;
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+        color: black;
+        font-size: 18px;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
 }
