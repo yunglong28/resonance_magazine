@@ -1,28 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: 'bodoni';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/bodoni-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+@font-face{
+  font-family:Golddrew;
+  src:url("../fonts/Golddrew.ttf");
 }
-@font-face {
-    font-family: 'nimbus';
-    src: url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff2') format('woff2'),
-         url('C:/Users/Lorenza/Desktop/Sito_Vitali/style/Font/freesans-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+@font-face{
+  font-family:Franklin;
+  src:url("../fonts/BenjaminFranklin.ttf");
+}
+
+@font-face{
+  font-family:Romantine;
+  src:url("../fonts/Romantine.ttf");
 }
 
     /* NAVBAR */
 .navbar {
-  font-family: 'nimbus';
-  background-color: #fc4434;
+  font-family: 'Bebas Neue';
+  background-color: #a8b59e;
   position: fixed;
   color:black!important;
   text-transform: uppercase;
@@ -233,8 +230,8 @@ padding-top: 10%;
 height: 700px;
 }
 .text{
-  color:black;
-    font-family: 'bodoni';
+  color:rgb(228, 217, 201);
+    font-family: 'Franklin';
     font-size: 25px;
 
     z-index: 100;
@@ -257,33 +254,28 @@ margin-left: 70px;
 
 .wrapper {
   display: grid;
-    grid-template-columns: 500px 700px ;
-    background-color:
-  #e6d8a8;
+  grid-template-columns: 500px 700px ;
+  background-color: rgb(211, 104, 65);
   height: 600px;
 }
 
 .wrapper_mag {
   display: grid;
-    grid-template-columns: 704px 700px ;
-    background-color:
-   #fc4434;
+  grid-template-columns: 704px 700px ;
+  background-color: black;
   height: 600px;
   margin-left: -32px;
 }
 
 .coltext {
-  color:black;
-    font-family: 'bodoni';
-    font-size: 25px;
-
-    z-index: 100;
-
-    text-align: justify;
-margin-top: 60px;
-margin-left: 70px;
-
-
+  color:rgb(191, 164, 4);
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  text-transform: uppercase;
+  z-index: 100;
+  text-align: justify;
+  margin-top: 60px;
+  margin-left: 70px;
 }
 
 .colimg {
@@ -293,8 +285,9 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: 21px;
-    margin-left: -300px;
+    margin-left: 100px;
     z-index: 0;
+  background-color: black;
 }
 
 .col_button {
@@ -366,26 +359,25 @@ margin-left: 70px;
     z-index: 100;
     text-align: justify;
     margin-top: 110px;
-    margin-left: 90px;
+    margin-left: 200px;
     z-index: 0;
 }
 
 .col_text_yet {
-
-  color: lightgrey;
-  font-family: 'bodoni';
-  font-size: 25px;
+  color: rgb(0, 53, 102);
+  font-family: 'Golddrew', cursive;
+  font-size: 20px;
   z-index: 100;
   text-align: justify;
-  margin-top: -470px;
+  margin-top: -580px;
   margin-left: 453px;
   margin-right: -525px;
 }
 
 .wrapper_yet{
   display: grid;
-    grid-template-columns: 704px 700px ;
-  background-color:#0c2414;
+  grid-template-columns: 704px 800px ;
+  background-color:beige;
   height: 700px;
   margin-left: -32px;
 
@@ -438,11 +430,11 @@ margin-left: 70px;
 
 .marquee-section {
     position: relative;
-    min-height:   100px;
+    min-height: 100px;
     font-size: 80px;
-    font-family: 'bodoni', serif;
-    color:black;
-    background-color: white
+    font-family: 'Franklin', cursive;
+    color:rgb(228, 217, 201);
+    background-color: rgb(211, 104, 65);
 
 }
 
@@ -511,13 +503,11 @@ footer{
   text-transform: uppercase;
 }
 
-
-
-.btn-10{
-font-family: nimbus;
+.wrapper_yet .btn-10{
+font-family: Golddrew, cursive;
   background-color: transparent;
-  border: 3px solid  #fc4434;
-  color: #fc4434;
+  border: 3px solid  rgb(0, 53, 102);
+  color: rgb(0, 53, 102);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;

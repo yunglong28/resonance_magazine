@@ -2,7 +2,7 @@ function change(name) {
  
 
    if (name == 'belle') {
-    $("#pagestyle").attr('href','style/inizio900.css');
+    $("#pagestyle").attr('href','style/belle.css');
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
@@ -64,7 +64,7 @@ function change(name) {
 
   if (name == 'tabloid'){
     $(".opening_img").remove();
-    $("#pagestyle").attr('href','style/fine900.css');
+    $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
     $()
