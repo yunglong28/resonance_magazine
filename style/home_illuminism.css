@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+@font-face {
+    font-family: 'Lynotype Didot Roman';
+    src: url('/fonts/DidotLH-Roman.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    overflow-x: hidden;
+}
+/* NAVBAR */
+.navbar {
+    position: relative;
+    height:80px;
+    margin: 0 auto;
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+/* Rende la navbar orizzontale */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    clear: left;
+    font-family: 'GFS Didot', serif;
+    font-variant: all-petite-caps;
+    letter-spacing: 5px;
+    background-repeat: repeat-x !important;
+    width: 100% !important;
+
+}
+/* Tutti gli elementi linkati in navbar */
+.navbar a {
+    display: flex;
+    color: #000000;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 31px;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    padding: 0px 0;
+    z-index: 2;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
+    font-size: 25px;
+}
+
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+
+/* Elementi che stanno del dropdown */
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px !important;
+    color: black;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+.navbar .dropdown:hover > ul {
+    visibility: visible;
+}
+
+
+a:hover{
+    color: black !important;
+}
+
+.icons {
+
+    filter: sepia(80%) !important;
+    margin: 0 40px 0 0 !important;
+}
+
+
+/* per la homepage */
+#magazine{
+    height: 700px;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black !important;
+    font-size: 25px;
+    z-index: 100;
+    position: relative;
+    padding: 5vh;
+    padding-right: 40%;
+    text-align: justify;
+    background-size: cover;
+    margin: 0;
+
+}
+#magazine2{
+    font-family: "Lynotype Didot Roman", serif; !important;
+    height: 700px;
+    color: black !important;
+    font-size: 25px;z-index: 100;
+    position: relative;
+    padding: 5vh;
+    padding-top: 10%;
+    padding-left: 40%;
+    text-align: justify;
+    background-size: cover;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 500px 700px ;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black;
+
+    height: 600px;
+}
+
+.col_us {
+
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -104px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+
+.col_img_yet {
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 110px;
+    margin-left: 90px;
+    z-index: 0;
+}
+
+
+.col_text_yet {
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -470px;
+    margin-left: 453px;
+    margin-right: -525px;
+}
+
+
+.projectsection {
+    height: 700px;
+}
+
+.colspotify{
+    color:black;
+    font-family: "Lynotype Didot Roman", serif; !important;
+    font-size: 25px;
+    z-index: 100;
+
+    text-align: justify;
+    margin-top: 80px;
+    margin-left: 70px;
+}
