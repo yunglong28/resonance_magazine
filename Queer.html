@@ -1,56 +1,92 @@
 <!DOCTYPE HTML>
 
 <head>
-    <title id="francesca">Issue 2</title>
-
-    <!-- CSS + Bootstrap Stylesheet-->
+<!-- CSS + Bootstrap Stylesheet-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link id="pagestyle" href="style/hobbyhorse.css" rel="stylesheet" type="text/css">
+<script src="scripts/sidebar.js"></script>
 <script src="scripts/changes.js"></script>
+<link  id="pagestyle" href="style/issue.css" rel="stylesheet" type="text/css">
+
 <link href="style/bootstrap.min.css" rel="stylesheet">
-<link href="stylebootstrap-icons.css" rel="stylesheet">
-<link href="style/css/boxicons.min.css" rel="stylesheet">
-<link href="style/glightbox.min.css" rel="stylesheet">
-<link href="styleswiper-bundle.min.css" rel="stylesheet">
+  <link href="style/bootstrap-icons.css" rel="stylesheet">
+  <link href="style/boxicons.min.css" rel="stylesheet">
+  <link href="style/glightbox.min.css" rel="stylesheet">
+  <link href="style/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
 
 <body>
+<!-- MODALS -->
 
+    <!-- disclaimer start -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Disclaimer</h5>
+            <button type="button" class="firstbtn" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body p-4">
+            <p>
+                The purpose of this web site is to explore various types of typographic and layout style for text documents, as an end-of-course project for the "Information Modelling and Web Technologies" course of the Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, held by professor Fabio Vitali.
+            </p>
 
+            <p>
+                All copyrights and related rights on the content remain with their original owners.
+                <br>
+                All copyright on the typographic and layout choices are 2021 © Edoardo Dal Borgo and Alessandra Failla.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button"   class="btn btn-secondary" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- disclaimer end -->
 
 
 <!-- NAV-->
 <nav class="navbar">
 
-        <ul>
-          <li><a href="home.html">The Resonance</a></li>
+          <ul>
+            <li><a href="home.html">The Resonance</a></li>
 
-          <li class="dropdown"><a href=>Issues</a>
-            <ul>
-              <li><a href="Streaming.html">Issue #1</a></li>
-              <li><a href="Decolonize.html">Issue #2</a></li>
-              <li><a href="issue.html">Issue #3</a></li>
-            </ul>
-            </li>
-             <li class="dropdown"><a href=>About</a>
-            <ul>
-              <li><a href="documentation.html">Documentation</a></li>
-              <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
-              <li><a href="home.html#aboutus">Us</a></li>
-            </ul>
-            </li>
-            <ul class="icons_nav">
-            <li class="icons" onclick="change('illuminist')"><img src="imgs/cellohome.png" id="cello"></li>
-            <li class="icons" id="" onclick="change('hobbyhorse')"><img src="imgs/harphome.png" id="harp"></li>
-            <li class="icons" id="belle" onclick="change('belle')"><img src="imgs/gramophonehome.png" id="gramophone"></li>
-            <li class="icons" id="" onclick="change('analog')"><img src="imgs/strobohome.png" id="disco"></li>
-            <li class="icons" id="tabloid" onclick="change('tabloid')"><img src="imgs/boomboxhome.png" id="boombox"></li>
-            <li class="icons" onclick="change('future')"><img src="imgs/ipodhome.png" class="icons" id="walkman"></li>
-            </ul>
-      
-</nav>
+            <li class="dropdown"><a href=>Issues</a>
+              <ul>
+                <li><a href>Issue #1</a></li>
+                <li><a href>Issue #2</a></li>
+                <li><a href>Issue #3</a></li>
+              </ul>
+              </li>
+               <li class="dropdown"><a href=>About</a>
+              <ul>
+                <li><a href="documentation.html">Documentation</a></li>
+                <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+                <li><a href="home.html#aboutus">Us</a></li>
+              </ul>
+              </li>
+              <ul class="icons_nav">
+              <li id="" onclick="change('illuminist')"><img class="icons" id="cello" src="imgs/cellohome.png"></li>
+              <li id="" onclick="change('hobbyhorse')"><img class="icons" id="harp" src="imgs/harphome.png"></li>
+              <li id="belle" onclick="change('belle')"><img class="icons" id="gramophone"src="imgs/gramophonehome.png"></li>
+              <li id="" onclick="change('disco')"><img class="icons"id="disco"src="imgs/strobohome.png"></li>
+              <li id="tabloid" onclick="change('tabloid')"><img id="boombox"class="icons"src="imgs/boomboxhome.png"></li>
+              <li id="" onclick="change('tabloid')"><img class="icons" id="walkman"src="imgs/ipodhome.png"></li>
+          </ul>
+        </nav>
+
 
 <br>
 <div class="image" ></div>
@@ -63,12 +99,12 @@
 
     <figure>
       	<img id="fig_article" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" width="300">
-		<img class="opening_img" id="fig1" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg">
+		<!---img class="opening_img" id="fig1" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" per hobbyhorse-->
 		<figcaption><span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>, photo by <span class="person" about="Renata Raksha">Renata Raksha</span></figcaption>
 </figure>
 
 <div class="title_and_subtitle" id="title_and_subtitle_1">
-   <img  class="sub1" src="imgs\sub1.png" width="300">
+   <!--img  class="sub1" src="imgs\sub1.png" width="300" per analog-->
 
 
 
@@ -116,20 +152,20 @@
 
 <p><span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>’s journey from a formerly anonymous and frequently misgendered figure to one of <span class="genre" about="pop">pop</span> culture’s most visible trans artists spoke to a fundamental hope—a path to a world beyond prejudice or stigma, where every individual is free to inhabit the identity they choose. <span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>’s art, likewise, was about the boundlessness of unfettered creative potential. Futurism, for <span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>, wasn’t just about aesthetics; it was a question of empathy, an invitation to embrace the becoming of a better self. <span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>’s music placed all its bets on the future. It hurts to imagine a future without <span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>.</p>
     </div>
-     <img class="adv2"src="imgs\adv2.png" width="300">
-    <img  class="deco" id="finalfig1" src="imgs\deco1.png" width="300">
+     <!--img class="adv2"src="imgs\adv2.png" width="300"per analog-->
+    <!--img  class="deco" id="finalfig1" src="imgs\deco1.png" width="300" per hobby-->
 </div>
 
 
 <div class="col article_col" id="col2">
 
 <figure>
-		<img  class="opening_img" src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg">
+		<img  src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg"  width="300"> <!-- togliere width="300" e class="opening_img" per hobby-->
 		<figcaption>Virtuosity doesn’t resonate for <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> as much as vulnerability does. In her work with <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> and on her solo records, she has
 always been most interested in making emotional connections. Photograph by Collier Schorr for <span class="magazine" about="TheNewYorker" data-wikidata-id="Q217305" data-label="The New Yorker"> The New Yorker</span></figcaption>
 	</figure>
 
-<div class="title_and_subtitle" id="title_and_subtitle_2"> <img  class="micro" id="finalfig1" src="imgs\micro.png" width="300">
+<div class="title_and_subtitle" id="title_and_subtitle_2"> <!--img  class="micro" id="finalfig1" src="imgs\micro.png" width="300" per analog -->
   <p class="title" id="title1"><span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Adrianne Lenker</span>’s Radical Honesty</p>
   <p class="subtitle">In her <span class="genre" about="folk-rock">folk-rock</span> songwriting and in interactions with her <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> bandmates, the musician’s raw openness creates strange and thrilling effects. </p>
 </div>
@@ -185,7 +221,7 @@ that it subverts the form,” <span class="person" about="JeffTweedy" data-label
 misunderstanding of her own song—‘Why’d she start singing there?’—but it’s not, it’s a precise angle that only she seems to
 possess.”</p>
 <div class="adv3">
-<img  id="finalfig1" src="imgs\adv3.png" width="300">
+<!--img  id="finalfig1" src="imgs\adv3.png" width="300" per analog -->
 </div>
 <p>The band grew out of a partnership between <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> and <span class="person" about="BuckMeek"> Buck Meek</span>. They met at a show in  <span class="place" about="Boston" data-wikidata-id="Q100" data-label="Boston">Boston, where they had both been
 undergraduates, and then ran into each other at a bodega on the day <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> moved to <span class="place" about="Brooklyn" data-wikidata-id="Q18419" data-label="Brooklyn">Brooklyn</span>. “I was moving into a warehouse
@@ -218,7 +254,7 @@ darted uphill gracefully.</p>
 <p><span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> was born in  <span class="place" about="Indianapolis" data-wikidata-id="Q6346" data-label="Indianapolis">Indianapolis in 1991, and brought up mostly in and around <span class="place" about="Minnesota" data-wikidata-id="Q1527" data-label="Minnesota">Minnesota </span>. She has a younger sister, Zoë, and a
 younger brother, Noah. When <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> was five, she was hit on the head by a railroad spike that fell out of a tree house in her
 family’s front yard. <span class="song" about="Mithological Beauty">“Mythological Beauty,”</span> a song from <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span>’s second record, <span class="song" about="Capacity">“Capacity,”</span> is addressed to her terrified mother:</p>
-<img id="block1"src="imgs/birds3.png" width="250">
+<!-- img id="block1"src="imgs/birds3.png" width="250" per hobby -->
 <p class="quote">
 Blood gushing from my head</br>
 You held me in the back seat with a dishrag, soaking up blood with your eyes</br>
@@ -321,7 +357,7 @@ From books half read</br>
 The juice of dark cherries cover his chin</br>
 The dog walks in and the crow lies in his</br>
 Jaw like lead
-<img id="birds2" src="imgs/birds2.png" width="250">
+<!--img id="birds2" src="imgs/birds2.png" width="250" per hobby-->
 </p>
 
 
@@ -407,7 +443,7 @@ reminders of certain things that I don’t want to forget,” she told me. Once 
 <p>Published in the print edition of the October 19, 2020, issue, with the headline “Opened Up.”</p>
 <p><span class="person" about="AmandaPetrusich" data-label="Amanda Petrusich" data-wikidata-id="Q64875564">Amanda Petrusich</span> is a staff writer at <span class="magazine" about="TheNewYorker" data-wikidata-id="Q217305" data-label="The New Yorker"> The New Yorker</span> and the author of “Do Not Sell at Any Price: The Wild,
 Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
-<img id="deco2"src="imgs\deco2.png" width="300">
+<!--img id="deco2"src="imgs\deco2.png" width="300" per hobby -->
 </div>
 
     </div>
@@ -418,11 +454,11 @@ Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
 
 <figure>
   <img id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" width="300">
-		<img class="opening_img" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg">
+		<!--img class="opening_img" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" per hobby-->
 		<figcaption></span></figcaption>
 	</figure>
 <div class="title_and_subtitle" id="title_and_subtitle_3">
-  <img  id="fig3" src="imgs\spartito.png" width="300">
+  <!--img  id="fig3" src="imgs\spartito.png" width="300" per analog-->
 <p class="title">LET US PREY: ANNA CALVI</p>
 
 <p class="subtitle">
@@ -454,12 +490,12 @@ Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
         <img src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-55.jpg" width="300">
 		<figcaption></figcaption>
 	</figure>
-  <figure class="an">
+  <!--figure class="an">
 		<img id="fig_article" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-54.jpg" width="300">
 		<figcaption></figcaption>
         <img  id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-55.jpg" width="300">
 		<figcaption></figcaption>
-	</figure>
+	</figure per analog-->
 
 <p>“I think that when my first record came out and there were quite a few songs about women on it,” she muses. “I almost didn't notice that they were about women because it was just normal for me. I felt slightly exposed, I think. And I was worried because I saw how Beth Ditto got treated in the early 2000s being openly gay... It would be like an article began, “Beth Ditto, lesbian" and I thought that was so ridiculous, to define her by just calling her that and not calling her a musician.”</p>
 
@@ -483,8 +519,8 @@ That <span class="key" about="record">record was a long time in the coming; her 
    <p> <span class="album" about="Hunter">‘Hunter’</span> is out 31st August via <span class="label" about="Domino">Domino</span>.</p>
 
     </div>
-    <img id="deco3"src="imgs\deco3.png" width="300">
-     <img id="adv1"src="imgs\adv1.png" width="300">
+    <!--img id="deco3"src="imgs\deco3.png" width="300" per hobby-->
+     <!--img id="adv1"src="imgs\adv1.png" width="300" per analog-->
 </div>
 
 </body>
