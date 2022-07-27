@@ -1,8 +1,17 @@
-/*function keepstyle(whichstyle){
+function keepstyle(pagestyle){
   var style= document.getElementById('pagestyle').getAttribute("href"); 
-  sessionStorage.setItem("currentstyle", style);//store the current style
-};*/
+  alert('pagestyle');
+  sessionStorage.setItem("currentstyle", style);
+};
 
+
+$(document).ready(function(){
+  if (sessionStorage.getItem("currentstyle")){
+    document.getElementById('pagestyle').setAttribute("href", currentstyle);
+    sessionStorage.clear();
+  }
+});
+   
 
 function change(name) {
  

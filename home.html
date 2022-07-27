@@ -5,6 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="scripts/sidebar.js"></script>
 <script src="scripts/changes.js"></script>
+<script src="scripts/home_script.js"></script>
 <link  id="pagestyle" href="style/home.css" rel="stylesheet" type="text/css">
 
 <link href="style/bootstrap.min.css" rel="stylesheet">
@@ -60,19 +61,19 @@
   <nav class="navbar sticky-top navbar-light" class="navbar">
 
           <ul>
-            <li><a href="home.html">The Resonance</a></li>
+            <li><a href="home.html" onclick="keepstylehome('pagestyle')">The Resonance</a></li>
 
-            <li class="dropdown"><a href=>Issues</a>
+            <li class="dropdown">Issues
               <ul>
-                <li><a href="Streaming.html">Issue #1</a></li>
-                <li><a href="Decolonize.html" href>Issue #2</a></li>
-                <li><a href="Queer.html">Issue #3</a></li>
+                <li><a href="Streaming.html" onclick="keepstylehome('pagestyle')">Issue #1</a></li>
+                <li><a href="Decolonize.html" onclick="keepstylehome('pagestyle')">Issue #2</a></li>
+                <li><a href="Queer.html" onclick="keepstylehome('pagestyle')">Issue #3</a></li>
               </ul>
               </li>
-               <li class="dropdown"><a href=>About</a>
+               <li class="dropdown">About
               <ul>
-                <li><a href="documentation.html">Documentation</a></li>
-                <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+                <li><a href="documentation.html" onclick="keepstylehome('pagestyle')">Documentation</a></li>
+                <a href=""data-toggle="modal" data-target="#myModal" onclick="keepstylehome('pagestyle')"><li>Disclaimer</li></a>
                 <li><a href="#aboutus">Us</a></li>
               </ul>
             </li>
