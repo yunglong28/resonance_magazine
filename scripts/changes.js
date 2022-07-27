@@ -1,13 +1,13 @@
 function keepstyle(pagestyle){
-  var style= document.getElementById('pagestyle').getAttribute("href"); 
-  alert('pagestyle');
+  var style = document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem("currentstyle", style);
-};
+  alert(currentstyle);
+}
 
 
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
-    document.getElementById('pagestyle').setAttribute("href", currentstyle);
+    document.getElementById("pagestyle").setAttribute("href", currentstyle);
     sessionStorage.clear();
   }
 });
