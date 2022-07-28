@@ -14,135 +14,163 @@
 }
 
 body{
-    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
     overflow-x: hidden;
 }
 /* NAVBAR */
-.navbar {
-    position: relative;
-    height:80px;
-    margin: 0 auto;
-    width: 100% !important;
-    padding: 0 !important;
-}
 
+.navbar {
+    font-family: 'GFS Didot', serif;
+    position: fixed;
+    color:black!important;
+    text-transform: uppercase;
+    font-size: 8px;
+
+    height: 60px;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+
+}
 /* Rende la navbar orizzontale */
 .navbar ul {
+    margin: 1px;
+    padding: 0;
     display: flex;
     list-style: none;
+    align-items: center;
     clear: left;
-    font-family: 'GFS Didot', serif;
-    font-variant: all-petite-caps;
-    letter-spacing: 5px;
-    background-repeat: repeat-x !important;
-    width: 100% !important;
-
 }
-/* Tutti gli elementi linkati in navbar */
-.navbar a {
+
+/* Tutti gli elementi in navbar */
+.navbar li {
+    position: relative;
     display: flex;
-    color: #000000;
-    margin-right: 40px;
-    text-decoration: none;
-    font-size: 31px;
+    justify-content: space-between;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align:center !important;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color:black;
 }
 
+.navbar li a {
+    color:black;
+    text-decoration: none;
+}
+
+.navbar li:hover{
+    color:  black;
+}
+
+.navbar li a:hover{
+    color:  black;
+    text-decoration:none;
+}
+
+
+/* Dropdown */
 .navbar .dropdown ul {
     display: block;
     position: absolute;
-    padding: 0px 0;
-    z-index: 2;
+    padding: 10px 0;
     visibility: hidden;
     background: #fff;
-    box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
-    font-size: 25px;
-}
-
-.navbar .dropdown ul li {
-    min-width: 200px;
+    z-index: 1;
 }
 
 /* Elementi che stanno del dropdown */
-.navbar .dropdown ul a {
-    padding: 10px 20px;
-    font-size: 14px !important;
+.navbar .dropdown ul li{
+    padding: 10px;
+    font-size: 20px;
     color: black;
-    margin: 0;
-    letter-spacing: 1px;
 }
 
-
 .navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
     visibility: visible;
 }
 
-
-a:hover{
-    color: black !important;
+.icons {
+    filter: sepia(80%) !important;
+    width: 60% !important;
 }
 
-.icons {
-
-    filter: sepia(80%) !important;
-    margin: 0 40px 0 0 !important;
+p {
+    color: rgb(0, 0, 0);
+    font-family: 'GFS Didot', serif;
+    margin: 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
 }
 
 
 /* per la homepage */
-#magazine{
-    height: 700px;
-    font-family: "Lynotype Didot Roman", serif; !important;
-    color: black !important;
+
+.wrapper_mag{
+    background-color: #bcb19d;
+    height: 600px;
+    margin-left: -22px;
+    display: grid;
+    grid-template-columns: 704px 700px ;
+}
+
+.mag_text{
     font-size: 25px;
-    z-index: 100;
-    position: relative;
-    padding: 5vh;
-    padding-right: 40%;
-    text-align: justify;
-    background-size: cover;
-    margin: 0;
+    text-align: justify!important;
 
 }
-#magazine2{
-    font-family: "Lynotype Didot Roman", serif; !important;
+
+
+
+/*seconda parte testuale */
+.wrapper_yet{
+    display: grid;
+    grid-template-columns: 704px 700px ;
     height: 700px;
-    color: black !important;
-    font-size: 25px;z-index: 100;
-    position: relative;
-    padding: 5vh;
-    padding-top: 10%;
-    padding-left: 40%;
-    text-align: justify;
-    background-size: cover;
-    margin: 0;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+
 }
+
+
+.col_issue {
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -470px;
+    margin-left: 453px;
+    margin-right: -525px;
+}
+
+.wrapper_issue {
+    display: grid;
+    grid-template-columns: 704px 700px ;
+    height: 700px;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
+
+
+}
+
 
 .wrapper {
     display: grid;
     grid-template-columns: 500px 700px ;
     font-family: "Lynotype Didot Roman", serif; !important;
     color: black;
-
     height: 600px;
+    background-color: #bcb19d;
+
 }
 
-.col_us {
 
-    font-family: "Lynotype Didot Roman", serif; !important;
-    color: black;
-    font-size: 25px;
-    z-index: 100;
-    text-align: justify;
-    margin-top: -104px;
-    margin-left: 532px;
-    margin-right: -525px;
-}
+
+
 
 .col_img_yet {
     color:black;
     font-family: "Lynotype Didot Roman", serif; !important;
     font-size: 25px;
-    z-index: 100;
     text-align: justify;
     margin-top: 110px;
     margin-left: 90px;
@@ -150,11 +178,20 @@ a:hover{
 }
 
 
-.col_text_yet {
-    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
-    color:black;
-    font-family: "Lynotype Didot Roman", serif; !important;
+.col_button {
     font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: 180px !important;
+    margin-left: 159px !important;
+}
+
+
+.col_text_yet {
+    color: rgb(0, 0, 0);
+    font-family: 'GFS Didot', serif;
+    letter-spacing: 2px;
+    font-size: 20px;
     z-index: 100;
     text-align: justify;
     margin-top: -470px;
@@ -172,8 +209,164 @@ a:hover{
     font-family: "Lynotype Didot Roman", serif; !important;
     font-size: 25px;
     z-index: 100;
-
     text-align: justify;
     margin-top: 80px;
     margin-left: 70px;
+}
+
+
+
+footer{
+    color: rgb(255, 255, 255);
+    font-family: 'GFS Didot', serif;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+
+}
+
+.colimg {
+    display: block;
+    z-index: 100;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.colimg2 {
+    display: block;
+
+
+    width: 60%;
+    margin-top: 40px !important;
+   margin-right: 20px !important;
+}
+
+
+/* bottoni */
+.btn-10 {
+    font-family: Didot, serif;
+    background-color: transparent;
+    border: 3px inset #bcb19d;
+    color: #bcb19d;
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+.marquee-section {
+    position: relative;
+    min-height: 100px;
+    font-size: 80px;
+    font-family: 'GFS Didot', serif !important;
+    color:white;
+    background-color: transparent;
+    text-transform: uppercase;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+
+}
+
+.marquee-section, .marquee-section * {
+    overflow: hidden;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-left-to-right linear 70s infinite;
+
+
+}
+
+/* parte about us */
+
+.wrapper_us{
+    display: grid;
+    grid-template-columns: 704px 700px ;
+    height: 650px;
+    margin-left: -32px;
+    background-color: #D6D0B8;
+
+}
+
+.col_button_us {
+    color: black;
+    font-family: 'Lynotype Didot Roman', serif !important;
+    font-size: 102px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -19px;
+    margin-left: 41px;}
+
+.col_us {
+
+    font-family: "Lynotype Didot Roman", serif; !important;
+    color: black;
+    font-size: 25px;
+    z-index: 100;
+    text-align: justify;
+    margin-top: -104px;
+    margin-left: 532px;
+    margin-right: -525px;
+}
+#us {
+    font-family: 'Lynotype Didot Roman', serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+#aboutus {
+    color: black;
+}
+
+a {
+    color: #000 !important;
+    text-decoration: black !important;
+}
+
+#ale, #fra, #lore {
+    font-weight: bolder;
+}
+
+.issue_title {
+    font-weight: bold;
+
+}
+
+.custom-btn {
+    margin-top: 20px;
+    text-align: center !important;
+}
+
+.text {
+    text-align: justify;
 }
