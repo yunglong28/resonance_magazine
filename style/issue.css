@@ -29,7 +29,7 @@
   font-size: 8px;
   margin-bottom: 20px;
   height: 60px;
-
+  z-index: 2;
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
@@ -92,6 +92,7 @@
   top: 100%;
   visibility: visible;
 }
+
 
 
 .container-fluid {
