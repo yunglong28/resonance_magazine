@@ -72,12 +72,10 @@ function change(name) {
 
 
 
-
   else{
     $(".container_articles").attr('class', 'container container_articles');
     $("figcaption").remove();
   }
-
 
 
   if (name == 'tabloid'){
@@ -92,6 +90,13 @@ function change(name) {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#pallino").remove();
+  }
+
+
+  if (name == 'analog'){
+    $("#pagestyle").attr('href','style/analog.css');  
+    $(".container_articles").attr('class', 'container-fluid container_articles'); 
+    if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
   }
 
 

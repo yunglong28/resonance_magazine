@@ -162,9 +162,12 @@ font-style: bold;
   transition: 0.3s;
   text-align:center !important;
   text-transform: uppercase;
+  text-decoration: none;
+}
 
 
-
+.navbar a:hover{
+  text-decoration: none;
 }
 
 .navbar a i {
