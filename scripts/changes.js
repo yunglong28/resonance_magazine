@@ -1,16 +1,21 @@
 function keepstyle(pagestyle){
+
   var style = document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem('currentstyle', style);
+
 }
 
 
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
-    document.getElementById("pagestyle").setAttribute("href", currentstyle);
+    var style = sessionStorage.getItem("currentstyle");
+    document.getElementById("pagestyle").setAttribute("href", style);
     sessionStorage.clear();
   }
 });
-   
+
+
+
 
 function change(name) {
  
@@ -69,12 +74,10 @@ function change(name) {
 
 
 
-
   else{
     $(".container_articles").attr('class', 'container container_articles');
     $("figcaption").remove();
   }
-
 
 
   if (name == 'tabloid'){
@@ -82,13 +85,20 @@ function change(name) {
     $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
-    $("<br>").insertAfter(".banner_issue");
+    if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
   }
 
   else {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#pallino").remove();
+  }
+
+
+  if (name == 'analog'){
+    $("#pagestyle").attr('href','style/analog.css');  
+    $(".container_articles").attr('class', 'container-fluid container_articles'); 
+    if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
   }
 
 
@@ -163,6 +173,7 @@ function change(name) {
   }
 
 }
+
 
 
 

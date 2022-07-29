@@ -177,11 +177,18 @@ body{
   font-family:'Zen Antique', serif;
   color: white;
 
+}
 
+
+.issue{
+  font-size: 22px;
+  margin-right: -98px;
+    margin-left: 63px;
+    text-transform: uppe
 }
 
 #magazine{
-  background-color: #fc4434;
+  background-color: black;
 height: 600px;
 
   color: lightgrey;
@@ -218,19 +225,22 @@ padding-top: 10%;
 
 }
 
-.projectsection {
+/*.projectsection {
     background-color: #e6d8a8;
 height: 700px;
-}
+}*/
 .text{
-  color:black;
-    font-family: 'bodoni';
+  color:white;
+    font-family: 'futura';
     font-size: 25px;
+    text-transform: uppercase;
 
     z-index: 100;
 
     text-align: justify;
 margin-top: 80px;
+margin-right: -98px;
+    margin-left: 59px;
 }
 
 .colspotify{
@@ -242,14 +252,13 @@ margin-top: 80px;
 
     text-align: justify;
 margin-top: 80px;
-margin-left: 70px;
+margin-left: 119px;
 }
 
 .wrapper {
   display: grid;
     grid-template-columns: 500px 700px ;
-    background-color:
-  #e6d8a8;
+    background-color: black;
   height: 600px;
 }
 
@@ -287,6 +296,11 @@ margin-left: 70px;
     background-color: black;
 }
 
+.colimg img{
+   margin-left: 80px;
+   margin-top: 30px;
+}
+
 .col_button {
     color:black;
     font-family: 'bodoni';
@@ -299,28 +313,28 @@ margin-left: 70px;
 
 .col_issue {
 
-    color: lightgrey;
-    font-family: 'bodoni';
+    color: black;
+    font-family: 'Metropolis-ExtraBoldItalic';
     font-size: 25px;
     z-index: 100;
     text-align: justify;
-    margin-top: -470px;
+    margin-top: -580px;
     margin-left: 532px;
     margin-right: -525px;
 }
 
 .wrapper_issue {
   display: grid;
-    grid-template-columns: 704px 700px ;
-  background-color:#0c2414;
+  grid-template-columns: 704px 700px ;
+  background-color:white;
   height: 900px;
   margin-left: -32px;
 }
 
 
 .col_button_us {
-  color:  #fc4434;
-    font-family: 'bodoni';
+  color: rgb(183,64,59) ;
+    font-family: 'Metropolis-ExtraBoldItalic';
     font-size: 102px;
     z-index: 100;
     text-align: justify;
@@ -329,8 +343,8 @@ margin-left: 70px;
 
 .col_us {
 
-    color:  #fc4434;
-    font-family: 'nimbus';
+    color:  white;
+    font-family: 'Metropolis-ExtraBoldItalic';
     font-size: 25px;
     z-index: 100;
     text-align: justify;
@@ -342,7 +356,7 @@ margin-left: 70px;
 .wrapper_us{
   display: grid;
     grid-template-columns: 704px 700px ;
-  background-color: lightgrey;
+  background-color: black;
   height: 650px;
   margin-left: -32px;
 }
@@ -350,15 +364,14 @@ margin-left: 70px;
 
 
 .col_img_yet {
-  color:black;
-    font-family: 'bodoni';
-    font-size: 25px;
     z-index: 100;
     text-align: justify;
-    margin-top: 110px;
+    margin-top: 35px;
     margin-left: 90px;
     z-index: 0;
 }
+
+
 
 .col_text_yet {
 
@@ -368,9 +381,9 @@ margin-left: 70px;
   font-size: 20px;
   z-index: 100;
   text-align: justify;
-  margin-top: -470px;
-  margin-left: 453px;
-  margin-right: -525px;
+  margin-top: 69px;
+  margin-left: -112px;
+  margin-right: 69px;
 }
 
 .wrapper_yet{
@@ -393,15 +406,14 @@ margin-left: 70px;
   top: 50%;
 }
 #us {
-  font-family: 'bodoni';
+  font-family: 'Metropolis-ExtraBoldItalic';
   font-size: 50px;
   margin-bottom: 20px;
 }
 
 .us_title {
-
-      color:  #fc4434;
-      font-family: 'nimbus';
+      color: rgb(183,64,59);
+      font-family: 'Metropolis-ExtraBoldItalic';
 }
 #project{
   background-color: #0d2110;
@@ -429,13 +441,11 @@ margin-left: 70px;
 
 .marquee-section {
     position: relative;
-    min-height:   100px;
+    min-height: 100px;
     font-size: 80px;
     font-family: 'Metropolis-ExtraBoldItalic', serif;
     color:white;
     background-color: rgb(183,64,59);
-    padding-top: 4px;
-
 }
 
 .marquee-section, .marquee-section * {
@@ -499,7 +509,7 @@ footer{
   color:black!important;
   background-color: white;
   margin-top: 90px;
-  font-family: 'nimbus';
+  font-family: 'Metropolis-ExtraBoldItalic';
   text-transform: uppercase;
 }
 
@@ -555,8 +565,6 @@ font-family: "Metropolis-ExtraBoldItalic";
    body {
      background: lightgrey;
    }
-
-
 
 
 
@@ -622,7 +630,10 @@ font-family: "Metropolis-ExtraBoldItalic";
    }
 
    .issue_title {
-     color:lightgrey;
+     color:black;
+     font-family: 'Metropolis-ExtraBoldItalic';
+     margin-right: -98px;
+    margin-left: 63px;
    }
 
 .btn_stili {
@@ -637,7 +648,7 @@ div.col-6 {
 
     width: 48%;
     font-size: 20px;
-    font-family: 'nimbus'!important;
+    font-family: 'Metropolis-ExtraBoldItalic'!important;
   }
 
 
@@ -654,7 +665,7 @@ div.col-6 {
  .wrapper_us a, a:hover, a:focus, a:active {
       text-decoration: none
       ;
-      color: #fc4434!important;
+      color:rgb(183,64,59);
  }
 
  #myModal {
@@ -671,9 +682,8 @@ div.col-6 {
 
  .modal-footer {
      background-color:white;
-      color:lightgrey;
-
-
+      color:black;
+      font-family: 'Metropolis-ExtraBoldItalic'
 
  }
 
@@ -724,3 +734,7 @@ border: none;
   margin-left: 295px;
   margin-top: 7px;
 }
+
+.edited_by{
+  margin-left: 59px;
+    }
