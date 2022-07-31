@@ -177,6 +177,16 @@ background-color: black;
 
 
 
+        .navbar .dropdown ul a {
+          padding: 0px 0px;
+          font-size: 14px;
+          color: white;
+          text-transform: uppercase;
+            margin: 0px;
+            color: black;
+
+        }
+
 /*Fine navbar*/
 
 
