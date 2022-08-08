@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <head>
-  <title>Issue 3</title>
+  <title id="title">Issue 3</title>
 <!-- CSS + Bootstrap Stylesheet-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="scripts/sidebar.js"></script>
@@ -61,24 +61,22 @@
 <!-- NAV-->
 <nav class="navbar">
 
-          <ul>
-            <li><a href="home.html" onclick="keepstyle()">The Resonance</a></li>
+        <ul>
+          <li><a href="home.html" onclick="keepstyle()">The Resonance</a></li>
 
-            <li class="dropdown">Issues
-              <ul>
-                <li><a href="Streaming.html" onclick="keepstyle('pagestyle')">Issue #1</a></li>
-                <li><a href="Decolonize.html" onclick="keepstyle('pagestyle')">Issue #2</a></li>
-                <li><a href="Queer.html" onclick="keepstyle('pagestyle')">Issue #3</a></li>
-              </ul>
-              </li>
-               <li class="dropdown">About
-              <ul>
-
-                <li><a href="documentation.html" onclick="keepstyle('pagestyle')">Documentation</a></li>
-                <a href=""data-toggle="modal" data-target="#myModal" onclick="keepstyle('pagestyle')"><li>Disclaimer</li></a>
-
-                <li><a href="home.html#aboutus">Us</a></li>
-              </ul>
+          <li class="dropdown"><a href=>Issues</a>
+            <ul>
+              <li><a href="Streaming.html" onclick="keepstyle('pagestyle')">Issue #1</a></li>
+              <li><a href="Decolonize.html" onclick="keepstyle('pagestyle')">Issue #2</a></li>
+              <li><a href="Queer.html" onclick="keepstyle('pagestyle')">Issue #3</a></li>
+            </ul>
+            </li>
+             <li class="dropdown"><a href=>About</a>
+            <ul>
+              <li><a href="documentation.html" onclick="keepstyle('pagestyle')">Documentation</a></li>
+              <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+              <li><a href="home.html#aboutus" onclick="keepstyle('pagestyle')">Us</a></li>
+            </ul>
             </li>
               <ul class="icons_nav">
               <li id="" onclick="change('illuminist')"><img class="icons" id="cello" src="imgs/cellohome.png"></li>
@@ -101,7 +99,7 @@
 <div class="cover1">
 
     <figure>
-      	<img id="fig_article" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" width="300">
+      	<img id="fig_article" class="first_img" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" width="300">
 		<!---img class="opening_img" id="fig1" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" per hobbyhorse-->
 		<figcaption><span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>, photo by <span class="person" about="Renata Raksha">Renata Raksha</span></figcaption>
 </figure>
@@ -163,7 +161,7 @@
 <div class="col article_col" id="col2">
 
 <figure>
-		<img  src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg"  width="300"> <!-- togliere width="300" e class="opening_img" per hobby-->
+		<img class="first_img" src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg"  width="300"> <!-- togliere width="300" e class="opening_img" per hobby-->
 		<figcaption>Virtuosity doesn’t resonate for <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> as much as vulnerability does. In her work with <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> and on her solo records, she has
 always been most interested in making emotional connections. Photograph by Collier Schorr for <span class="magazine" about="TheNewYorker" data-wikidata-id="Q217305" data-label="The New Yorker"> The New Yorker</span></figcaption>
 	</figure>
@@ -456,7 +454,7 @@ Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
 <div class="col article_col" id="col3">
 
 <figure>
-  <img id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" width="300">
+  <img class="first_img" id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" width="300">
 		<!--img class="opening_img" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" per hobby-->
 		<figcaption></span></figcaption>
 	</figure>

@@ -219,7 +219,7 @@ figcaption{
 }
 
 body{
-  background-color: white;
+  background-color: white !important;
   /*background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");*/
 }
 
@@ -251,35 +251,41 @@ body{
 #col1 .title_and_subtitle{
   background-image: url("../imgs/may.jpeg");
   padding:5px;
-  height: 335px;
+  height: auto;
   width: auto;
   text-align: left;
   margin-top: 15px;
   background-size: cover;
   font-family: futura;
-  font-size: 60px;
+  font-size: 30px;
   color: white;
   line-height: 1em;
+  min-height:200px;
 }
 
  #col1 .title {  
   font-size: 30px;
   text-decoration: underline;
+  max-width:80%;
  }
 
  #col1 .subtitle {
   text-transform: uppercase;
+  max-width:70%;
  }
 
 #col2 .title_and_subtitle{
   text-align: left;
   color:white;
   font-family: futura;
-  font-size: 70px;
+  font-size: 30px;
   line-height: 1em;
   background-image: url("../imgs/boris.jpeg");
-  background-size: cover;
-  height: 335px;
+  background-color: black;
+  background-size: auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  min-height:300px;
   width: auto;
   margin-top: 15px;
   padding: 6px;
@@ -290,6 +296,10 @@ body{
   word-wrap: break-word;
   text-transform: uppercase;
  }
+
+  #col2 .subtitle {
+    max-width:80%;
+  }
 
 #sep_container_belle{
   display: none;
@@ -302,12 +312,12 @@ body{
   text-align: left;
   padding-top:0.1em;
   padding-left: 5px;
-  height: 335px;
+  height: auto;
   width: auto;
   margin-top: 15px;
   background-image: url("../imgs/couple.jpg");
   background-size: cover;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1em;
   color: white;
 }
@@ -315,13 +325,11 @@ body{
 #col3 .title{
   max-width:80%;
   text-decoration: underline;
-  font-family: 'futura';
-  font-size: 30px;
+  font-family: 'futura'; 
 }
 
 #col3 .subtitle{
   max-width:50%;
-  font-size: 40px;
   line-height: 1em;
   font-family: "futura";
   margin-top: 2px;

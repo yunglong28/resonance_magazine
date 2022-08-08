@@ -71,22 +71,20 @@
 <nav class="navbar">
 
         <ul>
-          <li><a href="home.html">The Resonance</a></li>
+          <li><a href="home.html" onclick="keepstyle()">The Resonance</a></li>
 
           <li class="dropdown"><a href=>Issues</a>
             <ul>
-              <li><a href="Streaming.html">Issue #1</a></li>
-              <li><a href="Decolonize.html">Issue #2</a></li>
-              <li><a href="Queer.html">Issue #3</a></li>
+              <li><a href="Streaming.html" onclick="keepstyle('pagestyle')">Issue #1</a></li>
+              <li><a href="Decolonize.html" onclick="keepstyle('pagestyle')">Issue #2</a></li>
+              <li><a href="Queer.html" onclick="keepstyle('pagestyle')">Issue #3</a></li>
             </ul>
             </li>
              <li class="dropdown"><a href=>About</a>
             <ul>
-
-                <li><a href="documentation.html">Documentation</a></li>
-                <a href="" data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
-                <li><a href="home.html#aboutus">Us</a></li>
-
+              <li><a href="documentation.html" onclick="keepstyle('pagestyle')">Documentation</a></li>
+              <a href=""data-toggle="modal" data-target="#myModal"><li>Disclaimer</li></a>
+              <li><a href="home.html#aboutus" onclick="keepstyle('pagestyle')">Us</a></li>
             </ul>
             </li>
             <ul class="icons_nav">
@@ -115,16 +113,16 @@
         <div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">
             How Musicians Are Fighting <div class="title_small">for Streaming Pay</div>  During the Pandemic</div>
         <figure>
-            <img class="img-fluid cover_image" src="imgs/article_1_1.png">
+            <img class="img-fluid first_img cover_image" src="imgs/article_1_1.png"/>
         </figure>
-    <hr class="half-hr">
+    <!--hr class="half-hr"-->
 
         <div class="subtitle">With concerts on hold,
         it’s abundantly clear that most musicians can’t live off streaming income alone. How could the system be fixed?
         </div>
 
     </div>
-    <hr class="half-hr">
+    <!--hr class="half-hr"-->
 
     <div class="author_and_date">
     <p class="byline">
@@ -211,13 +209,13 @@ Musicians with different label and publishing situations—even those whose musi
     <div class="title_and_subtitle">
         <div class="title" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">
             2010s: The End <div class="title_small">of</div> Anarchy</div>
-        <figure >
-            <img class="img-fluid cover_image" src="imgs/article_2_1.jpg">
+        <figure>
+            <img class="img-fluid first_img cover_image" src="imgs/article_2_1.jpg">
         </figure>
-    <hr class="half-hr">
+    <!--hr class="half-hr"-->
     <div class="subtitle">Streaming platforms, the Culture Industry &amp; the commodification of accessibility</div>
     </div>
-    <hr class="half-hr">
+    <!--hr class="half-hr"-->
 
 
 
@@ -290,7 +288,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>Even though the internet &#8220;is not currently owned by any one corporation or government&#8221; &mdash; the theory goes &mdash; corporations can exercise disproportionate influence online given the sheer volume of internet content; &#8220;the route to the domination of online practice is the domination of <i>online attention</i>.&#8221; In other words, even though there are many spaces preserved for critical communication contrary to corporate interests &amp; away from corporate mediation &mdash; you&#8217;re reading one *wink* &mdash; these spaces are too often overwhelmed by corporate content (sorry, Mr P). As <span class="person" about="Lincoln Dahlberg">Dahlberg</span> writes in &#8220;<span class="book" about="The Corporate Colonization of Online&nbsp;Attention&#8221;">The Corporate Colonization of Online&nbsp;Attention&#8221;</span>:</p>
 
-<blockquote><p>With millions of Web pages, and millions more messages passing through e-mail and discussion groups, being noticed by any more than a handful of people is extremely difficult for most online participants. This is not the case for large media and communication corporations. They can gain significant audience attention given their established branding, strong customer loyalty, extensive product lines, large marketing budgets, and the capital to develop and buy up internet service providers (ISPs), user applications, Web sites, and online content&nbsp;… </p></blockquote>
+<p><blockquote>With millions of Web pages, and millions more messages passing through e-mail and discussion groups, being noticed by any more than a handful of people is extremely difficult for most online participants. This is not the case for large media and communication corporations. They can gain significant audience attention given their established branding, strong customer loyalty, extensive product lines, large marketing budgets, and the capital to develop and buy up internet service providers (ISPs), user applications, Web sites, and online content&nbsp;… </blockquote></p>
 
 <p>Oh &mdash; right, that was in 2005. You know what else was around in 2005? <span class="website" about="AOL">AOL</span> &amp; <span class="website" about="MSN">MSN</span>. People were searching for shit on <i>Yahoo</i>. We&#8217;re talking when <span class="website" about="Myspace">Myspace</span> was the biggest social network &amp; users were checking @hotmail.com accounts. When <span class="website" about="Google">Google</span> was <i>just</i> a search engine; <span class="website" about="Gmail">Gmail</span> &amp; <span class="website" about="Chrome">Chrome</span> were nowhere to be found. It was the year <span class="streaming-service" about="YouTube">YouTube</span> was founded &amp; barely anyone noticed back then. <span class="website" about="Facebook">Facebook</span> wasn&#8217;t even open to the public until 2006, the year <span class="website" about="Twitter">Twitter</span> &amp; <span class="streaming-service" about="Spotify">Spotify</span> were born into&nbsp;obscurity.</p>
 
@@ -352,7 +350,7 @@ Musicians with different label and publishing situations—even those whose musi
         <hr class="half-hr">
 <p>One might argue that a certain amount of this is inoffensive. However, in addition to changing how we ascribe value to music, these playlists are undeniably affecting our interactions with &mdash; &amp; the
  <i>uses</i> of &mdash; musicians. Consider that many tracks on sponsored playlists are ghostwritten &mdash; <span class="streaming-service" about="Spotify">Spotify</span>&#8217;s &#8220;fake artists&#8221; of infamy. But whether or not this is upsetting to you depends on your own vision of what our interactions with music should be. As <a href="shttps://www.digitalmusicnews.com/2017/07/10/spotify-fake-artists-real-artists-paid/">one cynical commentator</a> writes in support of the&nbsp;strategy,</p>
-<blockquote><p>&#8216;Fake artists&#8217; are actually real artists […] [with] fake names that <span class="streaming-service" about="Spotify">Spotify</span> listeners aren&#8217;t reading anyway. […] Show me the <span class="streaming-service" about="Spotify">Spotify</span> listener that c<span class="website" about="Ares">Ares</span> that their zen-like piano music wasn&#8217;t actually performed by <span class="person" about="Julius Aston">Julius Aston</span>. They don&#8217;t. […] Sorry you hate the fact that this &#8216;cheats&#8217; some struggling jazz artist who can&#8217;t get onto a&nbsp;playlist.</p></blockquote>
+<p><blockquote>&#8216;Fake artists&#8217; are actually real artists […] [with] fake names that <span class="streaming-service" about="Spotify">Spotify</span> listeners aren&#8217;t reading anyway. […] Show me the <span class="streaming-service" about="Spotify">Spotify</span> listener that c<span class="website" about="Ares">Ares</span> that their zen-like piano music wasn&#8217;t actually performed by <span class="person" about="Julius Aston">Julius Aston</span>. They don&#8217;t. […] Sorry you hate the fact that this &#8216;cheats&#8217; some struggling jazz artist who can&#8217;t get onto a&nbsp;playlist.</blockquote></p>
 
 <p>Cynicism aside, the writer reminds us that there are actual people behind these tracks who are being remunerated, even if their contracts prevent them from being credited in a familiar way. Regardless, even a neutral stance toward &#8220;fake artists&#8221; must recognize that such a phenomenon is only achievable under a regime that prioritizes music&#8217;s use-value: musicians themselves are&nbsp;expendable.</p>
 
@@ -382,6 +380,7 @@ Musicians with different label and publishing situations—even those whose musi
     </div>
 
 
+
 <!--ARTICLE 3-->
     <div class="col article_col" id="col3">
 
@@ -389,14 +388,14 @@ Musicians with different label and publishing situations—even those whose musi
 <div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">
     With NFTs, Musicians See <div class="title_small">a Way to</div> Finally Take Control</div>
             <figure>
-                <img class="img-fluid cover_image"src="imgs/article_3_1.png" id="dither6">
+                <img class="img-fluid first_img cover_image"src="imgs/article_3_1.png" id="dither6">
             </figure>
-            <hr class="half-hr">
+            <!--hr class="half-hr"-->
 
 <div class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring
     their potential as an alternative to labels and streaming services.</div>
-<hr class="half-hr">
-
+<!--hr class="half-hr"-->
+</div>
             <div class="author_and_date">
 
 <p class="byline">

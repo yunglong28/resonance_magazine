@@ -26,7 +26,8 @@ function change(name) {
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
+    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title"); 
+    $(".container_articles").attr('class', 'container container_articles');
   }
 
   else{
@@ -67,9 +68,16 @@ function change(name) {
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     $("#sep_nav").remove();
     $(".container_articles").attr('class', 'container-fluid container_articles');
-    $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
-    $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
-    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type"); 
+    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if ($("#francesca").length) {
+     if($(".first_img").length === 0){
+       $("<img class=first_img' id='ballerini' src='imgs/ballerini.png'>").insertBefore("#col1 .subtitle");
+       $("<img class='img-fluid opening_img' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
+       $("<img class='img-fluid opening_img' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");}
+    }
+
   }
 
 
