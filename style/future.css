@@ -72,7 +72,8 @@ h5 {
   font-size: 8px;
   margin-bottom: 20px;
   height: 60px;
-
+  border-bottom: solid;
+  border-bottom-color: #73895a;
 }
 /* Rende la navbar orizzontale */
 .navbar ul {

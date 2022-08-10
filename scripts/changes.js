@@ -37,6 +37,19 @@ $(document).ready(function(){
 
     if (style==="style/home_future.css"){
       document.getElementById("pagestyle").setAttribute("href", "style/future.css");
+      $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#navbar")
+      $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_article_1_1.png'>")
+      $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_article_2_1.png'>")
+      $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
+      $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
+      $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
+      $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_article_3_1.png'>")
+      $("#cello").attr('src','imgs/dither_it_cello.png');
+      $("#harp").attr('src','imgs/dither_it_harp.png');
+      $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
+      $("#disco").attr('src','imgs/dither_it_disco.png');
+      $("#boombox").attr('src','imgs/dither_it_boombox.png');
+      $("#walkman").attr('src','imgs/dither_it_walkman.png');
     }
 
 
