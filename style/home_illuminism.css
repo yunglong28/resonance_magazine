@@ -29,6 +29,8 @@ body{
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 
 }
+
+
 /* Rende la navbar orizzontale */
 .navbar ul {
     margin: 1px;
@@ -263,11 +265,9 @@ footer{
     position: relative;
     min-height: 100px;
     font-size: 80px;
-    font-family: 'GFS Didot', serif !important;
     color:white;
     background-color: transparent;
     text-transform: uppercase;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
 
 }
 
@@ -282,7 +282,6 @@ footer{
 .marquee-div {
     position: absolute;
     animation: move-left-to-right linear 70s infinite;
-
 
 }
 
@@ -348,10 +347,6 @@ footer{
     color: black;
 }
 
-a {
-    color: #000 !important;
-    text-decoration: black !important;
-}
 
 #ale, #fra, #lore {
     font-weight: bolder;
@@ -369,4 +364,8 @@ a {
 
 .text {
     text-align: justify;
+}
+
+a {
+    color: darkred !important;
 }
