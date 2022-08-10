@@ -43,6 +43,29 @@ function change(name) {
     $("#yet_img").replaceWith("<img id='yet_img' src='imgs/queen_elizabeth.png' height='550'>")
   }
 
+  if (name === 'illuminist') {
+      $("#pagestyle").attr('href','style/home_illuminism.css');
+      $("#mag_img").replaceWith("<img id='mag_img' src='imgs/didot_page.jpeg' height='550'>")
+      $("#yet_img").replaceWith("<img id='yet_img' src='imgs/didot_transparent.png' height='550'>")
+      $("#marquee_1").remove()
+      $("#marquee_2").remove()
+  }
+
+    if (name === 'future') {
+        $("#pagestyle").attr('href','style/home_future.css');
+        $("#mag_img").replaceWith("<img id='mag_img' src='imgs/dither_it_mag.png' height='550'>")
+        $("#yet_img").replaceWith("<img id='yet_img' src='imgs/dither_it_records.jpg' height='550'>")
+
+        /* ICONE */
+        $("#cello").attr('src','imgs/dither_it_cello.png');
+        $("#harp").attr('src','imgs/dither_it_harp.png');
+        $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
+        $("#disco").attr('src','imgs/dither_it_disco.png');
+        $("#boombox").attr('src','imgs/dither_it_boombox.png');
+        $("#walkman").attr('src','imgs/dither_it_walkman.png');
+
+    }
+
 }
 
  
