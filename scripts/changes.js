@@ -23,6 +23,8 @@ $(document).ready(function(){
     if (style==="style/home_belle.css"){
       document.getElementById("pagestyle").setAttribute("href", "style/belle.css");
       $("#first_img_one").replaceWith("<img class=first_img' id='ballerini first_img_one' src='imgs/ballerini.png'>")
+      $("#first_img_two").replaceWith("<img class='opening_img_belle' id='amazzone first_img_two' src='imgs/amazzone.png'/>")
+      $("#first_img_three").replaceWith("<img class='opening_img_belle' id='pattinatrice first_img_three' src='imgs/pattinatrice.png'/>")
     }
 
     if (style==="style/home_analog.css"){
