@@ -1,7 +1,21 @@
 function keepstylehome(pagestyle){
   var style= document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem("currentstyle", style);
-}
+}/*
+
+
+$(document).ready(function(){
+  if (sessionStorage.getItem("currentstyle")){
+    var style = sessionStorage.getItem("currentstyle");
+    /*document.getElementById("pagestyle").setAttribute("href", style);
+    sessionStorage.clear();
+  }
+  else{
+    alert("hola")
+    /*document.getElementById('pagestyle').setAttribute("href", 'style/home.css');
+  }
+});
+
 
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
@@ -12,10 +26,10 @@ $(document).ready(function(){
   else{
     document.getElementById('pagestyle').setAttribute("href", 'style/home.css');
   }
-});
+});*/
+
 
 function change(name) {
- 
 
    if (name == 'belle') {
     $("#pagestyle").attr('href','style/home_belle.css');
