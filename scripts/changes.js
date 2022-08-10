@@ -9,7 +9,35 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    document.getElementById("pagestyle").setAttribute("href", style);
+    if (style==="style/home.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/issue.css");
+    }
+    if (style==="style/home_illuminism.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/illuminism.css");
+    }
+
+    if (style==="style/home_hobbyhorse.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/hobbyhorse.css");
+    }
+
+    if (style==="style/home_belle.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/belle.css");
+      $("#first_img_one").replaceWith("<img class=first_img' id='ballerini first_img_one' src='imgs/ballerini.png'>")
+    }
+
+    if (style==="style/home_analog.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/analog.css");
+    }
+
+    if (style==="style/home_tabloid.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/tabloid.css");
+    }
+
+    if (style==="style/home_future.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/future.css");
+    }
+
+
     sessionStorage.clear();
   }
 });
@@ -38,8 +66,6 @@ function change(name) {
     $("<img class='op' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertAfter("#col2 .title");
     $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");*/
   }
-
-
 
 
   if (name ==='illuminist'){
