@@ -53,7 +53,7 @@ function change(name) {
 
     if (name === 'future') {
         $("#pagestyle").attr('href','style/home_future.css');
-        $("#mag_img").replaceWith("<img id='mag_img' src='imgs/dither_it_mag.png' height='550'>")
+        $("#mag_img").replaceWith("<img id='mag_img' src='imgs/dither_it_mag.jpeg' height='550'>")
         $("#yet_img").replaceWith("<img id='yet_img' src='imgs/dither_it_records.jpg' height='550'>")
 
         /* ICONE */

@@ -38,18 +38,21 @@ $(document).ready(function(){
     if (style==="style/home_future.css"){
       document.getElementById("pagestyle").setAttribute("href", "style/future.css");
       $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#navbar")
-      $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_article_1_1.png'>")
-      $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_article_2_1.png'>")
+      $("#first_img_one_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one_ale' src='imgs/dither_it_article_1_1.png'>")
+      $("#first_img_two_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two_ale' src='imgs/dither_it_article_2_1.png'>")
       $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
       $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
       $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
-      $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_article_3_1.png'>")
+      $("#first_img_three_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three_ale' src='imgs/dither_it_article_3_1.png'>")
       $("#cello").attr('src','imgs/dither_it_cello.png');
       $("#harp").attr('src','imgs/dither_it_harp.png');
       $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
       $("#disco").attr('src','imgs/dither_it_disco.png');
       $("#boombox").attr('src','imgs/dither_it_boombox.png');
       $("#walkman").attr('src','imgs/dither_it_walkman.png');
+      $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
+      $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
+      $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
     }
 
 
@@ -154,11 +157,38 @@ function change(name) {
   if (name ==='future'){
 
     $("#pagestyle").attr('href','style/future.css');
-    $(".first_img").remove();
+    /* icone */
+    $("#cello").attr('src','imgs/dither_it_cello.png');
+    $("#harp").attr('src','imgs/dither_it_harp.png');
+    $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
+    $("#disco").attr('src','imgs/dither_it_disco.png');
+    $("#boombox").attr('src','imgs/dither_it_boombox.png');
+    $("#walkman").attr('src','imgs/dither_it_walkman.png');
 
-    if($("#nav_hr").length == 0){
-      $("<hr id='nav_hr'>").insertAfter("nav");
-    }
+    /* solar bar */
+    $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")};
+
+  /* immagini ale */
+
+  $("<img class='img-fluid article_images' src='imgs/article_1_1.png'>").remove();
+  $("<img class='img-fluid article_images' src='imgs/article_2_1.jpg'>").remove();
+  $("<img class='img-fluid article_images' src='imgs/article_3_1.png'>").remove();
+  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_1_1.png'>").insertBefore("#contrassegno");
+  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_2_1.png'>").insertBefore("#contrassegno2");
+  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_3_1.png'>").insertBefore("#contrassegno3");
+
+
+
+  $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
+    $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
+    $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
+
+
+    /* immagini fra */
+  $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
+  $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
+  $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
+
     if($("#sep_nav").length == 0){
       $("<br id='sep_nav'>").insertAfter("#nav_hr");
     }
@@ -167,39 +197,16 @@ function change(name) {
     * le tue immagini solo nel tuo (da ale)*/
     if ($("#francesca").length) {
      if($(".opening_img_future").length === 0){
-       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra1.jpg'>").insertAfter("#col1 .title");
-       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
-       $("<img class='img-fluid opening_img_future' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");}
+       $("#first_img_one").replaceWith("<img class='first_img' id='first_img_one' src='imgs/dither_it_fra1.jpg' height='550'>")
+       $("#first_img_two").replaceWith("<img class='first_img' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
+       $("#first_img_three").replaceWith("<img class='first_img' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
     }
 
-    if($("#alessandro").length) {
-      /* Immagini di apertura */
-      $("<img class='img-fluid article_images' src='imgs/article_1_1.png'>").remove();
-      $("<img class='img-fluid article_images' src='imgs/article_2_1.jpg'>").remove();
-      $("<img class='img-fluid article_images' src='imgs/article_3_1.png'>").remove();
-      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_1_1.png'>").insertAfter("#col1 .title");
-      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_2_1.png'>").insertAfter("#col2 .title");
-      $("<img class='img-fluid opening_img' src='imgs/dither_it_article_3_1.png'>").insertAfter("#col3 .title");
-      $("#second_image_second_article").remove();
-      $("#third_image_second_article").remove();
-      $("#fourth_image_second_article").remove();
-      /* Immagini nell'articolo */
-      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_2.png'>").insertAfter(".article_2_2");
-      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_3.png'>").insertAfter(".article_2_3");
-      $("<img class='img-fluid article_images' src='imgs/dither_it_article_2_4.png'>").insertAfter(".article_2_4");
-    }
 
 
 
     if($("#solar_bar").length == 0)
-    {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#sep_nav")};
-    $("#cello").attr('src','imgs/dither_it_cello.png');
-    $("#harp").attr('src','imgs/dither_it_harp.png');
-    $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
-    $("#disco").attr('src','imgs/dither_it_disco.png');
-    $("#boombox").attr('src','imgs/dither_it_boombox.png');
-    $("#walkman").attr('src','imgs/dither_it_walkman.png');
-
+    {
     $("<div class='blackout' id='blackout'><p class='blackout-sentence' id='blackout-sentence'>SERVER IS OUT OF ENERGY</p></div>").insertBefore("head");
     function blackout() {
 
@@ -221,41 +228,4 @@ function change(name) {
     $(".blackout-sentence").remove();
   }
 
-}
-
-
-
-
-/*
-QUELLO CHE PROVAVO A FARE PRIMA
-function change(name, currentstyle) {
-  alert(currentstyle)
-  if (name == 'belle' && currentstyle != 'belle') {
-    $("#pagestyle").attr('href','style/inizio900.css');
-    $(".title_issue").remove();
-    $(".banner_issue").replaceWith("<br>");
-    $(".container_articles img").remove();
-    $("<img id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
-    $("<img id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
-    $("#col2 p:first-of-type").replaceWith( "<div id='container'><div id='left'><span class='key' about='colonization'>Colonization</span></div> <div id='center'>rears its ugly head whenever there is</div> <div id='right'><span class='key' about='globalization'> globalization</span></div></div><br>");
-    $("#col2 p").wrapAll( "<div id='col2_txt'>");
-    $("#belle").setAttr("onclick","change('belle', 'belle')");
-  }
-
-  if (name == 'tabloid' && currentstyle != 'tabloid'){
-    $("#pagestyle").attr('href','style/fine900.css');
-    $(".container_articles img").remove();
-    $("#sep_nav").remove();
-    $("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav");
-    $("#col1 .title").prepend("<img src='imgs/pallino.png'/>");
-    $("#tabloid").removeAttr("onclick");
-    $("#tabloid").setAttr("onclick","change('tabloid', 'tabloid')");
-  }
-
-  if (name=='illuminist'){
-    $("#pagestyle").attr('href','baroque.css');
-    $("img").remove();
-
-  }
-}*/
+} }
