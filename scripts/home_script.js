@@ -45,7 +45,7 @@ function change(name) {
 
   if (name === 'illuminist') {
       $("#pagestyle").attr('href','style/home_illuminism.css');
-      $("#mag_img").replaceWith("<img id='mag_img' src='imgs/didot_page.jpeg' height='550'>")
+      $("#mag_img").replaceWith("<img id='mag_img' src='imgs/kendrick__illuminism.png' height='550' filter='sepia'>")
       $("#yet_img").replaceWith("<img id='yet_img' src='imgs/didot_transparent.png' height='550'>")
       $("#marquee_1").remove()
       $("#marquee_2").remove()

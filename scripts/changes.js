@@ -14,6 +14,12 @@ $(document).ready(function(){
     }
     if (style==="style/home_illuminism.css"){
       document.getElementById("pagestyle").setAttribute("href", "style/illuminism.css");
+      $("#pagestyle").attr('href','style/illuminism.css');
+      $(".first_img").remove();
+
+      $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
+      $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
+      $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
     }
 
     if (style==="style/home_hobbyhorse.css"){
@@ -53,6 +59,11 @@ $(document).ready(function(){
       $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
       $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
       $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
+      $("#fig_article1").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' width='300'>")
+      $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' width='300'>")
+      $("#fig_article").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' width='300'>")
+      $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' width='300'>")
+      $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' width='300'>")
     }
 
 
@@ -188,6 +199,14 @@ function change(name) {
   $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
   $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
   $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
+
+  /* immagini lore */
+  $("#fig_article1").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' width='300'>")
+  $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' width='300'>")
+  $("#fig_article").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' width='300'>")
+  $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' width='300'>")
+  $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' width='300'>")
+
 
     if($("#sep_nav").length == 0){
       $("<br id='sep_nav'>").insertAfter("#nav_hr");
