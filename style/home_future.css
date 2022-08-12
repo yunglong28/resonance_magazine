@@ -323,7 +323,7 @@ footer{
 .wrapper_us{
     display: grid;
     grid-template-columns: 704px 700px ;
-    background-color: lightgrey;
+    background-color:#73895a;
     height: 650px;
     margin-left: -32px;
 }

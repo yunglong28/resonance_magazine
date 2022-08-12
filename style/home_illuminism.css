@@ -111,11 +111,22 @@ p {
 /* per la homepage */
 
 .wrapper_mag{
-    background-color: #bcb19d;
-    height: 600px;
-    margin-left: -22px;
+    background-color: #D5BE95;
     display: grid;
     grid-template-columns: 704px 700px ;
+    height: 600px;
+    margin-left: -32px;
+}
+
+.coltext {
+    color:black;
+    font-size: 25px;
+
+    z-index: 100;
+
+    text-align: justify;
+    margin-top: 60px;
+    margin-left: 70px;
 }
 
 .mag_text{
@@ -128,9 +139,11 @@ p {
 
 /*seconda parte testuale */
 .wrapper_yet{
+
     display: grid;
     grid-template-columns: 704px 700px ;
     height: 700px;
+    margin-left: -32px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 
 }
@@ -158,9 +171,9 @@ p {
 .wrapper {
     display: grid;
     grid-template-columns: 500px 700px ;
+    height: 600px;
     font-family: "Lynotype Didot Roman", serif; !important;
     color: black;
-    height: 600px;
     background-color: #bcb19d;
 
 }
@@ -210,7 +223,9 @@ p {
     color:black;
     font-family: "Lynotype Didot Roman", serif; !important;
     font-size: 25px;
+
     z-index: 100;
+
     text-align: justify;
     margin-top: 80px;
     margin-left: 70px;
@@ -229,13 +244,14 @@ footer{
 }
 
 .colimg {
-    display: block;
-    z-index: 100;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color:black;
+    font-family: 'bodoni';
+    font-size: 25px;
+
+    text-align: justify;
+    margin-top: 21px;
+    margin-left: -300px;
+    z-index: 0;
 }
 
 .colimg2 {
@@ -367,5 +383,5 @@ footer{
 }
 
 a {
-    color: darkred !important;
+    color: black !important;
 }

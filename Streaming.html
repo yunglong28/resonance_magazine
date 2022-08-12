@@ -68,7 +68,7 @@
 
 
 <!-- NAV-->
-<nav class="navbar">
+<nav class="navbar" id="navbar">
 
         <ul>
           <li><a href="home.html" onclick="keepstyle()">The Resonance</a></li>
@@ -95,10 +95,11 @@
             <li class="icons" id="tabloid" onclick="change('tabloid')"><img src="imgs/boomboxhome.png" id="boombox"></li>
             <li class="icons" onclick="change('future')"><img src="imgs/ipodhome.png" class="icons" id="walkman"></li>
             </ul>
+        </ul>
       
 </nav>
 
-
+<br id="sep_nav">
 <!-- Articles Boxes-->
 <div class="container container_articles">
 <div class="row row_articles">
@@ -112,8 +113,9 @@
     <div class="title_and_subtitle">
         <div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">
             How Musicians Are Fighting <div class="title_small">for Streaming Pay</div>  During the Pandemic</div>
+        <span id="contrassegno"></span>
         <figure>
-            <img class="img-fluid first_img cover_image" src="imgs/article_1_1.png"/>
+            <img class="img-fluid first_img cover_image" id="first_img_one_ale" src="imgs/article_1_1.png"/>
         </figure>
     <!--hr class="half-hr"-->
 
@@ -206,11 +208,14 @@ Musicians with different label and publishing situations—even those whose musi
 <!--ARTICLE 2-->
 <div class="col article_col" id="col2" alt="secondoarticolo">
 
+
     <div class="title_and_subtitle">
         <div class="title" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">
             2010s: The End <div class="title_small">of</div> Anarchy</div>
+        <span id="contrassegno2"></span>
+
         <figure>
-            <img class="img-fluid first_img cover_image" src="imgs/article_2_1.jpg">
+            <img class="img-fluid first_img cover_image"  id="first_img_two_ale" src="imgs/article_2_1.jpg">
         </figure>
     <!--hr class="half-hr"-->
     <div class="subtitle">Streaming platforms, the Culture Industry &amp; the commodification of accessibility</div>
@@ -384,12 +389,16 @@ Musicians with different label and publishing situations—even those whose musi
 <!--ARTICLE 3-->
     <div class="col article_col" id="col3">
 
+
         <div class="title_and_subtitle">
 <div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">
     With NFTs, Musicians See <div class="title_small">a Way to</div> Finally Take Control</div>
+
             <figure>
-                <img class="img-fluid first_img cover_image"src="imgs/article_3_1.png" id="dither6">
+                <img class="img-fluid first_img cover_image" id="first_img_three_ale" src="imgs/article_3_1.png" id="dither6">
             </figure>
+            <span id="contrassegno3"></span>
+
             <!--hr class="half-hr"-->
 
 <div class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring
@@ -448,7 +457,7 @@ Musicians with different label and publishing situations—even those whose musi
 </div>
 </body>
 
-<footer>
+<footer class="footer_baroque">
                   <div class="cont">
                     <div class="row">
                       <div class="col-6">
