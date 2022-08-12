@@ -165,7 +165,7 @@ body{
 #col1 .subtitle{
   background-image: url(../imgs/spaccata.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 400px;
   background-position: center;
 }
 

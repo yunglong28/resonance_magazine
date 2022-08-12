@@ -9,7 +9,35 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    document.getElementById("pagestyle").setAttribute("href", style);
+    if (style==="style/home.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/issue.css");
+    }
+    if (style==="style/home_illuminism.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/illuminism.css");
+    }
+
+    if (style==="style/home_hobbyhorse.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/hobbyhorse.css");
+    }
+
+    if (style==="style/home_belle.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/belle.css");
+      $("#first_img_one").replaceWith("<img class=first_img' id='ballerini first_img_one' src='imgs/ballerini.png'>")
+    }
+
+    if (style==="style/home_analog.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/analog.css");
+    }
+
+    if (style==="style/home_tabloid.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/tabloid.css");
+    }
+
+    if (style==="style/home_future.css"){
+      document.getElementById("pagestyle").setAttribute("href", "style/future.css");
+    }
+
+
     sessionStorage.clear();
   }
 });
@@ -26,7 +54,8 @@ function change(name) {
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
+    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title"); 
+    $(".container_articles").attr('class', 'container container_articles');
   }
 
   else{
@@ -37,8 +66,6 @@ function change(name) {
     $("<img class='op' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertAfter("#col2 .title");
     $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");*/
   }
-
-
 
 
   if (name ==='illuminist'){
@@ -67,9 +94,16 @@ function change(name) {
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     $("#sep_nav").remove();
     $(".container_articles").attr('class', 'container-fluid container_articles');
-    $("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-of-type");
-    $("<img src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-of-type");
-    $("<img src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-of-type"); 
+    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if ($("#francesca").length) {
+     if($(".first_img").length === 0){
+       $("<img class=first_img' id='ballerini' src='imgs/ballerini.png'>").insertBefore("#col1 .subtitle");
+       $("<img class='img-fluid opening_img' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#col2 .title");
+       $("<img class='img-fluid opening_img' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#col3 .title");}
+    }
+
   }
 
 
