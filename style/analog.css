@@ -204,7 +204,7 @@ font-style: bold;
 
 .navbar .dropdown ul li {
   min-width: 140px;
-  
+
 }
 
 /* Elementi che stanno del dropdown */
@@ -506,4 +506,13 @@ margin-right: auto;
 display: block;
 webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 filter: grayscale(100%);
+}
+
+footer{
+  color:black!important;
+  background-color: white;
+  margin-top: 70px;
+    font-family: 'vcr'!important;
+  text-transform: uppercase;
+  margin-bottom: 0px;
 }

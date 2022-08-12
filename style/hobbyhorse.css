@@ -184,7 +184,8 @@ margin-right: 20px;
 margin-left: 30px;
 margin-bottom: 0px;
 padding: 0px;
-color:black;
+color:white;
+
 text-decoration: none;
 }
 
@@ -457,5 +458,15 @@ figcaption {
 .icons_nav {
   margin-left: 295px;
   margin-top:10px;
+
+}
+
+footer{
+  color:black!important;
+  background-color: #E9E9E9;
+  margin-top: 20px;
+  font-family: 'caslon_old_faceregular';
+  text-transform: uppercase;
+  margin-bottom: 20px;
 
 }
