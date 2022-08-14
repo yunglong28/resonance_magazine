@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 
 function change(name) {
- 
+
 
    if (name == 'belle') {
     $("#pagestyle").attr('href','style/belle.css');
@@ -83,7 +83,7 @@ function change(name) {
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
-    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title"); 
+    $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
     $(".container_articles").attr('class', 'container container_articles');
   }
 
@@ -117,7 +117,7 @@ function change(name) {
     $(".didot_logo").remove();
   }
 
-  
+
 
   if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
@@ -159,9 +159,23 @@ function change(name) {
 
 
   if (name == 'analog'){
-    $("#pagestyle").attr('href','style/analog.css');  
-    $(".container_articles").attr('class', 'container-fluid container_articles'); 
+    $("#pagestyle").attr('href','style/analog.css');
+    $(".container_articles").attr('class', 'container-fluid container_articles');
+    $("#title_and_subtitle_1").prepend("<img src='imgs/sub1.png' width='300'>");
+    $("#title_and_subtitle_2").prepend("<img  class='micro' id='finalfig1' src='imgs/micro.png' width='300'>");
+    $("#title_and_subtitle_3").prepend("<img  id='fig3' src='imgs/spartito.png' width='300'>");
+    $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
+    $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
+      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
+      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
+      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
+      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
+      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
+      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
+        $(".start_line").remove()
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
+
   }
 
 

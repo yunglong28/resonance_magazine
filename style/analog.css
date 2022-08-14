@@ -148,6 +148,15 @@ font-style: bold;
 
 .navbar li {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  white-space: nowrap;
+  text-align:center !important;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  padding: 0;
 }
 
 /* Tutti gli elementi linkati in navbar */
@@ -515,4 +524,82 @@ footer{
     font-family: 'vcr'!important;
   text-transform: uppercase;
   margin-bottom: 0px;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 172px!important;
+  margin-top: 7px!important;
+}
+
+#myModal {
+  font-family:'joystix_monospace';
+
+        color:black;
+        text-transform: uppercase;
+        font-size: 15px;}
+
+.modal-header {
+    background-color:#white;
+     color:black;
+     border: 10px double black;
+}
+
+.modal-footer {
+    background-color:white;
+     color:lightgrey;
+     border: 10px double black;
+
+
+
+}
+
+
+
+.modal-footer .btn{
+  background-color: transparent;
+border: 5px double black;
+color:black;
+text-transform: uppercase;
+
+}
+
+.modal-footer .btn:hover{
+  background-color:black;
+  color:white;
+
+}
+.modal-header .firstbtn{
+   background-color: transparent;
+border: none;
+ color:lightgrey;
+ font-size: 32px;
+
+ }
+.p-4{
+  font-family:'joystix_monospace'!important;
+       background-color:white!important;
+       color: black;
+       font-size: 15px;
+       border: 10px double black;
+
+
+}
+
+.modal-title {
+ font-size: 32px;
+ text-transform: uppercase;
+
+}
+
+.modal-title:hover {
+ font-size: 32px;
+ text-transform: uppercase;
+ background-color: black;
+ color: white;
+
 }
