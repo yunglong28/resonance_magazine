@@ -31,7 +31,14 @@ $(document).ready(function(){
 
 function change(name) {
 
-    if (name == 'hobbyhorse') {
+   if (name == 'home') {
+    $("#pagestyle").attr('href','style/home.css');
+    $("#mag_img").replaceWith("<img id='mag_img' src='imgs/mag.png' height='550'>")
+   $("#yet_img").replaceWith("<img id='yet_img' src='imgs/records.jpg' height='450'>")
+   }
+
+
+  if (name == 'hobbyhorse') {
    $("#pagestyle").attr('href','style/home_hobbyhorse.css');
    $("#mag_img").replaceWith("<img id='mag_img' src='imgs/ars.png' width='600' >")
    $("#yet_img").replaceWith("<img id='yet_img' src='imgs/flowers.png' height='370'>")

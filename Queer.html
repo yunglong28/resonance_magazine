@@ -81,6 +81,7 @@
               </ul>
             </li>
               <ul class="icons_nav">
+              <li id="" onclick="change('home')"><img class="icons" id="home_icon" src="imgs/magazine.png"></li> 
               <li class="icons"id="" onclick="change('illuminist')"><img class="icons" id="cello" src="imgs/cellohome.png"></li>
               <li class="icons"id="" onclick="change('hobbyhorse')"><img class="icons" id="harp" src="imgs/harphome.png"></li>
               <li class="icons"id="belle" onclick="change('belle')"><img class="icons" id="gramophone"src="imgs/gramophonehome.png"></li>
@@ -90,9 +91,7 @@
           </ul>
         </nav>
 
-
-<br>
-<div class="image" ></div>
+<br id="sep_nav">
 
 <div class="container-fluid container_articles">
 <div class="row row_articles">
@@ -101,12 +100,6 @@
 <div class="cover1">
 
 
-    <figure id="first_img_one"  class="first_img" >
-      	<img id="fig_article" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" width="300">
-
-		<!---img class="opening_img" id="fig1" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" per hobbyhorse-->
-		<figcaption><span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>, photo by <span class="person" about="Renata Raksha">Renata Raksha</span></figcaption>
-</figure>
 
 <div class="title_and_subtitle" id="title_and_subtitle_1">
    <!--img  class="sub1" src="imgs\sub1.png" width="300" per analog-->
@@ -118,6 +111,15 @@
     <div class="subtitle">The revolutionary artist helped change the landscape of <span class="genre" about="pop">pop</span> music as we know it. </div> </div>
 
 </div>
+
+<figure id="first_img_one"  class="first_img" >
+        <img id="fig_article" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" width="300">
+
+    <!---img class="opening_img" id="fig1" src="https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg" per hobbyhorse-->
+    <figcaption><span class="person" about="Sophie" data-label="Sophie" data-wikidata-id="Q18161827">SOPHIE</span>, photo by <span class="person" about="Renata Raksha">Renata Raksha</span></figcaption>
+</figure>
+
+
 <div class="author_and_date">
       <div class="author">By <span class="person" about="PhilipSherburne">Philip Sherburne</span></div> <div class="publicationDate" about="01/02/2021">February 1, 2021</div>
       <hr class="start_line">
@@ -168,17 +170,17 @@
 <div class="col article_col" id="col2">
 
 
-<figure id="first_img_two"  class="first_img">
-		<img class="first_img"id="fig2" src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg"  width="300"> <!-- togliere width="300" e class="opening_img" per hobby-->
-
-		<figcaption>Virtuosity doesn’t resonate for <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> as much as vulnerability does. In her work with <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> and on her solo records, she has
-always been most interested in making emotional connections. Photograph by Collier Schorr for <span class="magazine" about="TheNewYorker" data-wikidata-id="Q217305" data-label="The New Yorker"> The New Yorker</span></figcaption>
-	</figure>
 
 <div class="title_and_subtitle" id="title_and_subtitle_2"> <!--img  class="micro" id="finalfig1" src="imgs\micro.png" width="300" per analog -->
   <p class="title" id="title1"><span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Adrianne Lenker</span>’s Radical Honesty</p>
   <p class="subtitle"><div id="container_belle"><span id="left">In her <span class="genre" about="folk-rock">folk-rock</span></span> <span id="center">songwriting and in interactions with her <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> bandmates, the musician’s raw openness creates strange and</span><span id="right"> thrilling effects.</p><span></div>
 </div>
+<figure id="first_img_two"  class="first_img">
+    <img class="first_img"id="fig2" src="https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg"  width="300"> <!-- togliere width="300" e class="opening_img" per hobby-->
+
+    <figcaption>Virtuosity doesn’t resonate for <span class="person" about="AdrianneLenker" data-label="Adrianne Lenker" data-wikidata-id="Q64875564">Lenker</span> as much as vulnerability does. In her work with <span class="band" about="BigThief" data-label="Big Thief" data-wikidata-id="Q28228836">Big Thief</span> and on her solo records, she has
+always been most interested in making emotional connections. Photograph by Collier Schorr for <span class="magazine" about="TheNewYorker" data-wikidata-id="Q217305" data-label="The New Yorker"> The New Yorker</span></figcaption>
+  </figure>
 
 
 <div class="author_and_date">
@@ -462,11 +464,7 @@ Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
 
 <div class="col article_col" id="col3">
 
-<figure id="first_img_three"  class="first_img">
-  <img class="first_img" id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" width="300">
-		<!--img class="opening_img" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" per hobby-->
-		<figcaption></span></figcaption>
-	</figure>
+
 <div class="title_and_subtitle" id="title_and_subtitle_3">
   <!--img  id="fig3" src="imgs\spartito.png" width="300" per analog-->
 <div class="title">LET US PREY: ANNA CALVI</div>
@@ -475,11 +473,17 @@ Obsessive Hunt for the World’s Rarest 78rpm Records.”</p>
     Anna Calvi’s third album ‘Hunter’ finds her rawer and realer than ever before.
   </div>
   </div>
+  <figure id="first_img_three"  class="first_img">
+  <img class="first_img" id="fig_article"src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" width="300">
+    <!--img class="opening_img" src="https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg" per hobby-->
+  </figure>
 
 
-    <div class="author_and_date"> Words: <div class="author">
+    <div class="author_and_date"> <div class="author">Words: 
 
-    <span class="person" about="EmilyMackay">Emily Mackay</span><span class="photographer">Photos:Eva Pentel</span></div><div class="publicationDate" about="30/08/2018">30th August 2018</div> <hr class="start_line"> </div>
+    <span class="person" about="EmilyMackay">Emily Mackay</span>
+    <br>
+    <span class="photographer">Photos: Eva Pentel</span></div><div class="publicationDate" about="30/08/2018">30th August 2018</div> <hr class="start_line"> </div>
 
 <div class="ArtBody" id="body3">
 <p>In the spring of 2018, a <span class="key" about="red">red</span> mist descended on <span class="person" about="AnnaCalvi" data-label="Anna Calvi" data-wikidata-id="Q262467">Anna Calvi</span>. A ruddy flush suffused her <span class="??" about="Instagram">Instagram</span>, tinting lusty pictures of surrealist beauties, a closeup of smeared lips, a naked back painted with French words: “mute and blind here I am, dressed in thoughts that you lend me”. It was the first bloodshot glimpse into the world of her third album ‘Hunter’, a record the colour of flesh, lust, danger, alarm, life.</p>
