@@ -66,6 +66,12 @@ function change(name) {
     $("#pagestyle").attr('href','style/home_belle.css');
     $("#mag_img").replaceWith("<img id='mag_img' src='imgs/amazzone.png' height='550'>")
     $("#yet_img").replaceWith("<img id='yet_img' src='imgs/pattinatrice.png' height='550'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png'>")
   
   }
 
@@ -73,6 +79,12 @@ function change(name) {
     $("#pagestyle").attr('href','style/home_tabloid.css');
     $("#mag_img").replaceWith("<img id='mag_img' src='imgs/may.png' height='550'>")
     $("#yet_img").replaceWith("<img id='yet_img' src='imgs/queen_elizabeth.png' height='550'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
   }
 
   if (name === 'illuminist') {
