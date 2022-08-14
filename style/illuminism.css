@@ -38,6 +38,15 @@ p {
     font-size: 20px;
 }
 
+#container_belle{
+ color: rgb(0, 0, 0);
+    font-family: 'GFS Didot', serif;
+    margin: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;   
+}
+
 .first_letter {
     font-size: 50px;
     font-family: 'GFS Didot', serif;
@@ -520,8 +529,7 @@ a:hover{
   width: 30px;
   height: 30px;
 }
-
 .icons_nav {
-  margin-left: 295px;
-  margin-top: 7px;
+  margin-left: 295px!important;
+  margin-top: 7px!important;
 }
