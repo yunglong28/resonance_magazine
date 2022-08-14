@@ -108,6 +108,14 @@ function change(name) {
        $("<figure id='first_img_three'><img class='first_img' id='fig_article' src='https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg' width='300'><figcaption></span></figcaption></figure>").insertAfter("#col3 .title");}
     }
 
+     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
+     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
+     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
+     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
+     $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
+     $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
+     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+
   }
 
 
@@ -120,6 +128,13 @@ function change(name) {
     $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
     $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
     $(".container_articles").attr('class', 'container container_articles');
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png'>")
   }
 
   else{
@@ -133,11 +148,13 @@ function change(name) {
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
-
-
-    /* per la home */
-    $(".marquee-section").remove();
-    $("<img src='imgs/cellohome.png'>").remove();
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
   }
 
   else {
@@ -176,6 +193,14 @@ function change(name) {
        $("<figure id='first_img_three'><img class='first_img' id='fig_article' src='https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg' width='300'><figcaption></span></figcaption></figure>").insertAfter("#col3 .title");}
     }
 
+     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
+
   }
 
   else{
@@ -189,6 +214,13 @@ function change(name) {
     $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
+     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
   }
 
   else {
