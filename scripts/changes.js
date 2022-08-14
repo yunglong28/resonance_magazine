@@ -96,19 +96,13 @@ function change(name) {
   }
 
   else{
-    $("#container_belle").remove();
     $(".opening_img_belle").remove();
-    /*if($('.op').length == 0){
-    $("<img class='op' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertAfter("#col1 .title");
-    $("<img class='op' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertAfter("#col2 .title");
-    $("<img class='op'src='https://ia804507.us.archive.org/10/items/pub_popular-music-and-society/pub_popular-music-and-society_itemimage.jpg' width='300'>").insertAfter("#col3 .title");*/
   }
 
 
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
-    /*$(".first_img").remove();*/
-
+    $(".first_img").remove();
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
@@ -126,15 +120,13 @@ function change(name) {
   }
 
 
-
-
   if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     /*$("#sep_nav").remove();*/
     $(".container_articles").attr('class', 'container-fluid container_articles');
     if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
-    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col1 p:last-child")};
-    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-child")};
 
     if ($("#francesca").length) {
      if($(".first_img").length === 0){
@@ -157,11 +149,7 @@ function change(name) {
        $("<figure id='first_img_three'><img class='first_img' id='fig_article' src='https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg' width='300'><figcaption></span></figcaption></figure>").insertAfter("#col3 .title");}
     }
 
-
-
   }
-
-
 
   else{
     $(".container_articles").attr('class', 'container container_articles');
@@ -179,16 +167,15 @@ function change(name) {
   else {
     $(".banner_issue").remove();
     $(".title_issue").remove();
-    $("#pallino").remove();
   }
 
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
     $(".container_articles").attr('class', 'container-fluid container_articles');
-    $("#title_and_subtitle_1").prepend("<img src='imgs/sub1.png' width='300'>");
-    $("#title_and_subtitle_2").prepend("<img  class='micro' id='finalfig1' src='imgs/micro.png' width='300'>");
-    $("#title_and_subtitle_3").prepend("<img  id='fig3' src='imgs/spartito.png' width='300'>");
+    $("#title_and_subtitle_1").prepend("<img class='analog_img' src='imgs/sub1.png' width='300'>");
+    $("#title_and_subtitle_2").prepend("<img  class=' analog_img micro' id='finalfig1' src='imgs/micro.png' width='300'>");
+    $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
     $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
     $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
       $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
@@ -198,10 +185,37 @@ function change(name) {
       $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
       $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
       $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
-        $(".start_line").remove()
-    if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
+      $(".start_line").remove()
 
-  }
+
+    if ($("#francesca").length) {
+      $(".first_img").remove()
+       $("<img class='first_img' id='first_img_one' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertBefore("#title_and_subtitle_1");
+       $("<img class='first_img' id='first_img_two' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertBefore("#title_and_subtitle_2");
+       $("<img class='first_img' id='first_img_three' src='imgs/popular_music_and_society.jpg' width='300'>").insertBefore("#title_and_subtitle_3");
+     }
+
+     if ($("#alessandro").length) {
+      $(".first_img").remove()
+       $("<img class='img-fluid first_img cover_image' id='first_img_one' src='imgs/article_1_1.png'/>").insertBefore("#title_and_subtitle_1");
+       $(" <img class='img-fluid first_img cover_image'  id='first_img_two' src='imgs/article_2_1.jpg'>").insertBefore("#title_and_subtitle_2");
+       $("<img class='img-fluid first_img cover_image' id='first_img_three' src='imgs/article_3_1.png' id='dither6'>").insertBefore("#title_and_subtitle_3");
+    }
+
+
+
+    }
+
+    else{
+      $('.analog_img').remove();
+      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
+      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
+      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
+      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
+      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
+      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+    }
+
 
 
   /*if (name ==='future'){

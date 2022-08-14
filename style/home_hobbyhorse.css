@@ -621,8 +621,8 @@ border: none;
 }
 
 .icons_nav {
-  margin-left: 295px;
-  margin-top: 7px;
+  margin-left: 295px!important;
+  margin-top: 7px!important;
 }
 
 .slide_us{

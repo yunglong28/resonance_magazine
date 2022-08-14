@@ -94,10 +94,6 @@ body{
     visibility: visible;
 }
 
-.icons {
-    filter: sepia(80%) !important;
-    width: 60% !important;
-}
 
 p {
     color: rgb(0, 0, 0);
@@ -384,4 +380,14 @@ footer{
 
 a {
     color: black !important;
+}
+
+.icons_nav {
+  margin-left: 295px!important;
+  margin-top: 7px!important;
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
 }

@@ -34,7 +34,13 @@
 }
 p {color: black;
 font-family: 'caslon_old_faceregular';
+}
 
+#container_belle{
+  text-align: center;
+    font-size: 14px;
+    font-family: 'caslon_old_face_italic';
+    text-transform: uppercase;
 }
 
 #body2::first-letter {
@@ -456,10 +462,10 @@ figcaption {
 }
 
 .icons_nav {
-  margin-left: 295px;
-  margin-top:10px;
-
+  margin-left: 295px!important;
+  margin-top: 7px!important;
 }
+
 
 footer{
   color:black!important;

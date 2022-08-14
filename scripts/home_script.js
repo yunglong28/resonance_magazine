@@ -45,6 +45,10 @@ function change(name) {
 
  }
 
+  else{
+    $("#block1").remove();
+  }
+
  if (name == 'disco') {
   $("#pagestyle").attr('href','style/home_analog.css');
   $("#mag_img").remove()
