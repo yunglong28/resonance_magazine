@@ -5,7 +5,7 @@ function keepstyle(pagestyle){
 }
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
     if (style==="style/home.css"){
@@ -76,7 +76,7 @@ $(document).ready(function(){
   }
 
 
-});
+});*/
 
 
 
@@ -107,7 +107,7 @@ function change(name) {
 
   if (name ==='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
-    $(".first_img").remove();
+    /*$(".first_img").remove();*/
 
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
@@ -130,7 +130,7 @@ function change(name) {
 
   if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
-    $("#sep_nav").remove();
+    /*$("#sep_nav").remove();*/
     $(".container_articles").attr('class', 'container-fluid container_articles');
     if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
     if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col1 p:last-child")};
@@ -173,7 +173,6 @@ function change(name) {
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
-    /*$("#col1 .title").prepend("<img src='imgs/pallino.png'/>");*/
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
   }
 
@@ -188,13 +187,14 @@ function change(name) {
     $("#pagestyle").attr('href','style/analog.css');  
     $(".container_articles").attr('class', 'container-fluid container_articles'); 
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
+
   }
 
 
-  if (name ==='future'){
+  /*if (name ==='future'){
 
     $("#pagestyle").attr('href','style/future.css');
-    /* icone */
+    /* icone 
     $("#cello").attr('src','imgs/dither_it_cello.png');
     $("#harp").attr('src','imgs/dither_it_harp.png');
     $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
@@ -202,10 +202,10 @@ function change(name) {
     $("#boombox").attr('src','imgs/dither_it_boombox.png');
     $("#walkman").attr('src','imgs/dither_it_walkman.png');
 
-    /* solar bar */
+    /* solar bar 
     $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")};
 
-  /* immagini ale */
+  /* immagini ale 
 
   $("<img class='img-fluid article_images' src='imgs/article_1_1.png'>").remove();
   $("<img class='img-fluid article_images' src='imgs/article_2_1.jpg'>").remove();
@@ -221,12 +221,12 @@ function change(name) {
     $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
 
 
-    /* immagini fra */
+    /* immagini fra 
   $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
   $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
   $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
 
-  /* immagini lore */
+  /* immagini lore 
   $("#fig_article1").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' width='300'>")
   $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' width='300'>")
   $("#fig_article").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' width='300'>")
@@ -239,7 +239,7 @@ function change(name) {
     }
     /*inserire un if per issue! Se inserisci nome dell'elemento
     * punto lenght come qua sotto verifica se esiste e poi fa. così inserisce
-    * le tue immagini solo nel tuo (da ale)*/
+    * le tue immagini solo nel tuo (da ale)
     if ($("#francesca").length) {
      if($(".opening_img_future").length === 0){
        $("#first_img_one").replaceWith("<img class='first_img' id='first_img_one' src='imgs/dither_it_fra1.jpg' height='550'>")
@@ -271,6 +271,6 @@ function change(name) {
     $(".opening_img_future").remove();
     $(".blackout").remove();
     $(".blackout-sentence").remove();
-  }
+  }*/
 
-} }
+} 
