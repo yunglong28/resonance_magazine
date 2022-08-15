@@ -1,34 +1,3 @@
-function keepstylehome(pagestyle){
-  var style= document.getElementById(pagestyle).getAttribute("href");
-  sessionStorage.setItem("currentstyle", style);
-}/*
-
-
-$(document).ready(function(){
-  if (sessionStorage.getItem("currentstyle")){
-    var style = sessionStorage.getItem("currentstyle");
-    /*document.getElementById("pagestyle").setAttribute("href", style);
-    sessionStorage.clear();
-  }
-  else{
-    alert("hola")
-    /*document.getElementById('pagestyle').setAttribute("href", 'style/home.css');
-  }
-});
-
-
-$(document).ready(function(){
-  if (sessionStorage.getItem("currentstyle")){
-    var style = sessionStorage.getItem("currentstyle");
-    document.getElementById("pagestyle").setAttribute("href", style);
-    sessionStorage.clear();
-  }
-  else{
-    document.getElementById('pagestyle').setAttribute("href", 'style/home.css');
-  }
-});*/
-
-
 function change(name) {
 
    if (name == 'home') {
@@ -136,3 +105,50 @@ function change(name) {
     }
 
 }
+
+
+function keepstylehome(pagestyle){
+  var style= document.getElementById(pagestyle).getAttribute("href");
+  sessionStorage.setItem("currentstyle", style);
+}
+
+$(document).ready(function(){
+  if (sessionStorage.getItem("currentstyle")){
+    var style = sessionStorage.getItem("currentstyle");
+    
+    if (style==="style/illuminism.css"){
+      change('illuminist')
+    }
+
+     if (style==="style/hobbyhorse.css"){
+      change('hobbyhorse')
+    }
+
+     if (style==="style/belle.css"){
+      change('belle')
+    }
+
+
+     if (style==="style/analog.css"){
+      change('disco')
+    }
+
+
+     if (style==="style/tabloid.css"){
+      change('tabloid')
+    }
+
+
+     if (style==="style/future.css"){
+      change('future')
+    }
+
+       sessionStorage.clear();
+
+}
+
+else{
+   $("#pagestyle").attr('href','style/home.css');
+}
+
+});
