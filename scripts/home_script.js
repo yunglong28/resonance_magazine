@@ -66,8 +66,9 @@ function change(name) {
 
  if (name == 'disco') {
   $("#pagestyle").attr('href','style/home_analog.css');
-  $("#mag_img").remove()
-  $(".colimg").append('<p> <img class="star_img"  src="imgs/star.png" ></p> <p> <img  class="tastiera_img" src="imgs/tastiera.png" > </p>')
+   $("#mag_img").replaceWith("<img id='mag_img' src='imgs/tastieranew.png'>")
+  /*$("#mag_img").remove()
+  $(".colimg").append('<p> <img class="star_img"  src="imgs/star.png" ></p> <p> <img  class="tastiera_img" src="imgs/tastiera.png" > </p>')*/
   $("#yet_img").replaceWith("<img id='yet_img' src='imgs/records.jpg' height='450'>")
   $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
   $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
@@ -89,7 +90,7 @@ function change(name) {
     $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png'>")
     $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png'>")
     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png'>")
-  
+
   }
 
   if (name == 'tabloid') {
