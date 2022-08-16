@@ -246,13 +246,13 @@ function change(name) {
         }
 
         if($("#francesca").length === 1) {
+            
             $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
             $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
             $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
         }
 
         if($("#lorenza").length === 1) {
-
             $("#fig_article").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>")
             $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>")
             $("#fig_article3").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>")
