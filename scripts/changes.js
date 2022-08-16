@@ -222,10 +222,33 @@ function change(name) {
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
         }
 
-        if($("#alessandro").length == 1)
+        if($("#alessandro").length){
+          $(".first_img").remove()
+          $("<img class='img-fluid first_img dithered_images' id='dither_1_ale' src='imgs/dither_it_article_1_1.png'>").insertAfter("#title_and_subtitle_1 .title")
+          $("<img class='img-fluid first_img dithered_images' id='dither_2_ale' src='imgs/dither_it_article_2_1.png'>").insertAfter("#title_and_subtitle_2 .title")
+          $("<img class='img-fluid first_img dithered_images' id='dither_3_ale' src='imgs/dither_it_article_3_1.png'>").insertAfter("#title_and_subtitle_3 .title")
+        }
+
+        if($("#francesca").length){
+          $(".first_img").remove()
+          $("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>").insertAfter("#title_and_subtitle_1 .title")
+          $("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>").insertAfter("#title_and_subtitle_2 .title")
+          $("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>").insertAfter("#title_and_subtitle_3 .title")
+        }
+
+        if($("#lorenza").length){
+          $(".first_img").remove()
+          $("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_1 .title")
+          $("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_2 .title")
+          $("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>").insertAfter("#title_and_subtitle_3 .title")
+        }
+
+      }
+
+
+
+        /*if($("#alessandro").length)
         {
-
-
             if ($("#dither_1_ale").length == 0) {
                 $("<img class='img-fluid opening_img dithered_images' id='dither_1_ale' src='imgs/dither_it_article_1_1.png'>").insertBefore("#contrassegno")
             }
@@ -260,7 +283,7 @@ function change(name) {
 
         }
     }
-
+*/
 
     else{
         $("#solar_bar").remove();
