@@ -117,30 +117,30 @@ $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
     
-    if (style==="style/illuminism.css"){
+    if (style==="style/illuminism.css"||style==="style/documentation_illuminism.css"){
       change('illuminist')
     }
 
-     if (style==="style/hobbyhorse.css"){
+     if (style==="style/hobbyhorse.css"||style==="style/documentation_hobbyhorse.css"){
       change('hobbyhorse')
     }
 
-     if (style==="style/belle.css"){
+     if (style==="style/belle.css"||style==="style/documentation_belle.css"){
       change('belle')
     }
 
 
-     if (style==="style/analog.css"){
+     if (style==="style/analog.css"||style==="style/documentation_analog.css"){
       change('disco')
     }
 
 
-     if (style==="style/tabloid.css"){
+     if (style==="style/tabloid.css"||style==="style/documentation_tabloid.css"){
       change('tabloid')
     }
 
 
-     if (style==="style/future.css"){
+     if (style==="style/future.css"||style==="style/documentation_future.css"){
       change('future')
     }
 

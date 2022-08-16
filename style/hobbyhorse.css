@@ -198,6 +198,7 @@ text-decoration: none;
 .navbar li a {
 color: white;
 text-decoration: none;
+font-size: 20px;
 }
 
 .navbar li:hover{
@@ -226,6 +227,7 @@ text-decoration:none;
   transition: 0.2s;
     background-color: #53575c;
     text-decoration: none;
+
   }
 
 
@@ -247,10 +249,9 @@ visibility: visible;
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul a {
   padding: 0px;
-  font-size: 16px;
   color: white;
   text-transform: uppercase;
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 

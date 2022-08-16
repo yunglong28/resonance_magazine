@@ -305,33 +305,32 @@ $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
     
-    if (style==="style/home.css"){
-      document.getElementById("pagestyle").setAttribute("href", "style/issue.css");
-      $(".container_articles").attr('class', 'container-fluid container_articles');
+    if (style==="style/home.css"||style==="style/issue.css"){
+       change('home');
     }
 
 
-    if (style==="style/home_illuminism.css"){
+    if (style==="style/home_illuminism.css"||style==="style/illuminism.css"){
       change('illuminist');
     }
 
-    if (style==="style/home_hobbyhorse.css"){
+    if (style==="style/home_hobbyhorse.css"||style==="style/hobbyhorse.css"){
        change('hobbyhorse');
     }
 
-    if (style==="style/home_belle.css"){
+    if (style==="style/home_belle.css"||style==="style/belle.css"){
       change('belle');
     }
 
-    if (style==="style/home_analog.css"){
+    if (style==="style/home_analog.css"||style==="style/analog.css"){
       change('analog');
     }
 
-    if (style==="style/home_tabloid.css"){
+    if (style==="style/home_tabloid.css"||style==="style/tabloid.css"){
       change('tabloid');
     }
 
-    if (style==="style/home_future.css"){
+    if (style==="style/home_future.css"||style==="style/future.css"){
       change('future');
       /*document.getElementById("pagestyle").setAttribute("href", "style/future.css");
       $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#navbar")
@@ -357,37 +356,9 @@ $(document).ready(function(){
       $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' width='300'>")*/
     }
 
- /*passaggio issue-issue*/
-
-     if (style==="style/belle.css"){
-      change('belle');
-     }
-
-     if (style==="style/tabloid.css"){
-      change('tabloid');
-     }
-
-     if (style==="style/analog.css"){
-      change('analog');
-     }
-
-     if (style==="style/illuminism.css"){
-      change('illuminist');
-     }
-
-     if (style==="style/hobbyhorse.css"){
-      change('hobbyhorse');
-     }
-
-     if (style==="style/future.css"){
-      change('future');
-     }
 
     sessionStorage.clear();
   }
 
 
 });
-
-
-

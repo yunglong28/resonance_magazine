@@ -1,26 +1,20 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-@font-face{
-  font-family:Golddrew;
-  src:url("../fonts/Golddrew.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
 @font-face{
-  font-family:Franklin;
-  src:url("../fonts/BenjaminFranklin.ttf");
+  font-family: "Metropolis-ExtraBoldItalic";
+  src:url("../fonts/Metropolis-ExtraBoldItalic.otf");
 }
-
 @font-face{
-  font-family:Romantine;
-  src:url("../fonts/Romantine.ttf");
+  font-family:"futura";
+  src:url("../fonts/Futura Condensed Bold.otf");
 }
 
-    /* NAVBAR */
+   /* NAVBAR */
 .navbar {
-  font-family: 'Bebas Neue';
-  background-image: url(../imgs/old_paper.jpg);
+  font-family: 'Metropolis-ExtraBoldItalic';
+  background-color: rgb(183,64,59);
   position: fixed;
+  color:white!important;
   text-transform: uppercase;
   font-size: 8px;
 }
@@ -39,18 +33,18 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 20px;
   white-space: nowrap;
   text-align:center !important;
   margin-right: 20px;
   margin-left: 30px;
   margin-bottom: 0px;
   padding: 0;
-  color:#9f281f;
+  color:white;
 }
 
 .navbar li a {
-   color: #9f281f;
+   color:white;
 }
 
 .navbar li:hover{
@@ -71,16 +65,18 @@
   padding: 5px 0;
   visibility: hidden;
   background: #fff;
-
 }
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul li{
   padding: 10px;
   font-size: 20px;
-
-
+  color:black!important;
 }
+
+.navbar .dropdown ul li a{
+  color:black!important;
+  }
 
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -90,9 +86,21 @@
 }
 
 
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px!important;
+  margin-top: 7px!important;
+}
+
+
 /*Fine navbar*/
 
 html {
+  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -100,11 +108,10 @@ html {
 section {
   width: 100%;
   height: 150vh;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Bebas Neue';
+  font-family: 'Futura';
   font-size: 25px;
   margin-top: 0px;
 }
@@ -114,48 +121,43 @@ section {
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  color:rgb(191, 164, 4); 
 }
 
 
-
-
 .btn-10{
- font-family: 'Golddrew', cursive;
-  background-color: transparent;
-   border: 3px solid  rgb(0, 53, 102);
-  color: rgb(0, 53, 102);
+  font-family: "Metropolis-ExtraBoldItalic";
+  background-color: rgb(183,64,59);
+  border: none;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   margin-top: 20px;
 }
 
 .btn-10:hover {
-  font-family: Golddrew, cursive;
-    background-color: rgb(211, 104, 65);
-    border: 3px solid  rgb(228, 217, 201);
-    color: rgb(228, 217, 201);
+  font-family: "Metropolis-ExtraBoldItalic";
+    background-color: white;
+    border: none;
+    color:rgb(183,64,59);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
   }
+
 .marquee-section {
     position: relative;
-    min-height:   100px;
+    min-height: 100px;
     font-size: 80px;
-    background-color: black;
-    color: rgb(228, 217, 201);
-    font-family: 'Franklin';
-    background-color: rgb(211, 104, 65);
-
-
+    font-family: 'Metropolis-ExtraBoldItalic', serif;
+    color:white;
+    background-color: rgb(183,64,59);
 }
 
 .marquee-section, .marquee-section * {
@@ -196,29 +198,30 @@ section {
 footer{
   color:black!important;
   background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: nimbus;
+  margin-top: 30px;
+  font-family: 'Metropolis-ExtraBoldItalic';
   text-transform: uppercase;
   height:30vh;
   font-size: 20px;
 }
 #magazine2{
-color: rgb(228, 217, 201);
-font-family: 'Franklin';
-background-color: rgb(211, 104, 65);
+  background-color:black;
 height: 370px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
 padding-bottom: 2%;
+  color:white;
+    font-family: 'Futura';
+    text-transform: uppercase;
     font-size: 25px;
     text-align: justify;
 
 }
+
 .btn_stili {
+  background-color:white;
   height: 100px;
-  background-image: url(../imgs/old_paper.jpg);
   text-align: center;
 }
 
@@ -229,17 +232,25 @@ padding-bottom: 2%;
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-
-    font-family: bodoni;
-    font-size: 22px;
+  font-family: bodoni;
+  font-size: 22px;
 }
 
 section {
   width: 100%;
   height: 220vh;
+  background-color:black;
   display: flex;
   align-items: center;
   text-align: justify;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+.titles{
+  font-family: 'Metropolis-ExtraBoldItalic'!important;
+  color:rgb(183,64,59);
 }
 
 /* unvisited link */
@@ -279,7 +290,7 @@ a:active {
 }
 
 .style_title {
-  font-size: 40px;
+  text-decoration: ;
 }
 
 .icons {
@@ -344,16 +355,4 @@ border: none;
 .modal-title {
   font-size: 32px;
   text-transform: uppercase;
-}
-
-
-
-.icons {
-  width: 30px;
-  height: 30px;
-}
-
-.icons_nav {
-  margin-left: 350px!important;
-  margin-top: 7px!important;
 }
