@@ -208,88 +208,71 @@ function change(name) {
     }
 
 
+    if (name ==='future') {
 
-  /*if (name ==='future'){
-
-    $("#pagestyle").attr('href','style/future.css');
-    /* icone
-    $("#cello").attr('src','imgs/dither_it_cello.png');
-    $("#harp").attr('src','imgs/dither_it_harp.png');
-    $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
-    $("#disco").attr('src','imgs/dither_it_disco.png');
-    $("#boombox").attr('src','imgs/dither_it_boombox.png');
-    $("#walkman").attr('src','imgs/dither_it_walkman.png');
-
-    /* solar bar
-    $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")};
-
-  /* immagini ale
-
-  $("<img class='img-fluid article_images' src='imgs/article_1_1.png'>").remove();
-  $("<img class='img-fluid article_images' src='imgs/article_2_1.jpg'>").remove();
-  $("<img class='img-fluid article_images' src='imgs/article_3_1.png'>").remove();
-  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_1_1.png'>").insertBefore("#contrassegno");
-  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_2_1.png'>").insertBefore("#contrassegno2");
-  $("<img class='img-fluid opening_img' src='imgs/dither_it_article_3_1.png'>").insertBefore("#contrassegno3");
+        $("#pagestyle").attr('href', 'style/future.css');
+        $("#cello").attr('src', 'imgs/dither_it_cello.png');
+        $("#harp").attr('src', 'imgs/dither_it_harp.png');
+        $("#gramophone").attr('src', 'imgs/dither_it_gramophone.png');
+        $("#disco").attr('src', 'imgs/dither_it_disco.png');
+        $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
+        $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
 
 
+        if ($("#solarbar".length === 0) && (name === 'future')) {
+            $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
+        }
 
-  $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
-    $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
-    $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
-
-
-    /* immagini fra
-  $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
-  $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
-  $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
-
-  /* immagini lore
-  $("#fig_article1").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' width='300'>")
-  $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' width='300'>")
-  $("#fig_article").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' width='300'>")
-  $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' width='300'>")
-  $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' width='300'>")
+        if($("#alessandro").length === 1)
+        {
 
 
-    if($("#sep_nav").length == 0){
-      $("<br id='sep_nav'>").insertAfter("#nav_hr");
-    }
-    /*inserire un if per issue! Se inserisci nome dell'elemento
-    * punto lenght come qua sotto verifica se esiste e poi fa. così inserisce
-    * le tue immagini solo nel tuo (da ale)
-    if ($("#francesca").length) {
-     if($(".opening_img_future").length === 0){
-       $("#first_img_one").replaceWith("<img class='first_img' id='first_img_one' src='imgs/dither_it_fra1.jpg' height='550'>")
-       $("#first_img_two").replaceWith("<img class='first_img' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
-       $("#first_img_three").replaceWith("<img class='first_img' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
+            if ($("#dither_1_ale".length === 0) && (name === 'future')) {
+                $("<img class='img-fluid opening_img dithered_images' id='dither_1_ale' src='imgs/dither_it_article_1_1.png'>").insertBefore("#contrassegno")
+            }
+
+            if ($("#dither_2_ale".length === 0) && (name === 'future')) {
+                $("<img class='img-fluid opening_img dithered_images' id='dither_2_ale' src='imgs/dither_it_article_2_1.png'>").insertBefore("#contrassegno2")
+            }
+
+            if ($("#dither_3_ale".length === 0) && (name === 'future')) {
+                $("<img class='img-fluid opening_img dithered_images' id='dither_3_ale' src='imgs/dither_it_article_3_1.png'>").insertBefore("#contrassegno3")
+            }
+
+            $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
+            $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
+            $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
+
+        }
+
+        if($("#francesca").length === 1) {
+            
+            $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
+            $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
+            $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
+        }
+
+        if($("#lorenza").length === 1) {
+            $("#fig_article").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>")
+            $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>")
+            $("#fig_article3").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>")
+            $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' class='dithered_images' width='300'>")
+            $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' class='dithered_images' width='300'>")
+
+        }
     }
 
 
+    else{
+        $("#solar_bar").remove();
+        $("#nav_hr").remove();
+        $(".opening_img_future").remove();
+        $(".blackout").remove();
+        $(".blackout-sentence").remove();
+        $(".dithered_images").remove();
 
+    }
 
-    if($("#solar_bar").length == 0)
-    {
-    $("<div class='blackout' id='blackout'><p class='blackout-sentence' id='blackout-sentence'>SERVER IS OUT OF ENERGY</p></div>").insertBefore("head");
-    function blackout() {
-
-            document.getElementById("blackout").style.display = "flex";
-            document.getElementById("blackout-sentence").style.display = "flex";
-            console.log('starting timer');
-}
-
-    myTimeout = setTimeout(blackout, 300000);
-
-  }
-
-
-  else{
-    $("#solar_bar").remove();
-    $("#nav_hr").remove();
-    $(".opening_img_future").remove();
-    $(".blackout").remove();
-    $(".blackout-sentence").remove();
-  }*/
 
 }
 
