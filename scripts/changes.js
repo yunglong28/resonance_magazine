@@ -254,6 +254,12 @@ function change(name) {
 
         if($("#lorenza").length === 1) {
 
+            $("#fig_article").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>")
+            $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>")
+            $("#fig_article3").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>")
+            $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' class='dithered_images' width='300'>")
+            $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' class='dithered_images' width='300'>")
+
         }
     }
 
