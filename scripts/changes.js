@@ -169,6 +169,7 @@ function change(name) {
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
+    $("#sep_nav").remove();
     $(".container_articles").attr('class', 'container-fluid container_articles');
     $("#title_and_subtitle_1").prepend("<img class='analog_img' src='imgs/sub1.png' width='300'>");
     $("#title_and_subtitle_2").prepend("<img  class=' analog_img micro' id='finalfig1' src='imgs/micro.png' width='300'>");
@@ -232,7 +233,8 @@ function change(name) {
         $("#disco").attr('src', 'imgs/dither_it_disco.png');
         $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
-
+        if ($('#sep_nav').length == 0) {"<br id='sep_nav'>" .insertAfter("nav")}
+        
 
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
         }
@@ -393,13 +395,19 @@ jQuery(document).ready(function ( $ ) {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
-    document.getElementById("articoli_ale").style.marginLeft = "350px";
+    document.getElementById("articoli").style.marginLeft = "350px";
+    document.getElementById("articoli").style.width = "70%";
+    $(".openbtn").removeAttr("onclick");
+    $(".openbtn").attr('onclick','closeNav()');
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("articoli_ale").style.marginLeft = "0";
+    document.getElementById("articoli").style.marginLeft = "auto";
+    document.getElementById("articoli").style.width = "100%";
+    $(".openbtn").removeAttr("onclick");
+    $(".openbtn").attr('onclick','openNav()');
 }
 
 
