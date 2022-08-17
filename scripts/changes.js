@@ -12,15 +12,15 @@ function change(name) {
     }
 
     if ($("#alessandro").length) {
-     if($(".first_img").length === 0){
-       $("<img class='first_img' id='first_img_one' src='imgs/article_1_1.png' width='300'/>").insertAfter("#col1 .title");
-       $(" <img class='first_img'  id='first_img_two' src='imgs/article_2_1.jpg' width='300'>").insertAfter("#col2 .title");
-       $("<img class='first_img' id='first_img_three' src='imgs/article_3_1.png' id='dither6' width='300'>").insertAfter("#col3 .title");}
-    }
+
+       $("<img class='first_img ' id='first_img_one_ale' src='imgs/article_1_1.png' width='400'/>").insertAfter("#col1 .title");
+       $(" <img class='first_img'  id='first_img_two' src='imgs/article_2_1.jpg' width='400'>").insertAfter("#col2 .title");
+       $("<img class='first_img' id='first_img_three' src='imgs/article_3_1.png' width='400'>").insertAfter("#col3 .title");}
+
 
      if ($("#lorenza").length) {
      if($(".first_img").length === 0){
-       $(" <figure id='first_img_one'><img id='fig_article' class='first_img' src='https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg' width='300'> <figcaption><span class='person' about='Sophie' data-label='Sophie' data-wikidata-id='Q18161827'>SOPHIE</span>, photo by <span class='person' about='Renata Raksha'>Renata Raksha</span></figcaption></figure>").insertAfter("#col1 .title");
+       $("<figure id='first_img_one'><img id='fig_article' class='first_img' src='https://media.pitchfork.com/photos/5f071957ca5f171c3b77135b/2:1/w_2560%2Cc_limit/SOPHIE%252520new%252520music%252520live%252520set.jpg' width='300'> <figcaption><span class='person' about='Sophie' data-label='Sophie' data-wikidata-id='Q18161827'>SOPHIE</span>, photo by <span class='person' about='Renata Raksha'>Renata Raksha</span></figcaption></figure>").insertAfter("#col1 .title");
        $("<figure id='first_img_two'><img class='first_img' src='https://media.newyorker.com/photos/5f7e295b9ee31e60d7874e93/master/w_2560%2Cc_limit/201019_r37204.jpg'  width='300'> <figcaption>Virtuosity doesn’t resonate for <span class='person' about='AdrianneLenker' data-label='Adrianne Lenker' data-wikidata-id='Q64875564'>Lenker</span> as much as vulnerability does. In her work with <span class='band' about='BigThief' data-label='Big Thief' data-wikidata-id='Q28228836'>Big Thief</span> and on her solo records, she has always been most interested in making emotional connections. Photograph by Collier Schorr for <span class='magazine' about='TheNewYorker' data-wikidata-id='Q217305' data-label='The New Yorker'> The New Yorker</span></figcaption></figure>").insertAfter("#col2 .title");
        $("<figure id='first_img_three'><img class='first_img' id='fig_article' src='https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg' width='300'><figcaption></span></figcaption></figure>").insertAfter("#col3 .title");}
     }
