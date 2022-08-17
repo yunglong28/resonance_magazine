@@ -93,8 +93,8 @@
             </li>
             <li><button class="openbtn" onclick="openNav()"> Metadata viewer</button></li>
             <ul class="icons_nav">
-            <li class="icons" id="" onclick="change('home')"><img id="home_icon" src="imgs/magazine.png"></li>     
-            <li class="icons" onclick="change('illuminist')"><img id="cello" src="imgs/cellohome.png"></li>
+            <li id="" onclick="change('home')"><img class="icons" id="home_icon" src="imgs/magazine.png"></li>
+            <li class="icons" onclick="change('illuminist')"><img src="imgs/cellohome.png" id="cello"></li>
             <li class="icons" id="" onclick="change('hobbyhorse')"><img src="imgs/harphome.png" id="harp"></li>
             <li class="icons" id="belle" onclick="change('belle')"><img src="imgs/gramophonehome.png" id="gramophone"></li>
             <li class="icons" id="" onclick="change('analog')"><img src="imgs/strobohome.png" id="disco"></li>
@@ -108,6 +108,7 @@
 </nav>
 
 <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <button class="accordion">Section 1</button>
     <div class="panel">
         <p>Lorem ipsum...</p>
@@ -135,9 +136,9 @@
 
 
     <div class="title_and_subtitle" id="title_and_subtitle_1">
-        <div class="title" id="title1" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">How Musicians Are Fighting <span class="title_small">for Streaming Pay</span> During the Pandemic</div>
+        <div class="title" data-src="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">
+            How Musicians Are Fighting <div class="title_small">for Streaming Pay</div>  During the Pandemic</div>
         <span id="contrassegno"></span>
-
 
     <!--hr class="half-hr"-->
 
@@ -145,7 +146,6 @@
         it’s abundantly clear that most musicians can’t live off streaming income alone. How could the system be fixed?
         </div>
             <img class="img-fluid first_img cover_image" id="first_img_one_ale" src="imgs/article_1_1.png"/>
-
     </div>
     <!--hr class="half-hr"-->
 
@@ -234,7 +234,7 @@ Musicians with different label and publishing situations—even those whose musi
 
     <div class="title_and_subtitle" id="title_and_subtitle_2">
         <div class="title" id="title1" data-src="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">
-            2010s: The End <span class="title_small">of</span> Anarchy</div>
+            2010s: The End <div class="title_small">of</div> Anarchy</div>
         <span id="contrassegno2"></span>
 
         <figure>
@@ -248,7 +248,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 
 <div class="author_and_date">
-        
+
     <div class="author">By <span class="writer" about="Baldr Eldursson"> Baldr Eldursson </span></div>
     <div class="publicationDate">November 12, 2019</div>
 
@@ -413,7 +413,7 @@ Musicians with different label and publishing situations—even those whose musi
 
         <div class="title_and_subtitle" id="title_and_subtitle_3">
 <div class="title" data-src="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">
-    With NFTs, Musicians See <span class="title_small">a Way to</span> Finally Take Control</div>
+    With NFTs, Musicians See <div class="title_small">a Way to</div> Finally Take Control</div>
 
             <figure>
                 <img class="img-fluid first_img cover_image" id="first_img_three_ale" src="imgs/article_3_1.png" id="dither6">
@@ -422,7 +422,8 @@ Musicians with different label and publishing situations—even those whose musi
 
             <!--hr class="half-hr"-->
 
-<div class="subtitle" id="subtitle3">NFTs are tearing the art and tech worlds apart, but some musicians are exploring their potential as an alternative to labels and streaming services.</div>
+<div class="subtitle">NFTs are tearing the art and tech worlds apart, but some musicians are exploring
+    their potential as an alternative to labels and streaming services.</div>
 <!--hr class="half-hr"-->
 </div>
 
