@@ -280,7 +280,7 @@ body{
   font-family: futura;
   font-size: 30px;
   line-height: 1em;
-  background-image: url("../imgs/boris.jpeg");
+  background-image: url("../imgs/borisprova.jpeg");
   background-color: black;
   background-size: auto;
   background-position: right bottom;
@@ -294,12 +294,15 @@ body{
  #col2 .title {  
   max-width:80%;
   word-wrap: break-word;
-  text-transform: uppercase;
+  text-decoration: underline;
+
  }
 
   #col2 .subtitle {
-    max-width:80%;
+    max-width:50%;
+    text-transform: uppercase;
   }
+
 
 #sep_container_belle{
   display: none;
@@ -315,7 +318,7 @@ body{
   height: auto;
   width: auto;
   margin-top: 15px;
-  background-image: url("../imgs/couple.jpg");
+  background-image: url("../imgs/coppiaprova.jpeg");
   background-size: cover;
   font-size: 30px;
   line-height: 1em;
