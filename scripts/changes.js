@@ -136,7 +136,22 @@ function change(name) {
     $("#pagestyle").attr('href','style/tabloid.css');
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
-     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
+    if($("#francesca").length){
+      $("#title_and_subtitle_1").css({fontSize: 50});
+      $("#title_and_subtitle_2").css({fontSize: 70});
+      $("#title_and_subtitle_3").css({fontSize: 40});
+      $("#title_and_subtitle_2").css("text-transform", "uppercase");
+      $("#title1").css("text-decoration","none");
+     }
+
+    if($("#alessandro").length){
+      $("#title_and_subtitle_2").css({fontSize: 30});
+      $("#title_and_subtitle_3").css({fontSize: 30});
+      $("#subtitle3").css("column-count","2");
+      $("#subtitle3").css("max-width","100%");
+     }
+
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
