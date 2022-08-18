@@ -385,6 +385,9 @@ $(document).ready(function(){
 
 });
 
+
+/*SIDEBAR SCRIPT*/
+
 jQuery(document).ready(function ( $ ) {
     $('[data-toggle=offcanvas]').click(function () {
         $('.row-offcanvas').toggleClass('active');
@@ -425,3 +428,27 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+/*END OF SIDEBAR SCRIPT*/
+
+/*METADATA SCRIPT: UNDERLINE*/
+
+var first_click = true;
+
+function underline(item){
+  if (first_click){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var topPos = $('#first_article span[about= "' + aboutwho + '"]:first').offset().top; //take the first instance, give me the coordinates of the top of the element
+        var scrolled = $("#first_article").scrollTop(); 
+        alert(scrolled)
+        $("#col1").animate({scrollTop:scrolled + topPos}, 1000);
+        first_click = false;
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    first_click = true;
+    $("#col1").animate({scrollTop:0}, 1000);
+  }
+}
+  

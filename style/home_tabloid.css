@@ -516,7 +516,7 @@ footer{
 
 
 .btn-10{
-font-family: "Metropolis-ExtraBoldItalic";
+  font-family: "Metropolis-ExtraBoldItalic";
   background-color: rgb(183,64,59);
   border: none;
   color: white;
@@ -541,6 +541,18 @@ font-family: "Metropolis-ExtraBoldItalic";
     font-size: 25px;
     text-transform: uppercase;
   }
+
+.btn-10 a{
+  color: white!important;
+}
+
+
+.btn-10 a:hover{
+  color:rgb(183,64,59)!important;
+  text-decoration: none;
+}
+
+
 
   #block1 {
       float:left;

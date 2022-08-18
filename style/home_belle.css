@@ -333,6 +333,17 @@ font-family: Golddrew, cursive;
   margin-top: 20px;
 }
 
+.wrapper_issue .btn-10 a{
+  color: rgb(0, 53, 102);
+  text-decoration: none;
+}
+
+
+.wrapper_issue .btn-10 a:hover{
+  color: rgb(228, 217, 201);
+  text-decoration: none;
+}
+
 
 .col_button_us {
     color:rgb(191, 164, 4);
