@@ -233,6 +233,7 @@ function change(name) {
         $("#disco").attr('src', 'imgs/dither_it_disco.png');
         $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
+        $("#home_icon").attr('src', 'imgs/dither_it_magazine.png');
         if ($('#sep_nav').length == 0) {"<br id='sep_nav'>" .insertAfter("nav")}
         
 

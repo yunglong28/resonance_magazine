@@ -361,9 +361,7 @@ footer{
 
 }
 
-a {
-    color: darkred !important;
-}
+
 
 
 .modal-header {
@@ -392,4 +390,9 @@ a {
     border-width: thin;
     border-radius: 25px;
 
+}
+
+#read_button{
+    font-family: "Times New Roman" !important;
+    color: black !important;
 }
