@@ -102,7 +102,7 @@
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: rgb(183,64,59); 
+  background-color: rgb(183,64,59);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -263,7 +263,7 @@ body{
   min-height:200px;
 }
 
- #col1 .title {  
+ #col1 .title {
   font-size: 30px;
   text-decoration: underline;
   max-width:80%;
@@ -291,7 +291,7 @@ body{
   padding: 6px;
  }
 
- #col2 .title {  
+ #col2 .title {
   max-width:80%;
   word-wrap: break-word;
   text-decoration: underline;
@@ -328,7 +328,7 @@ body{
 #col3 .title{
   max-width:80%;
   text-decoration: underline;
-  font-family: 'futura'; 
+  font-family: 'futura';
 }
 
 #col3 .subtitle{
@@ -413,4 +413,61 @@ footer{
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+}
+
+
+#myModal {
+   font-family: 'Metropolis-ExtraBoldItalic', serif;
+
+
+}
+
+.modal-header {
+  font-family: 'Metropolis-ExtraBoldItalic', serif;
+    background-color: rgb(183,64,59);
+     color:white;
+}
+
+.modal-footer {
+    background-color:white;
+     color:black;
+     font-family: 'Metropolis-ExtraBoldItalic'
+
+}
+
+
+
+.modal-footer .btn{
+  background-color: transparent;
+border: none;
+color:black;
+text-transform: uppercase;
+
+}
+
+.modal-footer .btn:hover{
+  background-color: rgb(183,64,59);
+  color:white;
+
+}
+.modal-header .firstbtn{
+   background-color: transparent;
+border: none;
+ color:lightgrey;
+ font-size: 32px;
+
+ }
+.p-4{
+       background-color:white!important;
+       font-family: 'Metropolis-ExtraBoldItalic';
+text-transform: uppercase;
+       color: black;
+       font-size: 18px;
+
+
+}
+
+.modal-title {
+ font-size: 32px;
+ text-transform: uppercase;
 }

@@ -206,13 +206,13 @@ body{
 }
 
 #col2{
-  background-color:black; 
+  background-color:black;
   font-family: 'Bebas Neue', cursive;
   color:rgb(191, 164, 4);
 }
 
 #col2 .title{
-  color:rgb(191, 164, 4); 
+  color:rgb(191, 164, 4);
   font-size: 50px;
   text-align: center;
   line-height: 1em;
@@ -341,7 +341,7 @@ body{
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: rgb(183,64,59); 
+  background-color: rgb(183,64,59);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -457,4 +457,67 @@ footer{
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
+}
+
+
+
+ #myModal {
+       font-family: 'Franklin';
+
+         color:lightgrey;
+
+ }
+
+ .modal-header {
+  background-color: rgb(211, 104, 65)!important;
+      color:lightgrey;
+      font-family: 'Franklin'!important;
+ }
+
+ .modal-footer {
+     background-color:white;
+          color: rgb(0, 53, 102);
+          background-image: url(../imgs/old_paper.jpg);
+
+
+
+ }
+
+
+
+.modal-footer .btn{
+   background-color: transparent;
+border: none;
+  font-family: 'Golddrew', cursive;
+
+  color: rgb(0, 53, 102);
+ text-transform: uppercase;
+
+ }
+
+.modal-footer .btn:hover{
+   background-color: rgb(211, 104, 65);
+   color:lightgrey;
+
+}
+ .modal-header .firstbtn{
+    background-color: transparent;
+ border: none;
+  color:lightgrey;
+  font-size: 32px;
+
+  }
+.p-4{
+        background-color:white!important;
+            background-image: url(../imgs/old_paper.jpg);
+    color: rgb(0, 53, 102);
+        font-size: 18px;
+        font-family: 'Golddrew', cursive;
+
+
+ }
+
+.modal-title {
+  font-size: 32px;
+  text-transform: uppercase;
 }

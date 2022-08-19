@@ -681,15 +681,15 @@ div.col-6 {
  }
 
  #myModal {
-   font-family:'nimbus';
+    font-family: 'Metropolis-ExtraBoldItalic', serif;
 
-         color:lightgrey;
 
  }
 
  .modal-header {
-     background-color:#0c2414;
-      color:lightgrey;
+   font-family: 'Metropolis-ExtraBoldItalic', serif;
+     background-color: rgb(183,64,59);
+      color:white;
  }
 
  .modal-footer {
@@ -710,8 +710,8 @@ border: none;
  }
 
 .modal-footer .btn:hover{
-   background-color:#0c2414;
-   color:lightgrey;
+   background-color: rgb(183,64,59);
+   color:white;
 
 }
  .modal-header .firstbtn{
@@ -723,6 +723,8 @@ border: none;
   }
 .p-4{
         background-color:white!important;
+        font-family: 'Metropolis-ExtraBoldItalic';
+text-transform: uppercase;
         color: black;
         font-size: 18px;
 
