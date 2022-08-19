@@ -151,6 +151,8 @@ function change(name) {
       $("#subtitle3").css("max-width","100%");
      }
 
+
+
     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
@@ -176,14 +178,15 @@ function change(name) {
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
     $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
     $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
-      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
-      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
-      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
-      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
-      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
-      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
-      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
-      $(".start_line").remove()
+    $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
+    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
+    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
+    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
+    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
+    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
+    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
+    $(".start_line").remove()
 
 
 
@@ -235,7 +238,7 @@ function change(name) {
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
         $("#home_icon").attr('src', 'imgs/dither_it_magazine.png');
         if ($('#sep_nav').length == 0) {"<br id='sep_nav'>" .insertAfter("nav")}
-        
+
 
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
         }
@@ -286,7 +289,7 @@ function change(name) {
         }
 
         if($("#francesca").length === 1) {
-            
+
             $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
             $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
             $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
@@ -327,7 +330,7 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    
+
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -437,19 +440,18 @@ var first_click = true;
 
 function underline(item){
   if (first_click){
-        var aboutwho = $(item).attr('about'); 
-        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var aboutwho = $(item).attr('about');
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E");
         var topPos = $('#first_article span[about= "' + aboutwho + '"]:first').offset().top; //take the first instance, give me the coordinates of the top of the element
-        var scrolled = $("#first_article").scrollTop(); 
+        var scrolled = $("#first_article").scrollTop();
         alert(scrolled)
         $("#col1").animate({scrollTop:scrolled + topPos}, 1000);
         first_click = false;
       }
   else{
-    var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    var aboutwho = $(item).attr('about');
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none");
     first_click = true;
     $("#col1").animate({scrollTop:0}, 1000);
   }
 }
-  

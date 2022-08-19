@@ -193,15 +193,11 @@ section {
     }
 }
 
+
 footer{
-  color:black!important;
-  background-color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: nimbus;
-  text-transform: uppercase;
-  height:30vh;
-  font-size: 20px;
+  background-image:url(../imgs/old_paper.jpg);
+  font-family: Golddrew, cursive;
+  color: rgb(0, 53, 102);
 }
 #magazine2{
 color: rgb(228, 217, 201);
@@ -365,4 +361,10 @@ border: none;
 .icons_nav {
   margin-left: 350px!important;
   margin-top: 7px!important;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    color: rgb(0, 53, 102);
 }
