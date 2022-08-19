@@ -23,6 +23,7 @@ function change(name) {
 
     if (name == 'belle') {
      $("#pagestyle").attr('href','style/documentation_belle.css');
+     
    }
 
     if (name == 'disco') {

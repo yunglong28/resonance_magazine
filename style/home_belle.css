@@ -663,7 +663,7 @@ div.col-6 {
 
     width: 48%;
     font-size: 15px;
-    
+
   }
 
 
@@ -691,13 +691,15 @@ div.col-6 {
  }
 
  .modal-header {
-     background-color:#0c2414;
+  background-color: rgb(211, 104, 65)!important;
       color:lightgrey;
+      font-family: 'Franklin'!important;
  }
 
  .modal-footer {
      background-color:white;
-      color:lightgrey;
+          color: rgb(0, 53, 102);
+          background-image: url(../imgs/old_paper.jpg);
 
 
 
@@ -708,13 +710,15 @@ div.col-6 {
 .modal-footer .btn{
    background-color: transparent;
 border: none;
- color:black;
+  font-family: 'Golddrew', cursive;
+
+  color: rgb(0, 53, 102);
  text-transform: uppercase;
 
  }
 
 .modal-footer .btn:hover{
-   background-color:#0c2414;
+   background-color: rgb(211, 104, 65);
    color:lightgrey;
 
 }
@@ -727,8 +731,10 @@ border: none;
   }
 .p-4{
         background-color:white!important;
-        color: black;
+            background-image: url(../imgs/old_paper.jpg);
+    color: rgb(0, 53, 102);
         font-size: 18px;
+        font-family: 'Golddrew', cursive;
 
 
  }
