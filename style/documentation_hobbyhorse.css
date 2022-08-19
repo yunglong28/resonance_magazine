@@ -135,16 +135,16 @@ visibility: visible;
   text-transform: uppercase;
   margin-top: 5px;
 }
-
 .icons {
   width: 30px;
   height: 30px;
 }
 
 .icons_nav {
-   margin-left: 75px!important;
+  margin-left: 280px!important;
   margin-top: 7px!important;
 }
+
 
 
 /*Fine navbar*/
@@ -432,4 +432,14 @@ background-color: transparent!important;
 
 .titles {
   font-family: 'p22_operina_fiore_fiore';
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 295px;
+  margin-top: 7px;
 }

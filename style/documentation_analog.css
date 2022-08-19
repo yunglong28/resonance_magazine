@@ -500,3 +500,13 @@ border: none;
  color: white;
 
 }
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 150px!important;
+  margin-top: 7px!important;
+}
