@@ -113,69 +113,68 @@ color:black !important;
 font-weight: 600 !important;
 }
 
-
-    /* NAVBAR */
+/* NAVBAR */
 .navbar {
-  font-family: 'nimbus';
-  background-color: #fc4434;
-  position: fixed;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #feae08!important;
-    border:50px  solid #9e086b;
-    border-width: 10px  ;
-    border-radius: 2rem;
+font-family: 'nimbus';
+background-color: #fc4434;
+position: fixed;
+text-transform: uppercase;
+font-size: 15px;
+color: #feae08!important;
+border:50px  solid #9e086b;
+border-width: 10px  ;
+border-radius: 2rem;
 
-      font-family: 'paraaminobenzoic';
-  font-style: bold;
-  background-color: transparent;
-      background-image: url('../imgs/backram.png');
+  font-family: 'paraaminobenzoic';
+font-style: bold;
+background-color: transparent;
+  background-image: url('../imgs/backram.png');
 
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
-  margin: 1px;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  clear: left;
+margin: 1px;
+padding: 0;
+display: flex;
+list-style: none;
+align-items: center;
+clear: left;
 }
 
 /* Tutti gli elementi in navbar */
 .navbar li {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  font-size: 40px;
-  white-space: nowrap;
-  text-align:center !important;
-  margin-right: 20px;
-  margin-left: 30px;
-  margin-bottom: 0px;
-  padding: 0;
-  color: #feae08!important;
+position: relative;
+display: flex;
+justify-content: space-between;
+font-size: 40px;
+white-space: nowrap;
+text-align:center !important;
+margin-right: 20px;
+margin-left: 30px;
+margin-bottom: 0px;
+padding: 0;
+color: #feae08!important;
 }
 
 .navbar li a {
 
-    color: #feae08!important;
+color: #feae08!important;
 }
 
 .navbar li:hover{
-  color: white
+color: white
 }
 
 .navbar li a:hover{
 
-  text-decoration:none;
+text-decoration:none;
 
 }
 
 
 /* Dropdown */
 .navbar .dropdown ul {
-  font-family: 'vcr';
+font-family: 'vcr';
 
 display: block;
 position: absolute;
@@ -190,11 +189,11 @@ background: rgba(0000)
 box-shadow: 10px 10px 30px rgba(127, 137, 161, 0.25);
 transition: 0.2s;
 
-  border: 7px  black;
-   border-style: double;
-  border-radius: 0rem;
-  color: black!important;
-  background-color: white;
+border: 7px  black;
+border-style: double;
+border-radius: 0rem;
+color: black!important;
+background-color: white;
 
 }
 
@@ -202,39 +201,38 @@ transition: 0.2s;
 
 /* Elementi che stanno del dropdown */
 .navbar .dropdown ul li{
-  padding: 0px;
-  font-size: 20px;
-  color: black!important;
+padding: 0px;
+font-size: 20px;
+color: black!important;
 
 
 }
 
 .navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
+opacity: 1;
+top: 100%;
+visibility: visible;
 
 }
 
 .navbar .dropdown ul a:hover{
 background-color: black;
-  color: white;
+color: white;
 }
 
 
 
-        .navbar .dropdown ul a {
-          padding: 0px 0px;
-          font-size: 14px;
-          color: white;
-          text-transform: uppercase;
-            margin: 0px;
-            color: black;
+    .navbar .dropdown ul a {
+      padding: 0px 0px;
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+        margin: 0px;
+        color: black;
 
-        }
+    }
 
 /*Fine navbar*/
-
 .container-fluid {
   width: 89% !important;
 padding-right: 15px;
