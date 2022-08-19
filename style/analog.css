@@ -146,7 +146,7 @@ clear: left;
 position: relative;
 display: flex;
 justify-content: space-between;
-font-size: 40px;
+font-size: 20px;
 white-space: nowrap;
 text-align:center !important;
 margin-right: 20px;
@@ -204,6 +204,7 @@ background-color: white;
 padding: 0px;
 font-size: 20px;
 color: black!important;
+margin: 2px;
 
 
 }
@@ -223,11 +224,12 @@ color: white;
 
 
     .navbar .dropdown ul a {
-      padding: 0px 0px;
+      padding: 0px;
       font-size: 14px;
       color: white;
       text-transform: uppercase;
         margin: 0px;
+
         color: black;
 
     }
@@ -246,6 +248,14 @@ margin-left: auto;
 
       border-radius: 2rem;
       margin-top: 0px
+}
+
+.dropdown li a {
+  color: black !important;
+}
+
+.dropdown li a:hover {
+  color: white !important;
 }
 
 
