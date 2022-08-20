@@ -398,8 +398,8 @@ jQuery(document).ready(function ( $ ) {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
-    document.getElementById("articoli").style.marginLeft = "350px";
     document.getElementById("articoli").style.width = "70%";
+    document.getElementById("articoli").style.marginLeft = "350px";
     $(".openbtn").removeAttr("onclick");
     $(".openbtn").attr('onclick','closeNav()');
 }
@@ -432,23 +432,88 @@ for (i = 0; i < acc.length; i++) {
 
 /*METADATA SCRIPT: UNDERLINE*/
 
-var first_click = true;
-
-function underline(item){
-  if (first_click){
+function underline_col1(item, color){
+  if ($(item).attr('clicked') == "false"){
         var aboutwho = $(item).attr('about'); 
-        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
-        var topPos = $('#first_article span[about= "' + aboutwho + '"]:first').offset().top; //take the first instance, give me the coordinates of the top of the element
-        var scrolled = $("#first_article").scrollTop(); 
-        alert(scrolled)
-        $("#col1").animate({scrollTop:scrolled + topPos}, 1000);
-        first_click = false;
+        $('[about= "' + aboutwho + '"]').css('background-color', color); 
+        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col1").scrollTop();
+        $("#col1").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
       }
   else{
     var aboutwho = $(item).attr('about'); 
     $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
-    first_click = true;
     $("#col1").animate({scrollTop:0}, 1000);
+    $(item).attr("clicked","false"); 
   }
 }
-  
+
+
+function underline_col2(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col2").scrollTop();
+        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    $("#col2").animate({scrollTop:0}, 1000);
+    $(item).attr("clicked","false"); 
+  }
+}
+
+function underline_col3(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col3").scrollTop();
+        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    $("#col3").animate({scrollTop:0}, 1000);
+    $(item).attr("clicked","false"); 
+  }
+}
+
+
+//SORTING FUNCTIONS
+
+function sortAlphabet(){
+  var list = document.getElementById('mylist');
+  var items = list.childNodes;
+  var itemsArr = [];
+  for (var i in items) {
+      if (items[i].nodeType == 1) { // get rid of the whitespace text nodes
+          itemsArr.push(items[i]);
+      }
+  }
+
+  itemsArr.sort(function(a, b) {
+    return a.innerHTML == b.innerHTML
+            ? 0
+            : (a.innerHTML > b.innerHTML ? 1 : -1);
+  });
+
+  for (i = 0; i < itemsArr.length; ++i) {
+    list.appendChild(itemsArr[i]);
+  }
+}
+
+
+
+$(document).ready(function(){
+  window.original_order = $('#mylist').html();
+  })
+
+function undo() {
+  $('#mylist').html(original_order);
+}
