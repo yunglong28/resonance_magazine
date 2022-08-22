@@ -1,23 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+@font-face {
+    font-family: 'Lynotype Didot Roman';
+    src: url('/fonts/DidotLH-Roman.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
 /* NAVBAR */
+
 .navbar {
-    font-family: 'Times New Roman', serif;
-    background-color: rgb(250, 247, 230);
+    font-family: 'GFS Didot', serif;
     position: fixed;
     color:black!important;
     text-transform: uppercase;
     font-size: 8px;
-    margin-bottom: 20px;
     height: 60px;
-    border-bottom: solid;
-    border-bottom-color: #73895a;
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 
 }
+
 /* Rende la navbar orizzontale */
 .navbar ul {
-    margin: 1;
+    margin: 1px;
     padding: 0;
     display: flex;
     list-style: none;
@@ -32,31 +44,37 @@
     justify-content: space-between;
     font-size: 20px;
     white-space: nowrap;
-    text-align:center !important;
     margin-right: 20px;
     margin-left: 30px;
     margin-bottom: 0px;
     padding: 0px;
     color:black;
-    text-align: left;
+    text-align: left !important;
 }
+
+.icons_nav {
+    margin-left: 280px!important;
+    margin-top: 7px!important;
+}
+
 
 .navbar li a {
     color:black;
 }
 
+
+.navbar li a:hover{
+    text-decoration:none;
+}
+
+
 /* Dropdown */
 .navbar .dropdown ul {
     display: block;
     position: absolute;
-    padding: 10px 0;
+    padding: 5px 0;
     visibility: hidden;
     background: #fff;
-    z-index: 1;
-    border-style: solid;
-    border-color: #73895a;
-    border-width: thin;
-    border-radius: 25px;
 }
 
 /* Elementi che stanno del dropdown */
@@ -64,6 +82,7 @@
     padding: 10px;
     font-size: 20px;
     color: black;
+    margin: 3px;
 }
 
 .navbar .dropdown:hover > ul {
@@ -73,42 +92,15 @@
 }
 
 
-/*Fine navbar*/
-
-.icons {
-    width: 30px;
-    height: 30px;
-}
-
-.icons_nav {
-    margin-left: 295px;
-    margin-top: 7px;
-}
-
-p {
-    font-family: "Times New Roman", Times, serif !important;
-    color: black !important;
-}
-
-
-
-
-
-html {
-    font-family: 'bodoni';
-    font-size: 10px;
-    box-sizing: border-box;
-}
-
 /*Section used for centering process*/
 section {
     width: 100%;
     height: 150vh;
-    background-color: #73895a;
+    background-color:#0c2414;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'bodoni';
+    font-family: "Lynotype Didot Roman"!important;
     font-size: 25px;
     margin-top: 0px;
 }
@@ -123,51 +115,40 @@ section {
 
 
 
-
-.btn-10 {
+.btn-10{
+    font-family: nimbus;
     background-color: transparent;
-    border-style: solid;
-    border-color: #73895a;
-    color: #73895a;
-    border-width: thin;
-    border-radius: 25px;
+    border: 3px solid  #fc4434;
+    color: #fc4434;
     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 16px;
     text-transform: uppercase;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-family: "Times New Roman";
+    margin-top: 20px;
 }
-
 
 .btn-10:hover {
-    background-color: transparent;
-    border-style: solid;
-    border-color: #73895a;
-    color: #73895a;
-    border-width: thin;
-    border-radius: 25px;
+    font-family: nimbus;
+    background-color: #fc4434;
+    border: 3px solid  #fc4434;
+    color:#0c2414;
     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 16px;
     text-transform: uppercase;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
 }
-
 .marquee-section {
     position: relative;
-    min-height: 100px;
+    min-height:   100px;
     font-size: 80px;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #73895a;
-    border-width: thin;
-    border-radius: 25px;
-    font-family: "Times New Roman";
+    font-family: 'bodoni', serif;
+    color:black;
+    background-color: white
+
 }
 
 .marquee-section, .marquee-section * {
@@ -180,10 +161,12 @@ section {
 
 .marquee-div {
     position: absolute;
-    animation: move-left-to-right linear 50s infinite !important;
+    animation: move-left-to-right linear 50s infinite;
+
+
 }
 
-
+/* use this one to move from left to right direction */
 @keyframes move-left-to-right {
     from {
         transform: translateX(-50%);
@@ -213,63 +196,31 @@ footer{
     height:30vh;
     font-size: 20px;
 }
-
-
 #magazine2{
-    background-color:#73895a;
+    background-color:
+            #e6d8a8;
     height: 370px;
-    margin-top: 10px;
     padding-top: 4%;
     padding-left: 6%;
     padding-right: 6%;
     padding-bottom: 2%;
     color:black;
-    font-family: 'Times New Roman';
+    font-family: 'bodoni';
     font-size: 25px;
     text-align: justify;
 
-
 }
 .btn_stili {
+    background-color:
+            #white;
     height: 100px;
-    background-color: rgb(250, 247, 230) !important;
+    background-color:#0c2414;
+
     text-align: center;
 }
 
 
 
-.modal-header {
-    background-color: rgb(250, 247, 230) !important;
-    color:black;
-}
-
-.modal-footer {
-    background-color: rgb(250, 247, 230) !important;
-    color:black;
-}
-
-.p-4{
-    background-color: rgb(250, 247, 230) !important;
-
-    color: black;
-    font-size: 18px;
-
-}
-
-.modal-footer .btn{
-    background-color: transparent;
-    border-style: solid;
-    border-color: #73895a;
-    color: #73895a;
-    border-width: thin;
-    border-radius: 25px;
-
-}
-
-
-
-
----da copiare in git---
 .container{
     width: 100%;
     max-width: 100rem;
@@ -283,7 +234,7 @@ footer{
 section {
     width: 100%;
     height: 220vh;
-    background-color: rgb(250, 247, 230);
+    background-color:#0c2414;
     display: flex;
     align-items: center;
     text-align: justify;
@@ -326,15 +277,42 @@ a:active {
     text-decoration: none;
 }
 
-
 .icons {
     width: 30px;
     height: 30px;
 }
 
-.icons_nav {
-    margin-left: 295px;
-    margin-top: 7px;
+
+
+.modal-title {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 30px !important;
+    text-transform: uppercase !important;
 }
 
+.modal-content {
+    background-color: #bcb19d !important;
+}
 
+.modal-body .p4 {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 25px !important;
+}
+
+.firstbtn {
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
+    font-family: Didot, serif !important;
+
+}
+
+.btn {
+    font-family: Didot, serif !important;
+    color: black;
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
+}

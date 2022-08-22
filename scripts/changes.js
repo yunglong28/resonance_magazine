@@ -151,8 +151,6 @@ function change(name) {
       $("#subtitle3").css("max-width","100%");
      }
 
-
-
     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
@@ -178,15 +176,14 @@ function change(name) {
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
     $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
     $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
-    $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
-    $(".start_line").remove()
+      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
+      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
+      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
+      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
+      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
+      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
+      $(".start_line").remove()
 
 
 
@@ -236,9 +233,8 @@ function change(name) {
         $("#disco").attr('src', 'imgs/dither_it_disco.png');
         $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
-        $("#home_icon").attr('src', 'imgs/dither_it_magazine.png');
         if ($('#sep_nav').length == 0) {"<br id='sep_nav'>" .insertAfter("nav")}
-
+        
 
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
         }
@@ -289,7 +285,7 @@ function change(name) {
         }
 
         if($("#francesca").length === 1) {
-
+            
             $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
             $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
             $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
@@ -330,7 +326,7 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-
+    
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -402,8 +398,8 @@ jQuery(document).ready(function ( $ ) {
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
-    document.getElementById("articoli").style.marginLeft = "350px";
     document.getElementById("articoli").style.width = "70%";
+    document.getElementById("articoli").style.marginLeft = "350px";
     $(".openbtn").removeAttr("onclick");
     $(".openbtn").attr('onclick','closeNav()');
 }
@@ -436,22 +432,151 @@ for (i = 0; i < acc.length; i++) {
 
 /*METADATA SCRIPT: UNDERLINE*/
 
-var first_click = true;
-
-function underline(item){
-  if (first_click){
-        var aboutwho = $(item).attr('about');
-        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E");
-        var topPos = $('#first_article span[about= "' + aboutwho + '"]:first').offset().top; //take the first instance, give me the coordinates of the top of the element
-        var scrolled = $("#first_article").scrollTop();
-        alert(scrolled)
-        $("#col1").animate({scrollTop:scrolled + topPos}, 1000);
-        first_click = false;
+function underline_col1(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css('background-color', color); 
+        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col1").scrollTop();
+        var pagescrollPos = $("html").scrollTop();
+        $("#col1").animate({scrollTop:(scrollPos - pagescrollPos) + elementPos - $("#col1").offset().top}, 1000);
+        $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about');
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none");
-    first_click = true;
-    $("#col1").animate({scrollTop:0}, 1000);
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
+    $(item).attr("clicked","false"); 
   }
+}
+
+
+function underline_col2(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col2").scrollTop();
+        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none");
+    $(item).attr("clicked","false"); 
+  }
+}
+
+function underline_col3(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $("#col3").scrollTop();
+        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    $(item).attr("clicked","false"); 
+  }
+}
+
+
+//SORTING FUNCTIONS
+
+//1
+
+
+
+//2
+function sortAlphabet(lista){
+  var list = document.getElementById(lista);
+  var items = list.childNodes;
+  var itemsArr = [];
+  for (var i in items) {
+      if (items[i].nodeType == 1) { // get rid of the whitespace text nodes
+          itemsArr.push(items[i]);
+      }
+  }
+
+  itemsArr.sort(function(a, b) {
+    return a.innerHTML == b.innerHTML
+            ? 0
+            : (a.innerHTML > b.innerHTML ? 1 : -1);
+  });
+
+  for (i = 0; i < itemsArr.length; ++i) {
+    list.appendChild(itemsArr[i]);
+  }
+}
+
+
+
+$(document).ready(function(){
+  window.original_order_one = $('#my_list_one').html();
+  window.original_order_two = $('#my_list_two').html();
+  window.original_order_three = $('#my_list_three').html();
+  })
+
+function undo(lista) {
+  if (lista == 'my_list_one'){
+    document.getElementById(lista).innerHTML = original_order_one;
+  }
+  else if (lista == 'my_list_two'){
+    document.getElementById(lista).innerHTML = original_order_two;
+  }
+  else{
+    document.getElementById(lista).innerHTML = original_order_three;
+  }
+}
+
+
+//FOCUS FUNCTION
+
+function focus_one(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col2').css({"display": "none"});
+    $('#col3').css({"display": "none"});
+    $('#col1 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col2').css({"display": "block"});
+     $('#col3').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
+}
+
+
+function focus_two(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col1').css({"display": "none"});
+    $('#col3').css({"display": "none"});
+    $('#col2 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col1').css({"display": "block"});
+     $('#col3').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
+}
+
+
+function focus_three(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col1').css({"display": "none"});
+    $('#col2').css({"display": "none"});
+    $('#col3 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col1').css({"display": "block"});
+     $('#col2').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
 }
