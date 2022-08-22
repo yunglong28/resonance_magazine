@@ -753,3 +753,35 @@ text-transform: uppercase;
 .edited_by{
   margin-left: 59px;
     }
+
+
+    @media only screen and (max-width: 1300px) {
+
+      .icons {
+        width: 30px;
+        height: 30px;
+
+      }
+
+      .icons_nav {
+        margin-left: 210px!important;
+        margin-top: 7px!important;
+
+      }
+      .col_text_yet {
+        margin-left: 498px;
+    margin-right: -554px;
+      }
+    .text {
+      margin-right: -30px;
+    margin-left: 59px;
+    }
+
+    .col_issue{    margin-left: 532px;
+    margin-right: -462px;}
+    }
+    .col_us{
+      margin-left: 532px;
+    margin-right: -449px;
+}
+    }
