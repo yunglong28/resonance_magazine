@@ -438,13 +438,13 @@ function underline_col1(item, color){
         $('[about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
-        $("#col1").animate({scrollTop: scrollPos + elementPos - $("#col1").offset().top}, 1000);
+        var pagescrollPos = $("html").scrollTop();
+        $("#col1").animate({scrollTop:(scrollPos - pagescrollPos) + elementPos - $("#col1").offset().top}, 1000);
         $(item).attr("clicked","true");
       }
   else{
     var aboutwho = $(item).attr('about'); 
     $('[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
-    $("#col1").animate({scrollTop:0}, 1000);
     $(item).attr("clicked","false"); 
   }
 }
@@ -461,8 +461,7 @@ function underline_col2(item, color){
       }
   else{
     var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
-    $("#col2").animate({scrollTop:0}, 1000);
+    $('[about= "' + aboutwho + '"]').css("text-decoration", "none");
     $(item).attr("clicked","false"); 
   }
 }
@@ -479,7 +478,6 @@ function underline_col3(item, color){
   else{
     var aboutwho = $(item).attr('about'); 
     $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
-    $("#col3").animate({scrollTop:0}, 1000);
     $(item).attr("clicked","false"); 
   }
 }
@@ -487,8 +485,13 @@ function underline_col3(item, color){
 
 //SORTING FUNCTIONS
 
-function sortAlphabet(){
-  var list = document.getElementById('mylist');
+//1
+
+
+
+//2
+function sortAlphabet(lista){
+  var list = document.getElementById(lista);
   var items = list.childNodes;
   var itemsArr = [];
   for (var i in items) {
@@ -511,12 +514,25 @@ function sortAlphabet(){
 
 
 $(document).ready(function(){
-  window.original_order = $('#mylist').html();
+  window.original_order_one = $('#my_list_one').html();
+  window.original_order_two = $('#my_list_two').html();
+  window.original_order_three = $('#my_list_three').html();
   })
 
-function undo() {
-  $('#mylist').html(original_order);
+function undo(lista) {
+  if (lista == 'my_list_one'){
+    document.getElementById(lista).innerHTML = original_order_one;
+  }
+  else if (lista == 'my_list_two'){
+    document.getElementById(lista).innerHTML = original_order_two;
+  }
+  else{
+    document.getElementById(lista).innerHTML = original_order_three;
+  }
 }
+
+
+//FOCUS FUNCTION
 
 function focus_one(elem){
   if ($(elem).attr('clicked') == "false"){

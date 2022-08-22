@@ -263,10 +263,6 @@ h5 {
 
 }
 
-a {
-  color: darkred !important;
-}
-
 
 .didot_logo {
   display: none;
@@ -311,6 +307,11 @@ a {
 .icons {
   width: 30px;
   height: 30px;
+}
+
+#home_icon {
+    width: 30px;
+    height: 30px;
 }
 
 .icons_nav {

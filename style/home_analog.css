@@ -159,6 +159,7 @@ transition: 0.2s;
   padding: 0px;
   font-size: 20px;
   color: black!important;
+  margin: 3px;
 
 
 }
@@ -186,7 +187,13 @@ background-color: black;
             color: black;
 
         }
+        .dropdown li a {
+          color: black !important;
+        }
 
+        .dropdown li a:hover {
+          color: white !important;
+        }
 /*Fine navbar*/
 
 

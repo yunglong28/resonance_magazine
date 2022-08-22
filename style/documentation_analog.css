@@ -163,6 +163,7 @@
           padding: 0px;
           font-size: 20px;
           color: black!important;
+            margin: 3px;
 
 
         }
@@ -188,7 +189,14 @@
             color: black;
 
         }
+        .dropdown li a {
+          color: black !important;
+        }
 
+        .dropdown li a:hover {
+          color: white !important;
+        }
+        
 /*Fine navbar*/
 
 html {
@@ -431,4 +439,82 @@ border: none;
 .icons_nav {
   margin-left: 295px;
   margin-top: 7px;
+}
+
+#myModal {
+  font-family:'joystix_monospace';
+
+        color:black;
+        text-transform: uppercase;
+        font-size: 15px;}
+
+.modal-header {
+    background-color: white!important;
+     color:black;
+     border: 10px double black;
+}
+
+.modal-footer {
+    background-color:white!important;
+     color:lightgrey;
+     border: 10px double black;
+
+
+
+}
+
+
+
+.modal-footer .btn{
+  background-color: transparent;
+border: 5px double black;
+color:black;
+text-transform: uppercase;
+
+}
+
+.modal-footer .btn:hover{
+  background-color:black;
+  color:white;
+
+}
+.modal-header .firstbtn{
+   background-color: transparent;
+border: none;
+ color:lightgrey;
+ font-size: 32px;
+
+ }
+.p-4{
+  font-family:'joystix_monospace'!important;
+       background-color:white!important;
+       color: black;
+       font-size: 15px;
+       border: 10px double black;
+
+
+}
+
+.modal-title {
+ font-size: 32px;
+ text-transform: uppercase;
+
+}
+
+.modal-title:hover {
+ font-size: 32px;
+ text-transform: uppercase;
+ background-color: black;
+ color: white;
+
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+}
+
+.icons_nav {
+  margin-left: 150px!important;
+  margin-top: 7px!important;
 }
