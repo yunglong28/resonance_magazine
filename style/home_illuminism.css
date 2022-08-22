@@ -12,9 +12,6 @@
     font-style: normal;
 }
 
-body{
-    overflow-x: hidden;
-}
 /* NAVBAR */
 
 .navbar {
@@ -49,8 +46,8 @@ body{
     text-align:center !important;
     margin-right: 20px;
     margin-left: 30px;
-    margin-bottom: 0px;
-    padding: 0px;
+    margin-bottom: 0;
+    padding: 0;
     color:black;
 }
 
@@ -96,7 +93,6 @@ body{
 p {
     color: rgb(0, 0, 0);
     font-family: 'GFS Didot', serif;
-    margin: 30px;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -115,9 +111,7 @@ p {
 .coltext {
     color:black;
     font-size: 25px;
-
     z-index: 100;
-
     text-align: justify;
     margin-top: 60px;
     margin-left: 70px;
@@ -126,14 +120,16 @@ p {
 .mag_text{
     font-size: 25px;
     text-align: justify!important;
+}
 
+#mag_img {
+    margin-left: 25px;
 }
 
 
-
 /*seconda parte testuale */
-.wrapper_yet{
-
+.wrapper_yet
+{
     display: grid;
     grid-template-columns: 704px 700px ;
     height: 700px;
@@ -157,14 +153,12 @@ p {
     grid-template-columns: 704px 700px ;
     height: 700px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
-
-
 }
 
 
 .wrapper {
     display: grid;
-    grid-template-columns: 500px 700px ;
+    grid-template-columns: 500px 700px;
     height: 600px;
     font-family: "Lynotype Didot Roman", serif; !important;
     color: black;
@@ -181,7 +175,7 @@ p {
     font-family: "Lynotype Didot Roman", serif; !important;
     font-size: 25px;
     text-align: justify;
-    margin-top: 110px;
+    margin-top: 20px;
     margin-left: 90px;
     z-index: 0;
 }
@@ -217,9 +211,7 @@ p {
     color:black;
     font-family: "Lynotype Didot Roman", serif; !important;
     font-size: 25px;
-
     z-index: 100;
-
     text-align: justify;
     margin-top: 80px;
     margin-left: 70px;
@@ -241,7 +233,6 @@ footer{
     color:black;
     font-family: 'bodoni';
     font-size: 25px;
-
     text-align: justify;
     margin-top: 21px;
     margin-left: -300px;
@@ -250,8 +241,6 @@ footer{
 
 .colimg2 {
     display: block;
-
-
     width: 60%;
     margin-top: 40px !important;
    margin-right: 20px !important;
@@ -264,6 +253,7 @@ footer{
     background-color: transparent;
     border: 3px inset #bcb19d;
     color: #bcb19d;
+    margin-left: 2px;
     padding: 15px 32px;
     display: inline-block;
     font-size: 25px;
@@ -367,6 +357,7 @@ footer{
 
 .text {
     text-align: justify;
+    font-size: 25px;
 }
 
 a {
