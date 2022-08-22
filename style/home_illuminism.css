@@ -10,7 +10,6 @@
     src: url('/fonts/DidotLH-Roman.otf') format('otf');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body{
@@ -24,7 +23,6 @@ body{
     color:black!important;
     text-transform: uppercase;
     font-size: 8px;
-
     height: 60px;
     background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII') !important;
 
@@ -365,14 +363,7 @@ footer{
 }
 
 .issue_title {
-    font-weight: bold;
-
-}
-
-.custom-btn {
-    margin-top: 20px;
-    text-align: center !important;
-}
+    font-weight: bold; }
 
 .text {
     text-align: justify;
@@ -390,4 +381,37 @@ a {
 .icons {
   width: 30px;
   height: 30px;
+}
+
+.modal-title {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 30px !important;
+    text-transform: uppercase !important;
+}
+
+.modal-content {
+    background-color: #bcb19d !important;
+}
+
+.modal-body .p4 {
+    font-family: "Lynotype Didot Roman" !important;
+    font-size: 25px !important;
+}
+
+.firstbtn {
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
+    font-family: Didot, serif !important;
+
+}
+
+.btn {
+    font-family: Didot, serif !important;
+    color: black;
+    background-color: transparent !important;
+    border: 3px inset #bcb19d !important;
+    display: inline-block !important;
+    font-size: 25px !important;
 }
