@@ -438,12 +438,12 @@ function underline_col1(item, color){
         $('[about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
-        $("#col1").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $("#col1").animate({scrollTop: scrollPos + elementPos - $("#col1").offset().top}, 1000);
         $(item).attr("clicked","true");
       }
   else{
     var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    $('[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
     $("#col1").animate({scrollTop:0}, 1000);
     $(item).attr("clicked","false"); 
   }
@@ -516,4 +516,51 @@ $(document).ready(function(){
 
 function undo() {
   $('#mylist').html(original_order);
+}
+
+function focus_one(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col2').css({"display": "none"});
+    $('#col3').css({"display": "none"});
+    $('#col1 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col2').css({"display": "block"});
+     $('#col3').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
+}
+
+
+function focus_two(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col1').css({"display": "none"});
+    $('#col3').css({"display": "none"});
+    $('#col2 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col1').css({"display": "block"});
+     $('#col3').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
+}
+
+
+function focus_three(elem){
+  if ($(elem).attr('clicked') == "false"){
+    $('#col1').css({"display": "none"});
+    $('#col2').css({"display": "none"});
+    $('#col3 .article_header').css("text-align", "center")
+    $(elem).attr("clicked","true"); 
+  }
+  else{
+     $('#col1').css({"display": "block"});
+     $('#col2').css({"display": "block"});
+     $(elem).attr("clicked","false"); 
+  }
+
 }

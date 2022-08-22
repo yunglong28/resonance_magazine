@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    
 </head>
 
 
@@ -97,6 +98,7 @@
             <b>Original source</b>: <a href="https://www.decolonizingthemusicroom.com/brazilian-black-music">Go to the source</a><br>
             <b>Journal</b>: Decolonize the music room
         </div>
+        <div class="focus"><button type="button" class="btn btn-light" clicked="false" onclick="focus_one(this)">Focus</button></div> <br>
         <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
@@ -106,9 +108,8 @@
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
-         <li><a about="Juliana Cantarelli Vita" clicked="false" onclick="underline_col1(this, '#ffb370')">Juliana Cantarelli Vita</a></li>
-        <li><a about="Chico Santana" clicked="false" onclick="underline_col1(this,'#ffb370')">Chico Santana</a></li>
-        <li><a about="Afro-Brazilian" clicked="false" onclick="underline_col1(this,'#ffb370')">Afro-Brazilian</a></li>
+         <li><a about="Juliana Cantarelli Vita" clicked="false" onclick="underline_col1(this, '#ffb370')">Juliana Cantarelli Vita (2)</a></li>
+        <li><a about="Chico Santana" clicked="false" onclick="underline_col1(this,'#ffb370')">Chico Santana (2)</a></li>
       </div>
     </div>
   </div>
@@ -119,7 +120,9 @@
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      <div class="accordion-body">
+        <li><a about="U.S." clicked="false" onclick="underline_col1(this, '#ffb370')"> U.S. (2)</a></li>
+        <li><a about="Chico Santana" clicked="false" onclick="underline_col1(this,'#ffb370')">Chico Santana (2)</a></li></div>
     </div>
   </div>
   <div class="accordion-item">
@@ -158,6 +161,7 @@
                     <b>Original source</b>: <a href="https://newmusicusa.org/nmbx/decolonizing-our-music/#:~:text=decolonize%E2%80%9D%20our%20music.-,Decolonizing%20music%20involves%20a%20conscious%20decision%20to%20move%20away%20from,and%E2%80%9D%20%E2%80%9Cdecolonized%E2%80%9D%20mentality">Go to the source</a><br>
                     <b>Journal</b>: New Music USA
                 </div>
+                <div class="focus"><button type="button" class="btn btn-light" clicked="false" onclick="focus_two(this)">Focus</button></div> <br>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
@@ -221,6 +225,7 @@
                   <b>Original source</b>: <a href="https://www.tandfonline.com/doi/full/10.1080/03007766.2016.1230695">Go to the source</a><br>
                   <b>Journal</b>: Popular Music and Society
               </div>
+               <div class="focus"><button type="button" class="btn btn-light" clicked="false" onclick="focus_three(this)">Focus</button></div> <br>
               <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -276,7 +281,7 @@
 
 <div class="col article_col" id="col1">
 
-
+<div class='article_header'>
 <div class="title_and_subtitle" id="title_and_subtitle_1">
   <div class="title"> <!--img id="pallino" src="imgs/pallino.png"-->Brazilian Black Music</div>
   <!--img class="opening_img" id="ballerini" src="imgs/ballerini.png">solo belle--> 
@@ -285,13 +290,14 @@
  <img class="first_img" id="first_img_one" src="https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280" alt="Coronation ceremony" width="300">
 
 <div class="author_and_date">
-<div class="author">By and <span class="person" about="Chico Santana"> Chico</span> phd </div>
+<div class="author">By <span  class="person" about="Juliana Cantarelli Vita">Juliana Cantarelli Vita</span> and <span class="person" about="Chico Santana"> Chico Santana, PhD</span> phd </div>
 <div class="publicationDate">January 21, 2020.</div>
 <hr class="start_line">
 </div>
+</div>
 
 <div class="ArtBody" id="first_article">
-    <p id="fra1">Every <span class="date" about="February">February</span>, <span class="place" about="U.S.">North Americans</span> take time to celebrate and recognize the central role of <span class="key" about="black_people">Black People</span> in <span class="place" about="U.S."> U.S.</span> history. With this article, we intend to go a little farther than<span class="place" about="U.S."> North America</span>, focusing on <span class="place" about="South_America">South America</span> and more specifically on <span class="key" about="indigenous"> Afro-Brazilian</span> <span class="key" about="tradition"> traditions</span>. Before we dive into two<span class="key" about="indigenous"> Afro-Brazilian</span> musical <span class="key" about="tradition"> traditions</span> that comprise the focus of this paper (namely, <span class="genre" about="maracatu"> maracatu de baque virado</span> and <span class="genre" about="samba"> samba</span>), let's briefly discuss the ways in which Brazilian music may be positioned among marketable and social categories. Being Brazilian means to be Latinx, even though some Brazilians often do not recognize themselves as such due to the fact that the term "Latinx" is normally associated with <span class="key" about="indigenous"> Hispanic</span> cultural traits (which is not a part of <span class="place" about="Brazil"> Brazilian</span> music/culture necessarily). We argue, however, that is important to recognize <span class="place" about="Brazil"> Brazilians</span> as Latinx, as the term bonds cultures who have been historically oppressed and <span class="key" about="colonization"> colonized</span>.</p>
+    <p id="fra1">Every <span class="date" about="February">February</span>, North Americans take time to celebrate and recognize the central role of <span class="key" about="black_people">Black People</span> in <span class="place" about="U.S."> U.S.</span> history. With this article, we intend to go a little farther than<span class="place" about="U.S."> North America</span>, focusing on <span class="place" about="South_America">South America</span> and more specifically on <span class="key" about="indigenous"> Afro-Brazilian</span> <span class="key" about="tradition"> traditions</span>. Before we dive into two<span class="key" about="indigenous"> Afro-Brazilian</span> musical <span class="key" about="tradition"> traditions</span> that comprise the focus of this paper (namely, <span class="genre" about="maracatu"> maracatu de baque virado</span> and <span class="genre" about="samba"> samba</span>), let's briefly discuss the ways in which Brazilian music may be positioned among marketable and social categories. Being Brazilian means to be Latinx, even though some Brazilians often do not recognize themselves as such due to the fact that the term "Latinx" is normally associated with <span class="key" about="indigenous"> Hispanic</span> cultural traits (which is not a part of <span class="place" about="Brazil"> Brazilian</span> music/culture necessarily). We argue, however, that is important to recognize <span class="place" about="Brazil"> Brazilians</span> as Latinx, as the term bonds cultures who have been historically oppressed and <span class="key" about="colonization"> colonized</span>.</p>
 
     <p>With that said, yes, we are a part of <span class="place" about="South_America"> América Latina </span>(yes, America is a continent and not a country), but <span class="genre" about="Brazilian music"> Brazilian music</span> has known a wide influence of <span class="place" about="Africa"> African</span> cultures, beyond the aesthetics and musical "sound" itself all the way to the meanings and contexts of the musical performances. As Agawu (2003) argues,</p> <p class="quote">the concept of <span class="genre" about="African music">  "African music"</span> is a problematic one: a whole continent cannot be represented by "one" music.</p> <p>Then, when we think about <span class="place" about="Africa"> African</span> traits in <span class="genre" about="Brazilian music"> Brazilian music</span>, we may observe the diversity of <span class="place" about="Africa"> African</span> elements. Of course, this view contrasts with mainstream history courses taught in the <span class="place" about="Brazil"> Brazilian</span> education system that focus on a <span class="key place" about="West colonization Europe">  Eurocentric personpective</span> of music’s <span class="place" about="Europe">  European</span> facets and thus reduces <span class="place" about="Africa"> Africa</span> (and its influences on Brazilian music) to an exotic and stigmatized place. It is important to understand which elements of<span class="place" about="Africa">  African</span> culture are inherent in <span class="place" about="Africa Brazil"> Afro-Brazilian</span> and Latinx music in order to avoid a reduction or misunderstanding of the wide and extremely rich cultural universe of <span class="place" about="Africa">  African continent</span>.</p>
 
@@ -299,7 +305,7 @@
     <p>The myriad traces of <span class="genre" about="African music"> African music </span> in <span class="place" about="Brazil"> Brazil</span> are a consequence of the long period of <span class="key" about="slavery">slavery</span> time in the country, when <span class="place" about="Brazil"> Brazil</span> was a <span class="key" about="colonization">Portuguese colony</span>. The forceful bringing of <span class="key" about="slavery">enslaved Africans to Brazilian shores</span> began in <span class="date" about="1550">1550</span> and was not abolished until <span class="date" about="1888">1888</span>, during which period <span class="key" about="colonization"> Brazil received more <span class="key" about="slavery">enslaved </span> Africans than any other country</span>. <span class="place" about="Africa"> West and Central African peoples</span> were forced to embark for <span class="place" about="Brazil">Brazil</span> at their ports (most from <span class="place" about="Africa">Luanda, present-day Angola</span>). An estimate of four million <span class="key" about="slavery">enslaved people </span> were brought to <span class="place" about="Brazil"> Brazil</span>, adding to 40% of the total number brought to all the <span class="place" about="U.S. South_America">Americas—North, Central, and South</span>.</p>
 
 
-    <p>As we know,</p> <p class="quote"><span class="key" about="black_people">Black History</span> month does not limit itself to times of struggles of <span class="place" about="Africa"> African</span> descendants in the <span class="place" about="U.S. South_America">Americas</span>.</p> <p>Being aware of these is crucial for an understanding of what comes after, but let's not stop there. The two <span class="key" about="tradition"> traditions</span> we are approaching here are a matter of pride and celebration for not only <span class="key" about="black_people">Black communities</span> in <span class="place" about="Brazil">Brazil</span> but for <span class="place" about="Brazil">Brazilian culture</span> as a whole. This paper addresses ways in which we can embrace <span class="person" about="Afro-Brazilian">Afro-Brazilian</span> music in and as culture in a respectful and responsible manner. What to consider teaching Brazilian music abroad? Considering the complexity of the "African" and "Latin" concepts, what and how do we  teach <span class="place" about="Africa Brazil">Afro-Brazilian</span> Music outside of its original contexts, where most often stigmas exist in relation to<span class="place" about="Brazil"> Brazil</span> itself?</p>
+    <p>As we know,</p> <p class="quote"><span class="key" about="black_people">Black History</span> month does not limit itself to times of struggles of <span class="place" about="Africa"> African</span> descendants in the <span class="place" about="U.S. South_America">Americas</span>.</p> <p>Being aware of these is crucial for an understanding of what comes after, but let's not stop there. The two <span class="key" about="tradition"> traditions</span> we are approaching here are a matter of pride and celebration for not only <span class="key" about="black_people">Black communities</span> in <span class="place" about="Brazil">Brazil</span> but for <span class="place" about="Brazil">Brazilian culture</span> as a whole. This paper addresses ways in which we can embrace Afro-Brazilian music in and as culture in a respectful and responsible manner. What to consider teaching Brazilian music abroad? Considering the complexity of the "African" and "Latin" concepts, what and how do we  teach <span class="place" about="Africa Brazil">Afro-Brazilian</span> Music outside of its original contexts, where most often stigmas exist in relation to<span class="place" about="Brazil"> Brazil</span> itself?</p>
 
     <p> <span  class="person" about="Juliana Cantarelli Vita">Juliana Cantarelli Vita</span> In terms of our positionality, it is important to highlight that our identities shift depending on where we are. Although we do identify as White in <span class="place" about="Brazil"> Brazil</span>, we have been perceived as <span class="key" about="black_people"> people of color</span> when living abroad, as both of us have lived outside of <span class="place" about="Brazil">Brazil for an extensive period of time (<span class="people" about="Juliana Cantarelli Vita">Juliana</span> in the <span class="place" about="U.S."> United States</span>, <span class="person" about="Chico Santana"> Chico</span> in <span class="place" about="U.S."> Germany</span>). More often than not, when abroad, we are put in a conglomerate of <span class="place"about="Brazil">  "Brazilians"</span> in which ethnicity is not likely to be emphasized. For that very reason, we like and need to make clear that although we are seen as part of a minority group when we are abroad, we belong to a position of white privilege back home. And that makes all the difference when we are teaching traditions that are so close to our hearts that are based in marginalized ethnic groups of which we ourselves are not members. This is especially true when others can and often do perceive us as “insiders” when we are not, no matter how close to our hearts these <span class="key" about="tradition"> musical traditions </span> may be, and no matter the extensive training and the permissions we have been granted to share these musics. With this piece, we hope to bring forward our experiences with the  <span class="key place" about="tradition Africa Brazil">  Afro-Brazilian traditions </span> of <span class="genre" about="maracatu"> maracatu de baque virado</span> and <span class="genre" about="samba"> samba</span>, as we have both been deeply involved with these in <span class="place" about="Brazil"> Brazil</span> and have been participating in the diasporic movement of these <span class="key" about="tradition"> traditions </span>.</p>
 
@@ -412,7 +418,7 @@
 <!--Inizio seconda colonna-->
 <div class="col-lg article_col" id="col2">
 
-
+<div class='article_header'>
 <div class="title_and_subtitle" id="title_and_subtitle_2">
   <div class="title" id="title1"> Decolonizing our music</div>
   <!--img class="opening_img" id="amazzone" src="imgs/amazzone.png">solo belle-->
@@ -422,6 +428,7 @@
 <div class="author_and_date">
 <div class="author">By <span class="person" about="Gary Ingle"> Gary Ingle</span></div>
 <div class="publicationDate">November 16, 2016.</div>
+</div>
 <hr class="start_line">
 </div>
 
@@ -474,7 +481,7 @@
 <!-- Inizio terza colonna-->
 <div class="col article_col" id="col3">
 
-
+<div class='article_header'>
 <div class="title_and_subtitle"  id="title_and_subtitle_3">
   <div class="title"> Decolonizing the ear</div>
   <!--img class="opening_img" id="pattinatrice" src="imgs/pattinatrice.png"/> solo belle-->
@@ -485,6 +492,7 @@
 <div class="author_and_date">
 <div class="author">By <span class="person" about="Oliver Lovesey"> Oliver Lovesey</span> </div>
 <div class="publicationDate">11 October 2016.</div>
+<div class='article_header'>
 <hr class="start_line">
 </div>
 
