@@ -261,13 +261,18 @@ footer{
 }
 
 
+
 .marquee-section {
     position: relative;
     min-height: 100px;
     font-size: 80px;
-    color:white;
-    background-color: transparent;
+    border: 3px inset #bcb19d;
+    color: #bcb19d;
+    background-color: white;
+    font-family: "Lynotype Didot Roman";
     text-transform: uppercase;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hubert_Robert_003.jpg/1280px-Hubert_Robert_003.jpg");
+
 
 }
 
@@ -281,9 +286,31 @@ footer{
 
 .marquee-div {
     position: absolute;
-    animation: move-left-to-right linear 70s infinite;
+    animation: move-left-to-right linear 50s infinite;
+
 
 }
+
+/* use this one to move from left to right direction */
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* use this one to move from right to left direction */
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 
 /* parte about us */
 
