@@ -439,8 +439,8 @@ function underline_col1(item, color){
         $('#col1 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
-        var pagescrollPos = $("html").scrollTop();
-        $("#col1").animate({scrollTop:(scrollPos - pagescrollPos) + elementPos - $("#col1").offset().top}, 1000);
+        $("html").animate({scrollTop:0}, 1000)
+        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top}, 1000);
         $(item).attr("clicked","true");
       }
   else{
@@ -459,6 +459,7 @@ function underline_col2(item, color){
         $('#col2 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col2").scrollTop();
+        $("html").animate({scrollTop:0}, 1000)
         $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
         $(item).attr("clicked","true");
       }
@@ -477,6 +478,7 @@ function underline_col3(item, color){
         $('#col3 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col3").scrollTop();
+        $("html").animate({scrollTop:0}, 1000)
         $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
         $(item).attr("clicked","true");
       }
@@ -528,6 +530,15 @@ $(document).ready(function(){
   window.original_order_six = $('#my_list_six').html();
   window.original_order_seven = $('#my_list_seven').html();
   window.original_order_eight = $('#my_list_eight').html();
+  window.original_order_nine = $('#my_list_nine').html();
+  window.original_order_ten = $('#my_list_ten').html();
+  window.original_order_eleven = $('#my_list_eleven').html();
+  window.original_order_twelve = $('#my_list_twelve').html();
+  window.original_order_thirteen = $('#my_list_thirteen').html();
+  window.original_order_fourteen = $('#my_list_fourteen').html();
+  window.original_order_fifteen = $('#my_list_fifteen').html();
+  window.original_order_sixteen = $('#my_list_sixteen').html();
+  window.original_order_seventeen = $('#my_list_seventeen').html();
   })
 
 function undo(lista) {
@@ -554,6 +565,30 @@ function undo(lista) {
   }
   else if (lista == 'my_list_eight'){
     document.getElementById(lista).innerHTML = original_order_eight;
+  }
+  else if (lista == 'my_list_nine'){
+    document.getElementById(lista).innerHTML = original_order_nine;
+  }
+   else if (lista == 'my_list_ten'){
+    document.getElementById(lista).innerHTML = original_order_ten;
+  }
+   else if (lista == 'my_list_eleven'){
+    document.getElementById(lista).innerHTML = original_order_eleven;
+  }
+   else if (lista == 'my_list_twelve'){
+    document.getElementById(lista).innerHTML = original_order_twelve;
+  }
+  else if (lista == 'my_list_thirteen'){
+    document.getElementById(lista).innerHTML = original_order_thirteen;
+  }
+   else if (lista == 'my_list_fourteen'){
+    document.getElementById(lista).innerHTML = original_order_fourteen;
+  }
+   else if (lista == 'my_list_fifteen'){
+    document.getElementById(lista).innerHTML = original_order_fifteen;
+  }
+   else if (lista == 'my_list_seventeen'){
+    document.getElementById(lista).innerHTML = original_order_seventeen;
   }
 }
 
