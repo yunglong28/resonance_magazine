@@ -139,20 +139,17 @@ margin-top: 80px;
   color:black;
     font-family: 'bodoni';
     font-size: 25px;
-
     z-index: 100;
-
     text-align: justify;
-margin-top: 80px;
-margin-left: 70px;
+    margin-top: 80px;
+    margin-left: 70px;
 }
 
 .wrapper {
   display: grid;
     grid-template-columns: 500px 700px ;
-    background-color:
-  #e6d8a8;
-  height: 600px;
+    background-color: #e6d8a8;
+    height: 600px;
 }
 
 .wrapper_mag {
@@ -391,7 +388,7 @@ font-family: nimbus;
   font-family: nimbus;
     background-color: #fc4434;
     border: 3px solid  #fc4434;
-    color:#0c2414;
+    color:#0c2414!important;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -559,9 +556,32 @@ border: none;
 .icons {
   width: 30px;
   height: 30px;
+
 }
 
 .icons_nav {
   margin-left: 295px!important;
   margin-top: 7px!important;
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 210px!important;
+    margin-top: 7px!important;
+
+  }
+}
+
+/*.icons_nav {
+  margin-left: 661px!important;
+  margin-top: 7px!important;
+    position: absolute;
 }

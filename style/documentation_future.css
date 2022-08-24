@@ -45,16 +45,6 @@
     color:black;
 }
 
-.navbar li:hover{
-    color:  #9fa4c4 !important;
-}
-
-.navbar li a:hover{
-    color:  #9fa4c4 !important;
-    text-decoration:none;
-}
-
-
 /* Dropdown */
 .navbar .dropdown ul {
     display: block;
@@ -226,11 +216,9 @@ footer{
 
 
 #magazine2{
-    background-color: rgb(250, 247, 230);
+    background-color:#73895a;
     height: 370px;
-    border: #73895a;
-    border-style: solid;
-    border-radius: 25px;
+    margin-top: 10px;
     padding-top: 4%;
     padding-left: 6%;
     padding-right: 6%;
@@ -239,6 +227,7 @@ footer{
     font-family: 'Times New Roman';
     font-size: 25px;
     text-align: justify;
+
 
 }
 .btn_stili {

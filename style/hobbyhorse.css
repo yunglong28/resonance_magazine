@@ -519,3 +519,19 @@ footer{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
 }
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 45px!important;
+    margin-top: 7px!important;
+
+  }
+}

@@ -79,8 +79,6 @@ function change(name) {
       $("#pagestyle").attr('href','style/home_illuminism.css');
       $("#mag_img").replaceWith("<img id='mag_img' src='imgs/kendrick__illuminism.png' height='550' filter='sepia'>")
       $("#yet_img").replaceWith("<img id='yet_img' src='imgs/didot_transparent.png' height='550'>")
-      $("#marquee_1").remove()
-      $("#marquee_2").remove()
       $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
       $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
       $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")

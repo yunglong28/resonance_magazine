@@ -698,3 +698,18 @@ height: 140px;
   color: black!important;
   font-size: 40px;
 }
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 40px!important;
+    margin-top: 7px!important;
+
+  }
+}

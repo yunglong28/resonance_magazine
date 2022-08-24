@@ -123,8 +123,9 @@ p {
 
 
 
-footer{
-    color: rgb(115, 47, 25);
+footer
+
+{ color: rgb(0, 0, 0);
     text-align: center;
     font-size: 20px;
 }
@@ -141,6 +142,7 @@ footer{
     display: inline-block;
     font-size: 25px;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 
@@ -196,9 +198,7 @@ footer{
 #magazine{
     background-color: #fc4434;
     height: 600px;
-
     color: lightgrey;
-    font-family: 'bodoni';
     font-size: 25px;
     z-index: 100;
     position: relative;
@@ -206,7 +206,6 @@ footer{
     padding-right: 40%;
     text-align: justify;
     background-size: cover;
-
     margin: 0;
     margin-top: -57px;
 
@@ -214,22 +213,21 @@ footer{
 
 .text{
     color:black;
-    font-family: 'bodoni';
     font-size: 25px;
-
     z-index: 100;
-
     text-align: justify;
     margin-top: 80px;
 }
 
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
 .colspotify{
     color:black;
-    font-family: 'bodoni';
     font-size: 25px;
-
     z-index: 100;
-
     text-align: justify;
     margin-top: 80px;
     margin-left: 70px;
@@ -278,10 +276,10 @@ footer{
     text-align: justify;
     margin-top: 216px;
     margin-left: 159px;
+    border-bottom: 2px;
 }
 
 .col_issue {
-
     color: lightgrey;
     font-size: 25px;
     z-index: 100;
@@ -301,7 +299,7 @@ footer{
 
 
 .col_button_us {
-    color:  darkred;
+    color:  black;
     font-size: 102px;
     z-index: 100;
     text-align: justify;
@@ -311,7 +309,6 @@ footer{
 .col_us {
 
     color:  #fc4434;
-    font-family: 'nimbus';
     font-size: 25px;
     z-index: 100;
     text-align: justify;
@@ -353,6 +350,7 @@ footer{
 }
 
 .wrapper_yet{
+
     display: grid;
     grid-template-columns: 704px 700px ;
     background-color: rgb(250, 247, 230) !important;
@@ -395,4 +393,20 @@ footer{
 #read_button{
     font-family: "Times New Roman" !important;
     color: black !important;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 210px!important;
+    margin-top: 7px!important;
+
+  }
 }
