@@ -434,8 +434,9 @@ for (i = 0; i < acc.length; i++) {
 
 function underline_col1(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about'); 
-        $('[about= "' + aboutwho + '"]').css('background-color', color); 
+        var aboutwho = $(item).attr('about');
+        $(item).css('background-color', color);
+        $('#col1 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
         var pagescrollPos = $("html").scrollTop();
@@ -444,7 +445,8 @@ function underline_col1(item, color){
       }
   else{
     var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
+    $(item).css('background-color', 'transparent');
+    $('#col1 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
     $(item).attr("clicked","false"); 
   }
 }
@@ -453,7 +455,8 @@ function underline_col1(item, color){
 function underline_col2(item, color){
   if ($(item).attr('clicked') == "false"){
         var aboutwho = $(item).attr('about'); 
-        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        $(item).css('background-color', color);
+        $('#col2 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col2").scrollTop();
         $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
@@ -461,7 +464,8 @@ function underline_col2(item, color){
       }
   else{
     var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none");
+    $(item).css('background-color', 'transparent');
+    $('#col2 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
     $(item).attr("clicked","false"); 
   }
 }
@@ -469,7 +473,8 @@ function underline_col2(item, color){
 function underline_col3(item, color){
   if ($(item).attr('clicked') == "false"){
         var aboutwho = $(item).attr('about'); 
-        $('[about= "' + aboutwho + '"]').css("text-decoration", "underline solid 0.5vh #C0533E"); 
+        $(item).css('background-color', color);
+        $('#col3 [about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col3").scrollTop();
         $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
@@ -477,7 +482,8 @@ function underline_col3(item, color){
       }
   else{
     var aboutwho = $(item).attr('about'); 
-    $('[about= "' + aboutwho + '"]').css("text-decoration", "none"); 
+    $(item).css('background-color', 'transparent');
+    $('#col3 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
     $(item).attr("clicked","false"); 
   }
 }
@@ -544,6 +550,7 @@ function focus_one(elem){
   else{
      $('#col2').css({"display": "block"});
      $('#col3').css({"display": "block"});
+     $('#col1 .article_header').css("text-align", "left");
      $(elem).attr("clicked","false"); 
   }
 
@@ -554,12 +561,13 @@ function focus_two(elem){
   if ($(elem).attr('clicked') == "false"){
     $('#col1').css({"display": "none"});
     $('#col3').css({"display": "none"});
-    $('#col2 .article_header').css("text-align", "center")
+    $('#col2 .article_header').css("text-align", "center");
     $(elem).attr("clicked","true"); 
   }
   else{
      $('#col1').css({"display": "block"});
      $('#col3').css({"display": "block"});
+     $('#col2 .article_header').css("text-align", "left");
      $(elem).attr("clicked","false"); 
   }
 
@@ -576,6 +584,7 @@ function focus_three(elem){
   else{
      $('#col1').css({"display": "block"});
      $('#col2').css({"display": "block"});
+     $('#col3 .article_header').css("text-align", "left");
      $(elem).attr("clicked","false"); 
   }
 
