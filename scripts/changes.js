@@ -523,6 +523,11 @@ $(document).ready(function(){
   window.original_order_one = $('#my_list_one').html();
   window.original_order_two = $('#my_list_two').html();
   window.original_order_three = $('#my_list_three').html();
+  window.original_order_four = $('#my_list_four').html();
+  window.original_order_five = $('#my_list_five').html();
+  window.original_order_six = $('#my_list_six').html();
+  window.original_order_seven = $('#my_list_seven').html();
+  window.original_order_eight = $('#my_list_eight').html();
   })
 
 function undo(lista) {
@@ -532,8 +537,23 @@ function undo(lista) {
   else if (lista == 'my_list_two'){
     document.getElementById(lista).innerHTML = original_order_two;
   }
-  else{
+  else if (lista == 'my_list_three'){
     document.getElementById(lista).innerHTML = original_order_three;
+  }
+   else if (lista == 'my_list_four'){
+    document.getElementById(lista).innerHTML = original_order_four;
+  }
+    else if (lista == 'my_list_five'){
+    document.getElementById(lista).innerHTML = original_order_five;
+  }
+    else if (lista == 'my_list_six'){
+    document.getElementById(lista).innerHTML = original_order_six;
+  }
+    else if (lista == 'my_list_seven'){
+    document.getElementById(lista).innerHTML = original_order_seven;
+  }
+  else if (lista == 'my_list_eight'){
+    document.getElementById(lista).innerHTML = original_order_eight;
   }
 }
 
