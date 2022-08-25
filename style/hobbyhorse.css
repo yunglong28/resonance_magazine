@@ -338,6 +338,7 @@ body {
   height: 100%;
     background-color: #White!important;
       background-image: url('../imgs/backremoved.png');
+      overflow-x: hidden!important;
  }
 
 .author_and_date {

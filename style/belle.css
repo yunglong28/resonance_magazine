@@ -90,6 +90,7 @@ body{
   background-image: url(../imgs/wall2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden!important;
 }
 
 .title_issue{

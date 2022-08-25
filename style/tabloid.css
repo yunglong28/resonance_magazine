@@ -220,6 +220,7 @@ figcaption{
 
 body{
   background-color: white !important;
+  overflow-x: hidden!important;
   /*background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");*/
 }
 

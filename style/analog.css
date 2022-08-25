@@ -272,6 +272,7 @@ body {
     background-color: #White!important;
       background-image: url('../imgs/backram.png');
       background-size: repeat;
+      overflow-x: hidden!important;
 
  }
 
