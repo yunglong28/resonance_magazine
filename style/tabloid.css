@@ -220,6 +220,7 @@ figcaption{
 
 body{
   background-color: white !important;
+  overflow-x: hidden!important;
   /*background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");*/
 }
 
@@ -470,4 +471,20 @@ text-transform: uppercase;
 .modal-title {
  font-size: 32px;
  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: -15px!important;
+    margin-top: 7px!important;
+
+  }
 }
