@@ -525,7 +525,6 @@ a:hover{
 .icons {
   width: 30px;
   height: 30px;
-
     filter: sepia(100%);
 }
 .icons_nav {
@@ -534,6 +533,20 @@ a:hover{
 
 }
 
+.openbtn {
+    font-size: 20px;
+    background-color: transparent;
+    color:black!important;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    text-align:center !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+    color:black;
+}
 
 .sidebar {
     height: 100%;
@@ -542,11 +555,31 @@ a:hover{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fc4434;
-    filter: opacity(30%);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: "Lynotype Didot Roman";
+    background-image: url('https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmZW1pbmluZTEtMjBjLW5hcC5qcGc.jpg?s=FqsJuJSUKgiYZ2xqrTzIaqVoXixOBnz9hvbrwhLrIII');
+;
+}
+
+.accordion-item {
+    border: 0px !important;
+    background-color: transparent;
+}
+
+.accordion-button {
+    font-size: 1rem !important;
+    font-family: Didot, serif !important;
+    background-color: transparent; !important;
+}
+
+#metadata_intro {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lynotype Didot Roman";
 }
 
 .sidebar a {
@@ -558,17 +591,44 @@ a:hover{
     transition: 0.3s ease;
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
+.accordion-button {
+    font-size: 1rem;
+
 }
+
+.sidebar a {
+    font-size: 15px;
+    padding: 0px;
+    display: inline-block;
+}
+
+
 
 .sidebar .closebtn {
     position: absolute;
     top: 55px;
     right: 25px;
-    font-size: 36px;
+    font-size: 30px;
+    margin-top: 30px;
     margin-left: 50px;
-    color: red !important;
+    color: black !important;
+}
+
+.btn-10 {
+    background-color: transparent;
+    border: 3px inset #bcb19d !important;
+    border-width: thin;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Lynotype Didot Roman";
+}
+
+.accordion-body {
+    background-color: transparent;!important;
+
 }
 
 @media screen and (max-height: 450px) {

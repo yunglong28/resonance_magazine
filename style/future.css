@@ -359,20 +359,45 @@ background-color: rgb(250, 247, 230) !important;
 
 .accordion-button {
     font-size: 1rem;
-    border-radius: 50px;
+
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
+.sidebar a {
+    font-size: 15px;
+    padding: 0px;
+    display: inline-block;
 }
+
+
 
 .sidebar .closebtn {
     position: absolute;
     top: 55px;
     right: 25px;
-    font-size: 36px;
+    font-size: 30px;
+    margin-top: 30px;
     margin-left: 50px;
     color: red !important;
+}
+
+.btn-10 {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #73895a;
+    color: #73895a;
+    border-width: thin;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+.accordion-body {
+    background-color: rgb(250, 247, 230) !important;
+
 }
 
 @media screen and (max-height: 450px) {
