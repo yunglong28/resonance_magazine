@@ -480,11 +480,8 @@ a:hover{
 
 
 
-.icons {
 
-    filter: sepia(80%) !important;
-    margin: 0 40px 0 0 !important;
-}
+
 
 #solar_bar {
     display: none;
@@ -528,10 +525,13 @@ a:hover{
 .icons {
   width: 30px;
   height: 30px;
+
+    filter: sepia(100%);
 }
 .icons_nav {
   margin-left: 75px!important;
   margin-top: 7px!important;
+
 }
 
 
