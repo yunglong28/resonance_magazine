@@ -130,6 +130,7 @@ border-radius: 2rem;
 font-style: bold;
 background-color: transparent;
   background-image: url('../imgs/backram.png');
+  z-index: 100;
 
 
 }
@@ -596,6 +597,7 @@ border: none;
     transition: 0.5s;
     padding-top: 60px;
     border: 6px double black;
+
 }
 
 /*.sidebar a {
