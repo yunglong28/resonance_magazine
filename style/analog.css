@@ -380,7 +380,7 @@ border-bottom: 1px solid black;
 #block1 {visibility: hidden;}
 
 .quote {
-  color: white;
+  color: white!important;
 	position: relative;
 	width: 290px; /* e.g. */
 	height: 197px; /* e.g. */

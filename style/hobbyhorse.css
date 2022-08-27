@@ -43,7 +43,7 @@ font-family: 'caslon_old_faceregular';
     text-transform: uppercase;
 }
 
-#body2::first-letter {
+#lo2::first-letter {
   background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
@@ -58,7 +58,7 @@ margin-bottom: -4.15rem;
 }
 
 
-#body3::first-letter {
+#lo3::first-letter {
   background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
@@ -73,7 +73,7 @@ margin-bottom: -4.15rem;
 
 }
 
-#body1::first-letter {
+#lo1::first-letter {
   background-image: url('../imgs/FDROP.png');
   background-size: contain;
   background-size: 48%;
@@ -107,18 +107,19 @@ margin-bottom: -4.15rem;
 #fra3::first-letter {
   background-image: url('../imgs/t2.png');
   background-size: contain;
-    background-size: 50%;
+    background-size: 60%;
 background-repeat: no-repeat;
 background-center: center center;
 float: left;
 font-size: 12rem;
 line-height: 0.65;
 color: transparent;
-margin-right: -0.15px;
+margin-right: -50px;
 margin-left: -0.15rem;
 margin-bottom: -4.15rem;
 
 }
+
 
 #fra1::first-letter {
   background-image: url('../imgs/e2.png');
@@ -135,7 +136,49 @@ margin-left: -0.0rem;
 margin-bottom: -4.80rem;
 
 }
+#ale1::first-letter {
+  background-image: url('../imgs/I.png');
+  background-size: contain;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -0.15px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+}
 
+#ale2::first-letter {
+  background-image: url('../imgs/t2.png');
+  background-size: contain;
+    background-size: 60%;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -50px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+
+}
+
+#ale3::first-letter {
+  background-image: url('../imgs/I.png');
+  background-size: contain;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -0.15px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+}
 
 
 img {
@@ -508,6 +551,7 @@ footer{
 }*/
 
 .sidebar .closebtn {
+  font-family: caslon_old_faceregular;
     position: absolute;
     top: 78px;
     right: 10px;
@@ -617,7 +661,7 @@ font-family: "caslon_old_face_italic";
 .btn-10{
   font-family: p22_operina_fiore_fiore;
     background-color: transparent;
-    border: 2px solid  grey;
+    border: 0px solid  grey;
     color: #grey;
     padding: 6px 6px;
     text-align: center;
@@ -631,9 +675,9 @@ font-family: "caslon_old_face_italic";
 
 .btn-10:hover {
   font-family: p22_operina_fiore_fiore;
-    background-color: #53575c;
-    border: 2px solid  #53575c;
-    color: #E9E9E9;
+
+    border: 0px solid  #53575c;
+    color:#53575c;
     padding: 6px 6px;
     text-align: center;
     text-decoration: none;
