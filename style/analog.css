@@ -597,6 +597,7 @@ border: none;
     transition: 0.5s;
     padding-top: 60px;
     border: 6px double black;
+    border-radius: 2rem;
 
 }
 
