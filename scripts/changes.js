@@ -47,7 +47,7 @@ function change(name) {
       $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
     }
     $(".container_articles").attr('class', 'container container_articles');
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'>")
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'>");
     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png'>")
     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png'>")
     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png'>")
