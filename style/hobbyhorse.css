@@ -362,7 +362,7 @@ display: block;
 
 
 .container-fluid {
-  width: 89% !important;
+
 padding-right: 15px;
 padding-left: 15px;
 margin-right: auto;
@@ -370,6 +370,9 @@ margin-left: auto;
     margin-top: -67px;
 }
 
+#articoli {
+  width: 89%;
+}
 
 /* The element to apply the animation to */
 

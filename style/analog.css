@@ -239,7 +239,7 @@ color: white;
 
 /*Fine navbar*/
 .container-fluid {
-  width: 89% !important;
+
 padding-right: 15px;
 padding-left: 15px;
 margin-right: auto;
@@ -251,6 +251,10 @@ margin-left: auto;
 
       border-radius: 2rem;
       margin-top: 0px
+}
+
+#articoli {
+  width: 89%;
 }
 
 .dropdown li a {
