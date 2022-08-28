@@ -75,6 +75,7 @@ h5 {
   height: 60px;
   border-bottom: solid;
   border-bottom-color: #73895a;
+  z-index: 100;
 }
 /* Rende la navbar orizzontale */
 .navbar ul {
