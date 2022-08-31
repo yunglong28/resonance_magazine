@@ -87,6 +87,8 @@ function change(name) {
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     /*$("#sep_nav").remove();*/
     $(".container_articles").attr('class', 'container-fluid container_articles');
+    $("#uccelli").append("<img id='birds' src='imgs/birds2.png' width='250'>");
+    $("#uccelli1").replaceWith("<img id='block1' src='imgs/birds3.png' width='250'>");
 
     $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazinetabloid.png'>")
     $("#cello").replaceWith("<img id='cello' src='imgs/cellotabloid.png'>")
@@ -128,6 +130,12 @@ function change(name) {
   else{
     $(".container_articles").attr('class', 'container container_articles');
     $("figcaption").remove();
+    $("#block1").remove();
+    $("#birds").remove();
+    $('#finalfig1').remove();
+    $('#finalfig2').remove();
+    $('#finalfig3').remove();
+
   }
 
 
@@ -164,6 +172,7 @@ function change(name) {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#sep_banner").remove()
+
   }
 
 
@@ -176,15 +185,18 @@ function change(name) {
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
     $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
     $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
-    $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
-    $("#cello").replaceWith("<img id='cello' src='imgs/celloanalog.png'>")
-    $("#harp").replaceWith("<img id='harp' src='imgs/harpanalog.png'>")
-    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/vynilanalog.png'>")
-    $("#disco").replaceWith("<img id='disco' src='imgs/stroboanalog.png'>")
-    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxanalog.png'>")
-    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodanalog.png'>")
-    $(".start_line").remove()
+    $("#adv8000").append("<img  id='finalfig1' src='imgs/adv3.png' width='300'>")
+    $("#advnextissue").append("<img class='adv' src='imgs/adv2.png' width='300'>")
+    $("#advatari").append("<img class='adv1' src='imgs/adv1.png' width='300'>")
+      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
+      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
+      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
+      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
+      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
+      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
+      $(".start_line").remove()
+
 
 
 
@@ -230,7 +242,7 @@ function change(name) {
         $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
         if ($('#sep_nav').length == 0) {$("<br id='sep_nav'>").insertAfter("nav")}
-        
+
 
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
         }
@@ -283,7 +295,7 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    
+
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -371,7 +383,7 @@ function underline_col1(item, color){
   if ($(item).attr('clicked') == "false"){
         var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
-        $('#col1 [about= "' + aboutwho + '"]').css('background-color', color); 
+        $('#col1 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -379,19 +391,19 @@ function underline_col1(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about'); 
+    var aboutwho = $(item).attr('about');
     $(item).css('background-color', 'transparent');
-    $('#col1 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
-    $(item).attr("clicked","false"); 
+    $('#col1 [about= "' + aboutwho + '"]').css('background-color', 'transparent');
+    $(item).attr("clicked","false");
   }
 }
 
 
 function underline_col2(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about'); 
+        var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
-        $('#col2 [about= "' + aboutwho + '"]').css('background-color', color); 
+        $('#col2 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col2").scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -399,18 +411,18 @@ function underline_col2(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about'); 
+    var aboutwho = $(item).attr('about');
     $(item).css('background-color', 'transparent');
-    $('#col2 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
-    $(item).attr("clicked","false"); 
+    $('#col2 [about= "' + aboutwho + '"]').css('background-color', 'transparent');
+    $(item).attr("clicked","false");
   }
 }
 
 function underline_col3(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about'); 
+        var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
-        $('#col3 [about= "' + aboutwho + '"]').css('background-color', color); 
+        $('#col3 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col3").scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -418,10 +430,10 @@ function underline_col3(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about'); 
+    var aboutwho = $(item).attr('about');
     $(item).css('background-color', 'transparent');
-    $('#col3 [about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
-    $(item).attr("clicked","false"); 
+    $('#col3 [about= "' + aboutwho + '"]').css('background-color', 'transparent');
+    $(item).attr("clicked","false");
   }
 }
 
@@ -550,13 +562,13 @@ function focus_one(elem){
     $('#col2').css({"display": "none"});
     $('#col3').css({"display": "none"});
     $('#col1 .article_header').css("text-align", "center")
-    $(elem).attr("clicked","true"); 
+    $(elem).attr("clicked","true");
   }
   else{
      $('#col2').css({"display": "block"});
      $('#col3').css({"display": "block"});
      $('#col1 .article_header').css("text-align", "left");
-     $(elem).attr("clicked","false"); 
+     $(elem).attr("clicked","false");
   }
 
 }
@@ -567,13 +579,13 @@ function focus_two(elem){
     $('#col1').css({"display": "none"});
     $('#col3').css({"display": "none"});
     $('#col2 .article_header').css("text-align", "center");
-    $(elem).attr("clicked","true"); 
+    $(elem).attr("clicked","true");
   }
   else{
      $('#col1').css({"display": "block"});
      $('#col3').css({"display": "block"});
      $('#col2 .article_header').css("text-align", "left");
-     $(elem).attr("clicked","false"); 
+     $(elem).attr("clicked","false");
   }
 
 }
@@ -584,13 +596,13 @@ function focus_three(elem){
     $('#col1').css({"display": "none"});
     $('#col2').css({"display": "none"});
     $('#col3 .article_header').css("text-align", "center")
-    $(elem).attr("clicked","true"); 
+    $(elem).attr("clicked","true");
   }
   else{
      $('#col1').css({"display": "block"});
      $('#col2').css({"display": "block"});
      $('#col3 .article_header').css("text-align", "left");
-     $(elem).attr("clicked","false"); 
+     $(elem).attr("clicked","false");
   }
 
 }

@@ -3,6 +3,7 @@
 <!-- HTML UNICO DELLA MIA ISSUE-->
 
 <head xmlns="http://www.w3.org/1999/html">
+  <link rel="icon" href="imgs/noise3.png">
 
 
     <!-- CSS + Bootstrap Stylesheet-->
@@ -24,6 +25,7 @@
 
 
     <title id="alessandro">Issue 1</title>
+
 </head>
 
 <body>
@@ -85,9 +87,9 @@
             </li>
             <li><button class="openbtn" onclick="openNav()"> Metadata viewer</button></li>
             <ul class="icons_nav">
-            <li  onclick="change('home')"><img class="icons" id="home_icon" src="imgs/magazine.png"></li>
+            <li class="icons" onclick="change('home')"><img id="home_icon" src="imgs/magazine.png"></li>
             <li class="icons" onclick="change('illuminist')"><img src="imgs/cellohome.png" id="cello"></li>
-            <li class="icons" id="" onclick="change('hobbyhorse')"><img src="imgs/harphome.png" id="harp"></li>
+            <li class="icons" onclick="change('hobbyhorse')" id="hobbyhorse"><img src="imgs/harphome.png" id="harp"></li>
             <li class="icons" id="belle" onclick="change('belle')"><img src="imgs/gramophonehome.png" id="gramophone"></li>
             <li class="icons" id="" onclick="change('analog')"><img src="imgs/strobohome.png" id="disco"></li>
             <li class="icons" id="tabloid" onclick="change('tabloid')"><img src="imgs/boomboxhome.png" id="boombox"></li>
@@ -106,17 +108,17 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-         Brazilian Black Music
-      </button>
+          How Musicians Are Fighting for Streaming Pay  During the Pandemic</div>
+       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_one(this)">Read better</button></div> <br>
         <div class="general_metadata">
-            <b>Author</b>: Juliana Cantarelli Vita and Chico Santana<br>
-            <b>Date of publication</b>: January 21, 2020<br>
-            <b>Original source</b>: <a href="https://www.decolonizingthemusicroom.com/brazilian-black-music">Go to the source</a><br>
-            <b>Journal</b>: Decolonize the music room
+            <b>Author</b>: Andy Cush<br>
+            <b>Date of publication</b>: June 29, 2020<br>
+            <b>Original source</b>: <a href="https://pitchfork.com/features/article/how-musicians-are-fighting-for-streaming-pay-during-the-pandemic/">Go to the source</a><br>
+            <b>Journal</b>: Pitchfork
         </div>
         <b>Click on the article column to read it better!</b>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -130,14 +132,16 @@
       <div class="accordion-body">
         <p><b>Sort by</b>
           <button class="custom-btn btn-10" onclick="undo('my_list_one')" >Appearance</button>
-          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_one')">Alphabeth</button></p>
+          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_one')">Alphabet</button></p>
           <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
         <ul id="my_list_one">
-         <li><a about="Juliana Cantarelli Vita" clicked="false" onclick="underline_col1(this, '#67ebfa')">Juliana Cantarelli Vita (3)</a></li>
-        <li><a about="Chico Santana" clicked="false" onclick="underline_col1(this,'#67ebfa')">Chico Santana (2)</a></li>
-        <li><a about="Agawu" clicked="false" onclick="underline_col1(this,'#67ebfa')">Agawu (1)</a></li>
-        <li><a about="Rose" clicked="false" onclick="underline_col1(this,'#67ebfa')">Rose-Anynago Omolo-Ongati (2)</a></li>
-         <li><a about="Candeia" clicked="false" onclick="underline_col1(this,'#67ebfa')">Candeia (1)</a></li>
+         <li><a about="Andy Cush" clicked="false" onclick="underline_col1(this, '#67ebfa')">Andy Cush (1)</a></li>
+        <li><a about="Cody Fitzgerald" clicked="false" onclick="underline_col1(this,'#67ebfa')">Cody Fitzgerald (6)</a></li>
+        <li><a about="Queen Elizabeth" clicked="false" onclick="underline_col1(this,'#67ebfa')">Queen Elizabeth (1)</a></li>
+        <li><a about="Sadie Dupuis" clicked="false" onclick="underline_col1(this,'#67ebfa')">Sadie Dupuis (2)</a></li>
+         <li><a about="Mark Taylor" clicked="false" onclick="underline_col1(this,'#67ebfa')">Mark Taylor (4)</a></li>
+            <li><a about="Joe Rogan" clicked="false" onclick="underline_col1(this,'#67ebfa')">Joe Rogan (3)</a></li>
+            <li><a about="Ted Gioia" clicked="false" onclick="underline_col1(this,'#67ebfa')">Ted Gioia (2)</a></li>
          </ul>
       </div>
     </div>
@@ -155,15 +159,10 @@
           <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_two')">Alphabeth</button>
         </p>
         <ul id="my_list_two">
-          <li><a about="U.S." clicked="false" onclick="underline_col1(this, '#ffb370')"> U.S. (4)</a></li>
-          <li><a about="South_America" clicked="false" onclick="underline_col1(this,'#ffb370')">South America (3)</a></li>
-          <li><a about="America" clicked="false" onclick="underline_col1(this,'#ffb370')">America (2)</a></li>
-          <li><a about="Brazil" clicked="false" onclick="underline_col1(this,'#ffb370')">Brazil (13)</a></li>
-          <li><a about="Africa" clicked="false" onclick="underline_col1(this,'#ffb370')">Africa (4)</a></li>
-          <li><a about="Germany" clicked="false" onclick="underline_col1(this,'#ffb370')">Germany (1)</a></li>
-          <li><a about="Pernambuco" clicked="false" onclick="underline_col1(this,'#ffb370')">Pernambuco (1)</a></li>
-          <li><a about="Portugal" clicked="false" onclick="underline_col1(this,'#ffb370')">Portugal (1)</a></li>
-          <li><a about="Rio" clicked="false" onclick="underline_col1(this,'#ffb370')">Rio de Janeiro (2)</a></li>
+          <li><a about="New York" clicked="false" onclick="underline_col1(this, '#ffb370')"> New York (1)</a></li>
+          <li><a about="UK" clicked="false" onclick="underline_col1(this,'#ffb370')">UK (2)</a></li>
+          <li><a about="U.S" clicked="false" onclick="underline_col1(this,'#ffb370')">U.S (1)</a></li>
+          <li><a about="Earth" clicked="false" onclick="underline_col1(this,'#ffb370')">Earth (1)</a></li>
        </ul>
       </div>
     </div>
@@ -171,15 +170,17 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Events
+        Musicians
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
       <div class="accordion-body">
+          <p><b>Sort by</b>
+              <button class="custom-btn btn-10" onclick="undo('my_list_three')" >Appearance</button>
+              <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_three')">Alphabeth</button>
+          </p>
         <ul id="my_list_three">
-          <li><a about="black_history_month" clicked="false" onclick="underline_col1(this, '#ffc701')">Black History Month (2)</a></li>
-          <li><a about="slave_trade" clicked="false" onclick="underline_col1(this,'#ffc701')">Slave Trade (2)</a></li>
-          <li><a about="samba_birth" clicked="false" onclick="underline_col1(this,'#ffc701')">Samba's birth (1)</a></li>
+          <li><a about="Tasmin Little" clicked="false" onclick="underline_col1(this, '#ffc701')">Tasmin Little (5)</a></li>
         </ul>
       </div>
     </div>
@@ -187,7 +188,7 @@
    <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Music Genres
+        Newspapers
       </button>
     </h2>
     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -197,12 +198,8 @@
           <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_four')">Alphabeth</button>
         </p>
         <ul id="my_list_four">
-          <li><a about="maracatu" clicked="false" onclick="underline_col1(this, '#cb7d60')">Maracatu (16)</a></li>
-          <li><a about="samba" clicked="false" onclick="underline_col1(this,'#cb7d60')">Samba (20)</a></li>
-          <li><a about="brazilian_music" clicked="false" onclick="underline_col1(this,'#cb7d60')">Brazilian Music (2)</a></li>
-          <li><a about="african_music" clicked="false" onclick="underline_col1(this,'#cb7d60')">African Music (2)</a></li>
-          <li><a about="afro_brazilian_music" clicked="false" onclick="underline_col1(this,'#cb7d60')">Afro-Brazilian Music (8)</a></li>
-          <li><a about="black_music" clicked="false" onclick="underline_col1(this,'#cb7d60')">Black Music (2)</a></li>
+          <li><a about="NPR" clicked="false" onclick="underline_col1(this, '#cb7d60')">NPR (1)</a></li>
+          <li><a about="New York Times" clicked="false" onclick="underline_col1(this,'#cb7d60')">New York Times (1)</a></li>
        </ul>
       </div>
     </div>
@@ -210,7 +207,7 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingFive">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        Concepts
+        Streaming Services
       </button>
     </h2>
     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -220,20 +217,42 @@
           <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_five')">Alphabeth</button>
         </p>
         <ul id="my_list_five">
-          <li><a about="black_people" clicked="false" onclick="underline_col1(this, '#8e56a1')">Black People (3)</a></li>
-          <li><a about="tradition" clicked="false" onclick="underline_col1(this,'#8e56a1')">Tradition (18)</a></li>
-          <li><a about="colonization" clicked="false" onclick="underline_col1(this,'#8e56a1')">Colonization (3)</a></li>
-          <li><a about="slavery" clicked="false" onclick="underline_col1(this,'#8e56a1')">Slavery (7)</a></li>
+          <li><a about="Spotify" clicked="false" onclick="underline_col1(this, '#3ff600')">Spotify (27)</a></li>
+          <li><a about="Apple Music" clicked="false" onclick="underline_col1(this,'#3ff600')">Apple Music (1)</a></li>
+          <li><a about="Bandcamp" clicked="false" onclick="underline_col1(this,'#3ff600')">Bandcamp (1)</a></li>
+          <li><a about="Deezer" clicked="false" onclick="underline_col1(this,'#3ff600')">Deezeer (1)</a></li>
        </ul>
       </div>
     </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Organizations
+              </button>
+          </h2>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+              <p><b>Sort by</b>
+                  <button class="custom-btn btn-10" onclick="undo('my_list_six')">Appearance</button>
+                  <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_six')">Alphabeth</button>
+              </p>
+              <ul id="my_list_six">
+                  <li><a about="Union of Musicians and Allied Workers (UMAW)" clicked="false" onclick="underline_col1(this, '#f50d0d')">Union of Musicians and Allied Workers (UMAW) (4)</a></li>
+                  <li><a about="Keep Music Alive" clicked="false" onclick="underline_col1(this,'#f50d0d')">Keep Music Alive (6)</a></li>
+                  <li><a about="UK Musicians Union" clicked="false" onclick="underline_col1(this,'#f50d0d')">UK’s Musician Union (2)</a></li>
+                  <li><a about="Ivors Academy" clicked="false" onclick="underline_col1(this,'#f50d0d')">Ivors Academy (2)</a></li>
+                  <li><a about="Soundcharts" clicked="false" onclick="underline_col1(this,'#f50d0d')">Soundcharts (2)</a></li>
+                  <li><a about="Finnish Music Publishers Association" clicked="false" onclick="underline_col1(this,'#f50d0d')">Finnish Music Publishers Association (1)</a></li>
+              </ul>
+          </div>
+      </div>
+          </div>
   </div>
 </div>
-        
-       
+
       </div>
     </div>
-  </div>
+
 
 
 
@@ -242,82 +261,142 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Decolonizing our music
+        2010s: The End of Anarchy
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
           <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_two(this)">Read better</button></div> <br>
                 <div class="general_metadata">
-                    <b>Author</b>: Gary Ingle<br>
-                    <b>Date of publication</b>: November 16, 2016<br>
-                    <b>Original source</b>: <a href="https://newmusicusa.org/nmbx/decolonizing-our-music/#:~:text=decolonize%E2%80%9D%20our%20music.-,Decolonizing%20music%20involves%20a%20conscious%20decision%20to%20move%20away%20from,and%E2%80%9D%20%E2%80%9Cdecolonized%E2%80%9D%20mentality">Go to the source</a><br>
-                    <b>Journal</b>: New Music USA
+                    <b>Author</b>: Baldr Eldursson<br>
+                    <b>Date of publication</b>: November 12, 2019<br>
+                    <b>Original source</b>: <a href="https://www.tinymixtapes.com/features/2010s-end-of-anarchy-streaming-platforms-culture-industry-commodification-of-accessibility">Go to the source</a><br>
+                    <b>Journal</b>: TinyMixtapes
                 </div>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                People
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <p><b>Sort by</b>
-                <button class="custom-btn btn-10" onclick="undo('my_list_six')">Appearance</button>
-                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_six')">Alphabeth</button></p>
-                <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
-                <ul id="my_list_six">
-                     <li><a about="ingle" clicked="false" onclick="underline_col2(this, '#67ebfa')">Gary Ingle (1)</a></li>
-                    <li><a about="columbus" clicked="false" onclick="underline_col2(this,'#67ebfa')">Christopher Columbus (1)</a></li>
-                    <li><a about="clark" clicked="false" onclick="underline_col2(this,'#67ebfa')">Andrew Clark (2)</a></li>
-                    <li><a about="grout" clicked="false" onclick="underline_col2(this,'#67ebfa')">Donald J. Grout (2)</a></li>
-                    <li><a about="negroponte" clicked="false" onclick="underline_col2(this,'#67ebfa')">Nicholas Negroponte (2)</a></li>
-                    <li><a about="karabuda" clicked="false" onclick="underline_col2(this,'#67ebfa')">Alfons Karabuda (2)</a></li>
-                    <li><a about="birkerts" clicked="false" onclick="underline_col2(this,'#67ebfa')">Sven Birkerts (1)</a></li>
-               </ul>
+              <h2 class="accordion-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                      People
+                  </button>
+              </h2>
+              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p><b>Sort by</b>
+                          <button class="custom-btn btn-10" onclick="undo('my_list_seven')" >Appearance</button>
+                          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_seven')">Alphabet</button></p>
+                      <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
+                      <ul id="my_list_seven">
+                          <li><a about="Baldr Eldursson" clicked="false" onclick="underline_col2(this, '#67ebfa')">Baldr Eldursson (1)</a></li>
+                          <li><a about="Ryan Seacrest" clicked="false" onclick="underline_col2(this,'#67ebfa')">Ryan Seacrest (1)</a></li>
+                          <li><a about="Lincoln Dahlberg" clicked="false" onclick="underline_col2(this,'#67ebfa')">Lincoln Dahlberg (7)</a></li>
+                          <li><a about="Walter Benjamin" clicked="false" onclick="underline_col2(this,'#67ebfa')">Walter Benjamin (3)</a></li>
+                          <li><a about="Julius Aston" clicked="false" onclick="underline_col2(this,'#67ebfa')">Julius Aston (1)</a></li>
+                          <li><a about="Jonah Peretti" clicked="false" onclick="underline_col2(this,'#67ebfa')">Jonah Peretti (1)</a></li>
+                          <li><a about="Gilles Deleuze" clicked="false" onclick="underline_col2(this,'#67ebfa')">Gilles Deleuze (1)</a></li>
+                          <li><a about="Felix Guattari" clicked="false" onclick="underline_col2(this,'#67ebfa')">Felix Guattari (1)</a></li>
+                      </ul>
+                  </div>
               </div>
-            </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Places
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <p><b>Sort by</b>
-                <button class="custom-btn btn-10" onclick="undo('my_list_seven')">Appearance</button>
-                <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_seven')">Alphabeth</button></p>
-                <!--button type="button" class="btn btn-light" onclick="undo('my_list_one')">Appearance</button> <button type="button" class="btn btn-light" onclick="sortAlphabet('my_list_one')">Alphabet</button-->
-                <ul id="my_list_seven">
-                     <li><a about="Spain" clicked="false" onclick="underline_col2(this, '#ffb370')">Spain (2)</a></li>
-                    <li><a about="America" clicked="false" onclick="underline_col2(this,'#ffb370')">America (2)</a></li>
-                    <li><a about="UK" clicked="false" onclick="underline_col2(this,'#ffb370')">Britain (1)</a></li>
-                    <li><a about="France" clicked="false" onclick="underline_col2(this,'#ffb370')">France (1)</a></li>
-               </ul>
+              <h2 class="accordion-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                      Places
+                  </button>
+              </h2>
+              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p><b>Sort by</b>
+                          <button class="custom-btn btn-10" onclick="undo('my_list_eight')" >Appearance</button>
+                          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_eight')">Alphabet</button>
+                      </p>
+                      <ul id="my_list_eight">
+                          <li><a about="Germany" clicked="false" onclick="underline_col2(this, '#ffb370')"> Germany (1)</a></li>
+                      </ul>
+                  </div>
               </div>
-            </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Events
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul id="my_list_eight">
-                     <li><a about="1500" clicked="false" onclick="underline_col2(this, '#ffc701')">XVI century (1)</a></li>
-                    <li><a about="renaissance" clicked="false" onclick="underline_col2(this,'#ffc701')">Renaissance (1)</a></li>
-                    <li><a about="baroque" clicked="false" onclick="underline_col2(this,'#ffc701')">Baroque (1)</a></li>
-               </ul>
+              <h2 class="accordion-header" id="flush-headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                      Musicians
+                  </button>
+              </h2>
+              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p><b>Sort by</b>
+                      <button class="custom-btn btn-10" onclick="undo('my_list_nine')" >Appearance</button>
+                      <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_nine')">Alphabeth</button>
+                      </p>
+                      <ul id="my_list_nine">
+                          <li><a about="Basshunter" clicked="false" onclick="underline_col2(this, '#ffc701')">Basshunter (1)</a></li>
+                          <li><a about="Brian Eno" clicked="false" onclick="underline_col2(this, '#ffc701')">Brian Eno (1)</a></li>
+                      </ul>
+                  </div>
               </div>
-            </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                      Websites
+                  </button>
+              </h2>
+              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p><b>Sort by</b>
+                          <button class="custom-btn btn-10" onclick="undo('my_list_ten')" >Appearance</button>
+                          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_ten')">Alphabet</button>
+                      </p>
+                      <ul id="my_list_ten">
+                          <li><a about="GeoCities" clicked="false" onclick="underline_col2(this, '#cb7d60')">GeoCities (1)</a></li>
+                          <li><a about="AOL" clicked="false" onclick="underline_col2(this,'#cb7d60')">AOL (1)</a></li>
+                          <li><a about="MSN" clicked="false" onclick="underline_col2(this,'#cb7d60')">MSN (1)</a></li>
+                          <li><a about="MySpace" clicked="false" onclick="underline_col2(this,'#cb7d60')">MySpace (2)</a></li>
+                          <li><a about="Google" clicked="false" onclick="underline_col2(this,'#cb7d60')">Google (4)</a></li>
+                          <li><a about="Gmail" clicked="false" onclick="underline_col2(this,'#cb7d60')">Gmail (2)</a></li>
+                          <li><a about="Chrome" clicked="false" onclick="underline_col2(this,'#cb7d60')">Chrome (2)</a></li>
+                          <li><a about="Facebook" clicked="false" onclick="underline_col2(this,'#cb7d60')">Facebook (4)</a></li>
+                          <li><a about="Drive" clicked="false" onclick="underline_col2(this,'#cb7d60')">Drive (1)</a></li>
+                          <li><a about="Instagram" clicked="false" onclick="underline_col2(this,'#cb7d60')">Instagram (1)</a></li>
+                          <li><a about="WhatsApp" clicked="false" onclick="underline_col2(this,'#cb7d60')">Whatsapp (1)</a></li>
+                          <li><a about="Messenger" clicked="false" onclick="underline_col2(this,'#cb7d60')">Messenger (1)</a></li>
+                          <li><a about="Firefox" clicked="false" onclick="underline_col2(this,'#cb7d60')">Firefox (1)</a></li>
+                          <li><a about="Vimeo" clicked="false" onclick="underline_col2(this,'#cb7d60')">Vimeo (1)</a></li>
+                          <li><a about="Outlook" clicked="false" onclick="underline_col2(this,'#cb7d60')">OutLook (1)</a></li>
+                          <li><a about="BuzzFeed" clicked="false" onclick="underline_col2(this,'#cb7d60')">BuzzFeed (2)</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingEleven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                      Streaming Services
+                  </button>
+              </h2>
+              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p><b>Sort by</b>
+                          <button class="custom-btn btn-10" onclick="undo('my_list_eleven')">Appearance</button>
+                          <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_eleven')">Alphabet</button>
+                      </p>
+                      <ul id="my_list_eleven">
+                          <li><a about="Youtube" clicked="false" onclick="underline_col2(this, '#3ff600')">Youtube (10)</a></li>
+                          <li><a about="VEVO" clicked="false" onclick="underline_col2(this, '#3ff600')">VEVO (1)</a></li>
+                          <li><a about="Spotify" clicked="false" onclick="underline_col2(this, '#3ff600')">Spotify (30)</a></li>
+                          <li><a about="Apple Music" clicked="false" onclick="underline_col2(this, '#3ff600')">Apple Music (2)</a></li>
+                          <li><a about="Tidal" clicked="false" onclick="underline_col2(this, '#3ff600')">Tidal (2)</a></li>
+                          <li><a about="Limewire" clicked="false" onclick="underline_col2(this, '#3ff600')">Limewire (2)</a></li>
+                          <li><a about="Ares" clicked="false" onclick="underline_col2(this,'#3ff600')">Ares (2)</a></li>
+                          <li><a about="Soundcloud" clicked="false" onclick="underline_col2(this,'#3ff600')">Soundcloud (3)</a></li>
+                          <li><a about="Bandcamp" clicked="false" onclick="underline_col2(this,'#3ff600')">Bandcamp (4)</a></li>
+                          <li><a about="Pandora" clicked="false" onclick="underline_col2(this,'#3ff600')">Pandora (1)</a></li>
+                          <li><a about="iTunes" clicked="false" onclick="underline_col2(this,'#3ff600')">iTunes (3)</a></li>
+                      </ul>
+                  </div>
+                  </div>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -328,64 +407,164 @@
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Decolonizing the ear
-      </button>
+          With NFTs, Musicians See a Way to Finally Take Control</div>
+    </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
             <div class="focus"><button class="custom-btn btn-10" clicked="false" onclick="focus_three(this)">Read better</button></div> <br>
               <div class="general_metadata">
-                  <b>Author</b>: Oliver Lovesey<br>
-                  <b>Date of publication</b>: October 11, 2016<br>
-                  <b>Original source</b>: <a href="https://www.tandfonline.com/doi/full/10.1080/03007766.2016.1230695">Go to the source</a><br>
-                  <b>Journal</b>: Popular Music and Society
+                  <b>Author</b>: Max Mertens<br>
+                  <b>Date of publication</b>: March, 12 2021<br>
+                  <b>Original source</b>: <a href="https://www.vice.com/en/article/v7ma5d/with-nfts-musicians-see-a-way-to-finally-take-control">Go to the source</a><br>
+                  <b>Journal</b>: Vice
               </div>
               <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <h2 class="accordion-header" id="flush-headingTwelve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
               People
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-              <li><a about="Chico Santana" onclick="underline_col3(this)">Chico Santana</a></li>
+                <p><b>Sort by</b>
+                    <button class="custom-btn btn-10" onclick="undo('my_list_twelve')" >Appearance</button>
+                    <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_twelve')">Alphabeth</button>
+                </p>
+                <ul id="my_list_twelve">
+              <li><a about="Max Mertens" clicked="false" onclick="underline_col3(this, '#67ebfa')">Max Mertens (1)</a></li>
+                <li><a about="Alex Crossan" clicked="false" onclick="underline_col3(this, '#67ebfa')">Alex Crossan (5)</a></li>
+                <li><a about="Jonathan Zawada" clicked="false" onclick="underline_col3(this, '#67ebfa')">Jonathan Zawada (1)</a></li>
+                <li><a about="Dee Goens" clicked="false" onclick="underline_col3(this, '#67ebfa')">Dee Goens (2)</a></li>
+                <li><a about="Jacob Horne" clicked="false" onclick="underline_col3(this, '#67ebfa')">Jacob Horne (1)</a></li>
+                <li><a about="Jeff Staples" clicked="false" onclick="underline_col3(this, '#67ebfa')">Jeff Staples (1)</a></li>
+                </ul>
             </div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <h2 class="accordion-header" id="flush-headingThirteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
               Places
             </button>
           </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
+            <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p><b>Sort by</b>
+                        <button class="custom-btn btn-10" onclick="undo('my_list_thirteen')">Appearance</button>
+                        <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_thirteen')">Alphabet</button>
+                    </p>
+                    <ul id="my_list_thirteen">
+                        <li><a about="Berlin" clicked="false" onclick="underline_col3(this, '#ffb370')">Berlin (1)</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Events
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFourteen">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                              Musicians
+                          </button>
+                      </h2>
+                      <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              <p><b>Sort by</b>
+                                  <button class="custom-btn btn-10" onclick="undo('my_list_fourteen')">Appearance</button>
+                                  <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_fourteen')">Alphabet</button>
+                              </p>
+                              <ul id="my_list_fourteen">
+                                  <li><a about="Mura Masa" clicked="false" onclick="underline_col3(this, '#ffc701')">Mura Masa (1)</a></li>
+                                  <li><a about="Grimes" clicked="false" onclick="underline_col3(this, '#ffc701')">Grimes (1)</a></li>
+                                  <li><a about="Kings of Leon" clicked="false" onclick="underline_col3(this, '#ffc701')">Kings of Leon (1)</a></li>
+                                  <li><a about="Jacques Greene" clicked="false" onclick="underline_col3(this, '#ffc701')">Jacques Greene (1)</a></li>
+                                  <li><a about="TNGHT" clicked="false" onclick="underline_col3(this, '#ffc701')">TNGHT (1)</a></li>
+                                  <li><a about="Hudson Mohawke" clicked="false" onclick="underline_col3(this, '#ffc701')">Hudson Mohawke (1)</a></li>
+                                  <li><a about="Lunice" clicked="false" onclick="underline_col3(this, '#ffc701')">Lunice (1)</a></li>
+                                  <li><a about="Azealia Banks" clicked="false" onclick="underline_col3(this, '#ffc701')">Azealia Banks (1)</a></li>
+                                  <li><a about="Toro Y Moi" clicked="false" onclick="underline_col3(this,'#ffc701')">Toro Y Moi (1)</a></li>
+                                  <li><a about="Yaejii" clicked="false" onclick="underline_col3(this,'#ffc701')">Yaejii (1)</a></li>
+                                  <li><a about="RAC" clicked="false" onclick="underline_col3(this,'#ffc701')">RAC (1)</a></li>
+                                  <li><a about="Holly Herndon" clicked="false" onclick="underline_col3(this,'#ffc701')">Holly Herndon (5)</a></li>
+                                  <li><a about="Matt Dryhurst" clicked="false" onclick="underline_col3(this,'#ffc701')">Matt Dryhurst (1)</a></li>
+                              </ul>
+                          </div>
+                      </div>
       </div>
-
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFifteen">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+                              Websites
+                          </button>
+                      </h2>
+                      <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                              <p><b>Sort by</b>
+                                  <button class="custom-btn btn-10" onclick="undo('my_list_fifteen')">Appearance</button>
+                                  <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_fifteen')">Alphabet</button>
+                              </p>
+                              <ul id="my_list_fifteen">
+                                  <li><a about="Nifty Gateway" clicked="false" onclick="underline_col3(this, '#cb7d60')">Nifty Gateway (1)</a></li>
+                                  <li><a about="Foundation" clicked="false" onclick="underline_col3(this, '#cb7d60')">Foundation (1)</a></li>
+                                  <li><a about="Zora" clicked="false" onclick="underline_col3(this, '#cb7d60')">Zora (3)</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingSixteen">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+                                  Streaming Services
+                              </button>
+                          </h2>
+                          <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <p><b>Sort by</b>
+                                      <button class="custom-btn btn-10" onclick="undo('my_list_sixteen')">Appearance</button>
+                                      <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_sixteen')">Alphabet</button>
+                                  </p>
+                                  <ul id="my_list_sixteen">
+                                      <li><a about="Apple Music" clicked="false" onclick="underline_col3(this, '#3ff600')">Apple Music (1)</a></li>
+                                      <li><a about="Spotify" clicked="false" onclick="underline_col3(this, '#3ff600')">Spotify (1)</a></li>
+                                      <li><a about="Amazon" clicked="false" onclick="underline_col3(this, '#3ff600')">Amazon (1)</a></li>
+                                      <li><a about="YellowHeart" clicked="false" onclick="underline_col3(this, '#3ff600')">YellowHeart (1)</a></li>
+                                      <li><a about="Catalog" clicked="false" onclick="underline_col3(this, '#3ff600')">Catalog (1)</a></li>
+                                      <li><a about="iTunes" clicked="false" onclick="underline_col3(this, '#3ff600')">iTunes (1)</a></li>
+                                      <li><a about="Netflix" clicked="false" onclick="underline_col3(this,'#3ff600')">Netflix (1)</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                                  <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingSeventeen">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                                              Organizations
+                                          </button>
+                                      </h2>
+                                      <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">
+                                              <p><b>Sort by</b>
+                                                  <button class="custom-btn btn-10" onclick="undo('my_list_seventeen')">Appearance</button>
+                                                  <button class="custom-btn btn-10" onclick="sortAlphabet('my_list_seventeen')">Alphabet</button>
+                                              </p>
+                                              <ul id="my_list_seventeen">
+                                                  <li><a about="Lucky Me" clicked="false" onclick="underline_col3(this, '#f50d0d')">LuckyMe (1)</a></li>
+                                                  <li><a about="IAMSOUND" clicked="false" onclick="underline_col3(this, '#f50d0d')">IAMSOUND (1)</a></li>
+                                                  <li><a about="Coinbase" clicked="false" onclick="underline_col3(this, '#f50d0d')">Coinbase (1)</a></li>
+                                                  <li><a about="Clive Davis Institute" clicked="false" onclick="underline_col3(this, '#f50d0d')">Clive Davis Institute (1)</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                          </div>
 
       </div>
     </div>
   </div>
 </div>
-
+</div>
 </div>
 
 <br id="sep_nav">
-
-
 
 
 
@@ -425,7 +604,7 @@
 
     <div class="ArtBody"  id="first_article">
 
-<p><span class="first_letter">I</span>ndie rockers <a href="https://www.stolenjars.com/"><span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span></a>  are not exactly <span class="band" about="Coldplay" data-label="Coldplay">Coldplay</span> or <span class="band" about="U2" data-label="U2">U2</span>, but they’re not a garage band either. They tour regularly and have been covered by <span class="newspaper" about="NPR" data-label="NPR">NPR</span> and <i><span class="newspaper" about="New York Times" data-label="New York Times">The New York Times</span></i>. They have a fanbase. They’ve placed one of their off-kilter songs in an iPad commercial. They currently have more than 22,000 monthly listeners on <span class="streaming-service" about="Spotify">Spotify</span>. Bandleader <span class="person" about='Cody Fitzgerald' data-label="Cody Fitzgerald">Cody Fitzgerald</span> estimates he makes about $1,500 to $2,000 every year from streaming services, which is good for about a month’s rent on his <span class="place" about="New York">New York</span> apartment.</p>
+<p id="ale1"><span class="first_letter">I</span>ndie rockers <a href="https://www.stolenjars.com/"><span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span></a>  are not exactly <span class="band" about="Coldplay" data-label="Coldplay">Coldplay</span> or <span class="band" about="U2" data-label="U2">U2</span>, but they’re not a garage band either. They tour regularly and have been covered by <span class="newspaper" about="NPR" data-label="NPR">NPR</span> and <i><span class="newspaper" about="New York Times" data-label="New York Times">The New York Times</span></i>. They have a fanbase. They’ve placed one of their off-kilter songs in an iPad commercial. They currently have more than 22,000 monthly listeners on <span class="streaming-service" about="Spotify">Spotify</span>. Bandleader <span class="person" about='Cody Fitzgerald' data-label="Cody Fitzgerald">Cody Fitzgerald</span> estimates he makes about $1,500 to $2,000 every year from streaming services, which is good for about a month’s rent on his <span class="place" about="New York">New York</span> apartment.</p>
 <p>That annual streaming income, <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Fitzgerald</span> is quick to note, is quite high for bands of <span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span>’ stature. “Most people are on labels, which means they get, at most, 50 percent of that,” he says. <span class="person" about="Cody Fitzgerald" data-label="Cody Fitzgerald">Fitzgerald</span> self-releases <span class="band" about="Stolen Jars" data-label="Stolen Jars">Stolen Jars</span>’ albums. He is also the band’s primary songwriter and performs many of the instruments on the recordings himself, all of which entitles him to an unusually large share of the total payments from services like <span class="streaming-service" about="Spotify">Spotify</span> and <span class= "mention streaming-service" about="Apple Music" data-label="Apple Music">Apple Music</span>.</p>
 
 
@@ -489,7 +668,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>I emailed <span class="person" about="Ted Gioia">Gioia</span>, who has written <a href="https://www.nytimes.com/2019/11/27/books/review/music-subversive-history-ted-gioia.html">a celebrated book</a> on music’s power to subvert existing orders, to ask if there’s any way that musicians, and the listeners who love them, can change the streaming system for the better. In a thoughtful and lengthy response, he chastised the record industry for failing to keep up with technological innovations on its own, allowing tech companies like <span class="streaming-service" about="Spotify">Spotify</span> to swoop in and set the negotiating terms. He pointed out that individual musicians have little to no leverage in their dealings with streaming platforms, despite the fact that their music makes those platforms run. He called the prospect of convincing platforms to pay musicians more a “pipe dream.”</p>
 
-<p>Despite all this, he ended his message with a faint note of hope. One way to fix things, he wrote, “would involve musicians taking control of their own destiny,” and walking away from streaming en masse to start something new. “Make no mistake, musicians could run their own streaming and distribution platforms, and reallocate the cash toward the people who create the songs,” he continued. “No, I don’t expect any of these things to happen. I’m just saying they could happen.”</p>
+<p id="advnextissue">Despite all this, he ended his message with a faint note of hope. One way to fix things, he wrote, “would involve musicians taking control of their own destiny,” and walking away from streaming en masse to start something new. “Make no mistake, musicians could run their own streaming and distribution platforms, and reallocate the cash toward the people who create the songs,” he continued. “No, I don’t expect any of these things to happen. I’m just saying they could happen.”</p>
 
         </div>
 </div>
@@ -528,8 +707,8 @@ Musicians with different label and publishing situations—even those whose musi
         <!--hr class="half-hr"-->
 
 <p><span class="first_letter">C</span>h&mdash;. Kh&mdash;.&nbsp;Sh&mdash;.</p>
-<p>Timeless: the sound of scanning airwaves, tuning the car radio on the highway, parsing through millisecond snippets of voice. Ch&mdash;. A sound in the collective memory, preserved beyond its analog lifespan. Kh&mdash;. Like the floppy disk as Save icon. Sh&mdash;. Like a white-noise TV screen, so you have to adjust the antenna. Ch&mdash;. Kh&mdash;. Sh&mdash;. Vestigial structures of the digital&nbsp;age.</p>
-<p>&#8220;I&#8217;m <span class="person" about="Ryan Seacrest"> Ryan Seacrest</span> &amp; you&#8217;re tuned into KRCK, the #1 Hit Music&nbsp;Station.&#8221;</p>
+<p id="ale2">Timeless: the sound of scanning airwaves, tuning the car radio on the highway, parsing through millisecond snippets of voice. Ch&mdash;. A sound in the collective memory, preserved beyond its analog lifespan. Kh&mdash;. Like the floppy disk as Save icon. Sh&mdash;. Like a white-noise TV screen, so you have to adjust the antenna. Ch&mdash;. Kh&mdash;. Sh&mdash;. Vestigial structures of the digital&nbsp;age.</p>
+<p class="quote">&#8220;I&#8217;m <span class="person" about="Ryan Seacrest"> Ryan Seacrest</span> &amp; you&#8217;re tuned into KRCK, the #1 Hit Music&nbsp;Station.&#8221;</p>
 <p>Yusef: <i>That&#8217;s mostly how I was exposed to music when I was younger. Taking the bus home from school … They used to put on TOP 40 radio &amp; I mean you&#8217;re a kid, you can&#8217;t really tell what&#8217;s good or bad &mdash; you know, you think it&#8217;s good &#8216;cause it&#8217;s popular or whatever. I used to like browsing the electronics section at the department stores &mdash; I guess I still do (laughs) &mdash; &amp; I&#8217;d hover around the boomboxes &amp; every so often I&#8217;d pick up on something cool. I used to think there was a set schedule for songs, like TV shows; so I&#8217;d go back home &amp; the next day I&#8217;d tune in at the exact same time to see if I could hear it again … Damn, I was dumb (laughs).</i></font></p>
 <p>Then <span class="tv-channel" about="MTV">MTV</span>, <span class="tv-channel" about="VH1">VH1</span>, <span class="tv-channel" about="HTV">HTV</span>, <span class="tv-channel" about="Fuse">Fuse</span>, <span class="tv-channel" about="Mazzika">Mazzika</span>. Zeitgeist markers: major tastemakers &amp; career-breakers, skyrocketing in popularity for a couple of decades with their daily countdowns, live-show features, flashy big-budget videos &mdash; iconic artifacts of the era. You got absorbed into the spectacle. Assimilated, I don&#8217;t know. But that&#8217;s gone too, now. At least in that&nbsp;form.</p>
 
@@ -539,7 +718,7 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>Xavi: <i>Joda, I remember when <span class="streaming-service" about="YouTube">YouTube</span> opened &mdash; umm, started? &mdash; &amp; that&#8217;s when I got into J-Rock &#8216;cause I used to watch shit-tons of AMVs &mdash; that was the first <span class="streaming-service" about="YouTube">YouTube</span> video I ever saw &mdash; so I kept digging around for the opening &amp; closing songs for the shows I liked &amp; such. Looking back, it&#8217;s kind of amazing. Like there was no other way I&#8217;d ever be exposed to any of that on the radio or whatever.</i></p>
 
-<p>See, that&#8217;s the thing: <span class="streaming-service" about="YouTube">YouTube</span> wasn&#8217;t just an online library of music television. No, the dynamic spirit of the internet resides in that element of surprise: the creative act of crate-digging internet archives, of choose-your-own-adventure rabbit holes dug into the sediments of the music industry architecture. Oh, but there was another way. Another type of platform that really captured that&nbsp;freedom.</p>
+<p id="adv8000">See, that&#8217;s the thing: <span class="streaming-service" about="YouTube">YouTube</span> wasn&#8217;t just an online library of music television. No, the dynamic spirit of the internet resides in that element of surprise: the creative act of crate-digging internet archives, of choose-your-own-adventure rabbit holes dug into the sediments of the music industry architecture. Oh, but there was another way. Another type of platform that really captured that&nbsp;freedom.</p>
 
 <p><span class="streaming-service" about="Spotify">Spotify</span> &amp; the streaming services that have emerged in its wake, particularly <span class="streaming-service" about="Apple Music">Apple Music</span> &amp; <span class="streaming-service" about="TIDAL">TIDAL</span>, have come to wholly redefine the framework of digital music consumption today, having no clear analog counterpart as did, say, online radio &amp; video platforms.</q></p>
 
@@ -696,19 +875,19 @@ Musicians with different label and publishing situations—even those whose musi
 
 <div class="author_and_date">
     <div class="author">By <span class="person" about="Max Mertens"> Max Mertens </span></div>
-    <div class="publicationDate">March, 12 2021</div>
+    <div class="publicationDate">March 12, 2021</div>
 </div>
 
     <!--hr class="half-hr"-->
             <div class="ArtBody" id="third_article">
-<p><span class="first_letter">I</span>f you were on the internet at all in the past month you've no doubt heard of NFTs, or non-fungible tokens. The cryptocurrency-based collectible market has exploded recently, with digital artworks in the form of JPEGs and GIFs <a href="https://www.vice.com/en/article/jgqz73/beeple-nft-sells-for-dollar69-million-in-christies-auction">going for tens of millions of dollars</a> and musicians selling publishing rights on the blockchain. NFTs are hardly a new phenomenon, but given <a href="https://www.vice.com/en/article/pkd83y/people-are-spending-millions-on-jpegs-tweets-and-other-crypto-collectibles">the immense amount of money</a> they’ve attracted in recent weeks, they’ve become a lightning rod for debate over art and capitalism.</p>
+<p id="ale3"><span class="first_letter">I</span>f you were on the internet at all in the past month you've no doubt heard of NFTs, or non-fungible tokens. The cryptocurrency-based collectible market has exploded recently, with digital artworks in the form of JPEGs and GIFs <a href="https://www.vice.com/en/article/jgqz73/beeple-nft-sells-for-dollar69-million-in-christies-auction">going for tens of millions of dollars</a> and musicians selling publishing rights on the blockchain. NFTs are hardly a new phenomenon, but given <a href="https://www.vice.com/en/article/pkd83y/people-are-spending-millions-on-jpegs-tweets-and-other-crypto-collectibles">the immense amount of money</a> they’ve attracted in recent weeks, they’ve become a lightning rod for debate over art and capitalism.</p>
 
 
 <p>British producer <span class="musician" about="Alex Crossan">Mura Masa</span> participated in his first NFT exhibition at the beginning of March, and he was surprised to quickly see a massive bid on his digital artwork. One bidder offered 10 ETH, or about $15,000, for the <a href="https://zora.co/mura_masa/966">pointillist glyphs</a>, which the artist (whose real name is <span class="person" about="Alex Crossan">Alex Crossan</span>) created during the making of his 2020 album <span class="album" about="R.Y.C.">R.Y.C</span>. The bid was later removed, but the auction got the producer thinking about exactly who’s participating in the NFT marketplace and how value is ascribed to art.</p>
 
 <p>“It's fair enough saying, ‘Oh yeah, NFTs are a way for finance bros to buy crypto art for ridiculous money,’ but it got me wondering about whether it's so ridiculous that these pieces should have such high market values,” he says. “The devaluation of art, music, creative work in general in the digital age is in my opinion a huge problem, and NFTs present a potentially interesting alternative to music streaming, etc.” </p>
 
-<p><span class="person" about="Alex Crossan">Crossan</span>’s not alone in seeing NFTs as an opportunity for artists to find new ways to get paid. From critically-acclaimed electronic pop auteurs to Grammy Award-winning, stadium-headlining groups, more musicians than ever are experimenting with NFTs these days, especially as the COVID-19 pandemic continues to take away revenue streams such as touring and playing festivals. Canadian producer and singer <span class="musician" about="Grimes">Grimes</span> <a href="https://www.theverge.com/2021/3/1/22308075/grimes-nft-6-million-sales-nifty-gateway-warnymph">sold a series of ten digital artworks</a> for $5.8 million on NFT market <span class="website" about="Nifty Gateway">Nifty Gateway</span>. Besides traditional platforms like <span class="streaming-service" about="Apple Music">Apple Music</span>, <span class="streaming-service" about="Spotify">Spotify</span>, and <span class="streaming-service" about="Amazon">Amazon</span>, rock band <span class="band" about="Kings of Leon">Kings of Leon</span> <a href="https://www.rollingstone.com/pro/news/kings-of-leon-when-you-see-yourself-album-nft-crypto-1135192/">made their latest album available</a> on <span class="streaming-service" about="YellowHeart">YellowHeart</span> as three types of tokens, which allowed fans to access perks including limited-edition vinyl and front row tickets to future concerts. </p>
+<p><span class="person" about="Alex Crossan">Crossan</span>’s not alone in seeing NFTs as an opportunity for artists to find new ways to get paid. From critically-acclaimed electronic pop auteurs to Grammy Award-winning, stadium-headlining groups, more musicians than ever are experimenting with NFTs these days, especially as the COVID-19 pandemic continues to take away revenue streams such as touring and playing festivals. Canadian producer and singer <span class="musician" about="Grimes">Grimes</span> <a href="https://www.theverge.com/2021/3/1/22308075/grimes-nft-6-million-sales-nifty-gateway-warnymph">sold a series of ten digital artworks</a> for $5.8 million on NFT market <span class="website" about="Nifty Gateway">Nifty Gateway</span>. Besides traditional platforms like <span class="streaming-service" about="Apple Music">Apple Music</span>, <span class="streaming-service" about="Spotify">Spotify</span>, and <span class="streaming-service" about="Amazon">Amazon</span>, rock band <span class="musician" about="Kings of Leon">Kings of Leon</span> <a href="https://www.rollingstone.com/pro/news/kings-of-leon-when-you-see-yourself-album-nft-crypto-1135192/">made their latest album available</a> on <span class="streaming-service" about="YellowHeart">YellowHeart</span> as three types of tokens, which allowed fans to access perks including limited-edition vinyl and front row tickets to future concerts. </p>
 
 <p>Some artists are even experimenting with selling the publishing rights to their work via NFTs. Canadian producer <span class="musician" about="Jacques Greene">Jacques Greene</span> <a href="https://exclaim.ca/music/article/jacques_greene_is_selling_his_new_songs_publishing_with_blockchain">sold the publishing rights</a> to his song <span class="song" about="Promise">“Promise”</span> on <span class="website" about="Foundation">Foundation</span>. “I'm excited (and scared) of what possibilities and promises lie in this field, and for arts and culture in general," the producer <a href="https://twitter.com/jacquesgreene/status/1363625157554810883">wrote on Twitter</a>, also mentioning that he recently “got out of a long, pretty bad publishing deal.” His <span class="organization" about="LuckyMe">LuckyMe</span> labelmates, the duo <span class="band" about="TNGHT">TNGHT</span> (<span class="musician" about="Hudson Mohawke">Hudson Mohawke</span> and <span class="musician" about="Lunice">Lunice</span>), also <a href="https://foundation.app/LUCKYME/tnght-s-horn-sound-3178">sold an original horn sound</a> they created. This week, rapper <span class="musician" about="Azealia Banks">Azealia Banks</span> <a href="https://www.vice.com/en/article/7k9y4b/azealia-banks-sex-tape-album-nft">sold an audio sex tape NFT</a> for more than $17,000 on Foundation that included the right to resell it. </p>
 
@@ -736,7 +915,8 @@ Musicians with different label and publishing situations—even those whose musi
 
 <p>“People are just going to be left in the dust if they refuse to come to grips with this in terms of it being a very important, dynamic shifting development,” said Crossan. “If you're not careful right now your kids are going to be exhaustedly explaining non-fungible cryptographic tokens to you.”</p>
 
-<p>According to <span class="musician" about="Holly Herndon">Herndon</span>, we should be encouraging experimentation with things that can move art to a more fair playing field. “I hope we can move past the platform paradigm that’s ruling all of our online lives right now, and move to something that’s more humane, more equitable, and creates communities in a healthier way and a more sustainable way,” she said.</p>
+<p id="advatari">According to <span class="musician" about="Holly Herndon">Herndon</span>, we should be encouraging experimentation with things that can move art to a more fair playing field. “I hope we can move past the platform paradigm that’s ruling all of our online lives right now, and move to something that’s more humane, more equitable, and creates communities in a healthier way and a more sustainable way,” she said.</p>
+
     </div>
 </div>
 <hr class="half-width">

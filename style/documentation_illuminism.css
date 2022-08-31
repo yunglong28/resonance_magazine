@@ -308,3 +308,21 @@ footer{
     background-repeat: repeat !important;
 
 }
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 210px!important;
+    margin-top: 7px!important;
+
+  }

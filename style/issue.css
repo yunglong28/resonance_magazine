@@ -122,6 +122,7 @@ font-family: 'nimbus';
     background-color: #E6D8A8 !important;
 
       background-size: repeat;
+      overflow-x: hidden!important;
  }
 
 
@@ -441,6 +442,7 @@ font-family: nimbus;
   }
 
 
+
 .user_added_class b{
   color:#0c2414;
   text-transform: uppercase;
@@ -451,10 +453,19 @@ font-family: nimbus;
 }
 
 
-path {
-  fill: transparent;
-}
 
-text {
-  fill: #FF9800;
-}
+  @media only screen and (max-width: 1300px) {
+
+    .icons {
+      width: 30px;
+      height: 30px;
+
+    }
+
+    .icons_nav {
+      margin-left: -15px!important;
+      margin-top: 7px!important;
+
+    }
+  }
+

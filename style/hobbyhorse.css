@@ -43,7 +43,7 @@ font-family: 'caslon_old_faceregular';
     text-transform: uppercase;
 }
 
-#body2::first-letter {
+#lo2::first-letter {
   background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
@@ -58,7 +58,7 @@ margin-bottom: -4.15rem;
 }
 
 
-#body3::first-letter {
+#lo3::first-letter {
   background-image: url('../imgs/I.png');
   background-size: contain;
 background-repeat: no-repeat;
@@ -73,7 +73,7 @@ margin-bottom: -4.15rem;
 
 }
 
-#body1::first-letter {
+#lo1::first-letter {
   background-image: url('../imgs/FDROP.png');
   background-size: contain;
   background-size: 48%;
@@ -107,18 +107,19 @@ margin-bottom: -4.15rem;
 #fra3::first-letter {
   background-image: url('../imgs/t2.png');
   background-size: contain;
-    background-size: 50%;
+    background-size: 60%;
 background-repeat: no-repeat;
 background-center: center center;
 float: left;
 font-size: 12rem;
 line-height: 0.65;
 color: transparent;
-margin-right: -0.15px;
+margin-right: -50px;
 margin-left: -0.15rem;
 margin-bottom: -4.15rem;
 
 }
+
 
 #fra1::first-letter {
   background-image: url('../imgs/e2.png');
@@ -135,7 +136,49 @@ margin-left: -0.0rem;
 margin-bottom: -4.80rem;
 
 }
+#ale1::first-letter {
+  background-image: url('../imgs/I.png');
+  background-size: contain;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -0.15px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+}
 
+#ale2::first-letter {
+  background-image: url('../imgs/t2.png');
+  background-size: contain;
+    background-size: 60%;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -50px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+
+}
+
+#ale3::first-letter {
+  background-image: url('../imgs/I.png');
+  background-size: contain;
+background-repeat: no-repeat;
+background-center: center center;
+float: left;
+font-size: 12rem;
+line-height: 0.65;
+color: transparent;
+margin-right: -0.15px;
+margin-left: -0.15rem;
+margin-bottom: -4.15rem;
+}
 
 
 img {
@@ -159,7 +202,7 @@ position: fixed;
 color:black!important;
 text-transform: uppercase;
 font-size: 8px;
-margin-bottom: 20px;
+margin-bottom: 30px;
 height: 66px;
 z-index: 2;
 font-family: 'caslon_old_faceregular';
@@ -319,7 +362,7 @@ display: block;
 
 
 .container-fluid {
-  width: 89% !important;
+
 padding-right: 15px;
 padding-left: 15px;
 margin-right: auto;
@@ -327,6 +370,9 @@ margin-left: auto;
     margin-top: -67px;
 }
 
+#articoli {
+  width: 89%;
+}
 
 /* The element to apply the animation to */
 
@@ -338,6 +384,7 @@ body {
   height: 100%;
     background-color: #White!important;
       background-image: url('../imgs/backremoved.png');
+      overflow-x: hidden!important;
  }
 
 .author_and_date {
@@ -477,8 +524,6 @@ footer{
   margin-bottom: 20px;
 
 }
-
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -486,14 +531,16 @@ footer{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fc4434;
-    filter: opacity(30%);
+
+
+           background-color: #E9E9E9;
+    /*filter: opacity(70%);*/
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
-.sidebar a {
+/*.sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -504,15 +551,53 @@ footer{
 
 .sidebar a:hover {
     color: #f1f1f1;
-}
+}*/
 
 .sidebar .closebtn {
+  font-family: caslon_old_faceregular;
     position: absolute;
-    top: 55px;
-    right: 25px;
+    top: 78px;
+    right: 10px;
     font-size: 36px;
-    margin-left: 50px;
-    color: red !important;
+    margin-left: 100px;
+    color: black !important;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+
+    color: white;
+    border: none;
+    background-color: transparent;
+
+    text-transform: uppercase;
+}
+
+.openbtn:hover {
+    font-size: 20px;
+    cursor: pointer;
+
+    color:   #b8bbbf!important;
+    border: none;
+    background-color: transparent;
+
+    text-transform: uppercase;
+}
+#metadata_intro{
+font-family: "caslon_old_face_italic";
+
+         background-color: #E9E9E9;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
@@ -520,17 +605,100 @@ footer{
     .sidebar a {font-size: 18px;}
 }
 
+.metadata_issue {
+    color: black !important;
+    margin-right: 75px !important;
+}
+
+
+.accordion-button{
+  font-family: 'caslon_old_faceregular'!important;
+  background-color: #53575c;
+}
+
+.accordion-button:not(.collapsed) {
+  color:lightgrey!important;
+  background-color: #53575c!important;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+.accordion-body{
+   font-family: 'caslon_old_faceregular';
+
+          background-color: #E9E9E9;
+  }
+
+.accordion-body li{
+    list-style-type: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+
+.focus{
+  text-align: center;
+}
+
+
+
+.btn-10{
+  font-family: p22_operina_fiore_fiore;
+    background-color: transparent;
+    border: 0px solid  grey;
+    color: #grey;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: lowercase;
+    text-transform: none;
+}
+
+
+.btn-10:hover {
+  font-family: p22_operina_fiore_fiore;
+
+    border: 0px solid  #53575c;
+    color:#53575c;
+    padding: 6px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+  }
+
 
 @media only screen and (max-width: 1300px) {
 
   .icons {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 
   }
 
   .icons_nav {
-    margin-left: 45px!important;
+    margin-left: -15px!important;
     margin-top: 7px!important;
 
   }

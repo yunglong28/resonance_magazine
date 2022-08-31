@@ -29,6 +29,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   height: 60px;
+  z-index: 100;
 
 }
 /* Rende la navbar orizzontale */
@@ -101,69 +102,11 @@
   visibility: visible;
 }
 
-/* The sidebar menu */
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: rgb(183,64,59);
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
 
-/* The sidebar links */
-.sidebar a, .dropdown-btn {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: black;
-}
 
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  color: white !important;
-  cursor: pointer;
-}
 
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: rgb(183,64,59);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  right:0;
-}
 
-.openbtn:hover {
-  background-color: #444;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-  float: right;
-}
-
-/*fine sidebar*/
 
 .title_issue {
   text-align: center;
@@ -227,6 +170,7 @@ figcaption{
 
 body{
   background-color: white !important;
+  overflow-x: hidden!important;
   /*background-image: url("https://miro.medium.com/max/630/1*CJKgA7EHcxi8wMs1_6kBqA.jpeg");*/
 }
 
@@ -381,42 +325,6 @@ footer{
 }
 
 
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #fc4434;
-    filter: opacity(30%);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition: 0.3s ease;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 55px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    color: red !important;
-}
-
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -478,3 +386,177 @@ text-transform: uppercase;
  font-size: 32px;
  text-transform: uppercase;
 }
+
+
+@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: -32px!important;
+    margin-top: 7px!important;
+
+  }
+}
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: white;
+    /*filter: opacity(70%);*/
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/*.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}*/
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 78px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 100px;
+    color: white !important;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+  font-family: 'Metropolis-ExtraBoldItalic';
+    text-transform: uppercase;
+}
+
+#metadata_intro{
+  font-family: 'Metropolis-ExtraBoldItalic';
+    background-color: rgb(183,64,59)!important;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.metadata_issue {
+    color: white !important;
+    margin-right: 75px !important;
+
+}
+
+
+.accordion-button{
+  text-decoration: underline;
+  font-family: 'futura';
+    background-color: black!important;
+    color: white!important;
+}
+
+.accordion-button:not(.collapsed) {
+  color:white!important;
+  background-color: rgb(183,64,59)!important;
+    font-family: 'Metropolis-ExtraBoldItalic';
+    text-decoration: none;
+}
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+.accordion-body{
+font-family:"frutiger";
+  background-color: white;
+  }
+
+.accordion-body li{
+    list-style-type: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    margin: 2px;
+    display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  outline: 1px solid;
+}
+
+
+.focus{
+  text-align: center;
+}
+
+
+
+.btn-10{
+  font-family: "Metropolis-ExtraBoldItalic";
+  background-color: rgb(183,64,59);
+  border: none;
+  color: white;
+  padding: 7px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+
+.btn-10:hover {
+  font-family: "Metropolis-ExtraBoldItalic";
+    background-color: white;
+    border: none;
+    color:rgb(183,64,59);
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
