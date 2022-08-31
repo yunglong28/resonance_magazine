@@ -75,7 +75,7 @@ function change(name) {
     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
   }
 
-  if (name === 'illuminist') {
+  if (name == 'illuminist') {
       $("#pagestyle").attr('href','style/home_illuminism.css');
       $("#mag_img").replaceWith("<img id='mag_img' src='imgs/kendrick__illuminism.png' height='550' filter='sepia'>")
       $("#yet_img").replaceWith("<img id='yet_img' src='imgs/didot_transparent.png' height='550'>")
@@ -88,7 +88,7 @@ function change(name) {
       $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
   }
 
-    if (name === 'future') {
+    if (name == 'future') {
         $("#pagestyle").attr('href','style/home_future.css');
         $("#mag_img").replaceWith("<img id='mag_img' src='imgs/dither_it_mag.jpeg' height='550'>")
         $("#yet_img").replaceWith("<img id='yet_img' src='imgs/dither_it_records.jpg' height='550'>")

@@ -521,3 +521,17 @@ border: none;
   font-size: 32px;
   text-transform: uppercase;
 }
+
+
+#title1{
+  overflow: auto;
+}
+
+#float_left{
+  float: left;
+}
+
+#float_right{
+  float: right;
+}
+

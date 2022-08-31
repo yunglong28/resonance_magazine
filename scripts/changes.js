@@ -25,13 +25,13 @@ function change(name) {
        $("<figure id='first_img_three'><img class='first_img' id='fig_article' src='https://diy-magazine.s3.amazonaws.com/d/diy/Artists/A/Anna-Calvi/DIY-77/Anna-Calvi-by-Eva-Pentel-for-DIY-Mag-Aug-2018-52.jpg' width='300'><figcaption></span></figcaption></figure>").insertAfter("#col3 .title");}
     }
 
-     $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
-     $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
-     $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
-     $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
-     $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
-     $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
-     $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+     $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazine.png'>")
+     $("#cello").replaceWith("<img id='cello' src='imgs/cellohome.png'>")
+     $("#harp").replaceWith("<img id='harp' src='imgs/harphome.png'>")
+     $("#gramophone").replaceWith("<img id='gramophone' src='imgs/gramophonehome.png'>")
+     $("#disco").replaceWith("<img id='disco' src='imgs/strobohome.png'>")
+     $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxhome.png'>")
+     $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodhome.png'>")
 
   }
 
@@ -43,17 +43,17 @@ function change(name) {
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     if ($('.opening_img_belle').length == 0){
       $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
-      $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertAfter("#col2 .title");
+      $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertBefore("#col2 .article_header");
       $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
     }
     $(".container_articles").attr('class', 'container container_articles');
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinebelle.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellobelle.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpbelle.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonebelle.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobobelle.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxbelle.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodbelle.png'>")
+    $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazinebelle.png'>");
+    $("#cello").replaceWith("<img id='cello' src='imgs/cellobelle.png'>");
+    $("#harp").replaceWith("<img id='harp' src='imgs/harpbelle.png'>");
+    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/gramophonebelle.png'>");
+    $("#disco").replaceWith("<img id='disco' src='imgs/strobobelle.png'>");
+    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxbelle.png'>");
+    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodbelle.png'>");
   }
 
   else{
@@ -61,19 +61,19 @@ function change(name) {
   }
 
 
-  if (name ==='illuminist'){
+  if (name =='illuminist'){
     $("#pagestyle").attr('href','style/illuminism.css');
     $(".first_img").remove();
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover1.jpeg'>").insertBefore("#col1 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover2.jpeg'>").insertBefore("#col2 .title");
     $("<img class='img-fluid opening_img opening_img_illuminism' src='imgs/didot_cover3.jpeg'>").insertBefore("#col3 .title");
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazine.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
+    $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazine.png'>")
+    $("#cello").replaceWith("<img id='cello' src='imgs/cellohome.png'>")
+    $("#harp").replaceWith("<img id='harp' src='imgs/harphome.png'>")
+    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/gramophonehome.png'>")
+    $("#disco").replaceWith("<img id='disco' src='imgs/strobohome.png'>")
+    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxhome.png'>")
+    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodhome.png'>")
   }
 
   else {
@@ -88,13 +88,13 @@ function change(name) {
     /*$("#sep_nav").remove();*/
     $(".container_articles").attr('class', 'container-fluid container_articles');
 
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
+    $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazinetabloid.png'>")
+    $("#cello").replaceWith("<img id='cello' src='imgs/cellotabloid.png'>")
+    $("#harp").replaceWith("<img id='harp' src='imgs/harptabloid.png'>")
+    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/gramophonetabloid.png'>")
+    $("#disco").replaceWith("<img id='disco' src='imgs/strobotabloid.png'>")
+    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxtabloid.png'>")
+    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodtabloid.png'>")
 
     if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
     if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-child")};
@@ -151,13 +151,13 @@ function change(name) {
       $("#subtitle3").css("max-width","100%");
      }
 
-    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazinetabloid.png'>")
-    $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellotabloid.png'>")
-    $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harptabloid.png'>")
-    $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonetabloid.png'>")
-    $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobotabloid.png'>")
-    $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxtabloid.png'>")
-    $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodtabloid.png'>")
+    $("#home_icon").replaceWith("<img id='home_icon' src='imgs/magazinetabloid.png'>")
+    $("#cello").replaceWith("<img id='cello' src='imgs/cellotabloid.png'>")
+    $("#harp").replaceWith("<img id='harp' src='imgs/harptabloid.png'>")
+    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/gramophonetabloid.png'>")
+    $("#disco").replaceWith("<img id='disco' src='imgs/strobotabloid.png'>")
+    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxtabloid.png'>")
+    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodtabloid.png'>")
   }
 
   else {
@@ -176,14 +176,15 @@ function change(name) {
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
     $(".adv3").prepend("<img  id'finalfig1' src='imgs/adv3.png' width='300'>");
     $(".adv1").prepend(" <img id='adv1'src='imgs/adv1.png' width='300'>");
-      $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
-      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
-      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
-      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
-      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/stroboanalog.png'>")
-      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxanalog.png'>")
-      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodanalog.png'>")
-      $(".start_line").remove()
+    $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+    $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
+    $("#cello").replaceWith("<img id='cello' src='imgs/celloanalog.png'>")
+    $("#harp").replaceWith("<img id='harp' src='imgs/harpanalog.png'>")
+    $("#gramophone").replaceWith("<img id='gramophone' src='imgs/vynilanalog.png'>")
+    $("#disco").replaceWith("<img id='disco' src='imgs/stroboanalog.png'>")
+    $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxanalog.png'>")
+    $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodanalog.png'>")
+    $(".start_line").remove()
 
 
 
@@ -215,25 +216,20 @@ function change(name) {
 
     else{
       $('.analog_img').remove();
-      $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/cellohome.png'>")
-      $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harphome.png'>")
-      $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/gramophonehome.png'>")
-      $("#disco").replaceWith("<img class='icons' id='disco' src='imgs/strobohome.png'>")
-      $("#boombox").replaceWith("<img class='icons' id='boombox' src='imgs/boomboxhome.png'>")
-      $("#walkman").replaceWith("<img class='icons' id='walkman' src='imgs/ipodhome.png'>")
     }
 
 
     if (name =='future') {
 
         $("#pagestyle").attr('href', 'style/future.css');
+        $("#home_icon").attr('src', 'imgs/dither_it_magazine.png')
         $("#cello").attr('src', 'imgs/dither_it_cello.png');
         $("#harp").attr('src', 'imgs/dither_it_harp.png');
         $("#gramophone").attr('src', 'imgs/dither_it_gramophone.png');
         $("#disco").attr('src', 'imgs/dither_it_disco.png');
         $("#boombox").attr('src', 'imgs/dither_it_boombox.png');
         $("#walkman").attr('src', 'imgs/dither_it_walkman.png');
-        if ($('#sep_nav').length == 0) {"<br id='sep_nav'>" .insertAfter("nav")}
+        if ($('#sep_nav').length == 0) {$("<br id='sep_nav'>").insertAfter("nav")}
         
 
         if ($('#solar_bar').length == 0) {$("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p></div>").insertAfter("#sep_nav")
@@ -262,45 +258,6 @@ function change(name) {
 
       }
 
-
-
-        /*if($("#alessandro").length)
-        {
-            if ($("#dither_1_ale").length == 0) {
-                $("<img class='img-fluid opening_img dithered_images' id='dither_1_ale' src='imgs/dither_it_article_1_1.png'>").insertBefore("#contrassegno")
-            }
-
-            if ($("#dither_2_ale").length == 0) {
-                $("<img class='img-fluid opening_img dithered_images' id='dither_2_ale' src='imgs/dither_it_article_2_1.png'>").insertBefore("#contrassegno2")
-            }
-
-            if ($("#dither_3_ale").length == 0) {
-                $("<img class='img-fluid opening_img dithered_images' id='dither_3_ale' src='imgs/dither_it_article_3_1.png'>").insertBefore("#contrassegno3")
-            }
-
-            $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
-            $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
-            $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
-
-        }
-
-        if($("#francesca").length === 1) {
-            
-            $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid dithered_images' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
-            $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
-            $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
-        }
-
-        if($("#lorenza").length === 1) {
-            $("#fig_article").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' class='dithered_images' width='300'>")
-            $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' class='dithered_images' width='300'>")
-            $("#fig_article3").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' class='dithered_images' width='300'>")
-            $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' class='dithered_images' width='300'>")
-            $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' class='dithered_images' width='300'>")
-
-        }
-    }
-*/
 
     else{
         $("#solar_bar").remove();
@@ -354,28 +311,6 @@ $(document).ready(function(){
 
     if (style==="style/home_future.css"||style==="style/future.css"){
       change('future');
-      /*document.getElementById("pagestyle").setAttribute("href", "style/future.css");
-      $("<div id='solar_bar'><p> This is a solar-powered website, which means it sometimes goes offline. You have 5 minutes of energy left. <img src='imgs/icons8-sun-30.png'><br></p><p>The page size is 86kb. You can print it ecologically <a href='https://www.greenerprinter.com/00'><img src='imgs/icons8-print-30.png'></a><p>Only 0.14 g of CO2 is produced every time someone visits this web page. This is cleaner than 86  % of web pages tested</p><p>Calculate your web page footprint <a href='https://www.websitecarbon.com/'>here</a>.<p/><p>Server Stats <img src='imgs/icons8-solar-panels-32.png'> <br> Location: Barcelona | Time: 16:58 CEST | Battery status: Charging | Power used: 2.50W | Uptime: 12 weeks, 2 days, 6 hours, 19 minutes</p><hr class='half-hr'/></div>").insertAfter("#navbar")
-      $("#first_img_one_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one_ale' src='imgs/dither_it_article_1_1.png'>")
-      $("#first_img_two_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two_ale' src='imgs/dither_it_article_2_1.png'>")
-      $("#second_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_2.png'>")
-      $("#third_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_3.png'>")
-      $("#fourth_image_second_article").replaceWith("<img class='img-fluid article_images' id='second_image_second_article' src='imgs/dither_it_article_2_4.png'>")
-      $("#first_img_three_ale").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three_ale' src='imgs/dither_it_article_3_1.png'>")
-      $("#cello").attr('src','imgs/dither_it_cello.png');
-      $("#harp").attr('src','imgs/dither_it_harp.png');
-      $("#gramophone").attr('src','imgs/dither_it_gramophone.png');
-      $("#disco").attr('src','imgs/dither_it_disco.png');
-      $("#boombox").attr('src','imgs/dither_it_boombox.png');
-      $("#walkman").attr('src','imgs/dither_it_walkman.png');
-      $("#first_img_one").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_one' src='imgs/dither_it_fra1.jpg'>")
-      $("#first_img_two").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_two' src='imgs/dither_it_fra2.jpeg'>")
-      $("#first_img_three").replaceWith("<img class='first_img cover_image img-fluid' id='first_img_three' src='imgs/dither_it_fra3.jpeg'>")
-      $("#fig_article1").replaceWith("<img id='fig_article1' src='imgs/dither_it_lorenza1.jpeg' width='300'>")
-      $("#fig2").replaceWith("<img id='fig2' src='imgs/dither_it_lorenza2.jpeg' width='300'>")
-      $("#fig_article").replaceWith("<img id='fig_article' src='imgs/dither_it_lorenza3.jpeg' width='300'>")
-      $("#fig3_2").replaceWith("<img id='fig3_2' src='imgs/dither_it_lorenza4.jpeg' width='300'>")
-      $("#fig3_3").replaceWith("<img id='fig3_3' src='imgs/dither_it_lorenza5.jpeg' width='300'>")*/
     }
 
 
@@ -491,13 +426,28 @@ function underline_col3(item, color){
 }
 
 
+function underline_col(item, color){
+  if ($(item).attr('clicked') == "false"){
+        var aboutwho = $(item).attr('about'); 
+        $(item).css('background-color', color);
+        $('[about= "' + aboutwho + '"]').css('background-color', color); 
+        var elementPos = $('span[about= "' + aboutwho + '"]:first').offset().top;
+        var scrollPos = $('[about= "' + aboutwho + '"]').parents('.article_col').scrollTop();
+        $("html").animate({scrollTop:0}, 1000)
+        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $(item).attr("clicked","true");
+      }
+  else{
+    var aboutwho = $(item).attr('about'); 
+    $(item).css('background-color', 'transparent');
+    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
+    $(item).attr("clicked","false"); 
+  }
+}
+
 //SORTING FUNCTIONS
 
-//1
 
-
-
-//2
 function sortAlphabet(lista){
   var list = document.getElementById(lista);
   var items = list.childNodes;
@@ -643,4 +593,89 @@ function focus_three(elem){
      $(elem).attr("clicked","false"); 
   }
 
+}
+
+//ADD METADATA
+// create dictionary with userclasses
+var UserClasses_init = {}
+// transform it in JSON object and save it into localStorage
+localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
+
+function saveNewClass(){
+    user_class = $("#add_class").val().toLowerCase().toString();
+    selected_text = document.getSelection().toString();
+    if ((user_class == '') | (user_class == null) | (selected_text == '') | (selected_text == null)) {
+        alert("Please, have a look at the instructions above :)")
+    }
+    
+
+    else{  
+
+        UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
+        if ((user_class in UserClasses)==0){
+            UserClasses[user_class] = []
+        }
+         UserClasses[user_class].push(selected_text);
+         localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
+
+       // var val1 = localStorage.getItem('UserClasses');
+      //  alert(val1)
+        add_metadata(Object.keys(UserClasses));
+        var wrap = document.createElement('span')
+        wrap.innerHTML = selected_text;
+        //add class NewClass and "myspan" to element
+        wrap.setAttribute("about", selected_text)
+        // var range containing the starting range of the selection
+        sel = document.getSelection()
+        range = sel.getRangeAt(0);
+        // clear the document content at that range
+        range.deleteContents();
+        // insert the new span node
+        range.insertNode(wrap);
+      }
+
+      
+}
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function add_metadata(keys_list){
+  for (let key of keys_list){
+    color = getRandomColor()
+      if ($("#"+key+"").length == 0){
+          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>")
+          }
+      var value = UserClasses[key]
+      for (let valore of value){
+        nospace= valore.replace(/\s/g, "_")
+        if ($("#"+nospace+"").length == 0){
+          class_color =  $("#"+key+"").attr('color')
+          $("#"+key+"").append("<li><a id='" + nospace + "' about='" + valore + "' clicked='false' onclick='underline_col(this, \""+ class_color +"\")'>" + valore + "</a></li>")
+      }
+      
+      }
+}
+}
+
+
+
+function clearAll(){
+  var myNode = document.getElementById("new_metadata_list");
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.lastChild);
+      }
+  $("#new_metadata_list").append('<br>') 
+  $('span').css('background-color', 'transparent');
+  $('#add_class').val('');
+  localStorage.clear()
+  var UserClasses_init = {}
+  // transform it in JSON object and save it into localStorage
+  localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 }

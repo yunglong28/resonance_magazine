@@ -301,7 +301,7 @@ footer{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #fc4434;
+    background-color: #e6d8a8;
     /*filter: opacity(70%);*/
     overflow-x: hidden;
     transition: 0.5s;
@@ -439,3 +439,22 @@ font-family: nimbus;
     font-size: 12px;
     text-transform: uppercase;
   }
+
+
+.user_added_class b{
+  color:#0c2414;
+  text-transform: uppercase;
+}
+
+#buttunazzi{
+  text-align: center;
+}
+
+
+path {
+  fill: transparent;
+}
+
+text {
+  fill: #FF9800;
+}

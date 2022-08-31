@@ -14,15 +14,19 @@
   src:url("../fonts/FrutigerNextLT-Bold.ttf");
 }
 
+@font-face{
+  font-family:"Franklin_Gothic";
+  src:url("../fonts/Franklin Gothic Heavy Italic.ttf");
+}
+
 
 
 /* NAVBAR */
 .navbar {
-  font-family: 'Metropolis-ExtraBoldItalic';
+  font-family: 'Franklin_Gothic';
   background-color: rgb(183,64,59);
   position: fixed;
   text-transform: uppercase;
-  font-size: 8px;
   margin-bottom: 20px;
   height: 60px;
 
@@ -42,7 +46,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 26px;
   white-space: nowrap;
   text-align:center !important;
   margin-right: 20px;
@@ -50,7 +54,10 @@
   margin-bottom: 0px;
   padding: 0px;
   color:white;
+  text-transform: uppercase;
 }
+
+
 
 .navbar li a {
    color:white;
@@ -58,12 +65,12 @@
 }
 
 .navbar li:hover{
-  color:  #9fa4c4 !important;
+  background-color: #444;
 }
 
 .navbar li a:hover{
-  color:  #9fa4c4 !important;
   text-decoration:none;
+   background-color: #444;
 }
 
 
@@ -359,7 +366,7 @@ footer{
   color:white;
   background-color: rgb(183,64,59);
   margin-top: 90px;
-  font-family: 'Metropolis-ExtraBoldItalic';
+  font-family: 'Franklin_Gothic';
   text-transform: uppercase;
 }
 
@@ -417,13 +424,13 @@ footer{
 
 
 #myModal {
-   font-family: 'Metropolis-ExtraBoldItalic', serif;
+   font-family: 'Franklin_Gothic', serif;
 
 
 }
 
 .modal-header {
-  font-family: 'Metropolis-ExtraBoldItalic', serif;
+  font-family: 'Franklin_Gothic', serif;
     background-color: rgb(183,64,59);
      color:white;
 }
@@ -431,7 +438,7 @@ footer{
 .modal-footer {
     background-color:white;
      color:black;
-     font-family: 'Metropolis-ExtraBoldItalic'
+     font-family: 'Franklin_Gothic'
 
 }
 
@@ -459,7 +466,7 @@ border: none;
  }
 .p-4{
        background-color:white!important;
-       font-family: 'Metropolis-ExtraBoldItalic';
+       font-family: 'Franklin_Gothic';
 text-transform: uppercase;
        color: black;
        font-size: 18px;
