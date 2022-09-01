@@ -85,7 +85,7 @@
               <li><a href="home.html#aboutus" onclick="keepstyle('pagestyle')">Us</a></li>
             </ul>
             </li>
-            <li><button class="openbtn" onclick="openNav()"> Metadata viewer</button></li>
+            <li id="metadati" onclick="openNav()">Metadata viewer</li>
             <ul class="icons_nav">
             <li class="icons" onclick="change('home')"><img id="home_icon" src="imgs/magazine.png"></li>
             <li class="icons" onclick="change('illuminist')"><img src="imgs/cellohome.png" id="cello"></li>
@@ -252,12 +252,6 @@
 
       </div>
     </div>
-
-
-
-
-
-
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -555,11 +549,34 @@
                                       </div>
                                     </div>
                                   </div>
+
                           </div>
 
+
       </div>
+
     </div>
+
   </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwenty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwenty" aria-expanded="false" aria-controls="flush-collapseTwenty">
+                Add metadata
+            </button>
+        </h2>
+        <div id="flush-collapseTwenty" class="accordion-collapse collapse" aria-labelledby="flush-headingTwenty" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <p>You can add customised metadata classes: type the new class' name below, select the portion of text you'd like to categorize and click on the 'Add metadata button'.</p>
+                <input type="text" class="form-control" id="add_class" placeholder="Class Name">
+                <br>
+                <div id="buttunazzi">
+                    <button class="custom-btn btn-10" onclick="saveNewClass()" id="add_metadata_button">Add metadata</button><button class="custom-btn btn-10" id="delete_metadata_button" onclick="clearAll()">Clear all</button>
+                </div>
+                <div id="new_metadata_list"><br>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 </div>
