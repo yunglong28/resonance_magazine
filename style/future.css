@@ -336,6 +336,10 @@ background-color: rgb(250, 247, 230) !important;
     transition: 0.5s;
     padding-top: 60px;
     font-family: "Times New Roman";
+    border-style: solid;
+    border-color: #73895a;
+    border-width: thin;
+    background-color:#73895a;
 }
 
 
@@ -401,6 +405,11 @@ background-color: rgb(250, 247, 230) !important;
 
 }
 
+.accordion-button:not(.collapsed) {
+    color: black;
+
+}
+
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -423,3 +432,4 @@ background-color: rgb(250, 247, 230) !important;
 
   }
 }
+
