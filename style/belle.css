@@ -217,9 +217,9 @@ body{
 #col2 .title{
   color:rgb(191, 164, 4);
   font-size: 50px;
-  text-align: center;
   line-height: 1em;
   padding:0.4em;
+  text-align: center;
 }
 
 #col2 .title_and_subtitle img{
@@ -634,3 +634,6 @@ border: none;
   text-transform: uppercase;
   }
 
+#buttunazzi{
+  text-align: center;
+}

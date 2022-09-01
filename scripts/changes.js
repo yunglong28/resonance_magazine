@@ -43,7 +43,7 @@ function change(name) {
     if($('#sep_nav').length == 0){$("<br id='sep_nav'>").insertAfter("nav")};
     if ($('.opening_img_belle').length == 0){
       $("<img class='opening_img_belle' id='ballerini' src='imgs/ballerini.png'/>").insertAfter("#col1 .title");
-      $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertBefore("#col2 .article_header");
+      $("<img class='opening_img_belle' id='amazzone' src='imgs/amazzone.png'/>").insertBefore("#title_and_subtitle_2");
       $("<img class='opening_img_belle' id='pattinatrice' src='imgs/pattinatrice.png'/>").insertAfter("#col3 .title");
     }
     $(".container_articles").attr('class', 'container container_articles');
@@ -86,7 +86,7 @@ function change(name) {
   if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
     /*$("#sep_nav").remove();*/
-    $(".container_articles").attr('class', 'container-fluid container_articles');
+    //$(".container_articles").attr('class', 'container-fluid container_articles');
     $("#uccelli").append("<img id='birds' src='imgs/birds2.png' width='250'>");
     $("#uccelli1").replaceWith("<img id='block1' src='imgs/birds3.png' width='250'>");
 
@@ -179,7 +179,7 @@ function change(name) {
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
     $("#sep_nav").remove();
-    $(".container_articles").attr('class', 'container-fluid container_articles');
+    //$(".container_articles").attr('class', 'container-fluid container_articles');
     $("#title_and_subtitle_1").prepend("<img class='analog_img' src='imgs/sub1.png' width='300'>");
     $("#title_and_subtitle_2").prepend("<img  class=' analog_img micro' id='finalfig1' src='imgs/micro.png' width='300'>");
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
@@ -189,6 +189,7 @@ function change(name) {
     $("#advnextissue").append("<img class='adv' src='imgs/adv2.png' width='300'>")
     $("#advatari").append("<img class='adv1' src='imgs/adv1.png' width='300'>")
       $(".adv2").prepend(" <img id='adv2'src='imgs/adv2.png' width='300'>");
+      $("#home_icon").replaceWith("<img class='icons' id='home_icon' src='imgs/magazineanalog.png'>")
       $("#cello").replaceWith("<img class='icons' id='cello' src='imgs/celloanalog.png'>")
       $("#harp").replaceWith("<img class='icons' id='harp' src='imgs/harpanalog.png'>")
       $("#gramophone").replaceWith("<img class='icons' id='gramophone' src='imgs/vynilanalog.png'>")
@@ -347,8 +348,8 @@ function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
     document.getElementById("articoli").style.width = "70%";
     document.getElementById("articoli").style.marginLeft = "350px";
-    $(".openbtn").removeAttr("onclick");
-    $(".openbtn").attr('onclick','closeNav()');
+    $("#metadati").removeAttr("onclick");
+    $("#metadati").attr('onclick','closeNav()');
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -356,8 +357,8 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("articoli").style.marginLeft = "auto";
     document.getElementById("articoli").style.width = "100%";
-    $(".openbtn").removeAttr("onclick");
-    $(".openbtn").attr('onclick','openNav()');
+    $("#metadati").removeAttr("onclick");
+    $("#metadati").attr('onclick','openNav()');
 }
 
 
@@ -386,8 +387,10 @@ function underline_col1(item, color){
         $('#col1 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col1").scrollTop();
+        var borderPixels = $(".article_col").css('borderWidth')
+        let border = borderPixels.replace("px", "");
         $("html").animate({scrollTop:0}, 1000)
-        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top}, 1000);
+        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
@@ -406,8 +409,10 @@ function underline_col2(item, color){
         $('#col2 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col2 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col2").scrollTop();
+        var borderPixels = $(".article_col").css('borderWidth')
+        let border = borderPixels.replace("px", "");
         $("html").animate({scrollTop:0}, 1000)
-        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $("#col2").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
@@ -425,8 +430,10 @@ function underline_col3(item, color){
         $('#col3 [about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('#col3 span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $("#col3").scrollTop();
+        var borderPixels = $(".article_col").css('borderWidth')
+        let border = borderPixels.replace("px", "");
         $("html").animate({scrollTop:0}, 1000)
-        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        $("#col3").animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
@@ -446,7 +453,9 @@ function underline_col(item, color){
         var elementPos = $('span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $('[about= "' + aboutwho + '"]').parents('.article_col').scrollTop();
         $("html").animate({scrollTop:0}, 1000)
-        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top}, 1000);
+        var borderPixels = $(".article_col").css('borderWidth')
+        let border = borderPixels.replace("px", "");
+        $('[about= "' + aboutwho + '"]').parents('.article_col').animate({scrollTop: scrollPos + elementPos - $("#articoli").offset().top - border}, 1000);
         $(item).attr("clicked","true");
       }
   else{
