@@ -142,7 +142,7 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
+    if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
@@ -229,6 +229,9 @@ function change(name) {
 
     else{
       $('.analog_img').remove();
+      $(".finalfig1").remove()
+      $(".adv").remove()
+      $(".adv1").remove()
     }
 
 
