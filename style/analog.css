@@ -623,10 +623,14 @@ footer{
  }
 
 .accordion-body{
-   font-family: 'vcr';
+   font-family: 'vcr'!important;
   background-color: white;
   color: black;
   }
+
+.accordion-body p {
+  font-family: 'vcr'!important;
+}
 
 .accordion-body li{
     list-style-type: none;
