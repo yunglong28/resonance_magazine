@@ -208,7 +208,7 @@ footer{
 #magazine2{
   background-color:
   #e6d8a8;
-height: 370px;
+height:  400px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
@@ -286,9 +286,7 @@ a:active {
   text-decoration: none;
 }
 
-.style_title {
-  text-decoration: ;
-}
+
 
 .icons {
   width: 30px;
@@ -367,4 +365,4 @@ border: none;
     margin-left: 210px!important;
     margin-top: 7px!important;
 
-  }
+  } }
