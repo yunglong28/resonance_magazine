@@ -142,7 +142,7 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    if($('.title_issue').length == 0){$("<div class='title_issue'> <img src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
+    if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
@@ -179,7 +179,6 @@ function change(name) {
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
     $("#sep_nav").remove();
-    //$(".container_articles").attr('class', 'container-fluid container_articles');
     $("#title_and_subtitle_1").prepend("<img class='analog_img' src='imgs/sub1.png' width='300'>");
     $("#title_and_subtitle_2").prepend("<img  class=' analog_img micro' id='finalfig1' src='imgs/micro.png' width='300'>");
     $("#title_and_subtitle_3").prepend("<img  class='analog_img' id='fig3' src='imgs/spartito.png' width='300'>");
@@ -353,6 +352,9 @@ function openNav() {
     document.getElementById("articoli").style.marginLeft = "350px";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','closeNav()');
+    $('.title_issue').css('paddingLeft', '350px');
+    $('.banner_issue').css('paddingLeft', '350px');
+
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -362,6 +364,8 @@ function closeNav() {
     document.getElementById("articoli").style.width = "100%";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','openNav()');
+    $('.title_issue').css('paddingLeft', '0');
+    $('.banner_issue').css('paddingLeft', '0');
 }
 
 
