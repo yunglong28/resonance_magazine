@@ -208,7 +208,7 @@ footer{
 #magazine2{
   background-color:
   #e6d8a8;
-height:  400px;
+height:  420px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
@@ -366,3 +366,12 @@ border: none;
     margin-top: 7px!important;
 
   } }
+
+
+.imgs_docs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 55vh;
+}
+
