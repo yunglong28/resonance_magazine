@@ -142,6 +142,7 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
+    $(".title").prepend("<img class='pallino' src='imgs/pallino.png'>")
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
@@ -150,6 +151,7 @@ function change(name) {
       $("#title_and_subtitle_3").css({fontSize: 40});
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
       $("#title1").css("text-decoration","none");
+      $("#col2 .pallino").remove();
      }
 
     if($("#alessandro").length){
@@ -172,7 +174,7 @@ function change(name) {
     $(".banner_issue").remove();
     $(".title_issue").remove();
     $("#sep_banner").remove()
-
+    $(".pallino").remove();
   }
 
 
@@ -624,41 +626,45 @@ function focus_three(elem){
 }
 
 //ADD METADATA
-// create dictionary with userclasses
+// create an object with userclasses
 var UserClasses_init = {}
-// transform it in JSON object and save it into localStorage
+// transform it in JOSN object literal and save it into localStorage
 localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
 function saveNewClass(){
-    user_class = $("#add_class").val().toLowerCase().toString();
-    selected_text = document.getSelection().toString();
-    if ((user_class == '') | (user_class == null) | (selected_text == '') | (selected_text == null)) {
+  //variable for the class from the user input
+    key = $("#add_class").val().toLowerCase().toString();
+  //variable fo the text selected by the user
+    value = document.getSelection().toString();
+  //check whether the user specified the class name and selected the text
+    if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
     }
     
-
     else{  
-
+      // get exising User classes
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
-        if ((user_class in UserClasses)==0){
-            UserClasses[user_class] = []
+      //if the class is new, create an empty list of its values
+        if ((key in UserClasses)==0){
+            UserClasses[key] = []
         }
-         UserClasses[user_class].push(selected_text);
+      //add the new value to the corresponding key in UserClasses
+         UserClasses[key].push(value);
+      //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-
-       // var val1 = localStorage.getItem('UserClasses');
+      // var val1 = localStorage.getItem('UserClasses');
       //  alert(val1)
         add_metadata(Object.keys(UserClasses));
         var wrap = document.createElement('span')
-        wrap.innerHTML = selected_text;
-        //add class NewClass and "myspan" to element
-        wrap.setAttribute("about", selected_text)
-        // var range containing the starting range of the selection
+        wrap.innerHTML = value;
+      //add class NewClass and "myspan" to element
+        wrap.setAttribute("about", value)
+      // var range containing the starting range of the selection
         sel = document.getSelection()
         range = sel.getRangeAt(0);
-        // clear the document content at that range
+      // clear the document content at that range
         range.deleteContents();
-        // insert the new span node
+      // insert the new span node
         range.insertNode(wrap);
       }
 

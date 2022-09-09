@@ -128,22 +128,23 @@ body{
 
 #col1{
   padding:0;
-  background-color: rgb(211, 104, 65);
+  background-color: #f0603b;
   text-align: center;
   font-family: 'Franklin', cursive;
 }
 
 #col1 .title{
   font-size: 35px;
-  color:rgb(228, 217, 201);
+  color: #E4D9C5;
   padding:0.6em;
   line-height: 1em;
   text-transform: uppercase;
+   font-weight: bold;
 }
 
 #col1 .subtitle{
   font-size: 30px;
-  color:rgb(228, 217, 201);
+  color:#E4D9C5;
   line-height: 1em;
   text-align: center;
   text-transform: uppercase;
@@ -289,7 +290,7 @@ body{
 }
 
 #col3 .title_and_subtitle{
-  color: rgb(0, 53, 102);
+  color: #003566;
   font-size: 40px;
   text-align: center;
   line-height: 1em;
@@ -297,7 +298,7 @@ body{
 }
 
 #col3 .author_and_date{
-   color:rgb(0, 53, 102);
+   color:#003566;
 }
 
  #col3 .start_line{
