@@ -111,8 +111,7 @@
   text-align: center;
   font-family: 'Courier Prime', monospace;
   color: rgb(183,64,59);
-  font-size: 48px;
-  /*font-weight: bold;*/
+  font-size: 50px;
   text-shadow: 1.5px 1.5px black;
   height:45px;
 }
@@ -452,7 +451,7 @@ text-transform: uppercase;
 
 #metadata_intro{
   font-family: 'Metropolis-ExtraBoldItalic';
-    background-color: rgb(183,64,59)!important;
+    background-color: black!important;
     text-transform: uppercase;
     font-size: 25px;
     text-align: center;
@@ -477,17 +476,19 @@ text-transform: uppercase;
 
 
 .accordion-button{
-  text-decoration: underline;
-  font-family: 'futura';
-    background-color: black!important;
-    color: white!important;
-}
-
-.accordion-button:not(.collapsed) {
   color:white!important;
   background-color: rgb(183,64,59)!important;
     font-family: 'Metropolis-ExtraBoldItalic';
     text-decoration: none;
+  
+}
+
+.accordion-button:not(.collapsed) {
+
+    text-decoration: underline;
+    font-family: 'futura';
+      background-color: black!important;
+      color: white!important;
 }
 
 :focus {
