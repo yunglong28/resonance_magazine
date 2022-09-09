@@ -352,6 +352,8 @@ function openNav() {
     document.getElementById("mySidebar").style.width = "350px";
     document.getElementById("articoli").style.width = "70%";
     document.getElementById("articoli").style.marginLeft = "350px";
+    document.getElementById("footer").style.width = "70%";
+    document.getElementById("footer").style.marginLeft = "350px";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','closeNav()');
     $('.title_issue').css('paddingLeft', '350px');
@@ -364,6 +366,8 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("articoli").style.marginLeft = "auto";
     document.getElementById("articoli").style.width = "100%";
+    document.getElementById("footer").style.width = "100%";
+    document.getElementById("footer").style.marginLeft = "auto";
     $("#metadati").removeAttr("onclick");
     $("#metadati").attr('onclick','openNav()');
     $('.title_issue').css('paddingLeft', '0');
