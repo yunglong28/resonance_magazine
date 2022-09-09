@@ -124,7 +124,7 @@
   overflow: scroll;
   overflow-x: hidden;
   background: white;
-  font-family:"Hel", sans-serif;
+  font-family:"frutiger", sans-serif;
   color:black;
 }
 
@@ -297,9 +297,6 @@ body{
 
 }
 
-.article_col{
-  font-family: 'frutiger';
-}
 
 footer{
   color:white;
