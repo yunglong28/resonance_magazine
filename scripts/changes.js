@@ -142,7 +142,8 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    $(".title").prepend("<img class='pallino' src='imgs/pallino.png'>")
+    $("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")
+    $("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallinorosso.jpeg'>")
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
@@ -151,7 +152,7 @@ function change(name) {
       $("#title_and_subtitle_3").css({fontSize: 40});
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
       $("#title1").css("text-decoration","none");
-      $("#col2 .pallino").remove();
+      $("#col2 .pallino_rosso").remove();
      }
 
     if($("#alessandro").length){
@@ -300,33 +301,33 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-
+    
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
 
 
-    if (style==="style/home_illuminism.css"||style==="style/illuminism.css"){
+    if (style==="style/home_illuminism.css"||style==="style/illuminism.css"||style==="style/documentation_illuminism.css"){
       change('illuminist');
     }
 
-    if (style==="style/home_hobbyhorse.css"||style==="style/hobbyhorse.css"){
+    if (style==="style/home_hobbyhorse.css"||style==="style/hobbyhorse.css"||style==="style/documentation_hobbyhorse.css"){
        change('hobbyhorse');
     }
 
-    if (style==="style/home_belle.css"||style==="style/belle.css"){
+    if (style==="style/home_belle.css"||style==="style/belle.css"||style==="style/documentation_belle.css"){
       change('belle');
     }
 
-    if (style==="style/home_analog.css"||style==="style/analog.css"){
+    if (style==="style/home_analog.css"||style==="style/analog.css"||style==="style/documentation_analog.css"){
       change('analog');
     }
 
-    if (style==="style/home_tabloid.css"||style==="style/tabloid.css"){
+    if (style==="style/home_tabloid.css"||style==="style/tabloid.css"||style==="style/documentation_tabloid.css"){
       change('tabloid');
     }
 
-    if (style==="style/home_future.css"||style==="style/future.css"){
+    if (style==="style/home_future.css"||style==="style/future.css"||style==="style/documentation_future.css"){
       change('future');
     }
 

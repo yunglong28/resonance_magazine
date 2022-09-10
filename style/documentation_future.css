@@ -103,15 +103,27 @@ html {
 /*Section used for centering process*/
 section {
     width: 100%;
-    height: 150vh;
-    background-color: #73895a;
+    height: 80vh;
+    background-color: rgb(250, 247, 230);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'bodoni';
+    color: black;
     font-size: 25px;
     margin-top: 0px;
+    text-align: justify;
+  overflow-y:auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+
+
+section::-webkit-scrollbar {
+  display: none;
+}
+
 
 .container{
     width: 100%;
@@ -206,11 +218,13 @@ section {
 footer{
     color:black!important;
     background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+      margin-top: 10px ;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
     font-family: nimbus;
     text-transform: uppercase;
-    height:30vh;
+    height:8vh;
     font-size: 20px;
 }
 
@@ -280,15 +294,7 @@ footer{
     font-size: 22px;
 }
 
-section {
-    width: 100%;
-    height: 220vh;
-    background-color: rgb(250, 247, 230);
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    color: white;
-}
+
 
 /* unvisited link */
 a:link {
