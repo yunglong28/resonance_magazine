@@ -269,6 +269,7 @@ text-align: center;
 
 
 
+
 /* unvisited link */
 /*a:link {
   color: red;
@@ -307,6 +308,7 @@ a:active {
 
 
 
+
 .icons {
   width: 30px;
   height: 30px;
@@ -335,7 +337,6 @@ a:active {
 
 
  }
-
 
 
 .modal-footer .btn{
@@ -394,16 +395,3 @@ border: none;
     max-height: 55vh;
 }
 
-.carousel {
-    height: 40vh;
-}
-
-.carousel-inner > .carousel-item > img {
-  height:100%;
-   width: 100%;
-}
-
-.carousel-inner > .carousel-item > a > img{
-  height:100%;
-   width: 100%;
-}
