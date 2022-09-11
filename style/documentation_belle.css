@@ -107,7 +107,7 @@ section {
   font-family: 'Bebas Neue';
   font-size: 25px;
   margin-top: 0px;
-   overflow-x:hidden; 
+   overflow-x:hidden;
    text-align: justify;
   overflow-y:auto;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -222,7 +222,7 @@ footer {
 color: rgb(228, 217, 201);
 font-family: 'Franklin';
 background-color: rgb(211, 104, 65);
-height: 370px;
+height: 450px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
