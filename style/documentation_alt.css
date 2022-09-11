@@ -382,3 +382,10 @@ border: none;
     max-height: 55vh;
 }
 
+#dimension{
+  height: 50px;
+}
+
+carousel-inner > .item > img 
+{ width:auto; 
+  height:150px; }

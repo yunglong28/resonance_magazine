@@ -142,8 +142,8 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    $("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")
-    $("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallinorosso.jpeg'>")
+    if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")}
+    if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallino_rosso.png'>")}
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
