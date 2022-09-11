@@ -110,7 +110,7 @@ section {
   align-items: center;
   justify-content: center;
   font-family: 'bodoni';
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 0px;
   color: white;
   overflow-x:hidden;
@@ -125,6 +125,11 @@ section::-webkit-scrollbar {
   display: none;
 }
 
+section a{
+  text-decoration: underline!important;
+  color: white !important;
+
+}
 
 .container{
   width: 100%;
@@ -223,17 +228,24 @@ footer{
 #magazine2{
   background-color:
   #e6d8a8;
-height:  420px;
+height:  410px;
 padding-top: 4%;
 padding-left: 6%;
 padding-right: 6%;
 padding-bottom: 2%;
   color:black;
     font-family: 'bodoni';
-    font-size: 25px;
+    font-size: 23px;
     text-align: justify;
 
 }
+
+.titles{
+  color:#fc4434;
+  font-family: 'bodoni';
+  font-weight: bold; 
+}
+
 .btn_stili {
   background-color:
   #white;
@@ -258,22 +270,22 @@ text-align: center;
 
 
 /* unvisited link */
-a:link {
+/*a:link {
   color: red;
 }
 
 /* visited link */
-a:visited {
+/*a:visited {
   color: red;
 }
 
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: black;
 }
 
 /* selected link */
-a:active {
+/*a:active {
   color: red;
 }
 
@@ -291,7 +303,7 @@ a:hover {
 
 a:active {
   text-decoration: none;
-}
+}*/
 
 
 
@@ -382,3 +394,16 @@ border: none;
     max-height: 55vh;
 }
 
+.carousel {
+    height: 40vh;
+}
+
+.carousel-inner > .carousel-item > img {
+  height:100%;
+   width: 100%;
+}
+
+.carousel-inner > .carousel-item > a > img{
+  height:100%;
+   width: 100%;
+}

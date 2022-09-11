@@ -115,7 +115,10 @@ section {
 }
 
 
-
+.titles{
+  color: rgb(211, 104, 65);
+  font-size: 30px;
+}
 
 section::-webkit-scrollbar {
   display: none;
