@@ -35,14 +35,11 @@
 p {color: black;
 font-family: 'caslon_old_faceregular';
 padding: 40px;
+font-weight: bold;
+line-height: 85%;
 }
 
-#container_belle{
-  text-align: center;
-    font-size: 14px;
-    font-family: 'caslon_old_face_italic';
-    text-transform: uppercase;
-}
+
 
 #lo2::first-letter {
   background-image: url('../imgs/I.png');
@@ -308,29 +305,34 @@ font-family:  'caslon_old_faceregular';
   color: black;
   text-transform: uppercase;
   font-size: 22px;
+  font-weight: bold;
 }
 
 
 
 .subtitle {
     text-align: center;
-      font-size: 14px;
-  font-family: 'caslon_old_face_italic';
-  text-transform: uppercase;
+      font-size: 16px;
+  font-family: 'caslon_old_face_italic'!important;
+
+  font-weight: bolder;
 
 
 }
+
+
 
 #subimage {
   float: left;}
 }
 .author_and_date {
   font-family:  'caslon_old_faceregular';
+  font-weight: bold;
 
 }
 
 
-figcaption {font-family:  'caslon_old_faceregular';}
+figcaption {font-family:  'caslon_old_faceregular';font-weight: bold;}
 
 h3 {text-align: center;
 font-family: 'caslon_old_faceregular';
