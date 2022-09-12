@@ -494,10 +494,11 @@ function sortAlphabet(lista){
   }
 
   itemsArr.sort(function(a, b) {
-    return a.innerHTML == b.innerHTML
-            ? 0
-            : (a.innerHTML > b.innerHTML ? 1 : -1);
+    return a.innerHTML == b.innerHTML// if the value is the same
+            ? 0//keep the original order
+            : (a.innerHTML > b.innerHTML ? 1 : -1);//if a > b, sort sort a after b, else sort sort a before b
   });
+
 
   for (i = 0; i < itemsArr.length; ++i) {
     list.appendChild(itemsArr[i]);
