@@ -395,8 +395,6 @@ text-align: center;
  .modal-footer {
      background-color:white;
       color:lightgrey;
-
-
  }
 
 
@@ -519,7 +517,7 @@ border: none;
 }
 
 .icons_nav {
-  margin-left: 150px!important;
+  margin-left: 130px!important;
   margin-top: 7px!important;
 }
 
