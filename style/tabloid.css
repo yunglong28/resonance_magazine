@@ -202,14 +202,14 @@ body{
   margin-top: 15px;
   background-size: cover;
   font-family: futura;
-  font-size: 30px;
   color: white;
+  font-size: 30px;
   line-height: 1em;
   min-height:200px;
 }
 
  #col1 .title {
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: underline;
   max-width:80%;
  }
@@ -240,11 +240,11 @@ body{
   max-width:80%;
   word-wrap: break-word;
   text-decoration: underline;
-
+  font-size: 25px;
  }
 
   #col2 .subtitle {
-    max-width:50%;
+    max-width:70%;
     text-transform: uppercase;
   }
 
@@ -312,7 +312,7 @@ footer{
 }
 
 .icons_nav {
-   margin-left: 50px!important;
+   margin-left: 70px!important;
   margin-top: 7px!important;
 }
 

@@ -269,45 +269,6 @@ text-align: center;
 
 
 
-/* unvisited link */
-/*a:link {
-  color: red;
-}
-
-/* visited link */
-/*a:visited {
-  color: red;
-}
-
-/* mouse over link */
-/*a:hover {
-  color: black;
-}
-
-/* selected link */
-/*a:active {
-  color: red;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}*/
-
-
-
-
 .icons {
   width: 30px;
   height: 30px;
@@ -394,3 +355,6 @@ border: none;
     max-height: 55vh;
 }
 
+.col{
+  padding: 10px;
+}

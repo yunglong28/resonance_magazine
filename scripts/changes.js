@@ -142,17 +142,18 @@ function change(name) {
   if (name == 'tabloid'){
     $(".first_img").remove();
     $("#pagestyle").attr('href','style/tabloid.css');
-    if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino_giallo' src='imgs/pallino.png'>")}
-    if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino_rosso' src='imgs/pallino_rosso.png'>")}
+    if($('.pallino_giallo').length == 0){$("#col1 .title").prepend("<img class='pallino' src='imgs/pallino.png'>")}
+    if($('.pallino_rosso').length == 0){$("#col2 .title").prepend("<img class='pallino' src='imgs/pallino_rosso.png'>")}
     if($('.title_issue').length == 0){$("<div class='title_issue'> <img id='theresonance' src='imgs/theresonance.jpeg'> </div> <div class='banner_issue'> EXCLUSIVE: DECOLONISING MUSIC</div>").insertAfter("nav")};
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
-      $("#title_and_subtitle_2").css({fontSize: 70});
+      $("#title2").css({fontSize: 80});
       $("#title_and_subtitle_3").css({fontSize: 40});
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
-      $("#title1").css("text-decoration","none");
-      $("#col2 .pallino_rosso").remove();
+      $("#title2").css("text-decoration","none");
+      $("#col2 .pallino").remove();
+      $("#title2").css("line-height", '1em');
      }
 
     if($("#alessandro").length){

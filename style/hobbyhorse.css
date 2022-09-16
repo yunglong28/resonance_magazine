@@ -1,4 +1,4 @@
-@font-face {
+hobby@font-face {
     font-family: 'caslon_old_faceregular';
     src: url('../fonts/caslon_old_face_regular-webfont.woff2') format('woff2'),
          url('../fonts/caslon_old_face_regular-webfont.woff') format('woff');
@@ -513,7 +513,7 @@ figcaption {
 }
 
 .icons_nav {
-   margin-left: 75px!important;
+   margin-left: 70px!important;
   margin-top: 7px!important;
 }
 
