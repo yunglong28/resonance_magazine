@@ -1,4 +1,4 @@
-hobby@font-face {
+@font-face {
     font-family: 'caslon_old_faceregular';
     src: url('../fonts/caslon_old_face_regular-webfont.woff2') format('woff2'),
          url('../fonts/caslon_old_face_regular-webfont.woff') format('woff');
@@ -37,6 +37,7 @@ font-family: 'caslon_old_faceregular';
 padding: 40px;
 font-weight: bold;
 line-height: 85%;
+font-size: 15px;
 }
 
 
