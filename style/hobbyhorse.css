@@ -519,7 +519,7 @@ figcaption {
 }
 
 .icons_nav {
-   margin-left: 70px!important;
+   margin-left: 2vh!important;
   margin-top: 7px!important;
 }
 
@@ -707,7 +707,7 @@ font-family: "caslon_old_face_italic";
   }
 
   .icons_nav {
-    margin-left: -15px!important;
+    margin-left: 2vh!important;
     margin-top: 7px!important;
 
   }
