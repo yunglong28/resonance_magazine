@@ -215,11 +215,11 @@ section {
   align-items: center;
   justify-content: center;
   font-family: 'zapf_elliptical_711_regular';
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 0px;
   border:10px solid #9e086b;
   border-radius: 2rem;
-  overflow-x:hidden; 
+  overflow-x:hidden;
   overflow-y:auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
