@@ -520,8 +520,9 @@ footer{
 }
 
 .icons_nav {
-   margin-right: 2px!important;
+  margin-right: 2px!important;
   margin-top: 7px!important;
+  margin-left: 125px!important;
 }
 
 
@@ -697,8 +698,6 @@ font-family: vcr;
 }
 
 
-
-
 #myModal {
   font-family:'joystix_monospace'!important;
 
@@ -776,3 +775,18 @@ border: none;
 .author, .publicationDate{
   font-weight: bold;
 }
+
+/*@media only screen and (max-width: 1300px) {
+
+  .icons {
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .icons_nav {
+    margin-left: 80px!important;
+    margin-top: 7px!important;
+
+  }
+}*/
