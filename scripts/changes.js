@@ -98,9 +98,9 @@ function change(name) {
     $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxtabloid.png'>")
     $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodtabloid.png'>")
 
-    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='200'>").insertAfter("#col1 p:last-child")};
-    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='200'>").insertAfter("#col2 p:last-child")};
-    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='200'>").insertAfter("#col3 p:last-child")};
+    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-child")};
 
     if ($("#francesca").length) {
      if($(".first_img").length === 0){
@@ -301,7 +301,7 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-
+    
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -460,9 +460,9 @@ function underline_col3(item, color){
 
 function underline_col(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about');
+        var aboutwho = $(item).attr('about'); 
         $(item).css('background-color', color);
-        $('[about= "' + aboutwho + '"]').css('background-color', color);
+        $('[about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $('[about= "' + aboutwho + '"]').parents('.article_col').scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -472,10 +472,10 @@ function underline_col(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about');
+    var aboutwho = $(item).attr('about'); 
     $(item).css('background-color', 'transparent');
-    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent');
-    $(item).attr("clicked","false");
+    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
+    $(item).attr("clicked","false"); 
   }
 }
 
@@ -636,7 +636,7 @@ var UserClasses_init = {}
 // Convert the JavaScript object into a string and save it into localStorage (JSON makes it possible to store JavaScript objects as text)
 localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
-function saveNewClass(){
+function saveNewClass(){  //saves new metadata classes in localStorage 
   //variable for the class from the user input
     key = $("#add_class").val().toLowerCase().toString();
   //variable fo the text selected by the user
@@ -645,15 +645,9 @@ function saveNewClass(){
     if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
     }
-<<<<<<< HEAD
     
     else{  
       // get existing User classes
-=======
-
-    else{
-      // get exising User classes
->>>>>>> 9fc6bf7dec05c7e86418dba07bd9e901dddba4f3
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
       //if the class is new, create an empty list of its values
         if ((key in UserClasses)==0){
@@ -663,8 +657,9 @@ function saveNewClass(){
          UserClasses[key].push(value);
       //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
+      //
         add_metadata(Object.keys(UserClasses));
-        //create a span with the selected text as contente
+      //create a span with the selected text as contente
         var wrap = document.createElement('span')
         wrap.innerHTML = value;
         wrap.setAttribute("about", value)
@@ -677,36 +672,36 @@ function saveNewClass(){
         range.insertNode(wrap);
       }
 
-
+      
 }
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+    color += letters[Math.floor(Math.random() * 16)];  //Returns a random value between the 16 elements of letters (repeated 6 times)
   }
   return color;
 }
+
 
 function add_metadata(keys_list){
   for (let key of keys_list){
     color = getRandomColor()
       if ($("#"+key+"").length == 0){
-          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>")
+          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>") //add new class
           }
-      var value = UserClasses[key]
+      var value = UserClasses[key] //populate the class
       for (let valore of value){
         nospace= valore.replace(/\s/g, "_")
         if ($("#"+nospace+"").length == 0){
           class_color =  $("#"+key+"").attr('color')
           $("#"+key+"").append("<li><a id='" + nospace + "' about='" + valore + "' clicked='false' onclick='underline_col(this, \""+ class_color +"\")'>" + valore + "</a></li>")
       }
-
+      
       }
 }
 }
-
 
 
 function clearAll(){
@@ -714,7 +709,7 @@ function clearAll(){
   while (myNode.firstChild) {
     myNode.removeChild(myNode.lastChild);
       }
-  $("#new_metadata_list").append('<br>')
+  $("#new_metadata_list").append('<br>') 
   $('span').css('background-color', 'transparent');
   $('#add_class').val('');
   localStorage.clear()
