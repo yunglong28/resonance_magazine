@@ -295,7 +295,6 @@ function change(name) {
 function keepstyle(pagestyle){
   var style = document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem('currentstyle', style);
-
 }
 
 
@@ -331,7 +330,6 @@ $(document).ready(function(){
     if (style==="style/home_future.css"||style==="style/future.css"||style==="style/documentation_future.css"){
       change('future');
     }
-
 
     sessionStorage.clear();
   }
@@ -400,12 +398,12 @@ function underline_col1(item, color){
         var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
         $('#col1 [about= "' + aboutwho + '"]').css('background-color', color);
-        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
-        var scrollPos = $("#col1").scrollTop();
-        var borderPixels = $(".article_col").css('borderWidth')
+        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top; /*retrieve the current position of an element (specifically its border box, which excludes margins) relative to the document*/
+        var scrollPos = $("#col1").scrollTop();/*returns the vertical scrollbar position for the selected element*/
+        var borderPixels = $(".article_col").css('borderWidth')/*returns the width of an element's border*/
         let border = borderPixels.replace("px", "");
-        $("html").animate({scrollTop:0}, 1000)
-        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);
+        $("html").animate({scrollTop:0}, 1000)/*set vertical scrollbar position for the webpage to the top*/
+        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);/*some maths*/
         $(item).attr("clicked","true");
       }
   else{
@@ -497,7 +495,7 @@ function sortAlphabet(lista){
   itemsArr.sort(function(a, b) {
     return a.innerHTML == b.innerHTML// if the value is the same
             ? 0//keep the original order
-            : (a.innerHTML > b.innerHTML ? 1 : -1);//if a > b, sort sort a after b, else sort sort a before b
+            : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort sort a after b, else sort sort a before b
   });
 
 
@@ -635,7 +633,7 @@ function focus_three(elem){
 //ADD METADATA
 // create an object with userclasses
 var UserClasses_init = {}
-// transform it in JOSN object literal and save it into localStorage
+// Convert the JavaScript object into a string and save it into localStorage (JSON makes it possible to store JavaScript objects as text)
 localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
 function saveNewClass(){
@@ -649,7 +647,7 @@ function saveNewClass(){
     }
     
     else{  
-      // get exising User classes
+      // get existing User classes
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
       //if the class is new, create an empty list of its values
         if ((key in UserClasses)==0){
@@ -659,12 +657,10 @@ function saveNewClass(){
          UserClasses[key].push(value);
       //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-      // var val1 = localStorage.getItem('UserClasses');
-      //  alert(val1)
         add_metadata(Object.keys(UserClasses));
+        //create a span with the selected text as contente
         var wrap = document.createElement('span')
         wrap.innerHTML = value;
-      //add class NewClass and "myspan" to element
         wrap.setAttribute("about", value)
       // var range containing the starting range of the selection
         sel = document.getSelection()
