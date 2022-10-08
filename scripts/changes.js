@@ -148,9 +148,13 @@ function change(name) {
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
+      $("#title_and_subtitle_1").addClass("delStyle");
       $("#title2").css({fontSize: 80});
+      $("#title2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 40});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
+      $("#title_and_subtitle_2").addClass("delStyle");
       $("#title2").css("text-decoration","none");
       $("#col2 .pallino").remove();
       $("#title2").css("line-height", '1em');
@@ -158,8 +162,11 @@ function change(name) {
 
     if($("#alessandro").length){
       $("#title_and_subtitle_2").css({fontSize: 30});
+      $("#title_and_subtitle_2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 30});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#subtitle3").css("column-count","2");
+      $("#subtitle3").addClass("delStyle");
       $("#subtitle3").css("max-width","100%");
      }
 
@@ -177,8 +184,8 @@ function change(name) {
     $(".title_issue").remove();
     $("#sep_banner").remove()
     $(".pallino").remove();
-  }
-
+    $(".delStyle").removeAttr("style");
+}
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
@@ -209,6 +216,7 @@ function change(name) {
        $("<img class='first_img' id='first_img_one' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertBefore("#title_and_subtitle_1");
        $("<img class='first_img' id='first_img_two' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertBefore("#title_and_subtitle_2");
        $("<img class='first_img' id='first_img_three' src='imgs/popular_music_and_society.jpg' width='300'>").insertBefore("#title_and_subtitle_3");
+       $("<br id='title_break'>").insertBefore("#title_and_subtitle_1 .title")
      }
 
      if ($("#alessandro").length) {
@@ -233,8 +241,9 @@ function change(name) {
     else{
       $('.analog_img').remove();
       $(".finalfig1").remove()
-      $(".adv").remove()
-      $(".adv1").remove()
+      $(".adv").remove();
+      $(".adv1").remove();
+      $("#title_break").remove();
     }
 
 

@@ -198,6 +198,11 @@ body{
   font-size: 10px;
 }
 
+#col1 a{
+  color: #E4D9C5;
+  text-decoration: underline; 
+}
+
 
 #ballerini{
   display: block;
@@ -235,6 +240,11 @@ body{
      width: 50%;
      border-top: 3px solid rgb(191, 164, 4);
   }
+
+#col2 a{
+  color:rgb(191, 164, 4);
+  text-decoration: underline;
+}
 
 #amazzone{
   display: block;
@@ -309,6 +319,11 @@ body{
      width: 50%;
      border-top: 3px solid rgb(0, 53, 102);
   }
+
+#col3 a {
+  color: #003566;
+  text-decoration: underline;
+}
 
 #li{
   float:left;
