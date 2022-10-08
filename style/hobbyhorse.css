@@ -1,4 +1,4 @@
-hobby@font-face {
+@font-face {
     font-family: 'caslon_old_faceregular';
     src: url('../fonts/caslon_old_face_regular-webfont.woff2') format('woff2'),
          url('../fonts/caslon_old_face_regular-webfont.woff') format('woff');
@@ -36,7 +36,8 @@ p {color: black;
 font-family: 'caslon_old_faceregular';
 padding: 40px;
 font-weight: bold;
-line-height: 85%;
+
+font-size: 15px;
 }
 
 
@@ -52,7 +53,8 @@ line-height: 0.65;
 color: transparent;
 margin-right: -0.15px;
 margin-left: -0.15rem;
-margin-bottom: -4.15rem;
+margin-bottom: -4.25rem;
+
 }
 
 
@@ -67,7 +69,8 @@ line-height: 0.65;
 color: transparent;
 margin-right: -0.15px;
 margin-left: -0.15rem;
-margin-bottom: -4.15rem;
+margin-bottom: -4.25rem;
+
 
 }
 
@@ -178,6 +181,9 @@ margin-left: -0.15rem;
 margin-bottom: -4.15rem;
 }
 
+#drop {
+  text-transform: uppercase;
+}
 
 img {
 -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -476,7 +482,7 @@ body {
 }
 
 #block1 {
-  margin-bottom: -90px;
+  margin-bottom: -110px;
   margin-left: 30px;
   margin-top: 12px;
 }
@@ -513,7 +519,7 @@ figcaption {
 }
 
 .icons_nav {
-   margin-left: 70px!important;
+   margin-left: 2vh!important;
   margin-top: 7px!important;
 }
 
@@ -701,7 +707,7 @@ font-family: "caslon_old_face_italic";
   }
 
   .icons_nav {
-    margin-left: -15px!important;
+    margin-left: 2vh!important;
     margin-top: 7px!important;
 
   }

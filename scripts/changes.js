@@ -98,9 +98,9 @@ function change(name) {
     $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxtabloid.png'>")
     $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodtabloid.png'>")
 
-    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
-    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-child")};
-    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-child")};
+    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='200'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='200'>").insertAfter("#col2 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='200'>").insertAfter("#col3 p:last-child")};
 
     if ($("#francesca").length) {
      if($(".first_img").length === 0){
@@ -301,7 +301,7 @@ function keepstyle(pagestyle){
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-    
+
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -460,9 +460,9 @@ function underline_col3(item, color){
 
 function underline_col(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about'); 
+        var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
-        $('[about= "' + aboutwho + '"]').css('background-color', color); 
+        $('[about= "' + aboutwho + '"]').css('background-color', color);
         var elementPos = $('span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $('[about= "' + aboutwho + '"]').parents('.article_col').scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -472,10 +472,10 @@ function underline_col(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about'); 
+    var aboutwho = $(item).attr('about');
     $(item).css('background-color', 'transparent');
-    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
-    $(item).attr("clicked","false"); 
+    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent');
+    $(item).attr("clicked","false");
   }
 }
 
@@ -645,9 +645,15 @@ function saveNewClass(){
     if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
     }
+<<<<<<< HEAD
     
     else{  
       // get existing User classes
+=======
+
+    else{
+      // get exising User classes
+>>>>>>> 9fc6bf7dec05c7e86418dba07bd9e901dddba4f3
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
       //if the class is new, create an empty list of its values
         if ((key in UserClasses)==0){
@@ -671,7 +677,7 @@ function saveNewClass(){
         range.insertNode(wrap);
       }
 
-      
+
 }
 
 function getRandomColor() {
@@ -696,7 +702,7 @@ function add_metadata(keys_list){
           class_color =  $("#"+key+"").attr('color')
           $("#"+key+"").append("<li><a id='" + nospace + "' about='" + valore + "' clicked='false' onclick='underline_col(this, \""+ class_color +"\")'>" + valore + "</a></li>")
       }
-      
+
       }
 }
 }
@@ -708,7 +714,7 @@ function clearAll(){
   while (myNode.firstChild) {
     myNode.removeChild(myNode.lastChild);
       }
-  $("#new_metadata_list").append('<br>') 
+  $("#new_metadata_list").append('<br>')
   $('span').css('background-color', 'transparent');
   $('#add_class').val('');
   localStorage.clear()

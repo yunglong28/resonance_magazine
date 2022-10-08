@@ -281,6 +281,8 @@ body {
 
  }
 
+
+
 .author_and_date {
   font-family:  'caslon_old_faceregular';
 }
@@ -313,7 +315,6 @@ body {
         text-align: justify;
         font-size: 10pt;
 }
-
 
 
 
@@ -410,7 +411,8 @@ border-bottom: 1px solid black;
       font-family: 'joystix_monospace';
       text-transform: uppercase;
       font-size: 9px;
-      line-height: 80%;:
+      line-height: 80%;
+      text-align: left;
   }
 
   p:nth-child(9) {
@@ -418,7 +420,9 @@ border-bottom: 1px solid black;
       font-family: 'joystix_monospace';
       text-transform: uppercase;
       font-size: 9px;
-      line-height: 80%;:
+      line-height: 80%;
+        text-align: left;
+      
   }
 
   .marquee {
@@ -516,7 +520,7 @@ footer{
 }
 
 .icons_nav {
-   margin-left: 145px!important;
+   margin-right: 2px!important;
   margin-top: 7px!important;
 }
 
@@ -765,4 +769,13 @@ border: none;
  background-color: black;
  color: white;
 
+}
+
+.ArtBody p {
+  margin-top: 19px;
+  text-indent: 1.5em;
+}
+
+.author, .publicationDate{
+  font-weight: bold;
 }
