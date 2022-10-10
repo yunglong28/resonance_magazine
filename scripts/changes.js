@@ -502,7 +502,7 @@ function sortAlphabet(lista){
   itemsArr.sort(function(a, b) {
     return a.innerHTML == b.innerHTML// if the value is the same
             ? 0//keep the original order
-            : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort sort a after b, else sort sort a before b
+            : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort a after b, else sort a before b ('Alice' is smaller than 'Bob')
   });
 
 
@@ -664,8 +664,8 @@ function saveNewClass(){  //saves new metadata classes in localStorage
          UserClasses[key].push(value);
       //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-         var val1 = localStorage.getItem('UserClasses');
-         alert(val1)
+      //var val1 = localStorage.getItem('UserClasses');
+      //alert(val1)
         add_metadata(Object.keys(UserClasses));
       //create a span with the selected text as contente
         var wrap = document.createElement('span')
