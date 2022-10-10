@@ -368,7 +368,12 @@ text-transform: uppercase;
 }
 
 
-
+.imgs_docs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 55vh;
+}
 
 @media only screen and (max-width: 1300px) {
 
@@ -383,3 +388,11 @@ text-transform: uppercase;
     margin-top: 7px!important;
 
   }
+
+
+    .imgs_docs {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 55vh;
+    } }
