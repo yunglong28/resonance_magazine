@@ -85,8 +85,6 @@ function change(name) {
 
   if (name =='hobbyhorse'){
     $("#pagestyle").attr('href','style/hobbyhorse.css');
-    /*$("#sep_nav").remove();*/
-    //$(".container_articles").attr('class', 'container-fluid container_articles');
     $("#uccelli").append("<img id='birds' src='imgs/birds2.png' width='250'>");
     $("#uccelli1").replaceWith("<img id='block1' src='imgs/birds3.png' width='250'>");
 
@@ -666,7 +664,8 @@ function saveNewClass(){  //saves new metadata classes in localStorage
          UserClasses[key].push(value);
       //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-      //
+         var val1 = localStorage.getItem('UserClasses');
+         alert(val1)
         add_metadata(Object.keys(UserClasses));
       //create a span with the selected text as contente
         var wrap = document.createElement('span')
