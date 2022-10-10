@@ -98,9 +98,9 @@ function change(name) {
     $("#boombox").replaceWith("<img id='boombox' src='imgs/boomboxtabloid.png'>")
     $("#walkman").replaceWith("<img id='walkman' src='imgs/ipodtabloid.png'>")
 
-    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='200'>").insertAfter("#col1 p:last-child")};
-    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='200'>").insertAfter("#col2 p:last-child")};
-    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='200'>").insertAfter("#col3 p:last-child")};
+    if($('.finalfig1').length == 0){$("<img  id='finalfig1' src='imgs/deco1.png' width='300'>").insertAfter("#col1 p:last-child")};
+    if($('.finalfig2').length == 0){$("<img  id='finalfig2' src='imgs/deco2.png' width='300'>").insertAfter("#col2 p:last-child")};
+    if($('.finalfig3').length == 0){$("<img  id='finalfig3' src='imgs/deco3.png' width='300'>").insertAfter("#col3 p:last-child")};
 
     if ($("#francesca").length) {
      if($(".first_img").length === 0){
@@ -148,9 +148,13 @@ function change(name) {
     if($('#sep_banner').length == 0){$("<br id='sep_banner'>").insertAfter(".banner_issue")};
     if($("#francesca").length){
       $("#title_and_subtitle_1").css({fontSize: 50});
+      $("#title_and_subtitle_1").addClass("delStyle");
       $("#title2").css({fontSize: 80});
+      $("#title2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 40});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#title_and_subtitle_2").css("text-transform", "uppercase");
+      $("#title_and_subtitle_2").addClass("delStyle");
       $("#title2").css("text-decoration","none");
       $("#col2 .pallino").remove();
       $("#title2").css("line-height", '1em');
@@ -158,8 +162,11 @@ function change(name) {
 
     if($("#alessandro").length){
       $("#title_and_subtitle_2").css({fontSize: 30});
+      $("#title_and_subtitle_2").addClass("delStyle");
       $("#title_and_subtitle_3").css({fontSize: 30});
+      $("#title_and_subtitle_3").addClass("delStyle");
       $("#subtitle3").css("column-count","2");
+      $("#subtitle3").addClass("delStyle");
       $("#subtitle3").css("max-width","100%");
      }
 
@@ -177,8 +184,8 @@ function change(name) {
     $(".title_issue").remove();
     $("#sep_banner").remove()
     $(".pallino").remove();
-  }
-
+    $(".delStyle").removeAttr("style");
+}
 
   if (name == 'analog'){
     $("#pagestyle").attr('href','style/analog.css');
@@ -209,6 +216,7 @@ function change(name) {
        $("<img class='first_img' id='first_img_one' src='https://img1.wsimg.com/isteam/ip/d8d3ee10-86f5-4a41-aa20-fec4c8ea1c2e/Maracatu%20Coronation.png/:/cr=t:3.65%25,l:0.71%25,w:94.34%25,h:94.34%25/rs=w:1280' alt='Coronation ceremony' width='300'>").insertBefore("#title_and_subtitle_1");
        $("<img class='first_img' id='first_img_two' src='https://2104310a1da50059d9c5-d1823d6f516b5299e7df5375e9cf45d2.ssl.cf2.rackcdn.com/nmbx/2016/11/GaryIngle-475x358.jpg' width='300'>").insertBefore("#title_and_subtitle_2");
        $("<img class='first_img' id='first_img_three' src='imgs/popular_music_and_society.jpg' width='300'>").insertBefore("#title_and_subtitle_3");
+       $("<br id='title_break'>").insertBefore("#title_and_subtitle_1 .title")
      }
 
      if ($("#alessandro").length) {
@@ -233,8 +241,9 @@ function change(name) {
     else{
       $('.analog_img').remove();
       $(".finalfig1").remove()
-      $(".adv").remove()
-      $(".adv1").remove()
+      $(".adv").remove();
+      $(".adv1").remove();
+      $("#title_break").remove();
     }
 
 
@@ -295,14 +304,13 @@ function change(name) {
 function keepstyle(pagestyle){
   var style = document.getElementById(pagestyle).getAttribute("href");
   sessionStorage.setItem('currentstyle', style);
-
 }
 
 
 $(document).ready(function(){
   if (sessionStorage.getItem("currentstyle")){
     var style = sessionStorage.getItem("currentstyle");
-
+    
     if (style==="style/home.css"||style==="style/issue.css"){
        change('home');
     }
@@ -331,7 +339,6 @@ $(document).ready(function(){
     if (style==="style/home_future.css"||style==="style/future.css"||style==="style/documentation_future.css"){
       change('future');
     }
-
 
     sessionStorage.clear();
   }
@@ -400,12 +407,12 @@ function underline_col1(item, color){
         var aboutwho = $(item).attr('about');
         $(item).css('background-color', color);
         $('#col1 [about= "' + aboutwho + '"]').css('background-color', color);
-        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top;
-        var scrollPos = $("#col1").scrollTop();
-        var borderPixels = $(".article_col").css('borderWidth')
+        var elementPos = $('#col1 span[about= "' + aboutwho + '"]:first').offset().top; /*retrieve the current position of an element (specifically its border box, which excludes margins) relative to the document*/
+        var scrollPos = $("#col1").scrollTop();/*returns the vertical scrollbar position for the selected element*/
+        var borderPixels = $(".article_col").css('borderWidth')/*returns the width of an element's border*/
         let border = borderPixels.replace("px", "");
-        $("html").animate({scrollTop:0}, 1000)
-        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);
+        $("html").animate({scrollTop:0}, 1000)/*set vertical scrollbar position for the webpage to the top*/
+        $("#col1").animate({scrollTop:scrollPos + elementPos - $("#col1").offset().top - border}, 1000);/*some maths*/
         $(item).attr("clicked","true");
       }
   else{
@@ -462,9 +469,9 @@ function underline_col3(item, color){
 
 function underline_col(item, color){
   if ($(item).attr('clicked') == "false"){
-        var aboutwho = $(item).attr('about');
+        var aboutwho = $(item).attr('about'); 
         $(item).css('background-color', color);
-        $('[about= "' + aboutwho + '"]').css('background-color', color);
+        $('[about= "' + aboutwho + '"]').css('background-color', color); 
         var elementPos = $('span[about= "' + aboutwho + '"]:first').offset().top;
         var scrollPos = $('[about= "' + aboutwho + '"]').parents('.article_col').scrollTop();
         $("html").animate({scrollTop:0}, 1000)
@@ -474,10 +481,10 @@ function underline_col(item, color){
         $(item).attr("clicked","true");
       }
   else{
-    var aboutwho = $(item).attr('about');
+    var aboutwho = $(item).attr('about'); 
     $(item).css('background-color', 'transparent');
-    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent');
-    $(item).attr("clicked","false");
+    $('span[about= "' + aboutwho + '"]').css('background-color', 'transparent'); 
+    $(item).attr("clicked","false"); 
   }
 }
 
@@ -497,7 +504,7 @@ function sortAlphabet(lista){
   itemsArr.sort(function(a, b) {
     return a.innerHTML == b.innerHTML// if the value is the same
             ? 0//keep the original order
-            : (a.innerHTML > b.innerHTML ? 1 : -1);//if a > b, sort sort a after b, else sort sort a before b
+            : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort sort a after b, else sort sort a before b
   });
 
 
@@ -635,10 +642,10 @@ function focus_three(elem){
 //ADD METADATA
 // create an object with userclasses
 var UserClasses_init = {}
-// transform it in JOSN object literal and save it into localStorage
+// Convert the JavaScript object into a string and save it into localStorage (JSON makes it possible to store JavaScript objects as text)
 localStorage.setItem('UserClasses', JSON.stringify(UserClasses_init))
 
-function saveNewClass(){
+function saveNewClass(){  //saves new metadata classes in localStorage 
   //variable for the class from the user input
     key = $("#add_class").val().toLowerCase().toString();
   //variable fo the text selected by the user
@@ -647,9 +654,9 @@ function saveNewClass(){
     if ((key == '') | (key == null) | (value == '') | (value == null)) {
         alert("Please, have a look at the instructions above :)")
     }
-
-    else{
-      // get exising User classes
+    
+    else{  
+      // get existing User classes
         UserClasses = JSON.parse(localStorage.getItem('UserClasses'))
       //if the class is new, create an empty list of its values
         if ((key in UserClasses)==0){
@@ -659,12 +666,11 @@ function saveNewClass(){
          UserClasses[key].push(value);
       //save updated UserClasses to localStorage
          localStorage.setItem('UserClasses', JSON.stringify(UserClasses))
-      // var val1 = localStorage.getItem('UserClasses');
-      //  alert(val1)
+      //
         add_metadata(Object.keys(UserClasses));
+      //create a span with the selected text as contente
         var wrap = document.createElement('span')
         wrap.innerHTML = value;
-      //add class NewClass and "myspan" to element
         wrap.setAttribute("about", value)
       // var range containing the starting range of the selection
         sel = document.getSelection()
@@ -675,36 +681,36 @@ function saveNewClass(){
         range.insertNode(wrap);
       }
 
-
+      
 }
 
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
   for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
+    color += letters[Math.floor(Math.random() * 16)];  //Returns a random value between the 16 elements of letters (repeated 6 times)
   }
   return color;
 }
+
 
 function add_metadata(keys_list){
   for (let key of keys_list){
     color = getRandomColor()
       if ($("#"+key+"").length == 0){
-          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>")
+          $("#new_metadata_list").append("<ul class='user_added_class' id='" + key + "' color='" + color + "'><b>" + key + "</b></ul>") //add new class
           }
-      var value = UserClasses[key]
+      var value = UserClasses[key] //populate the class
       for (let valore of value){
         nospace= valore.replace(/\s/g, "_")
         if ($("#"+nospace+"").length == 0){
           class_color =  $("#"+key+"").attr('color')
           $("#"+key+"").append("<li><a id='" + nospace + "' about='" + valore + "' clicked='false' onclick='underline_col(this, \""+ class_color +"\")'>" + valore + "</a></li>")
       }
-
+      
       }
 }
 }
-
 
 
 function clearAll(){
@@ -712,7 +718,7 @@ function clearAll(){
   while (myNode.firstChild) {
     myNode.removeChild(myNode.lastChild);
       }
-  $("#new_metadata_list").append('<br>')
+  $("#new_metadata_list").append('<br>') 
   $('span').css('background-color', 'transparent');
   $('#add_class').val('');
   localStorage.clear()

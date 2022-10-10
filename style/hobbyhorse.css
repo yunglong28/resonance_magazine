@@ -40,6 +40,15 @@ font-weight: bold;
 font-size: 15px;
 }
 
+ul, ol, #container_belle  {
+  color: black;
+  font-family: 'caslon_old_faceregular';
+  padding: 40px;
+  font-weight: bold;
+
+  font-size: 15px;
+
+}
 
 
 #lo2::first-letter {

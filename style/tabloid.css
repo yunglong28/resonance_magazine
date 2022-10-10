@@ -141,6 +141,14 @@
     background-color: #000000;
 }
 
+.article_col a{
+  color: black;
+  text-decoration: underline;
+}
+
+.article_col a:hover{
+  color: rgb(183,64,59);
+}
 
 .start_line{
 border-top: 3px solid black;
