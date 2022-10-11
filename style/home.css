@@ -586,7 +586,7 @@ border: none;
 }
 
 
-@media only screen and (min-width: 1800px) {
+/*@media only screen and (min-width: 1800px) {
 
   .icons {
     width: 30px;
