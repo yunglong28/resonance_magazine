@@ -218,6 +218,8 @@ body{
   background-color:black;
   font-family: 'Bebas Neue', cursive;
   color:rgb(191, 164, 4);
+  /*border:3px solid rgb(47,84,161);;
+  outline: 7px solid #edd5a2;*/
 }
 
 #col2 .title{
