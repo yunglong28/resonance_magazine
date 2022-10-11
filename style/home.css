@@ -564,7 +564,7 @@ border: none;
 }
 
 .icons_nav {
-  margin-left: 31vw!important;
+  margin-left: 295px!important;
   margin-top: 7px!important;
 
 
@@ -586,7 +586,7 @@ border: none;
 }
 
 
-/*@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
 
   .icons {
     width: 30px;
