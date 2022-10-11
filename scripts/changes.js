@@ -488,10 +488,9 @@ function underline_col(item, color){
 
 //SORTING FUNCTIONS
 
-
 function sortAlphabet(lista){
   var list = document.getElementById(lista);
-  var items = list.childNodes;
+  var items = list.childNodes;//The childNodes property returns a NodeList object. The childNodes property is read-only. Nodes are element nodes, text nodes, and comment nodes.
   var itemsArr = [];
   for (var i in items) {
       if (items[i].nodeType == 1) { // get rid of the whitespace text nodes
@@ -504,7 +503,7 @@ function sortAlphabet(lista){
             ? 0//keep the original order
             : (a.innerHTML > b.innerHTML ? 1 : -1);//otherwhise: if a > b, sort a after b, else sort a before b ('Alice' is smaller than 'Bob')
   });
-
+  
 
   for (i = 0; i < itemsArr.length; ++i) {
     list.appendChild(itemsArr[i]);
