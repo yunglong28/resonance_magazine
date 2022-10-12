@@ -55,7 +55,22 @@ ul, ol,   {
 
 }
 
+ #col1 a {
+   color: black;
+   text-decoration: underline;
+ }
 
+
+  #col2 a {
+    color: black;
+    text-decoration: underline;
+  }
+
+
+   #col3 a {
+     color: black;
+     text-decoration: underline;
+   }
 
 #lo2::first-letter {
   background-image: url('../imgs/I.png');

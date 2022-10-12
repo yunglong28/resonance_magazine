@@ -55,6 +55,22 @@ font-size: 13px;
 
 }
 
+
+ #col1  a {
+   color: black;
+   text-decoration: underline;
+ }
+
+  #col2 a {
+    color: black;
+    text-decoration: underline;
+  }
+
+   #col3 a {
+     color: black;
+     text-decoration: underline;
+   }
+
 #container_belle{font-family: 'zapf_elliptical_711_regular';
 
 
